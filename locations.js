@@ -37,7 +37,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
 
             map.on('load', () => {
-                map.addSource('national-park', {
+                map.addSource('map', {
                 'type': 'geojson',
                 'data': {
                 'type': 'FeatureCollection',
@@ -753,7 +753,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             map.addLayer({
                 'id': 'route',
                 'type': 'line',
-                'source': 'national-park',
+                'source': 'map',
                 'layout': {
                 'line-join': 'round',
                 'line-cap': 'round'
@@ -766,19 +766,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 map.addLayer({
                     'id': 'park-volcanoes',
                     'type': 'circle',
-                    'source': 'national-park',
+                    'source': 'map',
                     'paint': {
                     'circle-radius': 6,
                     'circle-color': '#B42222'
                     },
                     'filter': ['==', '$type', 'Point']
                     });
-            });
+           
         
-        map.on('click', e => {
-          //  console.log('click', e.lngLat);
-            
-        });
+      
         map.on('click', 'park-volcanoes', (e) =>  {
             
              setImg = e.features[0].properties.icon;
@@ -786,11 +783,56 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
             switch(setImg){
                 case   'start':
-                    console.log('Hiiiiiieeerrr');
                     document.getElementById("hidden").style.display = "block";
+
+                    var c = document.createElement("div");
+                    c.setAttribute("class", "added");
+                        c.setAttribute("id","circle");
+                        document.getElementById("labels").appendChild(c);
+
+                    var x = document.createElement("IMG");
+                    x.setAttribute("src", "/footage/kaese.png");
+                    x.setAttribute("alt", "fahne");
+                    x.setAttribute("class", "added");
+                    document.getElementById("circle").appendChild(x);
+
+                    
+                   
+                    break;
                     case   'end':
-                        console.log('Hiiiiiieeerrr');
                         document.getElementById("hidden").style.display = "block";
+
+                        var c = document.createElement("div");
+                        c.setAttribute("class", "added");
+                        c.setAttribute("id","circle");
+                        document.getElementById("labels").appendChild(c);
+
+                       
+                        var x = document.createElement("IMG");
+                        x.setAttribute("src", "/footage/fleisch.png");
+                        x.setAttribute("alt", "fahne");
+                        x.setAttribute("class","added");
+                        document.getElementById("circle").appendChild(x);
+
+                        var c = document.createElement("div");
+                        c.setAttribute("class", "added");
+                        c.setAttribute("id","circle2");
+                        document.getElementById("labels").appendChild(c);
+    
+                        
+                        var x = document.createElement("IMG");
+                        x.setAttribute("src", "/footage/kaese.png");
+                        x.setAttribute("alt", "fahne");
+                        x.setAttribute("class", "added");
+                        document.getElementById("circle2").appendChild(x);
+    
+                        
+                       
+                       
+
+                        
+                        break;
+                        
             }
             
           
@@ -799,4 +841,14 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             //state = true;
         });
         
-       
+    });
+
+    function back(){
+        document.getElementById('hidden').style.display = 'none';
+
+        //document.getElementById('labels').removeChild('added');
+
+        $('#labels').empty();
+  
+
+    }

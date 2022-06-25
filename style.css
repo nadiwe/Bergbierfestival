@@ -23,6 +23,7 @@ body {
    padding: 3vh;
 }
 img{
+   
     width: 100%;
     height: 100%;
     object-fit: contain;
@@ -52,18 +53,27 @@ img{
  #second{
     transform: translate(-50%, -50%) rotate(-45deg);
   }
-  .circle{
-      position: absolute;
-    
+  #circle{
+     
+  margin: 2vw;
       background-color: #ffffff;
       width: 60vw;
       height: 60vw;
       border-radius: 100%;
   }
+  #circle2{
+     
+    margin: 2vw;
+    background-color: #ffffff;
+    width: 60vw;
+    height: 60vw;
+    border-radius: 100%;
+}
   #labels{
       display: flex;
       justify-content: center;
       align-content: center;
+      flex-direction:column;
       margin: 2vh;
     
   }

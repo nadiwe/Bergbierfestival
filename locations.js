@@ -4,6 +4,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             [10.45, 46.9]  // [east, north]
         ];
 
+        let setImg;
+
         const map = new mapboxgl.Map({
 
 
@@ -48,6 +50,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       {
                         "type": "Feature",
                         "properties": {
+                            "icon": 'end',
                           "2": "ramosch"
                         },
                         "geometry": {
@@ -62,6 +65,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       {
                         "type": "Feature",
                         "properties": {
+                            "icon": 'start',
                           "Start": "tschlin"
                         },
                         "geometry": {
@@ -102,8 +106,15 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
     
         
         map.on('click', e => {
-            console.log('click', e.lngLat);
+          //  console.log('click', e.lngLat);
+            
         });
-
+        map.on('click', 'park-volcanoes', (e) =>  {
+            
+             setImg = e.features[0].properties.icon;
+            console.log(setImg);
+            //if(!state)
+            //state = true;
+        });
         
        

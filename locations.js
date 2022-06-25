@@ -791,7 +791,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("labels").appendChild(c);
 
                     var x = document.createElement("IMG");
-                    x.setAttribute("src", "/footage/kaese.png");
+                    x.setAttribute("src", "./footage/kaese.png");
                     x.setAttribute("alt", "fahne");
                     x.setAttribute("class", "added");
                     document.getElementById("circle").appendChild(x);
@@ -809,7 +809,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                        
                         var x = document.createElement("IMG");
-                        x.setAttribute("src", "/footage/fleisch.png");
+                        x.setAttribute("src", "./footage/fleisch.png");
                         x.setAttribute("alt", "fahne");
                         x.setAttribute("class","added");
                         document.getElementById("circle").appendChild(x);
@@ -821,7 +821,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
     
                         
                         var x = document.createElement("IMG");
-                        x.setAttribute("src", "/footage/kaese.png");
+                        x.setAttribute("src", "./footage/kaese.png");
                         x.setAttribute("alt", "fahne");
                         x.setAttribute("class", "added");
                         document.getElementById("circle2").appendChild(x);

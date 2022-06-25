@@ -113,7 +113,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             
              setImg = e.features[0].properties.icon;
             console.log(setImg);
-            //if(!state)
+            if(setImg == 'start'){
+                console.log('Hiiiiiieeerrr');
+                document.getElementById("hidden").style.display = "block";
+            }
+            
             //state = true;
         });
         

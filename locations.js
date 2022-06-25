@@ -3,6 +3,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             [10.3, 46.78], // [west, south]
             [10.45, 46.9]  // [east, north]
         ];
+
         const map = new mapboxgl.Map({
 
 
@@ -28,41 +29,81 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
       
 
-        map.on('load', () => {
-            map.addSource('locations', {
+     
+
+
+
+
+            map.on('load', () => {
+                map.addSource('national-park', {
                 'type': 'geojson',
-                'data':{
-                    'type': 'FeatureCollections',
-                    'features': [
-                          {
-                            'type': 'Feature',
-                            'geometry': {
-                                'type': 'Point',
-                              'coordinates': [
-                                10.382085,
-                                46.834375
-                              ] 
-                            },
-                          }
-                        ]
-                          } 
+                'data': {
+                'type': 'FeatureCollection',
+
+
+
+                
+                
+                    "features": [
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "2": "ramosch"
+                        },
+                        "geometry": {
+                          "coordinates": [
+                            10.382085,
+                            46.834375
+                          ],
+                          "type": "Point"
+                        },
+                        "id": "78b09a7f325b58d1d637ec029f77be80"
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "Start": "tschlin"
+                        },
+                        "geometry": {
+                          "coordinates": [
+                            10.425081,
+                            46.869304
+                          ],
+                          "type": "Point"
+                        },
+                        "id": "86dca45dbbfff1b39a5a97724cbcdd8d"
+                      }
+                    ],
+                    "type": "FeatureCollection"
+                  
+
+
+
+
+
+                }
+                });
+           
+ 
+                
+
+            map.addLayer({
+                'id': 'park-volcanoes',
+                'type': 'circle',
+                'source': 'national-park',
+                'paint': {
+                'circle-radius': 6,
+                'circle-color': '#B42222'
+                },
+                'filter': ['==', '$type', 'Point']
                 });
 
             });
-
     
-        map.addLayer({
-            'id': 'locations',
-            'type': 'circle',
-            'source': 'locations',
-           
-            'paint': {
-                'circle-radius': 6,
-                'circle-color': '#B42222'
-
-            }
-        });
+        
         map.on('click', e => {
             console.log('click', e.lngLat);
         });
+
+        
        

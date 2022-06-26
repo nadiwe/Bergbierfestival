@@ -847,8 +847,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     'type': 'circle',
                     'source': 'map',
                     'paint': {
-                    'circle-radius': 6,
-                    'circle-color': 'blue'
+                    'circle-radius': 20,
+                    'circle-color': 'blue',
+                    'circle-opacity': 0
                     },
                 'filter': ['==', '$type', 'Point']
 

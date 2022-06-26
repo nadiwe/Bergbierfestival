@@ -1,3 +1,7 @@
+
+
+
+
 mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5ejl2a2sifQ.GRtniIwJvJYrRsWqMR5MYA';
         const bounds = [
             [10.3, 46.78], // [west, south]
@@ -5,6 +9,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         ];
 
         let setImg;
+
+       
 
         const map = new mapboxgl.Map({
 
@@ -37,6 +43,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
 
             map.on('load', () => {
+                
                 map.addSource('map', {
                 'type': 'geojson',
                 'data': {
@@ -46,41 +53,110 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                 
                 
+                
                     "features": [
                       {
                         "type": "Feature",
                         "properties": {
-                            "icon": 'end',
-                          "2": "ramosch"
+                          "Icon": "start"
                         },
                         "geometry": {
                           "coordinates": [
-                            10.382085,
-                            46.834375
+                            10.425391,
+                            46.869797
                           ],
                           "type": "Point"
                         },
-                        "id": "78b09a7f325b58d1d637ec029f77be80"
+                        "id": "07d1296a6c61de55fac38564fab60ad2"
                       },
                       {
                         "type": "Feature",
                         "properties": {
-                            "icon": 'start',
-                          "Start": "tschlin"
+                          "Icon": "blue"
                         },
                         "geometry": {
                           "coordinates": [
-                            10.425081,
-                            46.869304
+                            10.408661,
+                            46.863247
                           ],
                           "type": "Point"
                         },
-                        "id": "86dca45dbbfff1b39a5a97724cbcdd8d"
+                        "id": "0c9b16763bc96a839f67c7800bd655e7"
                       },
                       {
                         "type": "Feature",
                         "properties": {
-                          "1": "weg"
+                          "Icon": "blue"
+                        },
+                        "geometry": {
+                          "coordinates": [
+                            10.394582,
+                            46.838818
+                          ],
+                          "type": "Point"
+                        },
+                        "id": "175f06b59c764d4a406d3c9b059e91e7"
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "Icon": "foto1"
+                        },
+                        "geometry": {
+                          "coordinates": [
+                            10.427881,
+                            46.872054
+                          ],
+                          "type": "Point"
+                        },
+                        "id": "1846bf45663f700ec395798378290663"
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "Icon": "foto2"
+                        },
+                        "geometry": {
+                          "coordinates": [
+                            10.401619,
+                            46.844231
+                          ],
+                          "type": "Point"
+                        },
+                        "id": "1fe84f60991c9aa58a0e41b097c34955"
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "Icon": "blue"
+                        },
+                        "geometry": {
+                          "coordinates": [
+                            10.421524,
+                            46.870734
+                          ],
+                          "type": "Point"
+                        },
+                        "id": "43fdc7575b003027fd86251a7fda746d"
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "Icon": "end"
+                        },
+                        "geometry": {
+                          "coordinates": [
+                            10.382315,
+                            46.834446
+                          ],
+                          "type": "Point"
+                        },
+                        "id": "55660bb521f930b393c260a90b0fd3a2"
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "Icon": "weg"
                         },
                         "geometry": {
                           "coordinates": [
@@ -732,16 +808,31 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                           "type": "LineString"
                         },
                         "id": "b0c104b981fdd72ef11de84819f85a38"
-                    }
+                      },
+                      {
+                        "type": "Feature",
+                        "properties": {
+                          "Icon": "blue"
+                        },
+                        "geometry": {
+                          "coordinates": [
+                            10.40223,
+                            46.852015
+                          ],
+                          "type": "Point"
+                        },
+                        "id": "d047a89a54275851c6cc5bd92f8aab5f"
+                      }
                     ],
                     "type": "FeatureCollection"
+                  }
                   
 
 
 
 
 
-                }
+                
                 });
            
  
@@ -754,31 +845,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 'id': 'route',
                 'type': 'line',
                 'source': 'map',
-                'layout': {
-                'line-join': 'round',
-                'line-cap': 'round'
-                },
                 'paint': {
                 'line-color': '#123',
                 'line-width': 8
                 }
+
                 });
-                map.addLayer({
-                    'id': 'park-volcanoes',
-                    'type': 'circle',
-                    'source': 'map',
-                    'paint': {
-                    'circle-radius': 6,
-                    'circle-color': '#B42222'
-                    },
-                    'filter': ['==', '$type', 'Point']
-                    });
+              
            
         
       
-        map.on('click', 'park-volcanoes', (e) =>  {
+        map.on('click', 'locations', (e) =>  {
             
-             setImg = e.features[0].properties.icon;
+             setImg = e.features[0].properties.Icon;
             console.log(setImg);
 
             switch(setImg){

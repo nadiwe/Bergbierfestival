@@ -17,8 +17,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
             container: 'map',
             style: 'mapbox://styles/nwfwsb/cl4srws8i002p14lp3up2ng3d',
-            center: [10.425259, 46.86209],
-            zoom: 13,
+            center: [10.425259, 46.86909],
+            zoom: 15,
             maxBounds: bounds
         });
 
@@ -841,17 +841,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
           
 
            
-            map.addLayer({
-                'id': 'route',
-                'type': 'line',
-                'source': 'map',
-                'paint': {
-                'line-color': '#123',
-                'line-width': 8
-                }
+          
+                map.addLayer({
+                    'id': 'locations',
+                    'type': 'circle',
+                    'source': 'map',
+                    'paint': {
+                    'circle-radius': 6,
+                    'circle-color': 'blue'
+                    },
+                'filter': ['==', '$type', 'Point']
 
-                });
-              
+                    });
+                   
            
         
       

@@ -875,7 +875,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                         var video = document.createElement("IFRAME");
                         video.setAttribute("class", "added");
-                        video.setAttribute("src", "https://www.youtube.com/watch?v=Mo5dzzMCG3s");
+                        video.setAttribute("src", "https://www.youtube.com/watch?v=zUipi3FB05Y");
                         document.getElementById("labels").appendChild(video);
 
 

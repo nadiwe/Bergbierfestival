@@ -13,14 +13,14 @@ body {
 .imgBar{
     background-color: rgb(210 223 219);
     height: auto;
-  right: 2vw;
+  right: 0;
   width: 80vw;
     z-index: 1;
     position: absolute;
     top: 7vh;
     display: none;
-    border-radius: 10vw;
-   padding: 3vh;
+    border-radius: 1vw 1vw 1vw  10vw;
+   padding: 8vh 3vh 3vh 2vh ;
 }
 img{
    
@@ -34,8 +34,8 @@ img{
     position: absolute;
     width: 4vw;
     height: 4vw; 
-    top: 10vw;
-    right: 10vw;
+    top: 6vw;
+    right: 5vw;
   }
  .line {
     position: absolute;
@@ -76,4 +76,9 @@ img{
       flex-direction:column;
       margin: 2vh;
     
+  }
+  #fotos{
+    object-fit:cover;
+     height: 60vh;
+      margin-top: 8vh;
   }

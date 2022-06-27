@@ -1,7 +1,6 @@
 
 
 
-
 mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5ejl2a2sifQ.GRtniIwJvJYrRsWqMR5MYA';
         const bounds = [
             [10.3, 46.78], // [west, south]
@@ -19,10 +18,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             style: 'mapbox://styles/nwfwsb/cl4srws8i002p14lp3up2ng3d',
             center: [10.425259, 46.86909],
             zoom: 15,
-            maxBounds: bounds
+            //maxBounds: bounds
         });
 
        
+
     map.addControl(
             new mapboxgl.GeolocateControl({
                 positionOptions: {
@@ -867,16 +867,17 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 case   'start':
                     document.getElementById("hidden").style.display = "block";
 
-                    var c = document.createElement("div");
-                    c.setAttribute("class", "added");
-                        c.setAttribute("id","circle");
-                        document.getElementById("labels").appendChild(c);
+                    var p = document.createElement("p");
+                    p.setAttribute("class", "added");
+                    var text = document.createTextNode("Hallo Bergbierfestival 22.10");
+                       // t.setAttribute("id","circle");
+                        document.getElementById("labels").appendChild(text);
 
-                    var x = document.createElement("IMG");
-                    x.setAttribute("src", "./footage/kaese.png");
-                    x.setAttribute("alt", "fahne");
-                    x.setAttribute("class", "added");
-                    document.getElementById("circle").appendChild(x);
+                        var video = document.createElement("IFRAME");
+                        video.setAttribute("class", "added");
+                        video.setAttribute("src", "https://www.youtube.com/watch?v=Mo5dzzMCG3s");
+                        document.getElementById("labels").appendChild(video);
+
 
                     
                    
@@ -884,32 +885,41 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'end':
                         document.getElementById("hidden").style.display = "block";
 
-                        var c = document.createElement("div");
-                        c.setAttribute("class", "added");
-                        c.setAttribute("id","circle");
-                        document.getElementById("labels").appendChild(c);
+                        var kreis = document.createElement("div");
+                        kreis.setAttribute("class", "added");
+                        kreis.setAttribute("id","circle");
+                        document.getElementById("labels").appendChild(kreis);
 
                        
-                        var x = document.createElement("IMG");
-                        x.setAttribute("src", "./footage/fleisch.png");
-                        x.setAttribute("alt", "fahne");
-                        x.setAttribute("class","added");
-                        document.getElementById("circle").appendChild(x);
+                        var bild = document.createElement("IMG");
+                        bild.setAttribute("src", "./footage/fleisch.png");
+                        bild.setAttribute("alt", "fahne");
+                        bild.setAttribute("class","added");
+                        document.getElementById("circle").appendChild(bild);
 
-                        var c = document.createElement("div");
-                        c.setAttribute("class", "added");
-                        c.setAttribute("id","circle2");
-                        document.getElementById("labels").appendChild(c);
+                        var kreis = document.createElement("div");
+                        kreis.setAttribute("class", "added");
+                        kreis.setAttribute("id","circle2");
+                        document.getElementById("labels").appendChild(kreis);
     
                         
-                        var x = document.createElement("IMG");
-                        x.setAttribute("src", "./footage/kaese.png");
-                        x.setAttribute("alt", "fahne");
-                        x.setAttribute("class", "added");
-                        document.getElementById("circle2").appendChild(x);
+                        var bild = document.createElement("IMG");
+                        bild.setAttribute("src", "./footage/kaese.png");
+                        bild.setAttribute("alt", "Kaese");
+                        bild.setAttribute("class", "added");
+                        document.getElementById("circle2").appendChild(bild);
+
+                        break;
     
-                        
-                       
+                        case   'foto1':   
+                        document.getElementById("hidden").style.display = "block";
+
+                        var bild = document.createElement("IMG");
+                        bild.setAttribute("src", "./footage/wanderung.png");
+                        bild.setAttribute("alt", "wanderung");
+                        bild.setAttribute("class", "added");
+                        bild.setAttribute("id", "fotos");
+                        document.getElementById("labels").appendChild(bild);
                        
 
                         

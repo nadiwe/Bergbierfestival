@@ -11,7 +11,7 @@ body {
 }
 
 .imgBar{
-    background-color: rgb(210 223 219);
+    background-color: #82adb3;
     height: auto;
   right: 0;
   width: 80vw;
@@ -56,7 +56,7 @@ img{
   #circle{
      
   margin: 2vw;
-      background-color: #ffffff;
+      background-color: #052e33;
       width: 60vw;
       height: 60vw;
       border-radius: 100%;
@@ -64,7 +64,7 @@ img{
   #circle2{
      
     margin: 2vw;
-    background-color: #ffffff;
+    background-color: #052e33;
     width: 60vw;
     height: 60vw;
     border-radius: 100%;
@@ -80,7 +80,7 @@ img{
   #fotos{
     object-fit:cover;
      height: 60vh;
-      margin-top: 8vh;
+      
   }
 
   iframe{

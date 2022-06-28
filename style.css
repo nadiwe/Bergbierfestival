@@ -30,7 +30,7 @@ img{
     z-index: 1;
 }
 #arrow {
-    z-index: 2;
+   
     position: absolute;
     width: 4vw;
     height: 4vw; 
@@ -96,7 +96,7 @@ img{
     position: absolute;
     top: 7vh;
     display: none;
-    opacity: 0.5;
+    opacity: 1;
     border-radius: 1vw 1vw 1vw  10vw;
    padding: 8vh 3vh 3vh 2vh ;
    overflow: scroll;

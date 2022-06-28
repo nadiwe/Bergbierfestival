@@ -20,7 +20,7 @@ body {
     top: 7vh;
     display: none;
     border-radius: 1vw 1vw 1vw  10vw;
-   padding: 8vh 3vh 3vh 2vh ;
+   padding: 8vh 0 3vh 2vh ;
 }
 img{
    
@@ -57,16 +57,16 @@ img{
      
   margin: 2vw;
       background-color: #052e33;
-      width: 60vw;
-      height: 60vw;
+      width: 55vw;
+      height: 55vw;
       border-radius: 100%;
   }
   #circle2{
      
     margin: 2vw;
     background-color: #052e33;
-    width: 60vw;
-    height: 60vw;
+    width: 55vw;
+    height: 55vw;
     border-radius: 100%;
 }
   #labels{
@@ -74,7 +74,7 @@ img{
       justify-content: center;
       align-content: center;
       flex-direction:column;
-      margin: 2vh;
+      margin: 0 0 0 2vh;
     
   }
   #fotos{
@@ -89,7 +89,7 @@ img{
 
   .BarInfo{
     background-color: #e59c9c;
-    height: 76vh;
+    height: 68vh;
   right: 0;
   width: 80vw;
     z-index: 1;

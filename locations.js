@@ -912,7 +912,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                        
                         var bild = document.createElement("IMG");
                         bild.setAttribute("src", "./footage/fleisch.png");
-                        bild.setAttribute("alt", "fahne");
+                        bild.setAttribute("alt", "fleisch");
+                        bild.setAttribute("id", "fleisch");
+                        bild.setAttribute("onclick", "infoblock()");
                         bild.setAttribute("class","added");
                         document.getElementById("circle").appendChild(bild);
 
@@ -924,7 +926,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         
                         var bild = document.createElement("IMG");
                         bild.setAttribute("src", "./footage/kaese.png");
-                        bild.setAttribute("alt", "Kaese");
+                        bild.setAttribute("alt", "kaese");
+                        bild.setAttribute("id", "kaese");
                         bild.setAttribute("class", "added");
                         bild.setAttribute("onclick", "infoblock()");
                         document.getElementById("circle2").appendChild(bild);
@@ -984,37 +987,49 @@ console.log('ALL')
 
         document.getElementById("hiddenInfo").style.display = "block";
        
+        var stand = event.target.id;
+        console.log(stand);
 
-        var br = document.createElement("br");
+        var br = document.createElement("BR");
 
-      
-       
-       var h1 = document.createElement("h1");
+       var h1 = document.createElement("H1");
+   
        h1.setAttribute("class", "added");
-       var texth1 = document.createTextNode("Simmentaler Braumanufaktur");
-       document.getElementById("labelsInfo").appendChild(texth1);
+       document.getElementById("labelsInfo").appendChild(h1);
        document.getElementById("labelsInfo").appendChild(br);
 
        var p = document.createElement("p");
        p.setAttribute("class", "added");
-       var textp = document.createTextNode("Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften");
-       document.getElementById("labelsInfo").appendChild(textp);
+       document.getElementById("labelsInfo").appendChild(p);
        document.getElementById("labelsInfo").appendChild(br);
 
        
-       var h2 = document.createElement("h2");
+       var h2 = document.createElement("H2");
        h2.setAttribute("class", "added");
-       var texth2 = document.createTextNode("Biersorten");
-       
-       document.getElementById("labelsInfo").appendChild(texth2);
+       document.getElementById("labelsInfo").appendChild(h2);
        document.getElementById("labelsInfo").appendChild(br);
 
-       var h3 = document.createElement("h3");
+       var h3 = document.createElement("H3");
        h3.setAttribute("class", "added");
-       var texth3 = document.createTextNode("Simmentaler Lager: Naturtrübes Lagerbier, untergärig");
-       document.getElementById("labelsInfo").appendChild(texth3);
-        
+       document.getElementById("labelsInfo").appendChild(h3);
 
+        switch(stand){
+                case   'fleisch': 
+       h1.innerHTML = "Fleisch";
+       p.innerHTML = "Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften";
+       h2.innerHTML = "Biersorten";
+       h3.innerHTML = 'Simmentaler Lager: Naturtrübes Lagerbier, untergärig';
+
+       break;
+
+       case   'kaese': 
+       h1.innerHTML = "Käse";
+       p.innerHTML = "Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften";
+       h2.innerHTML = "Biersorten";
+       h3.innerHTML = 'Simmentaler Lager: Naturtrübes Lagerbier, untergärig';
+
+       break;
+    }
     }
 
     function backToOverview(){

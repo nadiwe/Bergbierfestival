@@ -15,7 +15,7 @@ body {
     height: auto;
   right: 0;
   width: 80vw;
-    z-index: 1;
+ 
     position: absolute;
     top: 7vh;
     display: none;
@@ -86,3 +86,20 @@ img{
   iframe{
       z-index: 2;
   }
+
+  .BarInfo{
+    background-color: #ac0f6d;
+    height: 76vh;
+  right: 0;
+  width: 80vw;
+    z-index: 1;
+    position: absolute;
+    top: 7vh;
+    display: none;
+    opacity: 0.5;
+    border-radius: 1vw 1vw 1vw  10vw;
+   padding: 8vh 3vh 3vh 2vh ;
+   overflow: scroll;
+   
+  
+}

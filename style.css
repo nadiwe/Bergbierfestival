@@ -31,10 +31,10 @@ img{
 }
 #arrow {
    
-    position: absolute;
+    position: fixed;
     width: 4vw;
     height: 4vw; 
-    top: 9vw;
+    top: 21vw;
     right: 5vw;
   }
  .line {
@@ -82,9 +82,6 @@ img{
       
   }
 
-  iframe{
-      z-index: 2;
-  }
 
   .BarInfo{
     background-color: #e59c9c;
@@ -97,11 +94,14 @@ img{
     display: none;
     opacity: 1;
     border-radius: 1vw 1vw 1vw  10vw;
-   padding: 8vh 3vh 3vh 2vh ;
+   padding: 8vh 3vh 3vh 4vh ;
+ 
    overflow: scroll;
-   
-  
 }
+#labelsInfo{
+    overflow: scroll;
+}
+
 
 @media (min-width:680px) {
     .imgBar{ width: 20vw ;

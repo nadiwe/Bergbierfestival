@@ -882,10 +882,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             
              setImg = e.features[0].properties.Icon;
             console.log(setImg);
+            document.getElementById("hidden").style.display = "block";
 
             switch(setImg){
                 case   'start':
-                    document.getElementById("hidden").style.display = "block";
+                   
 
                     var p = document.createElement("p");
                     p.setAttribute("class", "added");
@@ -893,8 +894,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("labels").appendChild(text);
 
                         var video = document.createElement("IFRAME");
-                        video.setAttribute("class", "added");
-                        video.setAttribute("src", "https://www.youtube.com/watch?v=zUipi3FB05Y");
+                        video.setAttribute("class", "added"); 
+                        video.setAttribute("frameborder", "0"); 
+                        video.setAttribute('allowFullScreen', '')
+                        video.setAttribute("src", "https://www.youtube.com/embed/Mo5dzzMCG3s");
                         document.getElementById("labels").appendChild(video);
 
 
@@ -902,7 +905,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                    
                     break;
                     case   'stand3':
-                        document.getElementById("hidden").style.display = "block";
 
                         var kreis = document.createElement("div");
                         kreis.setAttribute("class", "added");
@@ -935,7 +937,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         break;
     
                         case   'foto1':   
-                        document.getElementById("hidden").style.display = "block";
 
                         var foto = document.createElement("IMG");
                         foto.setAttribute("src", "./footage/wanderung.png");
@@ -947,7 +948,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         break;
 
                         case   'foto2':   
-                        document.getElementById("hidden").style.display = "block";
 
                         var foto = document.createElement("IMG");
                         foto.setAttribute("src", "./footage/wanderung.png");
@@ -959,7 +959,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         break;
                         
                         case   'end':   
-                        document.getElementById("hidden").style.display = "block";
 
                         var p = document.createElement("p");
                         p.setAttribute("class", "added");

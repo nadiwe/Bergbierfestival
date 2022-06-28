@@ -34,18 +34,17 @@ img{
     position: absolute;
     width: 4vw;
     height: 4vw; 
-    top: 6vw;
+    top: 9vw;
     right: 5vw;
   }
  .line {
     position: absolute;
-    top: 50%;
+    
     left: 50%;
     width: 8vw;
     height: 1vw;
     border-radius: 2vw;
-    stroke: #ffffff;
-    color: #ffffff;
+   
     background: #ffffff;
     
     transform: translate(-50%, -50%) rotate(45deg);
@@ -102,4 +101,20 @@ img{
    overflow: scroll;
    
   
+}
+
+@media (min-width:680px) {
+    .imgBar{ width: 20vw ;
+        padding: 7vh 4vh 3vh 2vh;}
+    #circle{  width: 15vw;
+        height: 15vw;}
+        #circle2{  width: 15vw;
+            height: 15vw;}
+            #arrow{ top: 4vw;
+                right: 2vw;}
+                .line{  width: 5vw;
+                    height: 0.5vw;}
+                    
+               
+
 }

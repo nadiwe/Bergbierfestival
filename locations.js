@@ -36,14 +36,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         );
         function geoFindMe() {
             const successCallback = (position) =>{
-                console.log(position);
+                var lang = position.coords.latitude
+                var long = position.coords.longitude
+                console.log(lang,long);
+                document.getElementById("status").innerHTML = lang +" " + long; 
+                
+
+                   
             }
             const errorCallback = (error) =>{
                 console.log(error);
             }
-// navigator.geolocation.getCurrentPosition(successCallback,errorCallback);
-const watchID = navigator.geolocation.watchPosition(successCallback,errorCallback);
+            const options = {
+                enableHighAccuracy: true,
+                maximumAge: 30000,
+                timeout: 27000
+              };
+ navigator.geolocation.getCurrentPosition(successCallback,errorCallback,options);
         }
+     
+       
+
 
 
 //implement data - location points 

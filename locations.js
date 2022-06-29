@@ -39,7 +39,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 var lang = position.coords.latitude
                 var long = position.coords.longitude
                 console.log(lang,long);
-                document.getElementById("status").innerHTML = lang +" " + long; 
+                document.getElementById("status").style.display = "block"; 
+
+                document.getElementById("status").innerHTML = "got your location: "+lang +" " + long; 
                 
 
                    

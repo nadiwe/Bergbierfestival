@@ -174,3 +174,18 @@ img {
     }
 
 }
+
+#find-me {
+    background-color: #ff5252;
+
+}
+
+#status {
+    display: none;
+}
+
+.loc {
+    background-color: #bababa;
+    width: 50vw;
+    height: auto;
+}

@@ -22,7 +22,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         });
 
        
-
+//user location
     map.addControl(
             new mapboxgl.GeolocateControl({
                 positionOptions: {
@@ -35,12 +35,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             })
         );
 
-      
-
-     
-
-
-
 //implement data - location points 
             map.on('load', () => {
                 
@@ -49,7 +43,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 'data': {
                 'type': 'FeatureCollection',
 
-
+//GeoData from here ...
                 "features": [
                     {
                       "type": "Feature",
@@ -80,6 +74,20 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         "type": "Point"
                       },
                       "id": "0c9b16763bc96a839f67c7800bd655e7"
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
+                        "Icon": "konzert"
+                      },
+                      "geometry": {
+                        "coordinates": [
+                          10.385504,
+                          46.830282
+                        ],
+                        "type": "Point"
+                      },
+                      "id": "11c164987075cc87b58b2790d24fe1be"
                     },
                     {
                       "type": "Feature",
@@ -129,6 +137,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     {
                       "type": "Feature",
                       "properties": {
+                        "Icon": "stand1",
+                        "art": "loc"
+                      },
+                      "geometry": {
+                        "coordinates": [
+                          10.419061,
+                          46.868784
+                        ],
+                        "type": "Point"
+                      },
+                      "id": "28341757ff7f71c733268d6ed3e74ad8"
+                    },
+                    {
+                      "type": "Feature",
+                      "properties": {
                         "Icon": "blue",
                         "art": "bier"
                       },
@@ -159,17 +182,17 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     {
                       "type": "Feature",
                       "properties": {
-                        "Icon": "end",
+                        "Icon": "stand2",
                         "art": "loc"
                       },
                       "geometry": {
                         "coordinates": [
-                          10.385265,
-                          46.830484
+                          10.382944,
+                          46.835456
                         ],
                         "type": "Point"
                       },
-                      "id": "a69c5279d25781004c60b826ed006738"
+                      "id": "7ade03f97fb52d36b8dc11558f660849"
                     },
                     {
                       "type": "Feature",
@@ -844,7 +867,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     }
                   ],
                   "type": "FeatureCollection"
-                }  
+                
+                }
+//...until here
+
                 });
            
            
@@ -866,7 +892,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         
       
         map.on('click', 'locations', (e) =>  {
-            
+            $('#labels').empty();
              setImg = e.features[0].properties.Icon;
             console.log(setImg);
             document.getElementById("hidden").style.display = "block";
@@ -890,6 +916,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     
                    
                     break;
+                    case   'stand1':
+                    case   'stand2':
                     case   'stand3':
 
                         var kreis = document.createElement("div");
@@ -923,7 +951,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         break;
     
                         case   'foto1':   
-
+                        case   'foto2':  
                         var foto = document.createElement("IMG");
                         foto.setAttribute("src", "./footage/wanderung.png");
                         foto.setAttribute("alt", "wanderung");
@@ -933,18 +961,22 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                        
                         break;
 
-                        case   'foto2':   
-
+                        case   'blue':   
+                       
+                            var h1 = document.createElement("H1");
+                        h1.innerHTML = "Finde mich!";
+                        h1.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(h1);
                         var foto = document.createElement("IMG");
-                        foto.setAttribute("src", "./footage/wanderung.png");
-                        foto.setAttribute("alt", "wanderung");
+                        foto.setAttribute("src", "./footage/blauBierglas.png");
+                        foto.setAttribute("alt", "blauesBierGlas");
                         foto.setAttribute("class", "added");
                         foto.setAttribute("id", "fotos");
+                        foto.setAttribute("id", "blue");
                         document.getElementById("labels").appendChild(foto);
-                       
                         break;
                         
-                        case   'end':   
+                        case   'konzert':   
                        
                             var h1 = document.createElement("H1");
                         h1.innerHTML = "Hallo Konzertabend!";
@@ -960,9 +992,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
     });
 
 
-// Overview inofrmaiton - appear
+// Inofrmaiton - appear
     function infoblock(){
-
+        $('#labelsInfo').empty();
         document.getElementById("hiddenInfo").style.display = "block";
        
         var stand = event.target.id;

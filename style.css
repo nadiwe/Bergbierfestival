@@ -42,7 +42,7 @@ h1{
     position: absolute;
     top: 7vh;
     display: none;
-    border-radius: 1vw 1vw 1vw  10vw;
+    border-radius: 1px 1px 1px  20px;
    padding: 8vh 0 3vh 2vh ;
 }
 img{
@@ -124,7 +124,9 @@ img{
 #labelsInfo{
     overflow: scroll;
 }
-
+#blue{
+    height: fit-content;
+}
 
 @media (min-width:680px) {
     .imgBar{ width: 27vw ;

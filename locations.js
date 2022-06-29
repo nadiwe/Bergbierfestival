@@ -22,7 +22,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         });
 
        
-//user location
+//user location 
     map.addControl(
             new mapboxgl.GeolocateControl({
                 positionOptions: {
@@ -874,8 +874,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 });
            
            
-          //for testing - where are the locations
-                map.addLayer({
+//for testing - where are the locations
+    map.addLayer({
                     'id': 'locations',
                     'type': 'circle',
                     'source': 'map',
@@ -886,12 +886,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     },
                 'filter': ['==', '$type', 'Point']
 
-                    });
+    });
                    
            
         
-      
-        map.on('click', 'locations', (e) =>  {
+//Overview - appear 
+    map.on('click', 'locations', (e) =>  {
             $('#labels').empty();
              setImg = e.features[0].properties.Icon;
             console.log(setImg);
@@ -987,12 +987,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             
           
             
-        });
-        
+        });      
     });
 
-
-// Inofrmaiton - appear
+// Detailinformation - appear
     function infoblock(){
         $('#labelsInfo').empty();
         document.getElementById("hiddenInfo").style.display = "block";
@@ -1041,11 +1039,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        break;
     }
     }
+
 //Overview - popup desapear
     function back(){
         document.getElementById('hidden').style.display = 'none';
         $('#labels').empty();
     }
+
 //Detail inormation - desapear
     function backToOverview(){
         document.getElementById("hiddenInfo").style.display = "none";

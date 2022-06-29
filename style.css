@@ -127,16 +127,19 @@ img{
 
 
 @media (min-width:680px) {
-    .imgBar{ width: 20vw ;
+    .imgBar{ width: 27vw ;
         padding: 7vh 4vh 3vh 2vh;}
-    #circle{  width: 15vw;
-        height: 15vw;}
-        #circle2{  width: 15vw;
-            height: 15vw;}
-            #arrow{ top: 4vw;
+    #circle{  width: 18vw;
+        height: 18vw;}
+        #circle2{  width: 18vw;
+            height: 18vw;}
+            #arrow{ top: 11vh;
                 right: 2vw;}
                 .line{  width: 5vw;
                     height: 0.5vw;}
+                    #labels{
+                        margin: 0px 0 40px 2vh;
+                    }
                     
                
 

@@ -41,7 +41,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
 
 
-
+//implement data - location points 
             map.on('load', () => {
                 
                 map.addSource('map', {
@@ -844,24 +844,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     }
                   ],
                   "type": "FeatureCollection"
-                
-                
-                  
-
-
-
-                }
-
-                
+                }  
                 });
            
- 
-                
-
-          
-
            
-          
+          //for testing - where are the locations
                 map.addLayer({
                     'id': 'locations',
                     'type': 'circle',
@@ -972,14 +959,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         
     });
 
-    function back(){
-        document.getElementById('hidden').style.display = 'none';
-        document.getElementById("hiddenInfo").style.display = "none";
-console.log('ALL')
-        $('#labels').empty();
-  
-    }
 
+// Overview inofrmaiton - appear
     function infoblock(){
 
         document.getElementById("hiddenInfo").style.display = "block";
@@ -1028,10 +1009,13 @@ console.log('ALL')
        break;
     }
     }
-
+//Overview - popup desapear
+    function back(){
+        document.getElementById('hidden').style.display = 'none';
+        $('#labels').empty();
+    }
+//Detail inormation - desapear
     function backToOverview(){
         document.getElementById("hiddenInfo").style.display = "none";
-        console.log('NUR')
         $('#labelsInfo').empty();
-
     }

@@ -137,6 +137,12 @@ img {
     height: fit-content;
 }
 
+.loc {
+    position: absolute;
+    display: block;
+
+}
+
 @media (min-width:680px) {
     .imgBar {
         width: 27vw;
@@ -166,10 +172,5 @@ img {
     #labels {
         margin: 0px 0 40px 2vh;
     }
-
-}
-
-.loc {
-    position: absolute;
 
 }

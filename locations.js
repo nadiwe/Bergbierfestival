@@ -886,12 +886,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
             switch(setImg){
                 case   'start':
-                   
 
-                    var p = document.createElement("p");
-                    p.setAttribute("class", "added");
-                    var text = document.createTextNode("Hallo Bergbierfestival 22.10");
-                        document.getElementById("labels").appendChild(text);
+                        var h1 = document.createElement("H1");
+                        h1.innerHTML = "Hallo Bergbierfestival!";
+                        h1.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(h1);
 
                         var video = document.createElement("IFRAME");
                         video.setAttribute("class", "added"); 
@@ -959,12 +958,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         break;
                         
                         case   'end':   
-
-                        var p = document.createElement("p");
-                        p.setAttribute("class", "added");
-                        var text = document.createTextNode("Hallo Konzertabend!");
-                            document.getElementById("labels").appendChild(text);
                        
+                            var h1 = document.createElement("H1");
+                        h1.innerHTML = "Hallo Konzertabend!";
+                        h1.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(h1);
                         break;
             }
             

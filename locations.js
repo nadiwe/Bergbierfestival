@@ -8,9 +8,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         ];
 
         let setImg;
-
-       
-
+        //create map
         const map = new mapboxgl.Map({
 
 
@@ -20,44 +18,68 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             zoom: 15,
             //maxBounds: bounds
         });
-
-       
-//user location 
-    map.addControl(
-            new mapboxgl.GeolocateControl({
-                positionOptions: {
-                    enableHighAccuracy: true
-                },
-                // When active the map will receive updates to the device's location as it changes.
-                trackUserLocation: true,
-                // Draw an arrow next to the location dot to indicate which direction the device is heading.
-                showUserHeading: true
-            })
-        );
+        
+           
+         
         function geoFindMe() {
-            const successCallback = (position) =>{
-                var lang = position.coords.latitude
-                var long = position.coords.longitude
-                console.log(lang,long);
-                document.getElementById("status").style.display = "block"; 
+        navigator.geolocation.getCurrentPosition((pos) =>{
 
-                document.getElementById("status").innerHTML = "got your location: "+lang +" " + long; 
-                
+    
 
-                   
-            }
-            const errorCallback = (error) =>{
-                console.log(error);
-            }
-            const options = {
-                enableHighAccuracy: true,
-                maximumAge: 30000,
-                timeout: 27000
-              };
- navigator.geolocation.getCurrentPosition(successCallback,errorCallback,options);
-        }
-     
+        let marker = new mapboxgl.Marker()
+        .setLngLat([pos.coords.longitude, pos.coords.latitude])
+        .addTo(map);
+        map.flyTo({
+            center: [pos.coords.longitude, pos.coords.latitude]
+            });
+            document.getElementById('circleOut').style.border = '2px solid red';
+            document.getElementById('circleIn').style.backgroundColor = 'red';
+    }
+,        (err) =>{
+            console.log(error);
+        },
+
+    
+         {
+        enableHighAccuracy: true,
+        maximumAge: 30000,
+        timeout: 27000
+      }
+    );
+   
        
+           
+           // document.getElementById("status").style.display = "block"; 
+    
+        }     
+
+
+       
+
+
+        
+          
+          
+          
+      // var walk = navigator.geolocation.watchPosition(successCallback,errorCallback,options);
+     //Source for User Location   
+     
+
+           
+               
+          //user location 
+  /*  map.addControl(
+        new mapboxgl.GeolocateControl({
+            positionOptions: {
+                enableHighAccuracy: true
+            },
+            // When active the map will receive updates to the device's location as it changes.
+            trackUserLocation: true,
+            // Draw an arrow next to the location dot to indicate which direction the device is heading.
+            showUserHeading: true
+        })
+    );
+*/
 
 
 
@@ -900,7 +922,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 });
            
            
-//for testing - where are the locations
+//for testing - where are the stands
     map.addLayer({
                     'id': 'locations',
                     'type': 'circle',
@@ -913,6 +935,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 'filter': ['==', '$type', 'Point']
 
     });
+   
+   
+
                    
            
         

@@ -24,9 +24,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         function geoFindMe() {
         navigator.geolocation.getCurrentPosition((pos) =>{
 
-    
+            var el = document.createElement('div');
+            el.className = 'marker';
+          
 
-        let marker = new mapboxgl.Marker()
+        let marker = new mapboxgl.Marker(el)
         .setLngLat([pos.coords.longitude, pos.coords.latitude])
         .addTo(map);
         map.flyTo({
@@ -49,7 +51,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
    
        
            
-           // document.getElementById("status").style.display = "block"; 
     
         }     
 

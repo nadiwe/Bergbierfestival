@@ -176,6 +176,7 @@ img {
 }
 
 #find-me {
+
     position: relative;
     display: flex;
     justify-content: center;
@@ -200,11 +201,15 @@ img {
 
 }
 
-
-
 .loc {
     position: absolute;
     right: 5vh;
     top: 5vh;
+}
 
+.marker {
+    width: 8vw;
+    height: 8vw;
+    border-radius: 10vw;
+    border: 2px solid rgb(228, 14, 125);
 }

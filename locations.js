@@ -1,6 +1,6 @@
 
 
-
+let marker;
 mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5ejl2a2sifQ.GRtniIwJvJYrRsWqMR5MYA';
         const bounds = [
             [10.3, 46.78], // [west, south]
@@ -22,13 +22,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
            
          
         function geoFindMe() {
-        navigator.geolocation.getCurrentPosition((pos) =>{
+          
+          var options = {timeout:60000};
+
+        navigator.geolocation.watchPosition((pos,err,options) =>{
+
+          if ( marker){
+            
+            marker.remove();
+          }
 
             var el = document.createElement('div');
             el.className = 'marker';
-          
+            
 
-        let marker = new mapboxgl.Marker(el)
+         marker = new mapboxgl.Marker(el)
         .setLngLat([pos.coords.longitude, pos.coords.latitude])
         .addTo(map);
         map.flyTo({

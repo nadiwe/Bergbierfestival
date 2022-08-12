@@ -19,25 +19,36 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             //maxBounds: bounds
         });
         
-           
-         
+        map.addControl(
+          new mapboxgl.GeolocateControl({
+          positionOptions: {
+          enableHighAccuracy: true
+          },
+          // When active the map will receive updates to the device's location as it changes.
+          trackUserLocation: true,
+          // Draw an arrow next to the location dot to indicate which direction the device is heading.
+          showUserHeading: true
+          })
+          );
+         /*
         function geoFindMe() {
-          
+          console.log("get location")
           var options = {timeout:60000};
 
         navigator.geolocation.watchPosition((pos,err,options) =>{
 
           if ( marker){
-            
+            console.log("remove marker");
             marker.remove();
           }
 
             var el = document.createElement('div');
             el.className = 'marker';
             
-
+            console.log(pos.coords.longitude, pos.coords.latitude);
          marker = new mapboxgl.Marker(el)
         .setLngLat([pos.coords.longitude, pos.coords.latitude])
+       
         .addTo(map);
         map.flyTo({
             center: [pos.coords.longitude, pos.coords.latitude]
@@ -55,13 +66,14 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         maximumAge: 30000,
         timeout: 27000
       }
+
     );
    
-       
+     
            
     
         }     
-
+*/  
 
        
 

@@ -1,6 +1,6 @@
 
 
-let marker;
+let marker, posLo,posLa;
 mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5ejl2a2sifQ.GRtniIwJvJYrRsWqMR5MYA';
         const bounds = [
             [10.3, 46.78], // [west, south]
@@ -19,57 +19,50 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             //maxBounds: bounds
         });
         
-        map.addControl(
-          new mapboxgl.GeolocateControl({
-          positionOptions: {
-          enableHighAccuracy: true
-          },
-          // When active the map will receive updates to the device's location as it changes.
-          trackUserLocation: true,
-          // Draw an arrow next to the location dot to indicate which direction the device is heading.
-          showUserHeading: true
-          })
-          );
-         /*
-        function geoFindMe() {
-          console.log("get location")
-          var options = {timeout:60000};
-
         navigator.geolocation.watchPosition((pos,err,options) =>{
-
-          if ( marker){
-            console.log("remove marker");
-            marker.remove();
-          }
-
-            var el = document.createElement('div');
-            el.className = 'marker';
-            
-            console.log(pos.coords.longitude, pos.coords.latitude);
-         marker = new mapboxgl.Marker(el)
-        .setLngLat([pos.coords.longitude, pos.coords.latitude])
-       
-        .addTo(map);
-        map.flyTo({
-            center: [pos.coords.longitude, pos.coords.latitude]
-            });
-            document.getElementById('circleOut').style.border = '2px solid red';
-            document.getElementById('circleIn').style.backgroundColor = 'red';
-    }
-,        (err) =>{
+          (err) =>{
             console.log(error);
         },
 
     
          {
         enableHighAccuracy: true,
-        maximumAge: 30000,
-        timeout: 27000
+        maximumAge: 60000,
+        timeout: 50
       }
+      posLo = pos.coords.longitude
+      posLa = pos.coords.latitude
+      console.log(posLo, posLa);
+    });
 
-    );
+         
+        function geoFindMe() {
+          console.log("get location")
+          
+
+        
+
+          if ( marker){
+            console.log("remove marker");
+            
+            marker.remove();
+          }
+
+            var el = document.createElement('div');
+            el.className = 'marker';
+            
+ console.log(posLo, posLa);
+         marker = new mapboxgl.Marker(el)
+        .setLngLat([posLo, posLa])
+       
+        .addTo(map);
+        map.flyTo({
+            center: [posLo, posLa]
+            });
+            document.getElementById('circleOut').style.border = '2px solid red';
+            document.getElementById('circleIn').style.backgroundColor = 'red';  
         }     
-*/  
+
 
        
 

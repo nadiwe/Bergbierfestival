@@ -59,8 +59,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         map.flyTo({
             center: [posLo, posLa]
             });
-            document.getElementById('circleOut').style.border = '2px solid red';
-            document.getElementById('circleIn').style.backgroundColor = 'red';  
+            document.getElementById('circleOut').style.border = '2px solid  rgb(7, 98, 245)';
+            document.getElementById('circleIn').style.backgroundColor = 'rgb(7, 98, 245)';  
         }     
 
 

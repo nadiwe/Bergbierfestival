@@ -91,6 +91,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
 //GeoData from here ...
 
+
   "features": [
     {
       "type": "Feature",
@@ -100,8 +101,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
       },
       "geometry": {
         "coordinates": [
-          10.422499,
-          46.86777
+          10.422906,
+          46.868087
         ],
         "type": "Point"
       },
@@ -115,8 +116,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
       },
       "geometry": {
         "coordinates": [
-          10.408661,
-          46.863247
+          10.40901,
+          46.863066
         ],
         "type": "Point"
       },
@@ -144,8 +145,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
       },
       "geometry": {
         "coordinates": [
-          10.394582,
-          46.838818
+          10.39429,
+          46.838456
         ],
         "type": "Point"
       },
@@ -159,8 +160,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
       },
       "geometry": {
         "coordinates": [
-          10.427881,
-          46.872054
+          10.426942,
+          46.871937
         ],
         "type": "Point"
       },
@@ -204,12 +205,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
       },
       "geometry": {
         "coordinates": [
-          10.421524,
-          46.870734
+          10.421863,
+          46.870509
         ],
         "type": "Point"
       },
       "id": "43fdc7575b003027fd86251a7fda746d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Icon": "startGipfelstuermer",
+        "art": "loc"
+      },
+      "geometry": {
+        "coordinates": [
+          10.368192,
+          46.851996
+        ],
+        "type": "Point"
+      },
+      "id": "4c5bbb4269e918f02af89c255c9a8d3f"
     },
     {
       "type": "Feature",
@@ -1948,11 +1964,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
             switch(setImg){
                 case   'start':
+                
 
                         var h1 = document.createElement("H1");
                         h1.innerHTML = "Hallo Bergbierfestival!";
                         h1.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(h1);
+                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
                         var video = document.createElement("IFRAME");
                         video.setAttribute("class", "added"); 
@@ -1965,6 +1983,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     
                    
                     break;
+                    case   'startGipfelstuermer':
+
+                      var h1 = document.createElement("H1");
+                      h1.innerHTML = "Hallo Gipfelstürmende!";
+                      h1.setAttribute("class", "added");
+                      document.getElementById("labels").appendChild(h1);
+                      document.getElementById("hidden").style.backgroundColor = '#c5bc20';
+
+                      var video = document.createElement("IFRAME");
+                      video.setAttribute("class", "added"); 
+                      video.setAttribute("frameborder", "0"); 
+                      video.setAttribute('allowFullScreen', '')
+                      video.setAttribute("src", "https://www.youtube.com/embed/Mo5dzzMCG3s");
+                      document.getElementById("labels").appendChild(video);
+
+
+                  
+                 
+                  break;
+                 
                     case   'stand1':
                     case   'stand2':
                     case   'stand3':
@@ -1973,6 +2011,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         kreis.setAttribute("class", "added");
                         kreis.setAttribute("id","circle");
                         document.getElementById("labels").appendChild(kreis);
+                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
                        
                         var bild = document.createElement("IMG");
@@ -2007,7 +2046,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         foto.setAttribute("class", "added");
                         foto.setAttribute("id", "fotos");
                         document.getElementById("labels").appendChild(foto);
-                       
+                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
                         break;
 
                         case   'blue':   
@@ -2016,6 +2055,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         h1.innerHTML = "Finde mich!";
                         h1.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(h1);
+                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+
                         var foto = document.createElement("IMG");
                         foto.setAttribute("src", "./footage/blauBierglas.png");
                         foto.setAttribute("alt", "blauesBierGlas");
@@ -2031,6 +2072,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         h1.innerHTML = "Hallo Konzertabend!";
                         h1.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(h1);
+                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
                         break;
             }
             

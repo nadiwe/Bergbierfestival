@@ -1967,7 +1967,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 
 
                         var h1 = document.createElement("H1");
-                        h1.innerHTML = "Hallo Bergbierfestival!";
+                        h1.innerHTML = "Allegra, liebe Geniesserinnen und Geniesser";
                         h1.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(h1);
                         document.getElementById("hidden").style.backgroundColor = '#c68d2e';
@@ -1980,23 +1980,30 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("labels").appendChild(video);
 
 
+                        var text = document.createElement("P");
+                        text.innerHTML = "Schön, sind Sie bei uns. Wir freuen uns, dass wir auch heuer wieder die Bergbierwanderung durchführen können. Es gibt gewisse Anpassungen und Neuigkeiten, welche wir hiermit präsentieren möchten. ";
+                        text.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(text);
+
+
                     
                    
                     break;
                     case   'startGipfelstuermer':
 
                       var h1 = document.createElement("H1");
-                      h1.innerHTML = "Hallo Gipfelstürmende!";
+                      h1.innerHTML = "Option Gipfelbier Piz Arina";
                       h1.setAttribute("class", "added");
                       document.getElementById("labels").appendChild(h1);
+
+                      var text = document.createElement("P");
+                        text.innerHTML = "Diverse Gipfelstürmerinnen und Gipfelstürmer sind bereits unterwegs zum Piz Arina. Sie geniessen dort ein einmaliges Gipfelbier. Ab der Station Bieraria Tschlin werden diese auch wieder auf der Strecke sein und die Wanderung mitlaufen. ";
+                        text.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(text);
+
                       document.getElementById("hidden").style.backgroundColor = '#c5bc20';
 
-                      var video = document.createElement("IFRAME");
-                      video.setAttribute("class", "added"); 
-                      video.setAttribute("frameborder", "0"); 
-                      video.setAttribute('allowFullScreen', '')
-                      video.setAttribute("src", "https://www.youtube.com/embed/Mo5dzzMCG3s");
-                      document.getElementById("labels").appendChild(video);
+                      
 
 
                   
@@ -2069,9 +2076,42 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         case   'konzert':   
                        
                             var h1 = document.createElement("H1");
-                        h1.innerHTML = "Hallo Konzertabend!";
+                        h1.innerHTML = "Festival in Ramosch – MEGAWATT";
                         h1.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(h1);
+
+                        var video = document.createElement("IFRAME");
+                        video.setAttribute("class", "added"); 
+                        video.setAttribute("frameborder", "0"); 
+                        video.setAttribute('allowFullScreen', '')
+                        video.setAttribute("src", "https://www.youtube.com/embed/GoY4dkOD2iE");
+                        document.getElementById("labels").appendChild(video);
+
+                        var text = document.createElement("P");
+                        text.innerHTML = "Dieses Jahr können sich alle Partygänger/innen freuen – denn das Fest am Abend findet mit der Band «MEGAWATT» statt. Leidenschaftlich, rockig, modern und eingängig gesungen in Thomas' unverwechselbarem Dialekt sorgt die Band für noch mehr Heimatgefühl. Alle Bergbierwanderer und -Wanderinnen können am Abend noch zur Musik tanzen und das degustierte Bier weiter geniessen. Natürlich sind auch alle Gäste willkommen, die nicht an der Wanderung teilgenommen haben. "
+                        text.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(text);
+
+                        var foto1 = document.createElement("IMG");
+                        foto1.setAttribute("src", "./img/megawatt/Megawatt1.jpg");
+                        foto1.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(foto1);
+
+                        var foto2 = document.createElement("IMG");
+                        foto2.setAttribute("src", "./img/megawatt/Megawatt2.jpg");
+                        foto2.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(foto2);
+
+                        var foto3 = document.createElement("IMG");
+                        foto3.setAttribute("src", "./img/megawatt/Megawatt3.jpg");
+                        foto3.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(foto3);
+
+                        var foto4 = document.createElement("IMG");
+                        foto4.setAttribute("src", "./img/megawatt/Megawatt4.jpg");
+                        foto4.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(foto4);
+
                         document.getElementById("hidden").style.backgroundColor = '#c68d2e';
                         break;
             }

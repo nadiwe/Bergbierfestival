@@ -11,12 +11,9 @@
 
 @font-face {
     font-family: "ProximaNovaAW01-Extrabold";
-    src: url("//db.onlinewebfonts.com/t/aae6e0c9d1f05b7913615c232b114718.eot");
-    src: url("//db.onlinewebfonts.com/t/aae6e0c9d1f05b7913615c232b114718.eot?#iefix") format("embedded-opentype"),
-        url("//db.onlinewebfonts.com/t/aae6e0c9d1f05b7913615c232b114718.woff2") format("woff2"),
-        url("//db.onlinewebfonts.com/t/aae6e0c9d1f05b7913615c232b114718.woff") format("woff"),
-        url("//db.onlinewebfonts.com/t/aae6e0c9d1f05b7913615c232b114718.ttf") format("truetype"),
-        url("//db.onlinewebfonts.com/t/aae6e0c9d1f05b7913615c232b114718.svg#ProximaNovaAW01-Extrabold") format("svg");
+    src:
+        url("./font/proxima-nova-extrabold.woff2") format("woff2"),
+        url("./font/proxima-nova-extrabold.woff") format("woff")
 }
 
 body {

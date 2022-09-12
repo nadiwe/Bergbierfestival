@@ -23,7 +23,7 @@ body {
     font-family: 'proxima_nova_rgregular';
     margin: 0;
     padding: 0;
-    overscroll-behavior: none;
+    overscroll-behavior: contain;
 }
 
 h1 {

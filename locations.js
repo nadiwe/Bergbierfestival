@@ -190,7 +190,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("labels").appendChild(kreis);
                       document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
-                     
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./footage/bier.png");
                       bild.setAttribute("alt", "bieraEngiadinaisa");
@@ -199,19 +198,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("class","added");
                       document.getElementById("circle").appendChild(bild);
 
-                      var kreis = document.createElement("div");
-                      kreis.setAttribute("class", "added");
-                      kreis.setAttribute("id","circle2");
-                      document.getElementById("labels").appendChild(kreis);
-  
-                      
-                      var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/kaese.png");
-                      bild.setAttribute("alt", "kaese");
-                      bild.setAttribute("id", "kaese");
-                      bild.setAttribute("class", "added");
-                      bild.setAttribute("onclick", "infoblock()");
-                      document.getElementById("circle2").appendChild(bild);
+
 
                       break;
                     case   'stand2':
@@ -227,19 +214,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("class","added");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
-
-                      var kreis = document.createElement("div");
-                      kreis.setAttribute("class", "added");
-                      kreis.setAttribute("id","circle2");
-                      document.getElementById("labels").appendChild(kreis);
-                      
-                      var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/fleisch.png");
-                      bild.setAttribute("alt", "fleisch");
-                      bild.setAttribute("id", "fleisch");
-                      bild.setAttribute("class", "added");
-                      bild.setAttribute("onclick", "infoblock()");
-                      document.getElementById("circle2").appendChild(bild);
 
                       document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
@@ -264,9 +238,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("labels").appendChild(kreis);
                         
                         var bild = document.createElement("IMG");
-                        bild.setAttribute("src", "./footage/kaese.png");
-                        bild.setAttribute("alt", "kaese");
-                        bild.setAttribute("id", "kaese");
+                        bild.setAttribute("src", "./footage/tier.png");
+                        bild.setAttribute("alt", "standBioSchorta");
+                        bild.setAttribute("id", "standBioSchorta");
                         bild.setAttribute("class", "added");
                         bild.setAttribute("onclick", "infoblock()");
                         document.getElementById("circle2").appendChild(bild);
@@ -288,19 +262,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         bild.setAttribute("class","added");
                         document.getElementById("circle").appendChild(bild);
 
-                        var kreis = document.createElement("div");
-                        kreis.setAttribute("class", "added");
-                        kreis.setAttribute("id","circle2");
-                        document.getElementById("labels").appendChild(kreis);
-                        
-                        var bild = document.createElement("IMG");
-                        bild.setAttribute("src", "./footage/kaese.png");
-                        bild.setAttribute("alt", "kaese");
-                        bild.setAttribute("id", "kaese");
-                        bild.setAttribute("class", "added");
-                        bild.setAttribute("onclick", "infoblock()");
-                        document.getElementById("circle2").appendChild(bild);
-
                         document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
                         break;
@@ -319,18 +280,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                           bild.setAttribute("class","added");
                           document.getElementById("circle").appendChild(bild);
   
-                          var kreis = document.createElement("div");
-                          kreis.setAttribute("class", "added");
-                          kreis.setAttribute("id","circle2");
-                          document.getElementById("labels").appendChild(kreis);
-                          
-                          var bild = document.createElement("IMG");
-                          bild.setAttribute("src", "./footage/kaese.png");
-                          bild.setAttribute("alt", "kaese");
-                          bild.setAttribute("id", "kaese");
-                          bild.setAttribute("class", "added");
-                          bild.setAttribute("onclick", "infoblock()");
-                          document.getElementById("circle2").appendChild(bild);
   
                           break;
                         
@@ -522,7 +471,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        document.getElementById("labelsInfo").appendChild(bieraEngiadinaisa);
 
        var bild = document.createElement("IMG");
-       bild.setAttribute("src", "./img/logoBier/bieraEngadinaLogo.jpeg");
+       bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
        bild.setAttribute("class","added");
        document.getElementById("labelsInfo").appendChild(bild);
 
@@ -690,7 +639,38 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        document.getElementById("labelsInfo").appendChild(facebook);
 
        document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
-    }
+    
+       case   'standBioSchorta': 
+
+       var standBioSchorta = document.createElement("H1");
+       standBioSchorta.innerHTML = "Stand Bio Schorta";
+       standBioSchorta.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(standBioSchorta);
+
+       var bild = document.createElement("IMG");
+       bild.setAttribute("src", "./img/logo/bsSchorta.jpg");
+       bild.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bild);
+
+       var standBioSchortaT = document.createElement("P");
+       standBioSchortaT.innerHTML = "Ein Bio-Betrieb mit langer Geschichte und exotischer Rinderherde in Tschlin. Die Schortas verkaufen ihre Lebensmittel direkt ab Hof, auch den preisgekrönten Bio-Schlaviner. <br> Schottische Hochlandrinder im Bündner Unterengadin? Das ist nur auf den ersten Blick ungewöhnlich. Ihre Genügsamkeit prädestiniert die Tiere geradezu für das karge Tal. Auf 1500 m ü.M. fühlen sie sich zottelig wohl."
+       standBioSchortaT.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(standBioSchortaT);
+
+       var addresse = document.createElement("P");
+       addresse.innerHTML = "BS – Bio Schorta <br> Gian-Fadri und Pamela Schorta Curtins 2 <br> 7559 Tschli <br> Tel. +41 (0)79 265 24 32 www.bioschorta.ch" ;
+       addresse.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(addresse);
+       
+       
+       var website = document.createElement("A");
+       website.innerHTML = "www.buntschlin.ch";
+       website.href = "https://buntschlin.ch/betriebe/bio-schorta/#"; 
+       website.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(website);   
+
+       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
+      }
     }
 
 //Overview - popup desapear

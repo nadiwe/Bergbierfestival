@@ -290,7 +290,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     document.getElementById("labels").appendChild(bunTschlin);
 
                     var foto = document.createElement("IMG");
-                    foto.setAttribute("src", "./img/memories/foto1.jpeg");
+                    foto.setAttribute("src", "./img/memories/foto1.jpg");
                     foto.setAttribute("alt", "wanderung");
                     foto.setAttribute("class", "added");
                     foto.setAttribute("id", "fotos");
@@ -316,7 +316,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     document.getElementById("labels").appendChild(valsot);
 
                         var foto = document.createElement("IMG");
-                        foto.setAttribute("src", "./img/memories/foto2.jpeg");
+                        foto.setAttribute("src", "./img/memories/foto2.jpg");
                         foto.setAttribute("alt", "wanderung");
                         foto.setAttribute("class", "added");
                         foto.setAttribute("id", "fotos");

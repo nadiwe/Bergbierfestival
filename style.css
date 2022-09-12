@@ -18,9 +18,10 @@
 
 body {
     font-family: 'proxima_nova_rgregular';
+    height: 100%;
     margin: 0;
     padding: 0;
-    overscroll-behavior: contain;
+    overscroll-behavior: none;
 }
 
 h1 {
@@ -125,7 +126,7 @@ fotos {
 
 
 .BarInfo {
-    height: 80vh;
+    height: 70vh;
     right: 0;
     width: 87vw;
     z-index: 3;

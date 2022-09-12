@@ -555,7 +555,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        document.getElementById("labelsInfo").appendChild(doppelleuBoxerAG);
 
        var bild = document.createElement("IMG");
-       bild.setAttribute("src", "./img/logoBier/doppelleu.png");
+       bild.setAttribute("src", "./img/logo/doppelleu.png");
        bild.setAttribute("class","added");
        document.getElementById("labelsInfo").appendChild(bild);
 

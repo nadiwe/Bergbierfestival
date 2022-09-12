@@ -14,7 +14,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
             container: 'map',
             style: 'mapbox://styles/nwfwsb/cl4srws8i002p14lp3up2ng3d',
-            center: [10.425259, 46.86909],
+            center: [10.423259, 46.86909],
             zoom: 15,
             //maxBounds: bounds
         });
@@ -90,6 +90,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 'type': 'FeatureCollection',
 
 //GeoData from here ...
+
 
 
   "features": [
@@ -1104,6 +1105,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
     {
       "type": "Feature",
       "properties": {
+        "Icon": "foto3",
+        "art": "foto"
+      },
+      "geometry": {
+        "coordinates": [
+          10.426453,
+          46.869939
+        ],
+        "type": "Point"
+      },
+      "id": "cf907d6ddbd5bba2aeb5bd6c458da70f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "Icon": "blue",
         "art": "bier"
       },
@@ -1963,7 +1979,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             document.getElementById("hidden").style.display = "block";
 
             switch(setImg){
-                case   'start':
+                    case   'start':
                 
 
                         var h1 = document.createElement("H1");
@@ -1985,6 +2001,25 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         text.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(text);
 
+                        var grillstand = document.createElement("H2");
+                        grillstand.innerHTML = "Grillstand";
+                        grillstand.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(grillstand);
+
+                        var grillstandT = document.createElement("P");
+                        grillstandT.innerHTML = "Ungefähr in der Mitte der Wanderung haben wir dieses Jahr einen Grillstand organisiert. Die Bacharia Zanetti grilliert dort regionale Spezialitäten. Für CHF 5.– erhalten Sie dort eine Wurst (Biergriller, Käsengadiner, Bratwurst...) mit Brot. ";
+                        grillstandT.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(grillstandT);
+
+                        var verkaufsstand = document.createElement("H2");
+                        verkaufsstand.innerHTML = "Verkaufsstand";
+                        verkaufsstand.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(verkaufsstand);
+
+                        var verkaufsstandT = document.createElement("P");
+                        verkaufsstandT.innerHTML = "In Ramosch können am Ende der Wanderung alle Produkte eingekauft werden, die auf der Wanderung zur Degustation angeboten werden und Sie finden dort noch weitere Spezialitäten der Bun Tschlin Produzenten. ";
+                        verkaufsstandT.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(verkaufsstandT);
 
                     
                    
@@ -2011,7 +2046,68 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                   break;
                  
                     case   'stand1':
+
+                      var kreis = document.createElement("div");
+                      kreis.setAttribute("class", "added");
+                      kreis.setAttribute("id","circle");
+                      document.getElementById("labels").appendChild(kreis);
+                      document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+
+                     
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./footage/bier.png");
+                      bild.setAttribute("alt", "bieraEngiadinaisa");
+                      bild.setAttribute("id", "bieraEngiadinaisa");
+                      bild.setAttribute("onclick", "infoblock()");
+                      bild.setAttribute("class","added");
+                      document.getElementById("circle").appendChild(bild);
+
+                      var kreis = document.createElement("div");
+                      kreis.setAttribute("class", "added");
+                      kreis.setAttribute("id","circle2");
+                      document.getElementById("labels").appendChild(kreis);
+  
+                      
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./footage/kaese.png");
+                      bild.setAttribute("alt", "kaese");
+                      bild.setAttribute("id", "kaese");
+                      bild.setAttribute("class", "added");
+                      bild.setAttribute("onclick", "infoblock()");
+                      document.getElementById("circle2").appendChild(bild);
+
+                      break;
                     case   'stand2':
+                      var kreis = document.createElement("div");
+                      kreis.setAttribute("class", "added");
+                      kreis.setAttribute("id","circle");
+                      document.getElementById("labels").appendChild(kreis);
+                      document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+
+                     
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./footage/bier.png");
+                      bild.setAttribute("alt", "bierariaTschlinSA");
+                      bild.setAttribute("id", "bierariaTschlinSA");
+                      bild.setAttribute("class","added");
+                      bild.setAttribute("onclick", "infoblock()");
+                      document.getElementById("circle").appendChild(bild);
+
+                      var kreis = document.createElement("div");
+                      kreis.setAttribute("class", "added");
+                      kreis.setAttribute("id","circle2");
+                      document.getElementById("labels").appendChild(kreis);
+  
+                      
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./footage/fleisch.png");
+                      bild.setAttribute("alt", "fleisch");
+                      bild.setAttribute("id", "fleisch");
+                      bild.setAttribute("class", "added");
+                      bild.setAttribute("onclick", "infoblock()");
+                      document.getElementById("circle2").appendChild(bild);
+                      
+                      break;
                     case   'stand3':
 
                         var kreis = document.createElement("div");
@@ -2022,9 +2118,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                        
                         var bild = document.createElement("IMG");
-                        bild.setAttribute("src", "./footage/fleisch.png");
-                        bild.setAttribute("alt", "fleisch");
-                        bild.setAttribute("id", "fleisch");
+                        bild.setAttribute("src", "./footage/bier.png");
+                        bild.setAttribute("alt", "doppelleuBoxerAG");
+                        bild.setAttribute("id", "doppelleuBoxerAG");
                         bild.setAttribute("onclick", "infoblock()");
                         bild.setAttribute("class","added");
                         document.getElementById("circle").appendChild(bild);
@@ -2045,18 +2141,83 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                         break;
     
-                        case   'foto1':   
-                        case   'foto2':  
+                    case   'foto1': 
+                    var bunTschlin = document.createElement("H1");
+                    bunTschlin.innerHTML = "Bun Tschlin";
+                    bunTschlin.setAttribute("class", "added");
+                    document.getElementById("labels").appendChild(bunTschlin);
+
+                    var foto = document.createElement("IMG");
+                    foto.setAttribute("src", "./img/atmosphäre/foto1.jpg");
+                    foto.setAttribute("alt", "wanderung");
+                    foto.setAttribute("class", "added");
+                    foto.setAttribute("id", "fotos");
+                    document.getElementById("labels").appendChild(foto);
+                    document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+
+                    var bunTschlinT = document.createElement("P");
+                    bunTschlinT.innerHTML = "Bun Tschlin ist Organisator des Bergbierfestivals. Das Ganze ist mehr als die Summe aller Teile, wusste schon Aristoteles. Bun Tschlin vereinigt engagierte Betriebe aus der Gemeinde Valsot, die mit authentischen Angeboten die Lebensqualität vor Ort sowie einen sanften Tourismus pflegen wollen. <br> «Bun Tschlin» steht für nachhaltig, ökologisch, mutig und unternehmerisch! Wir pflegen die einheimischen Landschaft und bündeln die Kräfte der Natur in unseren authentischen Bun Tschlin Produkten. <br> In Tschlin und den benachbarten Dörfern Martina, Ramosch, Strada und Vnà haben wir uns zusammengetan, um gemeinsam die ursprüngliche Struktur und hohe Lebensqualität in der Region zu erhalten und diese zugleich mit unseren BesucherInnen zu teilen. Denn auch hier gilt: Sharing is caring! Dieser Zusammenschluss heisst Bun Tschlin, was bedeutet: Gutes aus Tschlin."
+                    bunTschlinT.setAttribute("class", "added");
+                    document.getElementById("labels").appendChild(bunTschlinT);
+
+                    var bunTschlinL = document.createElement("A");
+                    bunTschlinL.innerHTML = " www.buntschlin.ch";
+                    bunTschlinL.href = "https://buntschlin.ch/"; 
+                    bunTschlinL.setAttribute("class", "added");
+                    document.getElementById("labels").appendChild(bunTschlinL);
+
+                    break;
+
+                    case   'foto2':  
+                    var valsot = document.createElement("H1");
+                    valsot.innerHTML = "Valsot";
+                    valsot.setAttribute("class", "added");
+                    document.getElementById("labels").appendChild(valsot);
+
                         var foto = document.createElement("IMG");
-                        foto.setAttribute("src", "./footage/wanderung.png");
+                        foto.setAttribute("src", "./img/atmosphäre/foto2.jpg");
                         foto.setAttribute("alt", "wanderung");
                         foto.setAttribute("class", "added");
                         foto.setAttribute("id", "fotos");
                         document.getElementById("labels").appendChild(foto);
                         document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+
+                        var valsotT = document.createElement("P");
+                        valsotT.innerHTML = "Die Gemeinde Valsot grenzt an Österreich und an Italien. Ein Teil des Valsoter Gemeindeterritoriums, das Val Fenga (dt. Fimbertal), liegt als Exklave ausserhalb des übrigen Gemeindegebiets und ist von der österreichischen Seite über das Paznauntal erschlossen. Der Deutsche Alpenverein (DAV) besitzt und betreibt auf diesem Gebiet die Heidelberger Hütte, welche als Ausgangspunkt für zahlreiche Mountainbike- und Skitouren gilt. Die Gemeinde Valsot ist Teil der Region Engiadina Bassa Val Müstair. <br> <br>Höhe  -  zw. 1’231 und 1’533 M.ü.M. <br>Fläche - 15’916 Hektaren <br> Einwohner 2010 - 932 <br> <br> Die Fraktionen in alphabetischer Reihenfolge sind: Chaflur/Chasura, Martina, Ramosch, Raschvella, San Niclà, Sclamischot/S-chadatsch, Seraplana, Strada, Tschlin, Vinadi, Vnà" ;                        
+                        valsotT.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(valsotT);
+
+                       
                         break;
 
-                        case   'blue':   
+                   case   'foto3':  
+
+                   var rumantsch = document.createElement("H1");
+                        rumantsch.innerHTML = "Rumantsch, nossa lingua";
+                        rumantsch.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(rumantsch);
+
+                        var foto = document.createElement("IMG");
+                        foto.setAttribute("src", "./img/atmosphäre/foto3.jpg");
+                        foto.setAttribute("alt", "wanderung");
+                        foto.setAttribute("class", "added");
+                        foto.setAttribute("id", "fotos");
+                        document.getElementById("labels").appendChild(foto);
+                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+
+                        var rumantschT = document.createElement("P");
+                        rumantschT.innerHTML = "In nossa regiun discurrina rumantsch e da quai eschna fich superbis. Precis quel character as chatta eir in nossa biera ed in tuot ils prodots da Bun Tschlin. No cumprain il malt dad üerdi in Engiadina, il malt da furmaint illa Val Müstair ed dafatta offa prodüaina per part in nossa regiun. E scha no fain üna biera speciala, sco nossa biera alvetern schi tscherchaina adüna prodots regiunals – in quel cas alveterns dal puschlav. <br> Be pro no daja s-chettas bieras grischunaisas. VIVA nossa regiun! Ed hajat incletta scha quist program es uossa in lingua tudais-cha. Nossa bieraria douvra eir ils giasts d’utrò per pudair surviver ed uschea inclegian eir quels alch. Però, no rumantsch savain daplü!"
+                        rumantschT.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(rumantschT);
+
+                        var rumantschL = document.createElement("A");
+                        rumantschL.innerHTML = "www.curs.ch";
+                        rumantschL.href = "https://www.curs.ch/biera"; 
+                        rumantschL.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(rumantschL);                       
+                        break;
+
+                    case   'blue':   
                        
                             var h1 = document.createElement("H1");
                         h1.innerHTML = "Finde mich!";
@@ -2073,7 +2234,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("labels").appendChild(foto);
                         break;
                         
-                        case   'konzert':   
+                    case   'konzert':   
                        
                             var h1 = document.createElement("H1");
                         h1.innerHTML = "Festival in Ramosch – MEGAWATT";
@@ -2125,49 +2286,171 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
     function infoblock(){
         $('#labelsInfo').empty();
         document.getElementById("hiddenInfo").style.display = "block";
-       
+
         var stand = event.target.id;
         console.log(stand);
-
-        var br = document.createElement("BR");
-
-       var h1 = document.createElement("H1");
-   
-       h1.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(h1);
-       document.getElementById("labelsInfo").appendChild(br);
-
-       var p = document.createElement("p");
-       p.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(p);
-       document.getElementById("labelsInfo").appendChild(br);
-
        
-       var h2 = document.createElement("H2");
-       h2.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(h2);
-       document.getElementById("labelsInfo").appendChild(br);
+         switch(stand){
+       case   'fleisch': 
 
-       var h3 = document.createElement("H3");
-       h3.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(h3);
-
-        switch(stand){
-                case   'fleisch': 
-       h1.innerHTML = "Fleisch";
-       p.innerHTML = "Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften";
-       h2.innerHTML = "Biersorten";
-       h3.innerHTML = 'Simmentaler Lager: Naturtrübes Lagerbier, untergärig';
-
-       break;
+                var fleisch = document.createElement("H1");
+                fleisch.innerHTML = "Fleisch";
+                fleisch.setAttribute("class", "added");
+                document.getElementById("labelsInfo").appendChild(fleisch);
+         
+                var fleischT = document.createElement("P");
+                fleischT.innerHTML =        "Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften";
+                fleischT.setAttribute("class", "added");
+                document.getElementById("labelsInfo").appendChild(fleischT);
+                
+                document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
+         break;
 
        case   'kaese': 
-       h1.innerHTML = "Käse";
-       p.innerHTML = "Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften";
-       h2.innerHTML = "Biersorten";
-       h3.innerHTML = 'Simmentaler Lager: Naturtrübes Lagerbier, untergärig';
+
+       var kaese = document.createElement("H1");
+       kaese.innerHTML = "Käse";
+       kaese.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(kaese);
+
+       var kaeseT = document.createElement("P");
+       kaeseT.innerHTML =        "Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften";
+       kaeseT.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(kaeseT);
+       
+       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
 
        break;
+       
+       case   'bieraEngiadinaisa': 
+
+       var bieraEngiadinaisa = document.createElement("H1");
+       bieraEngiadinaisa.innerHTML = "Biera Engiadinaisa";
+       bieraEngiadinaisa.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bieraEngiadinaisa);
+
+       var bild = document.createElement("IMG");
+       bild.setAttribute("src", "./img/logoBier/bieraEngadinaLogo.jpeg");
+       bild.setAttribute("class","added");
+       document.getElementById("labelsInfo").appendChild(bild);
+
+       var bieraEngiadinaisaT = document.createElement("P");
+       bieraEngiadinaisaT.innerHTML = "Die Idee einer Bieraria im Unterengadin «Tschlin» geht auf einen «Zukunfts-Workshop» der Gemeinde Tschlin in den ersten Jahren des neuen Jahrtausends zurück. Dort entstand auch die Idee des Werbe- und Verkaufsförderungsverbunds «Bun Tschlin». Am 30. Juni 2004 wurde die Gründung der Bieraria Tschlin SA notariell beglaubigt. <br> Die Brauerei Tschlin produziert und vermarktet regionale BIO Biersorten aus einheimischem Gerstenmalz, Tschliner Wasser, Hopfen und Hefe. Bei uns werden fast alle Biersorten aus 100% aus Schweizer Rohstoffe hergestellt, so dass wir uns mit gutem Gewissen als «regionalste Brauerei der Schweiz» bezeichnen dürfen.";
+       bieraEngiadinaisaT.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bieraEngiadinaisaT);
+
+       var bieraSorten = document.createElement("H2");
+       bieraSorten.innerHTML = "Biersorten";
+       bieraSorten.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bieraSorten);
+
+       var bieraSortenT = document.createElement("P");
+       bieraSortenT.innerHTML = "Tschlin cler -  naturtrübes BIO-Bier, 100% CH, untergärig <br> Tschlin ambra - Amberbier BIO aus 100% CH, obergärig <br> BE Weizen - Weizen BIO mit einh. Weizenmalz, obergärig <br> Staila Alpina - BIO Bier mit Bündner-Edelweiss, untergärig <br> Engadin Pale Ale -  Pale Ale Bier – 100% CH, obergärig <br> La S-chüra -  Dunkles, citrahaltiges Bio Bier, untergärig <br> Festival-Spezial - Gebraut nach Pilsner-Bierstil";
+       bieraSortenT.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bieraSortenT);
+
+       var bieraEngiadinaisaSpirituosen = document.createElement("H2");
+       bieraEngiadinaisaSpirituosen.innerHTML = "Spirituosen";
+       bieraEngiadinaisaSpirituosen.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bieraEngiadinaisaSpirituosen);
+
+       var bieraEngiadinaisaSpirituosenT = document.createElement("P");
+       bieraEngiadinaisaSpirituosenT.innerHTML = "Tschliner Single Malt - Single Mal aus Tschliner Bier <br> Dschin da Tschlin - GIN <br> Ofa d’or - Hopfenschnaps <br> Tschliner Bier Brand - Tschliner Bier-Destilat <br> Tschliner Edelweiss - Feines Likör mit Edelweissblumen <br> Tschliner Honig Likör - Likör mit Honig";
+       bieraEngiadinaisaSpirituosenT.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bieraEngiadinaisaSpirituosenT);
+       
+       var website = document.createElement("A");
+       website.innerHTML = "www.bieraria.ch <br>";
+       website.href = "https://www.bieraria.ch/"; 
+       website.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(website);   
+
+       var instagram = document.createElement("A");
+       instagram.innerHTML = "Instagram  <br>";
+       instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+       instagram.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(instagram);
+       
+       var facebook = document.createElement("A");
+       facebook.innerHTML = "Facebook";
+       facebook.href = "https://www.facebook.com/bieratschlin"; 
+       facebook.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(facebook);
+
+       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
+
+       
+       break;  
+       
+       case   'bierariaTschlinSA': 
+
+       var bierariaTschlinSA = document.createElement("H1");
+       bierariaTschlinSA.innerHTML = "Bieraria Tschlin SA";
+       bierariaTschlinSA.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bierariaTschlinSA);
+
+       var bierariaTschlinSAT = document.createElement("P");
+       bierariaTschlinSAT.innerHTML = "Via Dal Dazi 233 <br> 7560 Martina <br> Tel. +41 (0)81 860 12 50 <br> Fax +41 (0)81 860 12 51";
+       bierariaTschlinSAT.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bierariaTschlinSAT);
+
+       
+       var website = document.createElement("A");
+       website.innerHTML = "www.bieraria.ch  mit Onlineshop ";
+       website.href = "https://www.bieraria.ch/"; 
+       website.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(website);   
+
+       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
+
+       
+       break;  
+
+       case   'doppelleuBoxerAG': 
+
+       var doppelleuBoxerAG = document.createElement("H1");
+       doppelleuBoxerAG.innerHTML = "Doppelleu Boxer AG";
+       doppelleuBoxerAG.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(doppelleuBoxerAG);
+
+       var doppelleuBoxerAGT = document.createElement("P");
+       doppelleuBoxerAGT.innerHTML = "2012 gegründet, verheiratete sich die Doppelleu Brauwerkstatt AG mit der Bière du Boxer S.A. im Jahr 2017. So entstand die dynamische Doppelleu Boxer AG. Mit der Vision, die qualitativ hochwertigsten Biere in grosser und abwechslungsreicher Vielfalt zu produzieren sind unsere Mitarbeitenden gefordert, immer wieder neue Wege zu gehen. Diverse – auch internationale – Auszeichnungen bestätigen den Erfolg.";
+       doppelleuBoxerAGT.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(doppelleuBoxerAGT);
+
+       var bieraSorten = document.createElement("H2");
+       bieraSorten.innerHTML = "Biersorten";
+       bieraSorten.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bieraSorten);
+
+       var bieraSortenT = document.createElement("P");
+       bieraSortenT.innerHTML = "Chopfab Draft - Idealer Durstlöscher, obergärig <br> Chopfab Amber - American Red Ale, rotglänzend, obergärig <br> Chopfab Trüeb - Australian Pale Ale mit tasmanischem Galaxy Hopfen, obergärig <br> Chopfab Weize - Belgian Blanche mir fruchtigem Zitrusaroma, obergärig <br> Doppelleu India Pale Ale - Mit viel charakterstarkem Simcoe- und Chinook-Hopfen, obergärig <br> Doppelleu Citra Double Wit - Fruchtiges, belgisches Wit Bier, obergärig "
+       bieraSortenT.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bieraSortenT);
+
+       
+       var website = document.createElement("A");
+       website.innerHTML = "www.doppelleuboxer.ch <br>";
+       website.href = "https://www.doppelleuboxer.ch/de/bier/doppelleu/"; 
+       website.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(website);   
+
+       var instagram = document.createElement("A");
+       instagram.innerHTML = "Instagram  <br>";
+       instagram.href = "https://www.instagram.com/doppelleu_boxer/"; 
+       instagram.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(instagram);
+       
+       var facebook = document.createElement("A");
+       facebook.innerHTML = "Facebook  ";
+       facebook.href = "https://www.facebook.com/doppelleuboxer/"; 
+       facebook.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(facebook);
+
+       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
+
+       
+       break;  
     }
     }
 

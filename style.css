@@ -61,14 +61,21 @@ img {
     z-index: 1;
 }
 
-#arrow {
+a {
+    color: black;
+}
+
+.arrow {
 
     position: fixed;
     width: 4vw;
     height: 4vw;
     padding-top: 4vh;
     right: 6.5vw;
+    z-index: 2;
 }
+
+#arrowBarInfo {}
 
 .line {
     position: absolute;
@@ -113,7 +120,7 @@ img {
     margin: 8vh 2vh 0 2vh;
 }
 
-#fotos {
+fotos {
     object-fit: cover;
     height: 60vh;
 
@@ -121,23 +128,22 @@ img {
 
 
 .BarInfo {
-    background-color: #e59c9c;
-    height: 68vh;
+    height: 80vh;
     right: 0;
-    width: 80vw;
-    z-index: 1;
+    width: 87vw;
+    z-index: 3;
     position: absolute;
-    top: 7vh;
+    right: 10vw;
+    top: 10vh;
     display: none;
     opacity: 1;
     border-radius: 1vw 1vw 1vw 10vw;
-    padding: 8vh 3vh 3vh 4vh;
-
     overflow: scroll;
 }
 
 #labelsInfo {
     overflow: scroll;
+    margin: 8vh 3vh 8vh 3vh;
 }
 
 #blue {

@@ -639,6 +639,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        document.getElementById("labelsInfo").appendChild(facebook);
 
        document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
+
+       break;
     
        case   'standBioSchorta': 
 

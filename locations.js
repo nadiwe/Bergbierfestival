@@ -274,8 +274,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                          
                           var bild = document.createElement("IMG");
                           bild.setAttribute("src", "./footage/bier.png");
-                          bild.setAttribute("alt", "doppelleuBoxerAG");
-                          bild.setAttribute("id", "doppelleuBoxerAG");
+                          bild.setAttribute("alt", "mundart");
+                          bild.setAttribute("id", "mundart");
                           bild.setAttribute("onclick", "infoblock()");
                           bild.setAttribute("class","added");
                           document.getElementById("circle").appendChild(bild);
@@ -309,7 +309,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     document.getElementById("labels").appendChild(bunTschlinL);
 
                     break;
-                    case   'foto2':  
+                   case   'foto2':  
                     var valsot = document.createElement("H1");
                     valsot.innerHTML = "Valsot";
                     valsot.setAttribute("class", "added");
@@ -463,7 +463,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
        break;
        
-       case   'bieraEngiadinaisa': 
+       case   'bieraEngiadinaisa':
 
        var bieraEngiadinaisa = document.createElement("H1");
        bieraEngiadinaisa.innerHTML = "Biera Engiadinaisa";
@@ -521,8 +521,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
 
        
-       break;  
-       
+       break;        
        case   'bierariaTschlinSA': 
 
        var bierariaTschlinSA = document.createElement("H1");
@@ -546,7 +545,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
        
        break;  
-       
        case   'doppelleuBoxerAG': 
 
        var doppelleuBoxerAG = document.createElement("H1");
@@ -597,7 +595,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
        
        break;  
-
        case   'bierVisionMonstein': 
        var bierVisionMonstein = document.createElement("H1");
        bierVisionMonstein.innerHTML = "BierVision Monstein";
@@ -641,7 +638,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
 
        break;
-    
+       case   'mundart': 
+       var mundart = document.createElement("H1");
+       mundart.innerHTML = "Mundart";
+       mundart.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(mundart);
+
+       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
+
+       break;
+
        case   'standBioSchorta': 
 
        var standBioSchorta = document.createElement("H1");

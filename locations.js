@@ -518,7 +518,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        facebook.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(facebook);
 
-       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
 
        
        break;        
@@ -541,7 +540,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        website.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(website);   
 
-       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
 
        
        break;  
@@ -591,7 +589,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        facebook.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(facebook);
 
-       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
 
        
        break;  
@@ -635,7 +632,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        facebook.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(facebook);
 
-       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
 
        break;
        case   'mundart': 
@@ -644,7 +640,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        mundart.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(mundart);
 
-       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
 
        break;
 
@@ -677,7 +672,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        website.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(website);   
 
-       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
       }
     }
 

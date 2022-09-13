@@ -37,15 +37,15 @@ h1 {
 }
 
 .imgBar {
-
+    top: 9vh;
     height: auto;
     max-height: 80vh;
     right: 0;
-    width: 80vw;
+    width: 47vw;
     overflow: auto;
 
     position: absolute;
-    top: 10vh;
+    top: 9vh;
     display: none;
     border-radius: 1px 1px 1px 20px;
     padding: 0 0 3vh 2vh;
@@ -95,18 +95,18 @@ a {
 #circle {
 
     margin: 2vw;
-    background-color: #a6d1dd;
-    width: 55vw;
-    height: 55vw;
+    background-color: #bcb48c;
+    width: 40vw;
+    height: 40vw;
     border-radius: 100%;
 }
 
 #circle2 {
 
     margin: 2vw;
-    background-color: #a6d1dd;
-    width: 55vw;
-    height: 55vw;
+    background-color: #bcb48c;
+    width: 40vw;
+    height: 40vw;
     border-radius: 100%;
 }
 
@@ -115,7 +115,7 @@ a {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    margin: 8vh 2vh 0 2vh;
+    margin: 8vh 2vh 0 0vh;
 }
 
 fotos {
@@ -126,13 +126,14 @@ fotos {
 
 
 .BarInfo {
-    height: 70vh;
+    background-color: #bcb48c;
+    height: 67vh;
     right: 0;
     width: 87vw;
     z-index: 3;
     position: absolute;
-    right: 10vw;
-    top: 10vh;
+    right: 4vw;
+    top: 9vh;
     display: none;
     opacity: 1;
     border-radius: 1vw 1vw 1vw 10vw;
@@ -140,6 +141,7 @@ fotos {
 }
 
 #labelsInfo {
+
     overflow: scroll;
     margin: 8vh 3vh 8vh 3vh;
 }

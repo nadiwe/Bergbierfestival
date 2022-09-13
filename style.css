@@ -227,3 +227,8 @@ fotos {
     border-radius: 10vw;
     background-color: rgb(7, 98, 245);
 }
+
+#hidden {
+    background-color: #c68d2e;
+    opacity: 1;
+}

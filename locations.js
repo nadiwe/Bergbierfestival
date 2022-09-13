@@ -126,7 +126,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         h1.innerHTML = "Allegra, liebe Geniesserinnen und Geniesser";
                         h1.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(h1);
-                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
                         var video = document.createElement("IFRAME");
                         video.setAttribute("class", "added"); 
@@ -188,7 +187,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       kreis.setAttribute("class", "added");
                       kreis.setAttribute("id","circle");
                       document.getElementById("labels").appendChild(kreis);
-                      document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./footage/bier.png");
@@ -199,6 +197,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("circle").appendChild(bild);
 
                       document.getElementById("hidden").style.width = "47vw";
+                      document.getElementById("hidden").style.backgroundColor = 'transparent';
 
 
                       break;
@@ -217,6 +216,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("circle").appendChild(bild);
 
                       document.getElementById("hidden").style.width = "47vw";
+                      document.getElementById("hidden").style.backgroundColor = 'transparent';
 
                       break;
                     case   'stand3':
@@ -248,6 +248,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                        
                         document.getElementById("hidden").style.width = "47vw";
+                        document.getElementById("hidden").style.backgroundColor = 'transparent';
 
 
                         break;
@@ -266,6 +267,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("circle").appendChild(bild);
 
                         document.getElementById("hidden").style.width = "47vw";
+                        document.getElementById("hidden").style.backgroundColor = 'transparent';
 
 
                         break;
@@ -274,7 +276,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                           kreis.setAttribute("class", "added");
                           kreis.setAttribute("id","circle");
                           document.getElementById("labels").appendChild(kreis);
-                          document.getElementById("hidden").style.backgroundColor = '#c68d2e';
                          
                           var bild = document.createElement("IMG");
                           bild.setAttribute("src", "./footage/bier.png");
@@ -285,6 +286,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                           document.getElementById("circle").appendChild(bild);
   
                           document.getElementById("hidden").style.width = "47vw";
+                          document.getElementById("hidden").style.backgroundColor = 'transparent';
 
                           break;
                         
@@ -300,7 +302,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     foto.setAttribute("class", "added");
                     foto.setAttribute("id", "fotos");
                     document.getElementById("labels").appendChild(foto);
-                    document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
                     var bunTschlinT = document.createElement("P");
                     bunTschlinT.innerHTML = "Bun Tschlin ist Organisator des Bergbierfestivals. Das Ganze ist mehr als die Summe aller Teile, wusste schon Aristoteles. Bun Tschlin vereinigt engagierte Betriebe aus der Gemeinde Valsot, die mit authentischen Angeboten die Lebensqualität vor Ort sowie einen sanften Tourismus pflegen wollen. <br> «Bun Tschlin» steht für nachhaltig, ökologisch, mutig und unternehmerisch! Wir pflegen die einheimischen Landschaft und bündeln die Kräfte der Natur in unseren authentischen Bun Tschlin Produkten. <br> In Tschlin und den benachbarten Dörfern Martina, Ramosch, Strada und Vnà haben wir uns zusammengetan, um gemeinsam die ursprüngliche Struktur und hohe Lebensqualität in der Region zu erhalten und diese zugleich mit unseren BesucherInnen zu teilen. Denn auch hier gilt: Sharing is caring! Dieser Zusammenschluss heisst Bun Tschlin, was bedeutet: Gutes aus Tschlin."
@@ -326,7 +327,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         foto.setAttribute("class", "added");
                         foto.setAttribute("id", "fotos");
                         document.getElementById("labels").appendChild(foto);
-                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
                         var valsotT = document.createElement("P");
                         valsotT.innerHTML = "Die Gemeinde Valsot grenzt an Österreich und an Italien. Ein Teil des Valsoter Gemeindeterritoriums, das Val Fenga (dt. Fimbertal), liegt als Exklave ausserhalb des übrigen Gemeindegebiets und ist von der österreichischen Seite über das Paznauntal erschlossen. Der Deutsche Alpenverein (DAV) besitzt und betreibt auf diesem Gebiet die Heidelberger Hütte, welche als Ausgangspunkt für zahlreiche Mountainbike- und Skitouren gilt. Die Gemeinde Valsot ist Teil der Region Engiadina Bassa Val Müstair. <br> <br>Höhe  -  zw. 1’231 und 1’533 M.ü.M. <br>Fläche - 15’916 Hektaren <br> Einwohner 2010 - 932 <br> <br> Die Fraktionen in alphabetischer Reihenfolge sind: Chaflur/Chasura, Martina, Ramosch, Raschvella, San Niclà, Sclamischot/S-chadatsch, Seraplana, Strada, Tschlin, Vinadi, Vnà" ;                        
@@ -348,7 +348,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         foto.setAttribute("class", "added");
                         foto.setAttribute("id", "fotos");
                         document.getElementById("labels").appendChild(foto);
-                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
                         var rumantschT = document.createElement("P");
                         rumantschT.innerHTML = "In nossa regiun discurrina rumantsch e da quai eschna fich superbis. Precis quel character as chatta eir in nossa biera ed in tuot ils prodots da Bun Tschlin. No cumprain il malt dad üerdi in Engiadina, il malt da furmaint illa Val Müstair ed dafatta offa prodüaina per part in nossa regiun. E scha no fain üna biera speciala, sco nossa biera alvetern schi tscherchaina adüna prodots regiunals – in quel cas alveterns dal puschlav. <br> Be pro no daja s-chettas bieras grischunaisas. VIVA nossa regiun! Ed hajat incletta scha quist program es uossa in lingua tudais-cha. Nossa bieraria douvra eir ils giasts d’utrò per pudair surviver ed uschea inclegian eir quels alch. Però, no rumantsch savain daplü!"
@@ -368,7 +367,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         h1.innerHTML = "Finde mich!";
                         h1.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(h1);
-                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+                        
 
                         var foto = document.createElement("IMG");
                         foto.setAttribute("src", "./footage/blauBierglas.png");
@@ -687,6 +686,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
     function back(){
         document.getElementById('hidden').style.display = 'none';
         document.getElementById("hidden").style.width = "87vw";
+        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+
 
         $('#labels').empty();
     }

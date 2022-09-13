@@ -41,7 +41,7 @@ h1 {
     height: auto;
     max-height: 80vh;
     right: 0;
-    width: 47vw;
+    width: 87vw;
     overflow: auto;
 
     position: absolute;
@@ -83,7 +83,7 @@ a {
     height: 1vw;
     border-radius: 2vw;
 
-    background: #ffffff;
+    background: #000000;
 
     transform: translate(-50%, -50%) rotate(45deg);
 }

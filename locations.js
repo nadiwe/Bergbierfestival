@@ -198,6 +198,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("class","added");
                       document.getElementById("circle").appendChild(bild);
 
+                      document.getElementById("hidden").style.width = "47vw";
 
 
                       break;
@@ -215,7 +216,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
 
-                      document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+                      document.getElementById("hidden").style.width = "47vw";
 
                       break;
                     case   'stand3':
@@ -245,7 +246,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         bild.setAttribute("onclick", "infoblock()");
                         document.getElementById("circle2").appendChild(bild);
 
-                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+                       
+                        document.getElementById("hidden").style.width = "47vw";
+
 
                         break;
                     case   'stand4':
@@ -262,7 +265,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         bild.setAttribute("class","added");
                         document.getElementById("circle").appendChild(bild);
 
-                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+                        document.getElementById("hidden").style.width = "47vw";
+
 
                         break;
                     case   'stand5':
@@ -280,7 +284,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                           bild.setAttribute("class","added");
                           document.getElementById("circle").appendChild(bild);
   
-  
+                          document.getElementById("hidden").style.width = "47vw";
+
                           break;
                         
                     case   'foto1': 
@@ -372,6 +377,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         foto.setAttribute("id", "fotos");
                         foto.setAttribute("id", "blue");
                         document.getElementById("labels").appendChild(foto);
+
+                        document.getElementById("hidden").style.width = "50vw";
+
                         break;
                         
                     case   'konzert':   
@@ -678,6 +686,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 //Overview - popup desapear
     function back(){
         document.getElementById('hidden').style.display = 'none';
+        document.getElementById("hidden").style.width = "87vw";
+
         $('#labels').empty();
     }
 

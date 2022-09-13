@@ -3,7 +3,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Icon": "start"
+        "Icon": "start",
+        "art": "loc"
       },
       "geometry": {
         "coordinates": [
@@ -96,8 +97,8 @@
       },
       "geometry": {
         "coordinates": [
-          10.425249,
-          46.869244
+          10.419061,
+          46.868784
         ],
         "type": "Point"
       },
@@ -107,7 +108,7 @@
       "type": "Feature",
       "properties": {
         "Icon": "stand5",
-        "Ico": "loc"
+        "Ico": "stand5"
       },
       "geometry": {
         "coordinates": [
@@ -136,7 +137,8 @@
     {
       "type": "Feature",
       "properties": {
-        "Icon": "startGipfelstuermer"
+        "Icon": "startGipfelstuermer",
+        "art": "loc"
       },
       "geometry": {
         "coordinates": [
@@ -155,8 +157,8 @@
       },
       "geometry": {
         "coordinates": [
-          10.419683,
-          46.869141
+          10.426024,
+          46.87193
         ],
         "type": "Point"
       },
@@ -170,8 +172,8 @@
       },
       "geometry": {
         "coordinates": [
-          10.425978,
-          46.871962
+          10.425086,
+          46.869033
         ],
         "type": "Point"
       },
@@ -181,7 +183,7 @@
       "type": "Feature",
       "properties": {
         "Icon": "stand4",
-        "art": "loc"
+        "art": "stand4"
       },
       "geometry": {
         "coordinates": [

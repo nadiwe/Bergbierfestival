@@ -192,10 +192,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("labels").appendChild(kreis);
 
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/bier.png");
-                      bild.setAttribute("alt", "bieraEngiadinaisa");
-                      bild.setAttribute("id", "bieraEngiadinaisa");
-                      bild.setAttribute("onclick", "infoblock()");
+                      bild.setAttribute("src", "./footage/startBier.png");
+                      bild.setAttribute("alt", "startBier");
+                      bild.setAttribute("id", "startBier");
+                      bild.setAttribute("onclick", "gifStart()");
                       bild.setAttribute("class","added");
                       document.getElementById("circle").appendChild(bild);
 
@@ -415,9 +415,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                    case   'foto3':  
 
                    var rumantsch = document.createElement("H1");
-                        rumantsch.innerHTML = "Rumantsch, nossa lingua";
+                        rumantsch.innerHTML = "Rumauntsch <br> nossa lingua";
                         rumantsch.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(rumantsch);
+
+                        var rumantschD = document.createElement("P");
+                        rumantschD.innerHTML = "Rätoromanisch unsere Sprache! Wieso nicht das nächste Bier auf romanisch bestellen?";
+                        rumantschD.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(rumantschD);
+
+                       
+
+                        var rumantsch = document.createElement("H2");
+                        rumantsch.innerHTML = "<i>“Tschüffa üna biera gronda?”</i>";
+                        rumantsch.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(rumantsch);
+                        var rumantschL = document.createElement("A");
+                        rumantschL.innerHTML = "www.curs.ch";
+                        rumantschL.href = "https://www.curs.ch/biera"; 
+                        rumantschL.setAttribute("class", "added");
+                        document.getElementById("labels").appendChild(rumantschL);     
 
                         var foto = document.createElement("IMG");
                         foto.setAttribute("src", "./img/memories/foto3.jpg");
@@ -431,11 +448,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         rumantschT.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(rumantschT);
 
-                        var rumantschL = document.createElement("A");
-                        rumantschL.innerHTML = "www.curs.ch";
-                        rumantschL.href = "https://www.curs.ch/biera"; 
-                        rumantschL.setAttribute("class", "added");
-                        document.getElementById("labels").appendChild(rumantschL);                       
+                                 
                         break;
 
                     case   'blue':   
@@ -776,7 +789,14 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        break;
       }
     }
+//
+function gifStart(){
+  var bild = document.getElementById("startBier");
+  bild.setAttribute("src", "./footage/startBier.gif");
 
+
+
+}
 //Overview - popup desapear
     function back(){
         document.getElementById('hidden').style.display = 'none';

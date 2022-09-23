@@ -113,6 +113,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         
 //Overview - appear 
     map.on('click', 'locations', (e) =>  {
+      back();
+      backToOverview();
+
             $('#labels').empty();
              setImg = e.features[0].properties.Icon;
             console.log(setImg);
@@ -228,6 +231,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
 
+                      var kreis = document.createElement("div");
+                      kreis.setAttribute("class", "added");
+                      kreis.setAttribute("id","circle2");
+                      document.getElementById("labels").appendChild(kreis);
+                      
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./footage/tier.png");
+                      bild.setAttribute("alt", "paurariaRiatsch");
+                      bild.setAttribute("id", "paurariaRiatsch");
+                      bild.setAttribute("class", "added");
+                      bild.setAttribute("onclick", "infoblock()");
+                      document.getElementById("circle2").appendChild(bild);
+
                       document.getElementById("hidden").style.width = "47vw";
                       document.getElementById("hidden").style.backgroundColor = 'transparent';
 
@@ -333,7 +349,24 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                             document.getElementById("hidden").style.backgroundColor = 'transparent';
   
                             break;
-                        
+                    case   'stand8':
+                              var kreis = document.createElement("div");
+                              kreis.setAttribute("class", "added");
+                              kreis.setAttribute("id","circle");
+                              document.getElementById("labels").appendChild(kreis);
+                             
+                              var bild = document.createElement("IMG");
+                              bild.setAttribute("src", "./footage/startBier.gif");
+                              bild.setAttribute("alt", "startBier");
+                              bild.setAttribute("onclick", "infoblock()");
+                              bild.setAttribute("class","added");
+                              document.getElementById("circle").appendChild(bild);
+                              var kreis = document.createElement("div");
+      
+                              document.getElementById("hidden").style.width = "47vw";
+                              document.getElementById("hidden").style.backgroundColor = 'transparent';
+    
+                              break;    
                     case   'foto1': 
                     var bunTschlin = document.createElement("H1");
                     bunTschlin.innerHTML = "Bun Tschlin";
@@ -508,8 +541,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        
        document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
 
-       break;
-       
+       break;     
        case   'bieraEngiadinaisa':
 
        var bieraEngiadinaisa = document.createElement("H1");
@@ -731,10 +763,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        website.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(website);   
        case   'simmentaler':
-        var standBioSchorta = document.createElement("H1");
-       standBioSchorta.innerHTML = "Simmentaler Bier";
-       standBioSchorta.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(standBioSchorta);
+        var simmentaler = document.createElement("H1");
+        simmentaler.innerHTML = "Simmentaler Bier";
+        simmentaler.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(simmentaler);
+       break;
+       case   'paurariaRiatsch':
+        var paurariaRiatsch = document.createElement("H1");
+        paurariaRiatsch.innerHTML = "Pauraria Riatsch";
+        paurariaRiatsch.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(paurariaRiatsch);
        break;
       }
     }

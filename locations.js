@@ -355,13 +355,15 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                               kreis.setAttribute("id","circle");
                               document.getElementById("labels").appendChild(kreis);
                              
-                              var bild = document.createElement("IMG");
-                              bild.setAttribute("src", "./footage/startBier.gif");
-                              bild.setAttribute("alt", "startBier");
-                              bild.setAttribute("onclick", "infoblock()");
-                              bild.setAttribute("class","added");
-                              document.getElementById("circle").appendChild(bild);
-                              var kreis = document.createElement("div");
+                           
+
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./footage/startBier.png");
+                      bild.setAttribute("alt", "startBier");
+                      bild.setAttribute("id", "startBier");
+                      bild.setAttribute("onclick", "gifStart()");
+                      bild.setAttribute("class","added");
+                      document.getElementById("circle").appendChild(bild);
       
                               document.getElementById("hidden").style.width = "47vw";
                               document.getElementById("hidden").style.backgroundColor = 'transparent';

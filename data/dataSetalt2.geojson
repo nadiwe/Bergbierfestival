@@ -7,27 +7,12 @@
       },
       "geometry": {
         "coordinates": [
-          10.423027,
-          46.868167
+          10.422906,
+          46.868087
         ],
         "type": "Point"
       },
       "id": "07d1296a6c61de55fac38564fab60ad2"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "Icon": "stand8",
-        "art": "loc"
-      },
-      "geometry": {
-        "coordinates": [
-          10.370954,
-          46.867692
-        ],
-        "type": "Point"
-      },
-      "id": "0b03e3f6db11480ec7386a51e22d66b2"
     },
     {
       "type": "Feature",
@@ -96,8 +81,8 @@
       },
       "geometry": {
         "coordinates": [
-          10.40287,
-          46.844514
+          10.401619,
+          46.844231
         ],
         "type": "Point"
       },
@@ -111,8 +96,8 @@
       },
       "geometry": {
         "coordinates": [
-          10.425032,
-          46.868417
+          10.425249,
+          46.869244
         ],
         "type": "Point"
       },
@@ -122,12 +107,12 @@
       "type": "Feature",
       "properties": {
         "Icon": "stand5",
-        "art": "loc"
+        "Ico": "loc"
       },
       "geometry": {
         "coordinates": [
-          10.399638,
-          46.85243
+          10.38121,
+          46.833334
         ],
         "type": "Point"
       },
@@ -170,8 +155,8 @@
       },
       "geometry": {
         "coordinates": [
-          10.397795,
-          46.866041
+          10.419683,
+          46.869141
         ],
         "type": "Point"
       },
@@ -185,8 +170,8 @@
       },
       "geometry": {
         "coordinates": [
-          10.406833,
-          46.861715
+          10.425978,
+          46.871962
         ],
         "type": "Point"
       },
@@ -200,8 +185,8 @@
       },
       "geometry": {
         "coordinates": [
-          10.3993,
-          46.861829
+          10.383662,
+          46.835737
         ],
         "type": "Point"
       },
@@ -215,8 +200,8 @@
       "geometry": {
         "coordinates": [
           [
-            10.423033,
-            46.868171
+            10.422942,
+            46.868119
           ],
           [
             10.42333,
@@ -1054,28 +1039,13 @@
     {
       "type": "Feature",
       "properties": {
-        "Icon": "stand6",
-        "art": "loc"
-      },
-      "geometry": {
-        "coordinates": [
-          10.399923,
-          46.840982
-        ],
-        "type": "Point"
-      },
-      "id": "bf81666c5b78527bd88fff9643299f8e"
-    },
-    {
-      "type": "Feature",
-      "properties": {
         "Icon": "foto3",
         "art": "foto"
       },
       "geometry": {
         "coordinates": [
-          10.42643,
-          46.869985
+          10.426453,
+          46.869939
         ],
         "type": "Point"
       },

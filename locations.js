@@ -196,6 +196,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("class","added");
                       document.getElementById("circle").appendChild(bild);
 
+                      var kreis = document.createElement("div");
+                      kreis.setAttribute("class", "added");
+                      kreis.setAttribute("id","circle2");
+                      document.getElementById("labels").appendChild(kreis);
+                      
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./footage/tier.png");
+                      bild.setAttribute("alt", "standBioSchorta");
+                      bild.setAttribute("id", "standBioSchorta");
+                      bild.setAttribute("class", "added");
+                      bild.setAttribute("onclick", "infoblock()");
+                      document.getElementById("circle2").appendChild(bild);
+
                       document.getElementById("hidden").style.width = "47vw";
                       document.getElementById("hidden").style.backgroundColor = 'transparent';
 
@@ -209,8 +222,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                      
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./footage/bier.png");
-                      bild.setAttribute("alt", "bierariaTschlinSA");
-                      bild.setAttribute("id", "bierariaTschlinSA");
+                      bild.setAttribute("alt", "simmentaler");
+                      bild.setAttribute("id", "simmentaler");
                       bild.setAttribute("class","added");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
@@ -227,25 +240,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
  
                         var bild = document.createElement("IMG");
                         bild.setAttribute("src", "./footage/bier.png");
-                        bild.setAttribute("alt", "doppelleuBoxerAG");
-                        bild.setAttribute("id", "doppelleuBoxerAG");
+                        bild.setAttribute("alt", "mundart");
+                        bild.setAttribute("id", "mundart");
                         bild.setAttribute("onclick", "infoblock()");
                         bild.setAttribute("class","added");
                         document.getElementById("circle").appendChild(bild);
-
-                        var kreis = document.createElement("div");
-                        kreis.setAttribute("class", "added");
-                        kreis.setAttribute("id","circle2");
-                        document.getElementById("labels").appendChild(kreis);
-                        
-                        var bild = document.createElement("IMG");
-                        bild.setAttribute("src", "./footage/tier.png");
-                        bild.setAttribute("alt", "standBioSchorta");
-                        bild.setAttribute("id", "standBioSchorta");
-                        bild.setAttribute("class", "added");
-                        bild.setAttribute("onclick", "infoblock()");
-                        document.getElementById("circle2").appendChild(bild);
-
                        
                         document.getElementById("hidden").style.width = "47vw";
                         document.getElementById("hidden").style.backgroundColor = 'transparent';
@@ -260,11 +259,24 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
  
                         var bild = document.createElement("IMG");
                         bild.setAttribute("src", "./footage/bier.png");
-                        bild.setAttribute("alt", "bierVisionMonstein");
-                        bild.setAttribute("id", "bierVisionMonstein");
+                        bild.setAttribute("alt", "bieraEngiadinaisa");
+                        bild.setAttribute("id", "bieraEngiadinaisa");
                         bild.setAttribute("onclick", "infoblock()");
                         bild.setAttribute("class","added");
                         document.getElementById("circle").appendChild(bild);
+
+                        var kreis = document.createElement("div");
+                        kreis.setAttribute("class", "added");
+                        kreis.setAttribute("id","circle2");
+                        document.getElementById("labels").appendChild(kreis);
+
+                        var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./footage/fleisch.png");
+                      bild.setAttribute("alt", "zanetti");
+                      bild.setAttribute("id", "zanetti");
+                      bild.setAttribute("class", "added");
+                      bild.setAttribute("onclick", "infoblock()");
+                      document.getElementById("circle2").appendChild(bild);
 
                         document.getElementById("hidden").style.width = "47vw";
                         document.getElementById("hidden").style.backgroundColor = 'transparent';
@@ -279,8 +291,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                          
                           var bild = document.createElement("IMG");
                           bild.setAttribute("src", "./footage/bier.png");
-                          bild.setAttribute("alt", "mundart");
-                          bild.setAttribute("id", "mundart");
+                          bild.setAttribute("alt", "bierVisionMonstein");
+                          bild.setAttribute("id", "bierVisionMonstein");
                           bild.setAttribute("onclick", "infoblock()");
                           bild.setAttribute("class","added");
                           document.getElementById("circle").appendChild(bild);
@@ -289,6 +301,38 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                           document.getElementById("hidden").style.backgroundColor = 'transparent';
 
                           break;
+                    case   'stand6':
+                            var kreis = document.createElement("div");
+                            kreis.setAttribute("class", "added");
+                            kreis.setAttribute("id","circle");
+                            document.getElementById("labels").appendChild(kreis);
+                           
+                            var bild = document.createElement("IMG");
+                            bild.setAttribute("src", "./footage/bier.png");
+                            bild.setAttribute("alt", "doppelleuBoxerAG");
+                            bild.setAttribute("id", "doppelleuBoxerAG");
+                            bild.setAttribute("onclick", "infoblock()");
+                            bild.setAttribute("class","added");
+                            document.getElementById("circle").appendChild(bild);
+                            var kreis = document.createElement("div");
+                            
+                            var kreis = document.createElement("div");
+                            kreis.setAttribute("class", "added");
+                            kreis.setAttribute("id","circle2");
+                            document.getElementById("labels").appendChild(kreis);
+
+                            var bild = document.createElement("IMG");
+                            bild.setAttribute("src", "./footage/kunfi.png");
+                            bild.setAttribute("alt", "etter");
+                            bild.setAttribute("id", "etter");
+                            bild.setAttribute("class", "added");
+                            bild.setAttribute("onclick", "infoblock()");
+                            document.getElementById("circle2").appendChild(bild);
+    
+                            document.getElementById("hidden").style.width = "47vw";
+                            document.getElementById("hidden").style.backgroundColor = 'transparent';
+  
+                            break;
                         
                     case   'foto1': 
                     var bunTschlin = document.createElement("H1");
@@ -439,19 +483,15 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         console.log(stand);
        
          switch(stand){
-       case   'fleisch': 
+       case   'zanetti': 
 
                 var fleisch = document.createElement("H1");
-                fleisch.innerHTML = "Fleisch";
+                fleisch.innerHTML = "Bacharia Zanetti";
                 fleisch.setAttribute("class", "added");
                 document.getElementById("labelsInfo").appendChild(fleisch);
          
-                var fleischT = document.createElement("P");
-                fleischT.innerHTML =        "Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften";
-                fleischT.setAttribute("class", "added");
-                document.getElementById("labelsInfo").appendChild(fleischT);
+               
                 
-                document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
          break;
 
        case   'kaese': 
@@ -557,11 +597,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        doppelleuBoxerAG.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(doppelleuBoxerAG);
 
-       var bild = document.createElement("IMG");
-       bild.setAttribute("src", "./img/logo/doppelleu.png");
-       bild.setAttribute("class","added");
-       document.getElementById("labelsInfo").appendChild(bild);
-
        var doppelleuBoxerAGT = document.createElement("P");
        doppelleuBoxerAGT.innerHTML = "2012 gegründet, verheiratete sich die Doppelleu Brauwerkstatt AG mit der Bière du Boxer S.A. im Jahr 2017. So entstand die dynamische Doppelleu Boxer AG. Mit der Vision, die qualitativ hochwertigsten Biere in grosser und abwechslungsreicher Vielfalt zu produzieren sind unsere Mitarbeitenden gefordert, immer wieder neue Wege zu gehen. Diverse – auch internationale – Auszeichnungen bestätigen den Erfolg.";
        doppelleuBoxerAGT.setAttribute("class", "added");
@@ -647,9 +682,26 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        mundart.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(mundart);
 
+       
 
        break;
+       case   'etter': 
+       var etter = document.createElement("H1");
+       etter.innerHTML = "Prodots Etter";
+       etter.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(etter);
 
+       var bild = document.createElement("IMG");
+       bild.setAttribute("src", "./img/logo/peEtter.jpg");
+       bild.setAttribute("class","added");
+       document.getElementById("labelsInfo").appendChild(bild);
+
+       var etterP = document.createElement("P");
+       etterP.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
+       etterP.innerHTML = "Vom Baum, aus dem Kräutergarten oder von der Kuh: Im Weiler San Niclà rechts des Inn gibts Lebensmittel direkt vom Hof. <br><br>Konfitüren, Minzensirup, Johannisbeerlikör, eigene Salsize und eigener Käse: Bei Etters ist alles selbstgemacht und geht aus dem vielfältigen Bauern- betrieb hervor. Das Sortiment variiert je nach Saison."
+       etterP.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(etterP);
+       break;
        case   'standBioSchorta': 
 
        var standBioSchorta = document.createElement("H1");
@@ -678,7 +730,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        website.href = "https://buntschlin.ch/betriebe/bio-schorta/#"; 
        website.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(website);   
-
+       case   'simmentaler':
+        var standBioSchorta = document.createElement("H1");
+       standBioSchorta.innerHTML = "Simmentaler Bier";
+       standBioSchorta.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(standBioSchorta);
+       break;
       }
     }
 

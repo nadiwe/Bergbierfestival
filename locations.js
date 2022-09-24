@@ -470,6 +470,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("labels").appendChild(foto);
 
                         document.getElementById("hidden").style.width = "55vw";
+                        document.getElementById("hidden").style.height = "53vh";
 
                         break;
                         
@@ -796,14 +797,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 function gifStart(){
   var bild = document.getElementById("startBier");
   bild.setAttribute("src", "./footage/startBier.gif");
-
-
-
 }
 //Overview - popup desapear
     function back(){
         document.getElementById('hidden').style.display = 'none';
         document.getElementById("hidden").style.width = "87vw";
+        document.getElementById("hidden").style.height = "67vh";
+
         document.getElementById("hidden").style.backgroundColor = '#c68d2e';
 
 

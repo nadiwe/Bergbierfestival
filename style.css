@@ -43,6 +43,9 @@ img {
     z-index: 1;
 }
 
+a {
+    color: black;
+}
 
 
 
@@ -57,7 +60,7 @@ img {
 
 .imgBar {
     top: 9vh;
-    height: auto;
+    height: 67vh;
     max-height: 80vh;
     right: 0;
     width: 87vw;
@@ -70,11 +73,28 @@ img {
     padding: 0 0 3vh 2vh;
 }
 
-
-
-a {
-    color: black;
+.BarInfo {
+    background-color: #bcb48c;
+    height: 67vh;
+    width: 87vw;
+    z-index: 3;
+    right: 0;
+    position: absolute;
+    top: 9vh;
+    display: none;
+    opacity: 1;
+    border-radius: 1vw 1vw 1vw 10vw;
+    overflow: scroll;
 }
+
+#labelsInfo {
+
+    overflow: scroll;
+    margin: 8vh 3vh 8vh 3vh;
+}
+
+
+
 
 .arrow {
 
@@ -137,26 +157,7 @@ fotos {
 }
 
 
-.BarInfo {
-    background-color: #bcb48c;
-    height: 67vh;
-    right: 0;
-    width: 87vw;
-    z-index: 3;
-    position: absolute;
-    right: 4vw;
-    top: 9vh;
-    display: none;
-    opacity: 1;
-    border-radius: 1vw 1vw 1vw 10vw;
-    overflow: scroll;
-}
 
-#labelsInfo {
-
-    overflow: scroll;
-    margin: 8vh 3vh 8vh 3vh;
-}
 
 #blue {
     height: fit-content;

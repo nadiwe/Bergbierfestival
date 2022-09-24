@@ -469,7 +469,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         foto.setAttribute("id", "blue");
                         document.getElementById("labels").appendChild(foto);
 
-                        document.getElementById("hidden").style.width = "50vw";
+                        document.getElementById("hidden").style.width = "55vw";
 
                         break;
                         
@@ -776,7 +776,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        website.innerHTML = "www.buntschlin.ch";
        website.href = "https://buntschlin.ch/betriebe/bio-schorta/#"; 
        website.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(website);   
+       document.getElementById("labelsInfo").appendChild(website); 
+       break;  
        case   'simmentaler':
         var simmentaler = document.createElement("H1");
         simmentaler.innerHTML = "Simmentaler Bier";

@@ -174,38 +174,7 @@ a {
 
 }
 
-@media (min-width:680px) {
-    .imgBar {
-        width: 27vw;
-        padding: 7vh 4vh 3vh 2vh;
-    }
 
-    #circle {
-        width: 18vw;
-        height: 18vw;
-    }
-
-    #circle2 {
-        width: 18vw;
-        height: 18vw;
-    }
-
-    #arrow {
-        top: 11vh;
-        right: 2vw;
-
-    }
-
-    .line {
-        width: 5vw;
-        height: 0.5vw;
-    }
-
-    #labels {
-        margin: 0px 0 40px 2vh;
-    }
-
-}
 
 #icons {
 
@@ -259,5 +228,40 @@ a {
 
 #hidden {
     background-color: #c68d2e;
+
+}
+
+
+
+@media (min-width:680px) {
+    .imgBar {
+        width: 27vw;
+        padding: 7vh 4vh 3vh 2vh;
+    }
+
+    #circle {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    #circle2 {
+        width: 18vw;
+        height: 18vw;
+    }
+
+    #arrow {
+        top: 11vh;
+        right: 2vw;
+
+    }
+
+    .line {
+        width: 5vw;
+        height: 0.5vw;
+    }
+
+    #labels {
+        margin: 0px 0 40px 2vh;
+    }
 
 }

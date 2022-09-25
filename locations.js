@@ -60,25 +60,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             center: [posLo, posLa]
             });
             document.getElementById('circleNavi').style.backgroundColor = 'rgb(7, 98, 245)';  
-        }     
-
-
-       
-
-
-        
-          
-          
+        }      
           
       // var walk = navigator.geolocation.watchPosition(successCallback,errorCallback,options);
      //Source for User Location   
      
 
-           
-               
- 
-
-
+          
 
 //implement data - location points 
             map.on('load', () => {
@@ -540,23 +528,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
          
                
                 
-         break;
-
-       case   'kaese': 
-
-       var kaese = document.createElement("H1");
-       kaese.innerHTML = "Käse";
-       kaese.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(kaese);
-
-       var kaeseT = document.createElement("P");
-       kaeseT.innerHTML =        "Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften";
-       kaeseT.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(kaeseT);
-       
-       document.getElementById("hiddenInfo").style.backgroundColor = '#a6d1dd';
-
-       break;     
+         break;    
        case   'bieraEngiadinaisa':
 
        var bieraEngiadinaisa = document.createElement("H1");
@@ -790,9 +762,24 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         paurariaRiatsch.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(paurariaRiatsch);
        break;
+      
+      
       }
     }
 //
+function infosGeneral(){
+  
+  document.getElementById("hiddenInfoGeneral").style.display = "block";
+  
+
+    var infosGeneral = document.createElement("H1");
+    infosGeneral.innerHTML = "Infos";
+    infosGeneral.setAttribute("class", "added");
+   document.getElementById("labelsInfo").appendChild(infosGeneral);
+  
+  
+}
+
 function gifStart(){
   var bild = document.getElementById("startBier");
   bild.setAttribute("src", "./footage/startBier.gif");
@@ -812,5 +799,7 @@ function gifStart(){
 //Detail inormation - desapear
     function backToOverview(){
         document.getElementById("hiddenInfo").style.display = "none";
+        document.getElementById("hiddenInfoGeneral").style.display = "none";
+
         $('#labelsInfo').empty();
     }

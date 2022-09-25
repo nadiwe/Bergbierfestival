@@ -100,6 +100,22 @@ a {
     overflow: scroll;
 }
 
+#hiddenInfoGeneral {
+
+    background-color: #bcb48c;
+    height: 67vh;
+    max-height: 67vh;
+    width: 87vw;
+    z-index: 2;
+    right: 0;
+    position: absolute;
+    top: 9vh;
+    display: none;
+    opacity: 1;
+    border-radius: 1vw 1vw 1vw 10vw;
+    overflow: scroll;
+}
+
 #labelsInfo {
 
     overflow: scroll;
@@ -234,7 +250,7 @@ a {
 
 #hidden {
     background-color: #847f62;
-
+    display: none;
 }
 
 

@@ -47,7 +47,15 @@ a {
     color: black;
 }
 
+#banner {
+    z-index: 3;
+    position: absolute;
+}
 
+#bergmassiv {
+    bottom: 0;
+    position: absolute;
+}
 
 
 
@@ -101,8 +109,8 @@ a {
     position: fixed;
     width: 4vw;
     height: 4vw;
-    padding-top: 4vh;
-    right: 6.5vw;
+    padding-top: 11vh;
+    right: 3.5vw;
     z-index: 2;
 }
 
@@ -147,14 +155,10 @@ a {
     justify-content: center;
     align-content: center;
     flex-direction: column;
-    margin: 8vh 2vh 0 0vh;
+    margin: 8vh 7vh 0 0vh;
 }
 
-fotos {
-    object-fit: cover;
-    height: 60vh;
 
-}
 
 
 
@@ -166,6 +170,7 @@ fotos {
 .loc {
     position: absolute;
     display: block;
+    z-index: 1;
 
 }
 
@@ -202,37 +207,48 @@ fotos {
 
 }
 
-#find-me {
+#icons {
 
     position: relative;
     display: flex;
+    bottom: 4vh;
     justify-content: center;
     align-items: center;
 
 }
 
-#circleOut {
-    position: absolute;
-    width: 8vw;
-    height: 8vw;
-    border-radius: 10vw;
-    border: 2px solid #bfc0c0;
+
+
+#circleNavi {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 1vw;
+    background-color: #ffffff;
 }
 
-#circleIn {
-    position: absolute;
-    width: 6vw;
-    height: 6vw;
-    border-radius: 6vw;
-    background-color: #bfc0c0;
+#circleNavi img {
+    margin: 0;
+}
 
+#circleGeneral {
+    width: 10vw;
+    height: 10vw;
+    border-radius: 1vw;
+    background-color: #ffffff;
+}
+
+#circleGeneral h1 {
+    text-align: center;
 }
 
 .loc {
     position: absolute;
-    right: 5vh;
-    top: 5vh;
+    bottom: 0;
+    right: 4vw;
 }
+
+
+
 
 .marker {
     width: 8vw;

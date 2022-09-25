@@ -14,8 +14,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
             container: 'map',
             style: 'mapbox://styles/nwfwsb/cl4srws8i002p14lp3up2ng3d',
-            center: [10.423259, 46.86909],
-            zoom: 15,
+            center: [10.40000, 46.85009],
+            zoom: 11.5,
             //maxBounds: bounds
         });
         
@@ -59,8 +59,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         map.flyTo({
             center: [posLo, posLa]
             });
-            document.getElementById('circleOut').style.border = '2px solid  rgb(7, 98, 245)';
-            document.getElementById('circleIn').style.backgroundColor = 'rgb(7, 98, 245)';  
+            document.getElementById('circleNavi').style.backgroundColor = 'rgb(7, 98, 245)';  
         }     
 
 
@@ -100,7 +99,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     'paint': {
                     'circle-radius': 20,
                     'circle-color': 'blue',
-                    'circle-opacity': 0.5
+                    'circle-opacity': 0
                     },
                 'filter': ['==', '$type', 'Point']
 

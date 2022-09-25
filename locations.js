@@ -513,7 +513,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         foto4.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(foto4);
 
-                        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+                        document.getElementById("hidden").style.backgroundColor = '#847f62';
                         break;
             }
             
@@ -801,9 +801,9 @@ function gifStart(){
     function back(){
         document.getElementById('hidden').style.display = 'none';
         document.getElementById("hidden").style.width = "87vw";
-        document.getElementById("hidden").style.height = "67vh";
+        document.getElementById("hidden").style.height = "auto";
 
-        document.getElementById("hidden").style.backgroundColor = '#c68d2e';
+        document.getElementById("hidden").style.backgroundColor = '#847f62';
 
 
         $('#labels').empty();

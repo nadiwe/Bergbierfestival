@@ -68,8 +68,8 @@ a {
 
 .imgBar {
     top: 9vh;
-    height: 67vh;
-    max-height: 80vh;
+    height: auto;
+    max-height: 67vh;
     right: 0;
     width: 87vw;
     overflow: auto;
@@ -83,9 +83,10 @@ a {
 
 .BarInfo {
     background-color: #bcb48c;
-    height: 67vh;
+    height: auto;
+    max-height: 67vh;
     width: 87vw;
-    z-index: 3;
+    z-index: 2;
     right: 0;
     position: absolute;
     top: 9vh;
@@ -227,7 +228,7 @@ a {
 }
 
 #hidden {
-    background-color: #c68d2e;
+    background-color: #847f62;
 
 }
 

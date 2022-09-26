@@ -40,7 +40,7 @@ img {
     height: 100%;
     object-fit: contain;
     margin: 1vh 0 1vh;
-    z-index: 1;
+
 }
 
 a {
@@ -72,6 +72,7 @@ a {
 
 .imgBar {
     top: 9vh;
+    z-index: 1;
     height: auto;
     max-height: 67vh;
     right: 0;

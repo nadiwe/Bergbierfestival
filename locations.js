@@ -165,7 +165,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         text.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(text);
 
-                      document.getElementById("hidden").style.backgroundColor = '#c5bc20';
+                      document.getElementById("hidden").style.backgroundColor = '#847f62';
 
                   
                  

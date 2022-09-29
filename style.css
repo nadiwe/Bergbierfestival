@@ -86,7 +86,7 @@ a {
     padding: 0 0 3vh 2vh;
 }
 
-.BarInfo {
+.textBar {
     background-color: #bcb48c;
     height: auto;
     max-height: 67vh;
@@ -111,16 +111,54 @@ a {
     right: 0;
     position: absolute;
     top: 9vh;
-    display: none;
+    display: block;
     opacity: 1;
     border-radius: 1vw 1vw 1vw 10vw;
     overflow: scroll;
+
 }
 
 #labelsInfo {
 
     overflow: scroll;
     margin: 8vh 3vh 8vh 3vh;
+}
+
+#labelsGeneral {
+    overflow: scroll;
+    margin: 8vh 3vh 8vh 3vh;
+
+}
+
+#labelsGeneral img {
+    width: 10%;
+}
+
+.legende {
+    display: flex;
+    flex-direction: column;
+}
+
+.legende div {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.legende img {
+    margin: 1em;
+}
+
+#standIcon {
+    width: 2em;
+    height: 2em;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: #847f62;
+    stroke: #ffffff;
+
+    stroke-width: 2;
 }
 
 

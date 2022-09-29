@@ -49,6 +49,14 @@ a {
     color: black;
 }
 
+p {
+    hyphens: auto;
+
+}
+
+
+
+
 #banner {
     z-index: 3;
     position: absolute;
@@ -57,10 +65,41 @@ a {
 #bergmassiv {
     bottom: -5px;
     position: absolute;
+    display: block;
+
 }
 
 #bergmassiv img {
+
     margin: 0;
+    z-index: 2;
+    position: relative;
+}
+
+
+
+svg {
+    bottom: 0;
+    z-index: 1;
+
+    fill: #000000;
+    position: absolute;
+
+}
+
+#textHoehenprofil {
+    bottom: 18vh;
+    width: 100%;
+    z-index: 2;
+    margin-left: 2em;
+    display: block;
+    justify-content: center;
+    color: #ffffff;
+    position: fixed;
+}
+
+.hiddeBergprofil {
+    opacity: 0;
 }
 
 
@@ -228,7 +267,7 @@ a {
 .loc {
     position: absolute;
     display: block;
-    z-index: 2;
+    z-index: 3;
 
 }
 
@@ -288,6 +327,12 @@ a {
 #hidden {
     background-color: #847f62;
     display: none;
+}
+
+#starBier {
+    display: none;
+    z-index: 5;
+    position: absolute;
 }
 
 

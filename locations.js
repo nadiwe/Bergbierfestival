@@ -172,13 +172,15 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                   break;
                  
                     case   'stand1':
+                    
+                     // startBierF();
 
                       var kreis = document.createElement("div");
                       kreis.setAttribute("class", "added");
                       kreis.setAttribute("id","circle");
                       document.getElementById("labels").appendChild(kreis);
 
-                      startBier();
+                      
 
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./footage/startBier.png");
@@ -1005,6 +1007,7 @@ function bergwanderungInfos(){
 
 }
 
-function  startBier(){
+ 
 
-}
+
+

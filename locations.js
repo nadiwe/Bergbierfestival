@@ -236,42 +236,34 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                       break;
                     case   'stand3':
-                      $('#labelsInfo').empty();
-                      document.getElementById("hidden").style.display = "none";
-                      document.getElementById("hiddenInfo").style.display = "block";
+                      var kreis = document.createElement("div");
+                      kreis.setAttribute("class", "added");
+                      kreis.setAttribute("id","circle");
+                      document.getElementById("labels").appendChild(kreis);
+                     
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./footage/bier.png");
+                      bild.setAttribute("alt", "mundart");
+                      bild.setAttribute("id", "mundart");
+                      bild.setAttribute("class","added");
+                      bild.setAttribute("onclick", "infoblock()");
+                      document.getElementById("circle").appendChild(bild);
 
-                      var mundart = document.createElement("H1");
-                      mundart.innerHTML = "Mundart";
-                      mundart.setAttribute("class", "added");
-                      document.getElementById("labelsInfo").appendChild(mundart);
-               
-                     var bild = document.createElement("IMG");
-                     bild.setAttribute("src", "./img/logo/mundart.png");
-                     bild.setAttribute("class", "added");
-                     document.getElementById("labelsInfo").appendChild(bild);
-               
-                     var mundartT = document.createElement("P");
-                     mundartT.innerHTML = "Unser erster eigener Biersud Helles Mundart Hausbier Cler Seit langer Zeit träumt Matze von einer eigenen Bierkreation. Im Juni 2019 ging mit dem eigenen Biersud dieser Traum in Erfüllung und das Mundartbier «Cler», zu Deutsch hell, ist geboren. In Zusammenarbeit mit der Bieraria Tschlin ist ein helles Bier mit einer erfrischenden, leichten Zitrusnote entstanden. <br> Unser zweiter eigener Biersud Schwarzes Mundart Hausbier Dreggsch Nachdem das helle Mundartbier bei den Gästen so gut ankam, hatte Matze die Idee auch noch ein zweites eigenes Bier zu kreieren, aber dieses Mal ein Schwarzes. Nach einigen Versuchen zusammen mit der Bieraria Tschlin entstand das schwarze Mundartbier «Dreggsch». Was heisst Dreggsch? Matzes Frau, Fabrizia, hatte die Idee dieses Bier nach etwas aus Matzes Geburtsort Dresden zu benennen. Da man in Ostdeutschland zu einem schwarzen Bier Dreggsch (dreckig) sagt, wurde dieses Bier so getauft." 
-                     mundartT.setAttribute("class", "added");
-                     document.getElementById("labelsInfo").appendChild(mundartT);
-               
-                     var website = document.createElement("A");
-                     website.innerHTML = "www.mundart-scuol.ch <br>";
-                     website.href = "https://www.mundart-scuol.ch/"; 
-                     website.setAttribute("class", "added");
-                     document.getElementById("labelsInfo").appendChild(website); 
-               
-                     var instagram = document.createElement("A");
-                     instagram.innerHTML = "Instagram <br>";
-                     instagram.href = "https://www.instagram.com/mundartscuol/"; 
-                     instagram.setAttribute("class", "added");
-                     document.getElementById("labelsInfo").appendChild(instagram); 
-               
-                     var facebook = document.createElement("A");
-                     facebook.innerHTML = "Facebook";
-                     facebook.href = "https://www.facebook.com/mundartscuol"; 
-                     facebook.setAttribute("class", "added");
-                     document.getElementById("labelsInfo").appendChild(facebook); 
+                      var kreis = document.createElement("div");
+                      kreis.setAttribute("class", "added");
+                      kreis.setAttribute("id","circle2");
+                      document.getElementById("labels").appendChild(kreis);
+                      
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./footage/fleisch.png");
+                      bild.setAttribute("alt", "matze");
+                      bild.setAttribute("id", "matze");
+                      bild.setAttribute("class", "added");
+                      bild.setAttribute("onclick", "infoblock()");
+                      document.getElementById("circle2").appendChild(bild);
+
+                      document.getElementById("hidden").style.width = "47vw";
+                      document.getElementById("hidden").style.backgroundColor = 'transparent';
 
 
                         break;
@@ -311,7 +303,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       $('#labelsInfo').empty();
                       document.getElementById("hidden").style.display = "none";
                       document.getElementById("hiddenInfo").style.display = "block";
-                      
+
                       var bierVisionMonstein = document.createElement("H1");
                       bierVisionMonstein.innerHTML = "BierVision Monstein";
                       bierVisionMonstein.setAttribute("class", "added");
@@ -393,16 +385,40 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       steimandliBier.innerHTML = "Steimandli Bier";
                       steimandliBier.setAttribute("class", "added");
                      document.getElementById("labelsInfo").appendChild(steimandliBier);
+
+                     var bild = document.createElement("IMG");
+       bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
+       bild.setAttribute("class","added");
+       document.getElementById("labelsInfo").appendChild(bild);
               
               
                      var steimandliBierT = document.createElement("P");
                      steimandliBierT.innerHTML = "Beim Grünhopfenbier, auch Wet Hop Beer genannt, wird die Hopfengabe mit frischen, ungedarrten Hopfendolden vorgenommen - innert 5 Stunden nach der Ernte. Vom Feld ins Bier sozusagen, und das möglichst ohne Umwege. Und natürlich arbeiten wir mit einheimischem Hopfen aus dem Prättigau. Das 'weltweit' einzige Bier mit Bündner Hopfen."
                      steimandliBierT.setAttribute("class", "added");
                      document.getElementById("labelsInfo").appendChild(steimandliBierT);
+
+                     var website = document.createElement("A");
+                     website.innerHTML = "www.bieraria.ch <br>";
+                     website.href = "https://www.bieraria.ch/"; 
+                     website.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(website);   
+              
+                     var instagram = document.createElement("A");
+                     instagram.innerHTML = "Instagram  <br>";
+                     instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+                     instagram.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(instagram);
+                     
+                     var facebook = document.createElement("A");
+                     facebook.innerHTML = "Facebook";
+                     facebook.href = "https://www.facebook.com/bieratschlin"; 
+                     facebook.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(facebook);
                               
   
                               break;    
-                    case   'foto1': 
+                    
+                   case   'foto1': 
                     var bunTschlin = document.createElement("H1");
                     bunTschlin.innerHTML = "Bun Tschlin";
                     bunTschlin.setAttribute("class", "added");
@@ -727,11 +743,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
        
        break;  
-       case   'bierVisionMonstein': 
-       
-
-
-       break;
        case   'etter': 
        var etter = document.createElement("H1");
        etter.innerHTML = "Prodots Etter";
@@ -849,8 +860,104 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        website.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(website); 
        break;
-    
+    case 'mundart':
+
+                      var mundart = document.createElement("H1");
+                      mundart.innerHTML = "Mundart";
+                      mundart.setAttribute("class", "added");
+                      document.getElementById("labelsInfo").appendChild(mundart);
+               
+                     var bild = document.createElement("IMG");
+                     bild.setAttribute("src", "./img/logo/mundart.png");
+                     bild.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(bild);
+               
+                     var mundartT = document.createElement("P");
+                     mundartT.innerHTML = "Unser erster eigener Biersud Helles Mundart Hausbier Cler Seit langer Zeit träumt Matze von einer eigenen Bierkreation. Im Juni 2019 ging mit dem eigenen Biersud dieser Traum in Erfüllung und das Mundartbier «Cler», zu Deutsch hell, ist geboren. In Zusammenarbeit mit der Bieraria Tschlin ist ein helles Bier mit einer erfrischenden, leichten Zitrusnote entstanden. <br> Unser zweiter eigener Biersud Schwarzes Mundart Hausbier Dreggsch Nachdem das helle Mundartbier bei den Gästen so gut ankam, hatte Matze die Idee auch noch ein zweites eigenes Bier zu kreieren, aber dieses Mal ein Schwarzes. Nach einigen Versuchen zusammen mit der Bieraria Tschlin entstand das schwarze Mundartbier «Dreggsch». Was heisst Dreggsch? Matzes Frau, Fabrizia, hatte die Idee dieses Bier nach etwas aus Matzes Geburtsort Dresden zu benennen. Da man in Ostdeutschland zu einem schwarzen Bier Dreggsch (dreckig) sagt, wurde dieses Bier so getauft." 
+                     mundartT.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(mundartT);
+               
+                     var website = document.createElement("A");
+                     website.innerHTML = "www.mundart-scuol.ch <br>";
+                     website.href = "https://www.mundart-scuol.ch/"; 
+                     website.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(website); 
+               
+                     var instagram = document.createElement("A");
+                     instagram.innerHTML = "Instagram <br>";
+                     instagram.href = "https://www.instagram.com/mundartscuol/"; 
+                     instagram.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(instagram); 
+               
+                     var facebook = document.createElement("A");
+                     facebook.innerHTML = "Facebook";
+                     facebook.href = "https://www.facebook.com/mundartscuol"; 
+                     facebook.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(facebook); 
+                     break;
+      case 'matze':
+        var matze = document.createElement("H1");
+        matze.innerHTML = "«Cullas da Vnà» – Kugeln von Vnà";
+        matze.setAttribute("class", "added");
+        document.getElementById("labelsInfo").appendChild(matze);
+
+        var matzeT = document.createElement("P");
+        matzeT.innerHTML = "Cuschina Engiadinaisa - Engadiner Esskultur <br> Jede Familie hat ihre eigene Esstraditionen und die besten Familienrezepte werden von Generation zu Generation weitergegeben. Hier am Stand von Matze kommt ihr in den Genuss der 'Cullas da Vnà' - wie der Name bereits verrät, haben diese ihren Ursprung in Vnà. Für diejenigen von euch, die nicht genug davon bekommen, hier das Rezept zum selber machen! "
+        matzeT.setAttribute("class", "added");
+        document.getElementById("labelsInfo").appendChild(matzeT);
+
+        var zutaten = document.createElement("H2");
+        zutaten.innerHTML = "Zutaten";
+        zutaten.setAttribute("class", "added");
+        document.getElementById("labelsInfo").appendChild(zutaten);
+
       
+        var zutatenU = document.createElement("UL");
+        zutatenU.setAttribute("id","ul")
+        zutatenU.setAttribute("class", "added");
+        document.getElementById("labelsInfo").appendChild(zutatenU);
+
+        var zutatenL = document.createElement("LI");
+        zutatenL.innerHTML = "10 rohe Kartoffeln"
+        zutatenL.setAttribute("class", "added");
+        document.getElementById("ul").appendChild(zutatenL);
+
+        var zutatenL1 = document.createElement("LI");
+        zutatenL1.innerHTML = "200 g Speck"
+        zutatenL1.setAttribute("class", "added");
+        document.getElementById("ul").appendChild(zutatenL1);
+
+        var zutatenL2 = document.createElement("LI");
+        zutatenL2.innerHTML = "2 geräucherte Engadiner Würste"
+        zutatenL2.setAttribute("class", "added");
+        document.getElementById("ul").appendChild(zutatenL2);
+
+        var zutaten3 = document.createElement("LI");
+        zutaten3.innerHTML = "Salz, Gewürze"
+        zutaten3.setAttribute("class", "added");
+        document.getElementById("ul").appendChild(zutaten3);
+
+        var zutatenL4 = document.createElement("LI");
+        zutatenL4.innerHTML = "200 g Mehl"
+        zutatenL4.setAttribute("class", "added");
+        document.getElementById("ul").appendChild(zutatenL4);
+
+        var zutatenL5 = document.createElement("LI");
+        zutatenL5.innerHTML = "70 g Paniermehl"
+        zutatenL5.setAttribute("class", "added");
+        document.getElementById("ul").appendChild(zutatenL5);
+
+        var zubereitung = document.createElement("H2");
+        zubereitung.innerHTML = "Zubereitung";
+        zubereitung.setAttribute("class", "added");
+        document.getElementById("labelsInfo").appendChild(zubereitung);
+
+        var zubereitungT = document.createElement("P")
+        zubereitungT.innerHTML = "Die Kartoffeln schälen und mit der Bircherraffel fein raffeln. Gut abtropfen lassen. Speck und Würste in Würfeli schneiden, mit den Kartoffeln mischen. Mehl und Paniermehl dazugeben. Alles zusammen zu einem Teig vermischen, würzen. Mit 2 Esslöffeln oder mit beiden Händen Kugeln formen. Damit der Teig nicht klebt, Löffel oder Hände mit Wasser befeuchten. <br> Die Kugeln in siedendes Wasser geben. Wenn sie auftauchen, sind sie gar und man kann sie aus dem Wasser nehmen. In Butter goldgelb anbraten. <br> Reibkäse darüber streuen, mit Salat oder Gemüse servieren.";
+        zubereitungT.setAttribute("class", "added");
+        document.getElementById("labelsInfo").appendChild(zubereitungT);
+
+        break;
       }
     }
 //

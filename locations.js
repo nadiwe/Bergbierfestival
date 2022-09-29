@@ -761,6 +761,27 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         paurariaRiatsch.innerHTML = "Pauraria Riatsch";
         paurariaRiatsch.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(paurariaRiatsch);
+
+       var bild = document.createElement("IMG");
+       bild.setAttribute("src", "./img/logo/prRiatsch.jpg");
+       bild.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(bild);
+
+       var paurariaRiatschT = document.createElement("P");
+       paurariaRiatschT.innerHTML = "Berge, feinste Kräuter, glückliche Kühe: Das steckt in den Bio-Alpprodukten aus Vnà. Und nach Wunsch gibts auch eine medizinische Massage dazu.<b>Dreitausend Kilo Käse produzieren Daniela und Fadri Riatsch jede Saison auf der Alp Pradigiant oberhalb von Vnà. Er gilt als einer der besten seiner Art und begrüssen im kleinsten Käseladen der Welt Ihre Kundschaft: In einem Kühlschrank vor dem Hof.<b>"
+       paurariaRiatschT.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(paurariaRiatschT);
+
+       var paurariaRiatschA = document.createElement("P");
+       paurariaRiatschA.innerHTML = "Daniela und Fadri Riatsch Padval 211 <br> 7557 Vnà <br> Tel. +41(0)81 866 32 83 <br> bioagricultura@hotmail.com "
+       paurariaRiatschA.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(paurariaRiatschA);
+
+       var website = document.createElement("A");
+       website.innerHTML = "www.buntschlin.ch";
+       website.href = "https://buntschlin.ch/betriebe/pauraria-riatsch/#"; 
+       website.setAttribute("class", "added");
+       document.getElementById("labelsInfo").appendChild(website); 
        break;
       
       
@@ -803,3 +824,8 @@ function gifStart(){
 
         $('#labelsInfo').empty();
     }
+
+//Informations about the hike
+function bergwanderungInfos(){
+
+}

@@ -178,6 +178,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       kreis.setAttribute("id","circle");
                       document.getElementById("labels").appendChild(kreis);
 
+                      startBier();
+
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./footage/startBier.png");
                       bild.setAttribute("alt", "startBier");
@@ -1000,5 +1002,9 @@ function gifStart(){
 
 //Informations about the hike
 function bergwanderungInfos(){
+
+}
+
+function  startBier(){
 
 }

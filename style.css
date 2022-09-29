@@ -27,11 +27,13 @@ body {
 h1 {
     font-family: 'ProximaNovaAW01-Extrabold', cursive;
     margin: 0 0 2vh 0;
+    font-size: 28px;
 
 }
 
 h2 {
     margin: 0;
+    font-size: 22px;
 }
 
 img {
@@ -121,17 +123,12 @@ a {
 #labelsInfo {
 
     overflow: scroll;
-    margin: 8vh 3vh 8vh 3vh;
+    margin: 8vh 6vh 8vh 3vh;
 }
 
 #labelsGeneral {
-    overflow: scroll;
-    margin: 8vh 3vh 8vh 3vh;
+    margin: 8vh 6vh 8vh 3vh;
 
-}
-
-#labelsGeneral img {
-    width: 10%;
 }
 
 .legende {
@@ -147,7 +144,8 @@ a {
 }
 
 .legende img {
-    margin: 1em;
+    width: 20%;
+    margin-right: 4vw;
 }
 
 #standIcon {

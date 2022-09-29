@@ -521,10 +521,37 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
          switch(stand){
        case   'zanetti': 
 
-                var fleisch = document.createElement("H1");
-                fleisch.innerHTML = "Bacharia Zanetti";
-                fleisch.setAttribute("class", "added");
-                document.getElementById("labelsInfo").appendChild(fleisch);
+                var zanetti = document.createElement("H1");
+                zanetti.innerHTML = "Bacharia Zanetti";
+                zanetti.setAttribute("class", "added");
+                document.getElementById("labelsInfo").appendChild(zanetti);
+
+                var bild = document.createElement("IMG");
+                bild.setAttribute("src", "./img/logo/bzZanetti.jpg");
+                bild.setAttribute("class", "added");
+                document.getElementById("labelsInfo").appendChild(bild);
+         
+                var zanettiT = document.createElement("P");
+                zanettiT.innerHTML = "Die Metzgerei Zanetti wurde 1992 gegründet. Neben dem Trockenfleisch, das nach einer eigenen Rezeptur hergestellt wird, hat sich die Bacharia auch auf die Veredelung von Wildfleisch spezialisiert. Die Spezialitäten sind Wurstwaren (Salsiz und Siedwürste) sowie Geräuchtes. <br> Die Produkte werden nach überliefertem Rezept mit viel Liebe und Sorgfalt zubereitet. Es werden nur beste Zutaten verwendet. Das Fleisch stammt so weit möglich aus Betrieben der Region."
+                zanettiT.setAttribute("class", "added");
+                document.getElementById("labelsInfo").appendChild(zanettiT);
+         
+                var zanettiA = document.createElement("P");
+                zanettiA.innerHTML = "Bacharia Zanetti <br> Quadra Secha <br> 7556 Ramosch <br> Tel. +41 (0)81 864 86 50 <br> info@frischwild.ch"
+                zanettiA.setAttribute("class", "added");
+                document.getElementById("labelsInfo").appendChild(zanettiA);
+         
+                var websiteZ = document.createElement("A");
+                websiteZ.innerHTML = " www.frisch-wild.ch";
+                websiteZ.href = "http://www.frisch-wild.ch/"; 
+                websiteZ.setAttribute("class", "added");
+                document.getElementById("labelsInfo").appendChild(websiteZ); 
+
+                var website = document.createElement("A");
+                website.innerHTML = " www.buntschlin.ch";
+                website.href = "https://buntschlin.ch/betriebe/bacharia-zanetti/#"; 
+                website.setAttribute("class", "added");
+                document.getElementById("labelsInfo").appendChild(website); 
          
                
                 

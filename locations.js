@@ -236,21 +236,42 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                       break;
                     case   'stand3':
-                      var kreis = document.createElement("div");
-                        kreis.setAttribute("class", "added");
-                        kreis.setAttribute("id","circle");
-                        document.getElementById("labels").appendChild(kreis);
- 
-                        var bild = document.createElement("IMG");
-                        bild.setAttribute("src", "./footage/bier.png");
-                        bild.setAttribute("alt", "mundart");
-                        bild.setAttribute("id", "mundart");
-                        bild.setAttribute("onclick", "infoblock()");
-                        bild.setAttribute("class","added");
-                        document.getElementById("circle").appendChild(bild);
-                       
-                        document.getElementById("hidden").style.width = "47vw";
-                        document.getElementById("hidden").style.backgroundColor = 'transparent';
+                      $('#labelsInfo').empty();
+                      document.getElementById("hidden").style.display = "none";
+                      document.getElementById("hiddenInfo").style.display = "block";
+
+                      var mundart = document.createElement("H1");
+                      mundart.innerHTML = "Mundart";
+                      mundart.setAttribute("class", "added");
+                      document.getElementById("labelsInfo").appendChild(mundart);
+               
+                     var bild = document.createElement("IMG");
+                     bild.setAttribute("src", "./img/logo/mundart.png");
+                     bild.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(bild);
+               
+                     var mundartT = document.createElement("P");
+                     mundartT.innerHTML = "Unser erster eigener Biersud Helles Mundart Hausbier Cler Seit langer Zeit träumt Matze von einer eigenen Bierkreation. Im Juni 2019 ging mit dem eigenen Biersud dieser Traum in Erfüllung und das Mundartbier «Cler», zu Deutsch hell, ist geboren. In Zusammenarbeit mit der Bieraria Tschlin ist ein helles Bier mit einer erfrischenden, leichten Zitrusnote entstanden. <br> Unser zweiter eigener Biersud Schwarzes Mundart Hausbier Dreggsch Nachdem das helle Mundartbier bei den Gästen so gut ankam, hatte Matze die Idee auch noch ein zweites eigenes Bier zu kreieren, aber dieses Mal ein Schwarzes. Nach einigen Versuchen zusammen mit der Bieraria Tschlin entstand das schwarze Mundartbier «Dreggsch». Was heisst Dreggsch? Matzes Frau, Fabrizia, hatte die Idee dieses Bier nach etwas aus Matzes Geburtsort Dresden zu benennen. Da man in Ostdeutschland zu einem schwarzen Bier Dreggsch (dreckig) sagt, wurde dieses Bier so getauft." 
+                     mundartT.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(mundartT);
+               
+                     var website = document.createElement("A");
+                     website.innerHTML = "www.mundart-scuol.ch <br>";
+                     website.href = "https://www.mundart-scuol.ch/"; 
+                     website.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(website); 
+               
+                     var instagram = document.createElement("A");
+                     instagram.innerHTML = "Instagram <br>";
+                     instagram.href = "https://www.instagram.com/mundartscuol/"; 
+                     instagram.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(instagram); 
+               
+                     var facebook = document.createElement("A");
+                     facebook.innerHTML = "Facebook";
+                     facebook.href = "https://www.facebook.com/mundartscuol"; 
+                     facebook.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(facebook); 
 
 
                         break;
@@ -287,21 +308,48 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                         break;
                     case   'stand5':
-                          var kreis = document.createElement("div");
-                          kreis.setAttribute("class", "added");
-                          kreis.setAttribute("id","circle");
-                          document.getElementById("labels").appendChild(kreis);
-                         
-                          var bild = document.createElement("IMG");
-                          bild.setAttribute("src", "./footage/bier.png");
-                          bild.setAttribute("alt", "bierVisionMonstein");
-                          bild.setAttribute("id", "bierVisionMonstein");
-                          bild.setAttribute("onclick", "infoblock()");
-                          bild.setAttribute("class","added");
-                          document.getElementById("circle").appendChild(bild);
-  
-                          document.getElementById("hidden").style.width = "47vw";
-                          document.getElementById("hidden").style.backgroundColor = 'transparent';
+                      $('#labelsInfo').empty();
+                      document.getElementById("hidden").style.display = "none";
+                      document.getElementById("hiddenInfo").style.display = "block";
+                      
+                      var bierVisionMonstein = document.createElement("H1");
+                      bierVisionMonstein.innerHTML = "BierVision Monstein";
+                      bierVisionMonstein.setAttribute("class", "added");
+                      document.getElementById("labelsInfo").appendChild(bierVisionMonstein);
+               
+                      var bierVisionMonsteinT = document.createElement("P");
+                      bierVisionMonsteinT.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
+                      bierVisionMonsteinT.setAttribute("class", "added");
+                      document.getElementById("labelsInfo").appendChild(bierVisionMonsteinT);
+               
+                      var bieraSorten = document.createElement("H2");
+                      bieraSorten.innerHTML = "Biersorten";
+                      bieraSorten.setAttribute("class", "added");
+                      document.getElementById("labelsInfo").appendChild(bieraSorten);
+               
+                      var bieraSortenT = document.createElement("P");
+                      bieraSortenT.innerHTML = "Monsteiner Husbier - Hell, unfiltriert. Bio-Berggerst; untergärig <br> Monsteiner Mungga -  Leichtbier mit 90% Bündner Gerste; obergärig <br> Monsteiner Steinbock - Bock-Bier mit 90% Bündner Gerste; untergärig <br> Monst.Wätterguoga - Amberbier, mit Rauchmalz; Untergärig "
+                      bieraSortenT.setAttribute("class", "added");
+                      document.getElementById("labelsInfo").appendChild(bieraSortenT);
+               
+                      
+                      var website = document.createElement("A");
+                      website.innerHTML = "www.monsteiner.ch <br>";
+                      website.href = "https://monsteiner.ch/"; 
+                      website.setAttribute("class", "added");
+                      document.getElementById("labelsInfo").appendChild(website);   
+               
+                      var instagram = document.createElement("A");
+                      instagram.innerHTML = "Instagram  <br>";
+                      instagram.href = "https://www.instagram.com/monsteiner_bier/"; 
+                      instagram.setAttribute("class", "added");
+                      document.getElementById("labelsInfo").appendChild(instagram);
+                      
+                      var facebook = document.createElement("A");
+                      facebook.innerHTML = "Facebook  ";
+                      facebook.href = "https://www.facebook.com/biervision/"; 
+                      facebook.setAttribute("class", "added");
+                      document.getElementById("labelsInfo").appendChild(facebook);
 
                           break;
                     case   'stand6':
@@ -337,24 +385,22 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
   
                             break;
                     case   'stand8':
-                              var kreis = document.createElement("div");
-                              kreis.setAttribute("class", "added");
-                              kreis.setAttribute("id","circle");
-                              document.getElementById("labels").appendChild(kreis);
-                             
-                           
+                      $('#labelsInfo').empty();
+                      document.getElementById("hidden").style.display = "none";
+                      document.getElementById("hiddenInfo").style.display = "block";
 
-                      var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/startBier.png");
-                      bild.setAttribute("alt", "startBier");
-                      bild.setAttribute("id", "startBier");
-                      bild.setAttribute("onclick", "gifStart()");
-                      bild.setAttribute("class","added");
-                      document.getElementById("circle").appendChild(bild);
-      
-                              document.getElementById("hidden").style.width = "47vw";
-                              document.getElementById("hidden").style.backgroundColor = 'transparent';
-    
+                      var steimandliBier = document.createElement("H1");
+                      steimandliBier.innerHTML = "Steimandli Bier";
+                      steimandliBier.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(steimandliBier);
+              
+              
+                     var steimandliBierT = document.createElement("P");
+                     steimandliBierT.innerHTML = "Beim Grünhopfenbier, auch Wet Hop Beer genannt, wird die Hopfengabe mit frischen, ungedarrten Hopfendolden vorgenommen - innert 5 Stunden nach der Ernte. Vom Feld ins Bier sozusagen, und das möglichst ohne Umwege. Und natürlich arbeiten wir mit einheimischem Hopfen aus dem Prättigau. Das 'weltweit' einzige Bier mit Bündner Hopfen."
+                     steimandliBierT.setAttribute("class", "added");
+                     document.getElementById("labelsInfo").appendChild(steimandliBierT);
+                              
+  
                               break;    
                     case   'foto1': 
                     var bunTschlin = document.createElement("H1");
@@ -512,6 +558,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
 // Detailinformation - appear
     function infoblock(){
+      console.log('test');
         $('#labelsInfo').empty();
         document.getElementById("hiddenInfo").style.display = "block";
 
@@ -681,82 +728,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        
        break;  
        case   'bierVisionMonstein': 
-       var bierVisionMonstein = document.createElement("H1");
-       bierVisionMonstein.innerHTML = "BierVision Monstein";
-       bierVisionMonstein.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(bierVisionMonstein);
-
-       var bierVisionMonsteinT = document.createElement("P");
-       bierVisionMonsteinT.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
-       bierVisionMonsteinT.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(bierVisionMonsteinT);
-
-       var bieraSorten = document.createElement("H2");
-       bieraSorten.innerHTML = "Biersorten";
-       bieraSorten.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(bieraSorten);
-
-       var bieraSortenT = document.createElement("P");
-       bieraSortenT.innerHTML = "Monsteiner Husbier - Hell, unfiltriert. Bio-Berggerst; untergärig <br> Monsteiner Mungga -  Leichtbier mit 90% Bündner Gerste; obergärig <br> Monsteiner Steinbock - Bock-Bier mit 90% Bündner Gerste; untergärig <br> Monst.Wätterguoga - Amberbier, mit Rauchmalz; Untergärig "
-       bieraSortenT.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(bieraSortenT);
-
        
-       var website = document.createElement("A");
-       website.innerHTML = "www.monsteiner.ch <br>";
-       website.href = "https://monsteiner.ch/"; 
-       website.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(website);   
 
-       var instagram = document.createElement("A");
-       instagram.innerHTML = "Instagram  <br>";
-       instagram.href = "https://www.instagram.com/monsteiner_bier/"; 
-       instagram.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(instagram);
-       
-       var facebook = document.createElement("A");
-       facebook.innerHTML = "Facebook  ";
-       facebook.href = "https://www.facebook.com/biervision/"; 
-       facebook.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(facebook);
-
-
-       break;
-       case   'mundart': 
-
-       var mundart = document.createElement("H1");
-       mundart.innerHTML = "Mundart";
-       mundart.setAttribute("class", "added");
-       document.getElementById("labelsInfo").appendChild(mundart);
-
-      var bild = document.createElement("IMG");
-      bild.setAttribute("src", "./img/logo/mundart.png");
-      bild.setAttribute("class", "added");
-      document.getElementById("labelsInfo").appendChild(bild);
-
-      var mundartT = document.createElement("P");
-      mundartT.innerHTML = "Unser erster eigener Biersud Helles Mundart Hausbier Cler Seit langer Zeit träumt Matze von einer eigenen Bierkreation. Im Juni 2019 ging mit dem eigenen Biersud dieser Traum in Erfüllung und das Mundartbier «Cler», zu Deutsch hell, ist geboren. In Zusammenarbeit mit der Bieraria Tschlin ist ein helles Bier mit einer erfrischenden, leichten Zitrusnote entstanden. <br> Unser zweiter eigener Biersud Schwarzes Mundart Hausbier Dreggsch Nachdem das helle Mundartbier bei den Gästen so gut ankam, hatte Matze die Idee auch noch ein zweites eigenes Bier zu kreieren, aber dieses Mal ein Schwarzes. Nach einigen Versuchen zusammen mit der Bieraria Tschlin entstand das schwarze Mundartbier «Dreggsch». Was heisst Dreggsch? Matzes Frau, Fabrizia, hatte die Idee dieses Bier nach etwas aus Matzes Geburtsort Dresden zu benennen. Da man in Ostdeutschland zu einem schwarzen Bier Dreggsch (dreckig) sagt, wurde dieses Bier so getauft." 
-      mundartT.setAttribute("class", "added");
-      document.getElementById("labelsInfo").appendChild(mundartT);
-
-      var website = document.createElement("A");
-      website.innerHTML = "www.mundart-scuol.ch <br>";
-      website.href = "https://www.mundart-scuol.ch/"; 
-      website.setAttribute("class", "added");
-      document.getElementById("labelsInfo").appendChild(website); 
-
-      var instagram = document.createElement("A");
-      instagram.innerHTML = "Instagram <br>";
-      instagram.href = "https://www.instagram.com/mundartscuol/"; 
-      instagram.setAttribute("class", "added");
-      document.getElementById("labelsInfo").appendChild(instagram); 
-
-      var facebook = document.createElement("A");
-      facebook.innerHTML = "Facebook";
-      facebook.href = "https://www.facebook.com/mundartscuol"; 
-      facebook.setAttribute("class", "added");
-      document.getElementById("labelsInfo").appendChild(facebook); 
-       
 
        break;
        case   'etter': 
@@ -849,7 +822,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
       facebook.setAttribute("class", "added");
       document.getElementById("labelsInfo").appendChild(facebook); 
        break;
-
        case   'paurariaRiatsch':
         var paurariaRiatsch = document.createElement("H1");
         paurariaRiatsch.innerHTML = "Pauraria Riatsch";
@@ -877,7 +849,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        website.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(website); 
        break;
-      
+    
       
       }
     }

@@ -224,7 +224,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("labels").appendChild(kreis);
                       
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/tier.png");
+                      bild.setAttribute("src", "./footage/kaese.png");
                       bild.setAttribute("alt", "paurariaRiatsch");
                       bild.setAttribute("id", "paurariaRiatsch");
                       bild.setAttribute("class", "added");
@@ -723,11 +723,39 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
        break;
        case   'mundart': 
+
        var mundart = document.createElement("H1");
        mundart.innerHTML = "Mundart";
        mundart.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(mundart);
 
+      var bild = document.createElement("IMG");
+      bild.setAttribute("src", "./img/logo/mundart.png");
+      bild.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(bild);
+
+      var mundartT = document.createElement("P");
+      mundartT.innerHTML = "Unser erster eigener Biersud Helles Mundart Hausbier Cler Seit langer Zeit träumt Matze von einer eigenen Bierkreation. Im Juni 2019 ging mit dem eigenen Biersud dieser Traum in Erfüllung und das Mundartbier «Cler», zu Deutsch hell, ist geboren. In Zusammenarbeit mit der Bieraria Tschlin ist ein helles Bier mit einer erfrischenden, leichten Zitrusnote entstanden. <br> Unser zweiter eigener Biersud Schwarzes Mundart Hausbier Dreggsch Nachdem das helle Mundartbier bei den Gästen so gut ankam, hatte Matze die Idee auch noch ein zweites eigenes Bier zu kreieren, aber dieses Mal ein Schwarzes. Nach einigen Versuchen zusammen mit der Bieraria Tschlin entstand das schwarze Mundartbier «Dreggsch». Was heisst Dreggsch? Matzes Frau, Fabrizia, hatte die Idee dieses Bier nach etwas aus Matzes Geburtsort Dresden zu benennen. Da man in Ostdeutschland zu einem schwarzen Bier Dreggsch (dreckig) sagt, wurde dieses Bier so getauft." 
+      mundartT.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(mundartT);
+
+      var website = document.createElement("A");
+      website.innerHTML = "www.mundart-scuol.ch <br>";
+      website.href = "https://www.mundart-scuol.ch/"; 
+      website.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(website); 
+
+      var instagram = document.createElement("A");
+      instagram.innerHTML = "Instagram <br>";
+      instagram.href = "https://www.instagram.com/mundartscuol/"; 
+      instagram.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(instagram); 
+
+      var facebook = document.createElement("A");
+      facebook.innerHTML = "Facebook";
+      facebook.href = "https://www.facebook.com/mundartscuol"; 
+      facebook.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(facebook); 
        
 
        break;
@@ -782,7 +810,46 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         simmentaler.innerHTML = "Simmentaler Bier";
         simmentaler.setAttribute("class", "added");
        document.getElementById("labelsInfo").appendChild(simmentaler);
+
+      var bild = document.createElement("IMG");
+      bild.setAttribute("src", "./img/logo/mundart.png");
+      bild.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(bild);
+
+      var simmentalerT = document.createElement("P");
+      simmentalerT.innerHTML = "Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. <br> Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. "
+      simmentalerT.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(simmentalerT);
+
+      var bieraSorten = document.createElement("H2");
+      bieraSorten.innerHTML = "Biersorten";
+      bieraSorten.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(bieraSorten);
+
+      var bieraSortenT = document.createElement("P");
+      bieraSortenT.innerHTML = "Simmentaler Lager - Naturtrübes Lagerbier, untergärig <br> Simmentaler Märzen - Märzen - Kräftiges, naturtrübes Bier, untergärig <br> Simmentaler Red Ale - Red Ale Bier mit Irish Moos, obergärig <br> Mountain Pale Ale - IPA Bier mit Irish Moos, obergärig"
+      bieraSortenT.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(bieraSortenT);
+
+      var website = document.createElement("A");
+      website.innerHTML = "www.simmentalerbier.ch <br>";
+      website.href = "https://simmentalerbier.ch/"; 
+      website.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(website); 
+
+      var instagram = document.createElement("A");
+      instagram.innerHTML = "Instagram <br>";
+      instagram.href = "https://www.instagram.com/simmentaler_bier/"; 
+      instagram.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(instagram); 
+
+      var facebook = document.createElement("A");
+      facebook.innerHTML = "Facebook";
+      facebook.href = "https://www.facebook.com/simmentalerbier"; 
+      facebook.setAttribute("class", "added");
+      document.getElementById("labelsInfo").appendChild(facebook); 
        break;
+
        case   'paurariaRiatsch':
         var paurariaRiatsch = document.createElement("H1");
         paurariaRiatsch.innerHTML = "Pauraria Riatsch";

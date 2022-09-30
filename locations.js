@@ -1003,9 +1003,15 @@ function gifStart(){
     }
 
 //Informations about the hike
-function bergwanderungInfos(){
+
+
+document.getElementById('bergmassiv').onclick = function(){
+  console.log('HHHHHIIIIEEEEER');
+  document.getElementById('hoehenprofil').classList.toggle('fade');
+  
 
 }
+
 
  
 

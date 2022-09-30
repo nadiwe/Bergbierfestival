@@ -27,13 +27,13 @@ body {
 h1 {
     font-family: 'ProximaNovaAW01-Extrabold', cursive;
     margin: 0 0 2vh 0;
-    font-size: 28px;
+    font-size: 26px;
 
 }
 
 h2 {
     margin: 0;
-    font-size: 22px;
+    font-size: 20px;
 }
 
 img {
@@ -51,6 +51,7 @@ a {
 
 p {
     hyphens: auto;
+    font-size: 15px;
 
 }
 
@@ -81,25 +82,34 @@ p {
 svg {
     bottom: 0;
     z-index: 1;
-
-    fill: #000000;
+    fill: #000000c7;
     position: absolute;
 
 }
 
 #textHoehenprofil {
-    bottom: 18vh;
+    bottom: 22vh;
     width: 100%;
-    z-index: 2;
-    margin-left: 2em;
+    z-index: 1;
+    margin-left: 4em;
     display: block;
     justify-content: center;
     color: #ffffff;
     position: fixed;
 }
 
-.hiddeBergprofil {
+
+#hoehenprofil {
     opacity: 0;
+    -webkit-transition: opacity 0.3s ease-in-out;
+    -moz-transition: opacity 0.3s ease-in-out;
+    -ms-transition: opacity 0.3s ease-in-out;
+    -o-transition: opacity 0.3s ease-in-out;
+    transition: opacity 0.3s ease-in-out;
+}
+
+#hoehenprofil.fade {
+    opacity: 1;
 }
 
 
@@ -267,9 +277,12 @@ svg {
 .loc {
     position: absolute;
     display: block;
+    bottom: -5.5vh;
+    right: 2vw;
     z-index: 3;
 
 }
+
 
 
 
@@ -307,12 +320,7 @@ svg {
     text-align: center;
 }
 
-.loc {
-    position: absolute;
-    bottom: -5.5vh;
-    right: 2vw;
-    z-index: 2;
-}
+
 
 
 

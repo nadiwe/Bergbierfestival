@@ -100,8 +100,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         
 //Overview - appear 
     map.on('click', 'locations', (e) =>  {
-      back();
-      backToOverview();
+      backToImg();
+      backToMap();
 
             $('#labels').empty();
              setImg = e.features[0].properties.Icon;
@@ -578,7 +578,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
 // Detailinformation - appear
     function infoblock(){
-      console.log('test');
         $('#labelsInfo').empty();
         document.getElementById("hiddenInfo").style.display = "block";
 
@@ -966,7 +965,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
     }
 //
 function infosGeneral(){
-  
+ backToImg();
+ backToMap();
+
   document.getElementById("hiddenInfoGeneral").style.display = "block";
   
 
@@ -982,20 +983,20 @@ function gifStart(){
   var bild = document.getElementById("startBier");
   bild.setAttribute("src", "./footage/startBier.gif");
 }
+
 //Overview - popup desapear
-    function back(){
+    function backToImg(){
         document.getElementById('hidden').style.display = 'none';
         document.getElementById("hidden").style.width = "87vw";
         document.getElementById("hidden").style.height = "auto";
 
         document.getElementById("hidden").style.backgroundColor = '#847f62';
 
-
         $('#labels').empty();
     }
 
 //Detail inormation - desapear
-    function backToOverview(){
+    function backToMap(){
         document.getElementById("hiddenInfo").style.display = "none";
         document.getElementById("hiddenInfoGeneral").style.display = "none";
 
@@ -1003,13 +1004,8 @@ function gifStart(){
     }
 
 //Informations about the hike
-
-
 document.getElementById('bergmassiv').onclick = function(){
-  console.log('HHHHHIIIIEEEEER');
   document.getElementById('hoehenprofil').classList.toggle('fade');
-  
-
 }
 
 

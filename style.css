@@ -371,7 +371,8 @@ svg {
 
     .boxDesign {
         width: 50vw;
-        height: 70vh;
+        max-height: 68vh;
+        border-radius: 1vw 1vw 1vw 3vw;
     }
 
     .layoutDesign {
@@ -379,13 +380,11 @@ svg {
     }
 
     #hiddenIllus {
-        width: 27vw;
+
         padding: 7vh 4vh 3vh 2vh;
     }
 
-    #hiddenIllus {
-        width: 24vw;
-    }
+    #hiddenIllus {}
 
 
 

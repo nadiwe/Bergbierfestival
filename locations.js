@@ -157,6 +157,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'startGipfelstuermer':
                       document.getElementById("hiddenIllus").classList.add('boxDesign');
 
+
+
                       var h1 = document.createElement("H1");
                       h1.innerHTML = "Option Gipfelbier Piz Arina";
                       h1.setAttribute("class", "added");
@@ -174,7 +176,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                  
                     case   'stand1':
                     
-                     // startBierF();
+        
 
                       var kreis = document.createElement("div");
                       kreis.setAttribute("class", "added");
@@ -204,8 +206,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
 
-                     // document.getElementById("hiddenIllus").style.width = "47vw";
-                     // document.getElementById("hiddenIllus").style.backgroundColor = 'transparent';
+                  
 
 
                       break;
@@ -236,8 +237,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
 
-                     // document.getElementById("hiddenIllus").style.width = "47vw";
-                    //  document.getElementById("hiddenIllus").style.backgroundColor = 'transparent';
+                    
 
                       break;
                     case   'stand3':

@@ -98,7 +98,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                    
            
         
-//Overview - appear 
+//Click on Map Icons 
     map.on('click', 'locations', (e) =>  {
       backToImg();
       backToMap();
@@ -183,7 +183,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       
 
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/startBier.png");
+                      bild.setAttribute("src", "./illustrationen/startBier.png");
                       bild.setAttribute("alt", "startBier");
                       bild.setAttribute("id", "startBier");
                       bild.setAttribute("onclick", "gifStart()");
@@ -196,7 +196,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("labels").appendChild(kreis);
                       
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/tier.png");
+                      bild.setAttribute("src", "./illustrationen/tier.png");
                       bild.setAttribute("alt", "standBioSchorta");
                       bild.setAttribute("id", "standBioSchorta");
                       bild.setAttribute("class", "added");
@@ -215,7 +215,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("labels").appendChild(kreis);
                      
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/bier.png");
+                      bild.setAttribute("src", "./illustrationen/bier.png");
                       bild.setAttribute("alt", "simmentaler");
                       bild.setAttribute("id", "simmentaler");
                       bild.setAttribute("class","added");
@@ -228,7 +228,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("labels").appendChild(kreis);
                       
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/kaese.png");
+                      bild.setAttribute("src", "./illustrationen/kaese.png");
                       bild.setAttribute("alt", "paurariaRiatsch");
                       bild.setAttribute("id", "paurariaRiatsch");
                       bild.setAttribute("class", "added");
@@ -246,7 +246,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("labels").appendChild(kreis);
                      
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/bier.png");
+                      bild.setAttribute("src", "./illustrationen/bier.png");
                       bild.setAttribute("alt", "mundart");
                       bild.setAttribute("id", "mundart");
                       bild.setAttribute("class","added");
@@ -259,7 +259,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("labels").appendChild(kreis);
                       
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/fleisch.png");
+                      bild.setAttribute("src", "./illustrationen/fleisch.png");
                       bild.setAttribute("alt", "matze");
                       bild.setAttribute("id", "matze");
                       bild.setAttribute("class", "added");
@@ -278,7 +278,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("labels").appendChild(kreis);
  
                         var bild = document.createElement("IMG");
-                        bild.setAttribute("src", "./footage/bier.png");
+                        bild.setAttribute("src", "./illustrationen/bier.png");
                         bild.setAttribute("alt", "bieraEngiadinaisa");
                         bild.setAttribute("id", "bieraEngiadinaisa");
                         bild.setAttribute("onclick", "infoblock()");
@@ -291,7 +291,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("labels").appendChild(kreis);
 
                         var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./footage/fleisch.png");
+                      bild.setAttribute("src", "./illustrationen/fleisch.png");
                       bild.setAttribute("alt", "zanetti");
                       bild.setAttribute("id", "zanetti");
                       bild.setAttribute("class", "added");
@@ -355,7 +355,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                             document.getElementById("labels").appendChild(kreis);
                            
                             var bild = document.createElement("IMG");
-                            bild.setAttribute("src", "./footage/bier.png");
+                            bild.setAttribute("src", "./illustrationen/bier.png");
                             bild.setAttribute("alt", "doppelleuBoxerAG");
                             bild.setAttribute("id", "doppelleuBoxerAG");
                             bild.setAttribute("onclick", "infoblock()");
@@ -369,7 +369,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                             document.getElementById("labels").appendChild(kreis);
 
                             var bild = document.createElement("IMG");
-                            bild.setAttribute("src", "./footage/kunfi.png");
+                            bild.setAttribute("src", "./illustrationen/kunfi.png");
                             bild.setAttribute("alt", "etter");
                             bild.setAttribute("id", "etter");
                             bild.setAttribute("class", "added");
@@ -515,11 +515,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         
 
                         var foto = document.createElement("IMG");
-                        foto.setAttribute("src", "./footage/blauBierglas.png");
-                        foto.setAttribute("alt", "blauesBierGlas");
+                        foto.setAttribute("src", "./illustrationen/goldenesBierglas.png");
+                        foto.setAttribute("alt", "goldenesBierGlas");
                         foto.setAttribute("class", "added");
                         foto.setAttribute("id", "fotos");
-                        foto.setAttribute("id", "blue");
+                        foto.setAttribute("id", "gold");
                         document.getElementById("labels").appendChild(foto);
 
                         document.getElementById("hidden").style.width = "55vw";
@@ -981,10 +981,10 @@ function infosGeneral(){
 
 function gifStart(){
   var bild = document.getElementById("startBier");
-  bild.setAttribute("src", "./footage/startBier.gif");
+  bild.setAttribute("src", "./illustrationen/startBier.gif");
 }
 
-//Overview - popup desapear
+//Overview Icons - popup Infotext desapear
     function backToImg(){
         document.getElementById('hidden').style.display = 'none';
         document.getElementById("hidden").style.width = "87vw";
@@ -995,7 +995,7 @@ function gifStart(){
         $('#labels').empty();
     }
 
-//Detail inormation - desapear
+//Overview Map - Icons desapear
     function backToMap(){
         document.getElementById("hiddenInfo").style.display = "none";
         document.getElementById("hiddenInfoGeneral").style.display = "none";

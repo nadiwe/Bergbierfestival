@@ -60,7 +60,12 @@ p {
 
 #banner {
     z-index: 3;
+    align-items: center;
     position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
 }
 
 #bergmassiv {
@@ -320,8 +325,9 @@ svg {
     background-color: #ffffff;
 }
 
-#circleGeneral h1 {
-    text-align: center;
+#circleGeneral img {
+    margin: 0;
+
 }
 
 

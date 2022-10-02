@@ -45,28 +45,13 @@
 
 
     <div id='map'></div>
-    <div class="loc">
-        <div id="icons">
 
-
-            <div id="circleNavi" onclick="geoFindMe()">
-                <img src="./illustrationen/navigation.png" alt="navigation">
-            </div>
-            <div id="circleGeneral" onclick="infosGeneral()">
-
-                <img src="./illustrationen/info.png" alt="navigation">
-
-
-            </div>
-        </div><br />
-    </div>
-
-    <div id="hiddenInfoGeneral">
+    <div id="hiddenInfoGeneral" class="boxDesign">
         <div class="arrow" id="arrowBarInfo" onclick="backToMap()">
             <div class=" line"></div>
             <div class="line" id="second"></div>
         </div>
-        <div id="labelsGeneral">
+        <div id="labelsGeneral" class="layoutDesign">
             <h1>Bergbierwanderung Tschlin - Ramosch</h1>
             <p>Von Tschlin nach Ramosch gibt es viel zu entdecken. Die Karte gibt dir einen Überblick was dich erwartet.
             </p>
@@ -123,17 +108,17 @@
     </div>
 
 
-    <div class="textBar" id="hiddenInfo">
+    <div id="hiddenText" class="boxDesign">
         <div class="arrow" id="arrowBarInfo" onclick="backToMap()">
             <div class=" line"></div>
             <div class="line" id="second"></div>
         </div>
-        <div id="labelsInfo">
+        <div id="labelsInfo" class="layoutDesign">
 
         </div>
     </div>
 
-    <div class="imgBar" id="hidden">
+    <div id="hiddenIllus">
         <div class="arrow" onclick="backToImg()">
             <div class=" line"></div>
             <div class="line" id="second"></div>
@@ -161,6 +146,21 @@
             <h2>Zeit: 3 - 5 h</h2><br>
             <h2>min / max Höhe: 1153 m / 1783 m</h2><br>
         </div>
+    </div>
+    <div class="loc">
+        <div id="icons">
+
+
+            <div id="circleNavi" onclick="geoFindMe()" class="bottonFixedInfos">
+                <img src="./illustrationen/navigation.png" alt="navigation">
+            </div>
+            <div id="circleGeneral" onclick="infosGeneral()" class="bottonFixedInfos">
+
+                <img src="./illustrationen/info.png" alt="navigation">
+
+
+            </div>
+        </div><br />
     </div>
 
 

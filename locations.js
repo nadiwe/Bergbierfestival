@@ -106,11 +106,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             $('#labels').empty();
              setImg = e.features[0].properties.Icon;
             console.log(setImg);
-            document.getElementById("hidden").style.display = "block";
+            document.getElementById("hiddenIllus").style.display = "block";
 
             switch(setImg){
                     case   'start':
                 
+                      document.getElementById("hiddenIllus").classList.add('boxDesign');
 
                         var h1 = document.createElement("H1");
                         h1.innerHTML = "Allegra, liebe Geniesserinnen und Geniesser";
@@ -154,6 +155,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                    
                     break;
                     case   'startGipfelstuermer':
+                      document.getElementById("hiddenIllus").classList.add('boxDesign');
 
                       var h1 = document.createElement("H1");
                       h1.innerHTML = "Option Gipfelbier Piz Arina";
@@ -165,7 +167,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         text.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(text);
 
-                      document.getElementById("hidden").style.backgroundColor = '#847f62';
 
                   
                  
@@ -203,8 +204,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
 
-                      document.getElementById("hidden").style.width = "47vw";
-                      document.getElementById("hidden").style.backgroundColor = 'transparent';
+                     // document.getElementById("hiddenIllus").style.width = "47vw";
+                     // document.getElementById("hiddenIllus").style.backgroundColor = 'transparent';
 
 
                       break;
@@ -235,11 +236,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
 
-                      document.getElementById("hidden").style.width = "47vw";
-                      document.getElementById("hidden").style.backgroundColor = 'transparent';
+                     // document.getElementById("hiddenIllus").style.width = "47vw";
+                    //  document.getElementById("hiddenIllus").style.backgroundColor = 'transparent';
 
                       break;
                     case   'stand3':
+
                       var kreis = document.createElement("div");
                       kreis.setAttribute("class", "added");
                       kreis.setAttribute("id","circle");
@@ -265,9 +267,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("class", "added");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
-
-                      document.getElementById("hidden").style.width = "47vw";
-                      document.getElementById("hidden").style.backgroundColor = 'transparent';
 
 
                         break;
@@ -298,15 +297,14 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
 
-                        document.getElementById("hidden").style.width = "47vw";
-                        document.getElementById("hidden").style.backgroundColor = 'transparent';
+       
 
 
                         break;
                     case   'stand5':
-                      $('#labelsInfo').empty();
-                      document.getElementById("hidden").style.display = "none";
-                      document.getElementById("hiddenInfo").style.display = "block";
+
+                      document.getElementById("hiddenText").style.display = "block";
+                   
 
                       var bierVisionMonstein = document.createElement("H1");
                       bierVisionMonstein.innerHTML = "BierVision Monstein";
@@ -376,14 +374,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                             bild.setAttribute("onclick", "infoblock()");
                             document.getElementById("circle2").appendChild(bild);
     
-                            document.getElementById("hidden").style.width = "47vw";
-                            document.getElementById("hidden").style.backgroundColor = 'transparent';
+                       
   
                             break;
                     case   'stand8':
                       $('#labelsInfo').empty();
-                      document.getElementById("hidden").style.display = "none";
-                      document.getElementById("hiddenInfo").style.display = "block";
+                      document.getElementById("hiddenIllus").style.display = "none";
+                      document.getElementById("hiddenText").style.display = "block";
 
                       var steimandliBier = document.createElement("H1");
                       steimandliBier.innerHTML = "Steimandli Bier";
@@ -391,9 +388,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                      document.getElementById("labelsInfo").appendChild(steimandliBier);
 
                      var bild = document.createElement("IMG");
-       bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
-       bild.setAttribute("class","added");
-       document.getElementById("labelsInfo").appendChild(bild);
+                     bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
+                     bild.setAttribute("class","added");
+                     document.getElementById("labelsInfo").appendChild(bild);
               
               
                      var steimandliBierT = document.createElement("P");
@@ -423,6 +420,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                               break;    
                     
                    case   'foto1': 
+                   document.getElementById("hiddenIllus").classList.add('boxDesign');
+
                     var bunTschlin = document.createElement("H1");
                     bunTschlin.innerHTML = "Bun Tschlin";
                     bunTschlin.setAttribute("class", "added");
@@ -447,7 +446,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     document.getElementById("labels").appendChild(bunTschlinL);
 
                     break;
-                   case   'foto2':  
+                   case   'foto2': 
+                   document.getElementById("hiddenIllus").classList.add('boxDesign');
+
+                   
                     var valsot = document.createElement("H1");
                     valsot.innerHTML = "Valsot";
                     valsot.setAttribute("class", "added");
@@ -468,6 +470,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                        
                         break;
                    case   'foto3':  
+                   document.getElementById("hiddenIllus").classList.add('boxDesign');
 
                    var rumantsch = document.createElement("H1");
                         rumantsch.innerHTML = "Rumauntsch <br> nossa lingua";
@@ -507,7 +510,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         break;
 
                     case   'blue':   
-                       
+                    document.getElementById("hiddenIllus").classList.add('boxDesign');
+
                             var h1 = document.createElement("H1");
                         h1.innerHTML = "Finde mich!";
                         h1.setAttribute("class", "added");
@@ -522,13 +526,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         foto.setAttribute("id", "gold");
                         document.getElementById("labels").appendChild(foto);
 
-                        document.getElementById("hidden").style.width = "55vw";
-                        document.getElementById("hidden").style.height = "53vh";
 
                         break;
                         
                     case   'konzert':   
-                       
+                    document.getElementById("hiddenIllus").classList.add('boxDesign');
+
                             var h1 = document.createElement("H1");
                         h1.innerHTML = "Festival in Ramosch – MEGAWATT";
                         h1.setAttribute("class", "added");
@@ -566,8 +569,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         foto4.setAttribute("src", "./img/megawatt/Megawatt4.jpg");
                         foto4.setAttribute("class", "added");
                         document.getElementById("labels").appendChild(foto4);
-
-                        document.getElementById("hidden").style.backgroundColor = '#847f62';
+                      
                         break;
             }
             
@@ -579,7 +581,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 // Detailinformation - appear
     function infoblock(){
         $('#labelsInfo').empty();
-        document.getElementById("hiddenInfo").style.display = "block";
+        document.getElementById("hiddenText").style.display = "block";
 
         var stand = event.target.id;
         console.log(stand);
@@ -986,19 +988,20 @@ function gifStart(){
 
 //Overview Icons - popup Infotext desapear
     function backToImg(){
-        document.getElementById('hidden').style.display = 'none';
-        document.getElementById("hidden").style.width = "87vw";
-        document.getElementById("hidden").style.height = "auto";
+        document.getElementById("hiddenIllus").style.display = 'none';
+        document.getElementById("hiddenIllus").classList.remove('boxDesign');
 
-        document.getElementById("hidden").style.backgroundColor = '#847f62';
+      
 
         $('#labels').empty();
     }
 
 //Overview Map - Icons desapear
     function backToMap(){
-        document.getElementById("hiddenInfo").style.display = "none";
+        document.getElementById("hiddenText").style.display = "none";
         document.getElementById("hiddenInfoGeneral").style.display = "none";
+        document.getElementById("hiddenIllus").classList.remove('boxDesign');
+
 
         $('#labelsInfo').empty();
     }

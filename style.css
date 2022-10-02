@@ -41,7 +41,6 @@ img {
     width: 100%;
     height: 100%;
     object-fit: contain;
-    margin: 1vh 0 1vh;
 
 }
 
@@ -60,29 +59,30 @@ p {
 
 #banner {
     z-index: 3;
-    align-items: center;
-    position: absolute;
-    display: block;
+    position: fixed;
+    display: flex;
+    justify-content: center;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
 
 #bergmassiv {
+    z-index: 3;
     bottom: -5px;
-    position: absolute;
-    display: block;
-
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    object-fit: contain;
+    height: 20%;
 }
 
 #bergmassiv img {
-
     margin: 0;
-    z-index: 2;
-    position: relative;
+    width: 100%;
+    object-fit: fill;
 }
-
-
 
 svg {
     bottom: 0;
@@ -103,9 +103,7 @@ svg {
     position: fixed;
 }
 
-
 #hoehenprofil {
-
     display: none;
     opacity: 0;
     -webkit-transition: opacity 0.3s ease-in-out;
@@ -130,64 +128,54 @@ svg {
     width: 100%;
 }
 
-.imgBar {
-    top: 9vh;
-    z-index: 1;
-    height: auto;
-    max-height: 67vh;
-    right: 0;
-    width: 87vw;
-    overflow: auto;
 
-    position: absolute;
-    top: 9vh;
-    display: none;
-    border-radius: 1px 1px 1px 20px;
-    padding: 0 0 3vh 2vh;
+
+
+.layoutDesign {
+    margin: 8vh 6vh 8vh 3vh;
 }
 
-.textBar {
+.boxDesign {
+    position: absolute;
     background-color: #bcb48c;
     height: auto;
-    max-height: 67vh;
     width: 87vw;
     z-index: 2;
     right: 0;
-    position: absolute;
     top: 9vh;
-    display: none;
-    opacity: 1;
     border-radius: 1vw 1vw 1vw 10vw;
+    background-color: #7e947ffc;
     overflow: scroll;
+    max-height: 67vh;
+}
+
+#hiddenIllus {
+
+
+    top: 9vh;
+    z-index: 1;
+
+
+    right: 0;
+
+
+
+    position: absolute;
+
+    display: none;
+
+    padding: 0 0 3vh 2vh;
+}
+
+
+#hiddenText {
+    display: none;
 }
 
 #hiddenInfoGeneral {
-
-    background-color: #bcb48c;
-    height: 67vh;
-    max-height: 67vh;
-    width: 87vw;
-    z-index: 1;
-    right: 0;
-    position: absolute;
-    top: 9vh;
     display: block;
-    opacity: 1;
-    border-radius: 1vw 1vw 1vw 10vw;
-    overflow: scroll;
-
 }
 
-#labelsInfo {
-
-    overflow: scroll;
-    margin: 8vh 6vh 8vh 3vh;
-}
-
-#labelsGeneral {
-    margin: 8vh 6vh 8vh 3vh;
-
-}
 
 .legende {
     display: flex;
@@ -203,7 +191,8 @@ svg {
 
 .legende img {
     width: 20%;
-    margin-right: 4vw;
+    margin: 1vh 4vw 1vh 0;
+
 }
 
 #standIcon {
@@ -213,7 +202,6 @@ svg {
     display: inline-block;
     background-color: #847f62;
     stroke: #ffffff;
-
     stroke-width: 2;
 }
 
@@ -221,7 +209,6 @@ svg {
 
 
 .arrow {
-
     position: fixed;
     width: 4vw;
     height: 4vw;
@@ -230,17 +217,13 @@ svg {
     z-index: 2;
 }
 
-
 .line {
     position: absolute;
-
     left: 50%;
     width: 8vw;
     height: 1vw;
     border-radius: 2vw;
-
     background: #000000;
-
     transform: translate(-50%, -50%) rotate(45deg);
 }
 
@@ -284,9 +267,9 @@ svg {
 }
 
 .loc {
-    position: absolute;
+    position: fixed;
     display: block;
-    bottom: -5.5vh;
+    bottom: -.5vh;
     right: 2vw;
     z-index: 3;
 
@@ -296,8 +279,6 @@ svg {
 
 
 #icons {
-
-    position: relative;
     display: flex;
     bottom: 4vh;
     justify-content: center;
@@ -307,28 +288,15 @@ svg {
 
 
 
-#circleNavi {
+.bottonFixedInfos {
     width: 10vw;
     height: 10vw;
     border-radius: 1vw;
     background-color: #ffffff;
 }
 
-#circleNavi img {
-    margin: 0;
-}
 
-#circleGeneral {
-    width: 10vw;
-    height: 10vw;
-    border-radius: 1vw;
-    background-color: #ffffff;
-}
 
-#circleGeneral img {
-    margin: 0;
-
-}
 
 
 
@@ -339,10 +307,10 @@ svg {
     width: 8vw;
     height: 8vw;
     border-radius: 10vw;
-    background-color: rgb(7, 98, 245);
+    background-color: #0762f5ad;
 }
 
-#hidden {
+#hiddenStaend {
     background-color: #847f62;
     display: none;
 }
@@ -355,11 +323,74 @@ svg {
 
 
 
-@media (min-width:680px) {
-    .imgBar {
+@media (min-width:1920px) {
+
+    h1 {
+        font-size: 45px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 28px;
+    }
+
+    #banner img {
+        width: auto;
+    }
+
+    #bergmassiv {
+        height: 20%;
+    }
+
+    #bergmassiv img {
+        object-fit: fill;
+    }
+
+
+    svg {
+        bottom: -200px;
+    }
+
+    #textHoehenprofil {
+        bottom: 26vh;
+    }
+
+    .bottonFixedInfos {
+        width: 4vw;
+        height: 4vw;
+    }
+
+
+    .marker {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .boxDesign {
+        width: 50vw;
+        height: 70vh;
+    }
+
+    .layoutDesign {
+        margin: 9vh 11vh 8vh 5vh;
+    }
+
+    #hiddenIllus {
         width: 27vw;
         padding: 7vh 4vh 3vh 2vh;
     }
+
+    #hiddenIllus {
+        width: 24vw;
+    }
+
+
+
+
+
 
     #circle {
         width: 18vw;
@@ -371,15 +402,15 @@ svg {
         height: 18vw;
     }
 
-    #arrow {
-        top: 11vh;
-        right: 2vw;
+    .arrow {
+        top: 5vh;
+        right: 1.5vw;
 
     }
 
     .line {
-        width: 5vw;
-        height: 0.5vw;
+        width: 3vw;
+        height: 0.4vw;
     }
 
     #labels {

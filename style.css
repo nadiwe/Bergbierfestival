@@ -85,6 +85,7 @@ p {
 }
 
 svg {
+    transform: scale(1);
     bottom: 0;
     z-index: 1;
     fill: #020e04db;
@@ -121,6 +122,8 @@ svg {
 
 
 
+
+
 #map {
     position: absolute;
     top: 0;
@@ -131,7 +134,11 @@ svg {
 
 
 
-.layoutDesign {
+.layoutDesignText {
+    margin: 8vh 6vh 8vh 3vh;
+}
+
+.layoutDesignIllus {
     margin: 8vh 6vh 8vh 3vh;
 }
 
@@ -366,11 +373,14 @@ svg {
     }
 
 
+
     svg {
-        bottom: -200px;
+
+        bottom: -957px;
     }
 
     #textHoehenprofil {
+
         bottom: 26vh;
     }
 
@@ -391,8 +401,13 @@ svg {
         border-radius: 1vw 1vw 1vw 3vw;
     }
 
-    .layoutDesign {
-        margin: 9vh 13vh 8vh 5vh;
+    .layoutDesignText {
+        margin: 0vh 6vh 8vh 3vh;
+    }
+
+    .layoutDesignIllus {
+        margin: 0vh 1vh 8vh 3vh;
+
     }
 
     #layerOne {
@@ -400,6 +415,10 @@ svg {
         padding: 7vh 4vh 3vh 2vh;
     }
 
+    .boxDesignSmall {
+        width: 18vw;
+        height: 39vh;
+    }
 
 
 
@@ -408,13 +427,13 @@ svg {
 
 
     #circle {
-        width: 18vw;
-        height: 18vw;
+        width: 10vw;
+        height: 10vw;
     }
 
     #circle2 {
-        width: 18vw;
-        height: 18vw;
+        width: 10vw;
+        height: 10vw;
     }
 
     .arrow {
@@ -431,5 +450,10 @@ svg {
     #layoutIllus {
         margin: 0px 0 40px 2vh;
     }
+
+    #hiddenInfoGeneral {
+        padding: 7vh 4vh 3vh 2vh;
+    }
+
 
 }

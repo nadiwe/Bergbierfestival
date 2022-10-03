@@ -111,6 +111,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'start':
                       document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
+                      document.getElementById("one").classList.add('layoutDesignText');
+
                     
 
                         var h1 = document.createElement("H1");
@@ -157,6 +159,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'startGipfelstuermer':
                        document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
+                      document.getElementById("one").classList.add('layoutDesignText');
 
 
                       var h1 = document.createElement("H1");
@@ -177,7 +180,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'stand1':       
             document.getElementById("layerOne").style.display = "block";
             document.getElementById("layerOne").classList.add('illusDesign');
-          
+            document.getElementById("one").classList.add('layoutDesignIllus');
+
 
         
 
@@ -216,6 +220,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'stand2':
            document.getElementById("layerOne").style.display = "block";
            document.getElementById("layerOne").classList.add('illusDesign');
+           document.getElementById("one").classList.add('layoutDesignIllus');
 
 
                       var kreis = document.createElement("div");
@@ -250,6 +255,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'stand3':
                       document.getElementById("layerOne").style.display = "block";
                       document.getElementById("layerOne").classList.add('illusDesign');
+                      document.getElementById("one").classList.add('layoutDesignIllus');
 
 
 
@@ -284,6 +290,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'stand4':
                       document.getElementById("layerOne").style.display = "block";
                       document.getElementById("layerOne").classList.add('illusDesign');
+                      document.getElementById("one").classList.add('layoutDesignIllus');
 
                         var kreis = document.createElement("div");
                         kreis.setAttribute("class", "added");
@@ -319,6 +326,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'stand5':
                       document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
+                      document.getElementById("one").classList.add('layoutDesignText');
 
 
 
@@ -366,6 +374,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'stand6':
                       document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('illusDesign');
+                      document.getElementById("one").classList.add('layoutDesignIllus');
 
 
 
@@ -403,6 +412,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                    case   'stand8':
                       document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
+                      document.getElementById("one").classList.add('layoutDesignText');
 
 
                       var steimandliBier = document.createElement("H1");
@@ -446,6 +456,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                    document.getElementById("layerOne").style.display = 'block';
                    document.getElementById("layerOne").classList.add('boxDesign');
                    document.getElementById("layerOne").classList.add('boxDesignDidYouKnow');
+                   document.getElementById("one").classList.add('layoutDesignText');
 
 
 
@@ -477,6 +488,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                    document.getElementById("layerOne").style.display = 'block';
                    document.getElementById("layerOne").classList.add('boxDesign');
                    document.getElementById("layerOne").classList.add('boxDesignDidYouKnow');
+                   document.getElementById("one").classList.add('layoutDesignText');
 
                    
                     var valsot = document.createElement("H1");
@@ -502,6 +514,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                    document.getElementById("layerOne").style.display = 'block';
                    document.getElementById("layerOne").classList.add('boxDesign');
                    document.getElementById("layerOne").classList.add('boxDesignDidYouKnow');
+                   document.getElementById("one").classList.add('layoutDesignText');
 
 
                    var rumantsch = document.createElement("H1");
@@ -545,7 +558,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     document.getElementById("layerOne").style.display = 'block';
                     document.getElementById("layerOne").classList.add('boxDesign');
                     document.getElementById("layerOne").classList.add('boxDesignSmall');
-                    
+                    document.getElementById("one").classList.add('layoutDesignText');
+
 
 
                             var h1 = document.createElement("H1");
@@ -569,6 +583,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                        document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
                       document.getElementById("layerOne").classList.add('boxDesignKonzert');
+                      document.getElementById("one").classList.add('layoutDesignText');
 
                       
 
@@ -1032,11 +1047,13 @@ function gifStart(){
     function backToImg(){
         document.getElementById("layerOne").style.display = 'none';
         document.getElementById("layerOne").classList.remove('boxDesign');
-        document.getElementById("layerOne").classList.remove('layoutDesign');
         document.getElementById("layerOne").classList.remove('illusDesign');
         document.getElementById("layerOne").classList.remove('boxDesignSmall');
         document.getElementById("layerOne").classList.remove('boxDesignDidYouKnow');
         document.getElementById("layerOne").classList.remove('boxDesignKonzert');
+        document.getElementById("one").classList.remove('layoutDesignText');
+        document.getElementById("one").classList.remove('layoutDesignIllus');
+
 
         
 

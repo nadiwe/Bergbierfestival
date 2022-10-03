@@ -1028,7 +1028,9 @@ function infosGeneral(){
  backToMap();
 
   document.getElementById("hiddenInfoGeneral").style.display = "block";
-  
+  document.getElementById('circleGeneral').style.backgroundColor = '#a1c9c9';  
+
+
 
     var infosGeneral = document.createElement("H1");
     infosGeneral.innerHTML = "Infos";
@@ -1067,7 +1069,7 @@ function gifStart(){
         document.getElementById("layerTwo").style.display = "none";
         document.getElementById("hiddenInfoGeneral").style.display = "none";
         document.getElementById("layerOne").style.display = 'none';
-        
+        document.getElementById("circleGeneral").style.background = 'white';
 
 
         $('#two').empty();

@@ -28,7 +28,6 @@ h1 {
     font-family: 'ProximaNovaAW01-Extrabold', cursive;
     margin: 0 0 2vh 0;
     font-size: 26px;
-
 }
 
 h2 {
@@ -37,11 +36,9 @@ h2 {
 }
 
 img {
-
     width: 100%;
     height: 100%;
     object-fit: contain;
-
 }
 
 a {
@@ -51,7 +48,10 @@ a {
 p {
     hyphens: auto;
     font-size: 15px;
+}
 
+iframe {
+    width: 100%;
 }
 
 
@@ -66,6 +66,7 @@ p {
     margin-right: auto;
     width: 100%;
 }
+
 
 #bergmassiv {
     z-index: 3;
@@ -104,7 +105,7 @@ svg {
     position: fixed;
 }
 
-#hoehenprofil {
+#actionHoehenprofil {
     display: none;
     opacity: 0;
     -webkit-transition: opacity 0.3s ease-in-out;
@@ -114,7 +115,7 @@ svg {
     transition: opacity 0.3s ease-in-out;
 }
 
-#hoehenprofil.fade {
+#actionHoehenprofil.fade {
     z-index: 4;
     display: block;
     opacity: 1;
@@ -132,10 +133,8 @@ svg {
 }
 
 #circleGeneral {
-
     background-color: #a1c9c9;
 }
-
 
 .layoutDesignText {
     margin: 8vh 6vh 8vh 3vh;
@@ -147,7 +146,6 @@ svg {
 
 .boxDesign {
     position: absolute;
-
     height: auto;
     width: 87vw;
     z-index: 2;
@@ -174,23 +172,18 @@ svg {
 }
 
 .illusDesign {
-
     top: 9vh;
     z-index: 1;
     right: 0;
     position: absolute;
     padding: 0 0 3vh 2vh;
-
-
 }
 
 #layerOne {
-
     display: none;
 }
 
 #layerTwo {
-
     display: none;
 }
 
@@ -219,15 +212,7 @@ svg {
 
 }
 
-#standIcon {
-    width: 2em;
-    height: 2em;
-    border-radius: 50%;
-    display: inline-block;
-    background-color: #847f62;
-    stroke: #ffffff;
-    stroke-width: 2;
-}
+
 
 
 
@@ -256,7 +241,6 @@ svg {
 }
 
 #circle {
-
     margin: 2vw;
     background-color: #4d8f79;
     width: 40vw;
@@ -265,7 +249,6 @@ svg {
 }
 
 #circle2 {
-
     margin: 2vw;
     background-color: #4d8f79;
     width: 40vw;
@@ -273,13 +256,7 @@ svg {
     border-radius: 100%;
 }
 
-#layoutIllus {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    flex-direction: column;
-    margin: 8vh 7vh 0 0vh;
-}
+
 
 
 
@@ -334,41 +311,32 @@ svg {
     background-color: #0762f5ad;
 }
 
-#hiddenStaend {
-    background-color: #847f62;
-    display: none;
-}
-
-#starBier {
-    display: none;
-    z-index: 5;
-    position: absolute;
-}
 
 
 
-@media (min-width:1920px) {
+@media (min-width:680px) {
 
     h1 {
-        font-size: 40px;
-    }
-
-    h2 {
-        font-size: 30px;
-    }
-
-    p {
-        font-size: 18px;
+        font-size: 28px;
     }
 
     #banner img {
         display: none;
-        width: auto;
     }
+
+
+    h2 {
+        font-size: 20px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
 
     #bergmassiv {
         right: 0;
-        width: 40%;
+        width: 50%;
         height: 20%;
     }
 
@@ -376,28 +344,32 @@ svg {
         object-fit: fill;
     }
 
-
-
     svg {
-
-        bottom: -957px;
-    }
-
-    #textHoehenprofil {
-
-        bottom: 26vh;
+        bottom: -657px;
     }
 
     .bottonFixedInfos {
-        width: 4vw;
-        height: 4vw;
+        width: 3.5vw;
+        height: 3.5vw;
     }
 
+    #textHoehenprofil {
+        bottom: 26vh;
+    }
 
     .marker {
         width: 3vw;
         height: 3vw;
     }
+
+
+
+
+
+
+
+
+
 
     .boxDesign {
         width: 30vw;
@@ -413,6 +385,7 @@ svg {
         margin: 0vh 1vh 8vh 3vh;
 
     }
+
 
     #layerOne {
 
@@ -456,13 +429,44 @@ svg {
         height: 0.4vw;
     }
 
-    #layoutIllus {
-        margin: 0px 0 40px 2vh;
-    }
+
 
     #hiddenInfoGeneral {
         padding: 7vh 4vh 3vh 2vh;
     }
+}
+
+@media (min-width:1920px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    p {
+        font-size: 18px;
+    }
+
+    #bergmassiv {
+        height: 20%;
+    }
+
+    svg {
+        bottom: -957px;
+    }
+
+    .bottonFixedInfos {
+        width: 4vw;
+        height: 4vw;
+    }
+
+
+
+
+
 
 
 }

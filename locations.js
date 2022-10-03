@@ -1077,7 +1077,7 @@ function gifStart(){
 
 //Informations about the hike
 document.getElementById('bergmassiv').onclick = function(){
-  document.getElementById('hoehenprofil').classList.toggle('fade');
+  document.getElementById('actionHoehenprofil').classList.toggle('fade');
 }
 
 

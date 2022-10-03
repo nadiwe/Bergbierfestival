@@ -137,40 +137,53 @@ svg {
 
 .boxDesign {
     position: absolute;
-    background-color: #bcb48c;
+
     height: auto;
     width: 87vw;
     z-index: 2;
     right: 0;
     top: 9vh;
     border-radius: 1vw 1vw 1vw 10vw;
-    background-color: #7e947ffc;
+    background-color: #a2d5bf;
     overflow: scroll;
     max-height: 67vh;
 }
 
-#hiddenIllus {
+.boxDesignSmall {
+    width: 47vw;
+    background-color: #00a26b;
+}
 
+.boxDesignDidYouKnow {
+    background-color: #72bf93;
+}
+
+.boxDesignKonzert {
+    background-color: #b3c078;
+
+}
+
+.illusDesign {
 
     top: 9vh;
     z-index: 1;
-
-
     right: 0;
-
-
-
     position: absolute;
-
-    display: none;
-
     padding: 0 0 3vh 2vh;
+
+
 }
 
+#layerOne {
 
-#hiddenText {
     display: none;
 }
+
+#layerTwo {
+
+    display: none;
+}
+
 
 #hiddenInfoGeneral {
     display: block;
@@ -234,7 +247,7 @@ svg {
 #circle {
 
     margin: 2vw;
-    background-color: #bcb48c;
+    background-color: #4d8f79;
     width: 40vw;
     height: 40vw;
     border-radius: 100%;
@@ -243,13 +256,13 @@ svg {
 #circle2 {
 
     margin: 2vw;
-    background-color: #bcb48c;
+    background-color: #4d8f79;
     width: 40vw;
     height: 40vw;
     border-radius: 100%;
 }
 
-#labels {
+#layoutIllus {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -326,7 +339,7 @@ svg {
 @media (min-width:1920px) {
 
     h1 {
-        font-size: 45px;
+        font-size: 40px;
     }
 
     h2 {
@@ -334,14 +347,17 @@ svg {
     }
 
     p {
-        font-size: 28px;
+        font-size: 18px;
     }
 
     #banner img {
+        display: none;
         width: auto;
     }
 
     #bergmassiv {
+        right: 0;
+        width: 40%;
         height: 20%;
     }
 
@@ -370,21 +386,21 @@ svg {
     }
 
     .boxDesign {
-        width: 50vw;
-        max-height: 68vh;
+        width: 30vw;
+        max-height: 60vh;
         border-radius: 1vw 1vw 1vw 3vw;
     }
 
     .layoutDesign {
-        margin: 9vh 11vh 8vh 5vh;
+        margin: 9vh 13vh 8vh 5vh;
     }
 
-    #hiddenIllus {
+    #layerOne {
 
         padding: 7vh 4vh 3vh 2vh;
     }
 
-    #hiddenIllus {}
+
 
 
 
@@ -412,7 +428,7 @@ svg {
         height: 0.4vw;
     }
 
-    #labels {
+    #layoutIllus {
         margin: 0px 0 40px 2vh;
     }
 

@@ -326,6 +326,25 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bieraSortenU.setAttribute("id", "ul");
                       document.getElementById("one").appendChild(bieraSortenU);
 
+                      var weiterInformation = document.createElement("H2");
+                      weiterInformation.innerHTML = "<br>Weitere Informationen";
+                      document.getElementById("one").appendChild(weiterInformation);
+
+                      var website = document.createElement("A");
+                      website.innerHTML = "<br>www.monsteiner.ch <br>";
+                      website.href = "https://monsteiner.ch/"; 
+                      document.getElementById("one").appendChild(website);   
+               
+                      var instagram = document.createElement("A");
+                      instagram.innerHTML = "Instagram  <br>";
+                      instagram.href = "https://www.instagram.com/monsteiner_bier/"; 
+                      document.getElementById("one").appendChild(instagram);
+                      
+                      var facebook = document.createElement("A");
+                      facebook.innerHTML = "Facebook  ";
+                      facebook.href = "https://www.facebook.com/biervision/"; 
+                      document.getElementById("one").appendChild(facebook);
+
                       var bieraSortenL1 = document.createElement("LI");
                       bieraSortenL1.innerHTML = "<h3>Monsteiner Husbier</h3> Hell, unfiltriert. Bio-Berggerst; untergärig"; 
                       document.getElementById("ul").appendChild(bieraSortenL1);
@@ -344,24 +363,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                
                       var bieraSortenL5 = document.createElement("LI");
-                      bieraSortenL5.innerHTML = "<h3> Monst.Wätterguoga </h3> Amberbier, mit Rauchmalz; Untergärig "
+                      bieraSortenL5.innerHTML = "<h3> Monst.Wätterguoga </h3> Amberbier, mit Rauchmalz; Untergärig ";
                       document.getElementById("ul").appendChild(bieraSortenL5);
                
-                      
-                      var website = document.createElement("A");
-                      website.innerHTML = "www.monsteiner.ch <br>";
-                      website.href = "https://monsteiner.ch/"; 
-                      document.getElementById("one").appendChild(website);   
-               
-                      var instagram = document.createElement("A");
-                      instagram.innerHTML = "Instagram  <br>";
-                      instagram.href = "https://www.instagram.com/monsteiner_bier/"; 
-                      document.getElementById("one").appendChild(instagram);
-                      
-                      var facebook = document.createElement("A");
-                      facebook.innerHTML = "Facebook  ";
-                      facebook.href = "https://www.facebook.com/biervision/"; 
-                      document.getElementById("one").appendChild(facebook);
+                     
+                    
 
                           break;
                     //_____________________illu
@@ -418,8 +424,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                      steimandliBierT.innerHTML = "Beim Grünhopfenbier, auch Wet Hop Beer genannt, wird die Hopfengabe mit frischen, ungedarrten Hopfendolden vorgenommen - innert 5 Stunden nach der Ernte. Vom Feld ins Bier sozusagen, und das möglichst ohne Umwege. Und natürlich arbeiten wir mit einheimischem Hopfen aus dem Prättigau. Das 'weltweit' einzige Bier mit Bündner Hopfen."
                      document.getElementById("one").appendChild(steimandliBierT);
 
+                     var weiterInformation = document.createElement("H2");
+                     weiterInformation.innerHTML = "<br>Weitere Informationen";
+                     document.getElementById("one").appendChild(weiterInformation);
+
+
                      var website = document.createElement("A");
-                     website.innerHTML = "www.bieraria.ch <br>";
+                     website.innerHTML = "<br>www.bieraria.ch <br>";
                      website.href = "https://www.bieraria.ch/"; 
                      document.getElementById("one").appendChild(website);   
               
@@ -553,9 +564,6 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("layerOne").classList.add('boxDesign');
                       document.getElementById("layerOne").classList.add('boxDesignKonzert');
                       document.getElementById("one").classList.add('layoutDesignText');
-
-                      
-
 
 
                             var h1 = document.createElement("H1");
@@ -695,6 +703,25 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        bieraEngiadinaisaSpirituosenU.setAttribute("id", "ulS");
        document.getElementById("two").appendChild(bieraEngiadinaisaSpirituosenU);
 
+       var weiterInformation = document.createElement("H2");
+       weiterInformation.innerHTML = "<br>Weitere Informationen";
+       document.getElementById("two").appendChild(weiterInformation);
+
+       var website = document.createElement("A");
+       website.innerHTML = "<br>www.bieraria.ch <br>";
+       website.href = "https://www.bieraria.ch/"; 
+       document.getElementById("two").appendChild(website);   
+
+       var instagram = document.createElement("A");
+       instagram.innerHTML = "Instagram  <br>";
+       instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+       document.getElementById("two").appendChild(instagram);
+       
+       var facebook = document.createElement("A");
+       facebook.innerHTML = "Facebook";
+       facebook.href = "https://www.facebook.com/bieratschlin"; 
+       document.getElementById("two").appendChild(facebook);
+
        var bieraEngiadinaisaSpirituosenL1 = document.createElement("LI");
        bieraEngiadinaisaSpirituosenL1.innerHTML = "<h3>Tschliner Single Malt</h3>Single Mal aus Tschliner Bier "; 
        document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL1);
@@ -719,20 +746,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        bieraEngiadinaisaSpirituosenL6.innerHTML = "<h3>Tschliner Honig Likör</h3>Likör mit Honig"; 
        document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL6);
        
-       var website = document.createElement("A");
-       website.innerHTML = "www.bieraria.ch <br>";
-       website.href = "https://www.bieraria.ch/"; 
-       document.getElementById("two").appendChild(website);   
-
-       var instagram = document.createElement("A");
-       instagram.innerHTML = "Instagram  <br>";
-       instagram.href = "https://www.instagram.com/bierariatschlin/"; 
-       document.getElementById("two").appendChild(instagram);
-       
-       var facebook = document.createElement("A");
-       facebook.innerHTML = "Facebook";
-       facebook.href = "https://www.facebook.com/bieratschlin"; 
-       document.getElementById("two").appendChild(facebook);
+      
 
 
        
@@ -747,7 +761,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        bierariaTschlinSAT.innerHTML = "Via Dal Dazi 233 <br> 7560 Martina <br> Tel. +41 (0)81 860 12 50 <br> Fax +41 (0)81 860 12 51";
        document.getElementById("two").appendChild(bierariaTschlinSAT);
 
-       
+       var weiterInformation = document.createElement("H2");
+       weiterInformation.innerHTML = "<br>Weitere Informationen";
+       document.getElementById("two").appendChild(weiterInformation);
+
        var website = document.createElement("A");
        website.innerHTML = "www.bieraria.ch  mit Onlineshop ";
        website.href = "https://www.bieraria.ch/"; 
@@ -778,6 +795,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        bieraSortenU.setAttribute("id", "ul");
        document.getElementById("two").appendChild(bieraSortenU);
 
+       var weiterInformation = document.createElement("H2");
+       weiterInformation.innerHTML = "<br>Weitere Informationen";
+       document.getElementById("two").appendChild(weiterInformation);
+
        var bieraSortenL1 = document.createElement("LI");
        bieraSortenL1.innerHTML = "<h3>Chopfab Draft</h3>Idealer Durstlöscher, obergärig"; 
        document.getElementById("ul").appendChild(bieraSortenL1);
@@ -803,7 +824,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        document.getElementById("ul").appendChild(bieraSortenL6);
        
        var website = document.createElement("A");
-       website.innerHTML = "www.doppelleuboxer.ch <br>";
+       website.innerHTML = "<br>www.doppelleuboxer.ch <br>";
        website.href = "https://www.doppelleuboxer.ch/de/bier/doppelleu/"; 
        document.getElementById("two").appendChild(website);   
 
@@ -849,16 +870,19 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        document.getElementById("two").appendChild(standBioSchortaT);
 
        var addresse = document.createElement("P");
-       addresse.innerHTML = "BS – Bio Schorta <br> Gian-Fadri und Pamela Schorta Curtins 2 <br> 7559 Tschli <br> Tel. +41 (0)79 265 24 32 www.bioschorta.ch" ;
+       addresse.innerHTML = "BS – Bio Schorta <br> Gian-Fadri & Pamela Schorta Curtins 2 <br> 7559 Tschli <br> Tel. +41 (0)79 265 24 32 www.bioschorta.ch" ;
        document.getElementById("two").appendChild(addresse);
        
-       
+       var weiterInformation = document.createElement("H2");
+       weiterInformation.innerHTML = "<br>Weitere Informationen";
+       document.getElementById("two").appendChild(weiterInformation);
+
        var website = document.createElement("A");
-       website.innerHTML = "www.buntschlin.ch";
+       website.innerHTML = "<br>www.buntschlin.ch";
        website.href = "https://buntschlin.ch/betriebe/bio-schorta/#"; 
        document.getElementById("two").appendChild(website); 
        break;  
-    case   'simmentaler':
+       case   'simmentaler':
         var simmentaler = document.createElement("H1");
         simmentaler.innerHTML = "Simmentaler Bier";
        document.getElementById("two").appendChild(simmentaler);
@@ -879,6 +903,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
       bieraSortenU.setAttribute("id", "ul");
       document.getElementById("two").appendChild(bieraSortenU);
 
+      var weiterInformation = document.createElement("H2");
+      weiterInformation.innerHTML = "<br>Weitere Informationen";
+      document.getElementById("two").appendChild(weiterInformation);
+
       var bieraSortenL1 = document.createElement("LI");
       bieraSortenL1.innerHTML = "<h3>Simmentaler Lager</h3>Naturtrübes Lagerbier, untergärig"; 
       document.getElementById("ul").appendChild(bieraSortenL1);
@@ -896,7 +924,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
       document.getElementById("ul").appendChild(bieraSortenL4);
 
       var website = document.createElement("A");
-      website.innerHTML = "www.simmentalerbier.ch <br>";
+      website.innerHTML = "<br>www.simmentalerbier.ch <br>";
       website.href = "https://simmentalerbier.ch/"; 
       document.getElementById("two").appendChild(website); 
 
@@ -927,12 +955,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        paurariaRiatschA.innerHTML = "Daniela und Fadri Riatsch Padval 211 <br> 7557 Vnà <br> Tel. +41(0)81 866 32 83 <br> bioagricultura@hotmail.com "
        document.getElementById("two").appendChild(paurariaRiatschA);
 
+       var weiterInformation = document.createElement("H2");
+       weiterInformation.innerHTML = "<br>Weitere Informationen";
+       document.getElementById("two").appendChild(weiterInformation);
+
        var website = document.createElement("A");
-       website.innerHTML = "www.buntschlin.ch";
+       website.innerHTML = "<br>www.buntschlin.ch";
        website.href = "https://buntschlin.ch/betriebe/pauraria-riatsch/#"; 
        document.getElementById("two").appendChild(website); 
        break;
-    case 'mundart':
+       case 'mundart':
 
                       var mundart = document.createElement("H1");
                       mundart.innerHTML = "Mundart";
@@ -945,9 +977,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                      var mundartT = document.createElement("P");
                      mundartT.innerHTML = "Unser erster eigener Biersud Helles Mundart Hausbier Cler Seit langer Zeit träumt Matze von einer eigenen Bierkreation. Im Juni 2019 ging mit dem eigenen Biersud dieser Traum in Erfüllung und das Mundartbier «Cler», zu Deutsch hell, ist geboren. In Zusammenarbeit mit der Bieraria Tschlin ist ein helles Bier mit einer erfrischenden, leichten Zitrusnote entstanden. <br> Unser zweiter eigener Biersud Schwarzes Mundart Hausbier Dreggsch Nachdem das helle Mundartbier bei den Gästen so gut ankam, hatte Matze die Idee auch noch ein zweites eigenes Bier zu kreieren, aber dieses Mal ein Schwarzes. Nach einigen Versuchen zusammen mit der Bieraria Tschlin entstand das schwarze Mundartbier «Dreggsch». Was heisst Dreggsch? Matzes Frau, Fabrizia, hatte die Idee dieses Bier nach etwas aus Matzes Geburtsort Dresden zu benennen. Da man in Ostdeutschland zu einem schwarzen Bier Dreggsch (dreckig) sagt, wurde dieses Bier so getauft." 
                      document.getElementById("two").appendChild(mundartT);
+
+                     var weiterInformation = document.createElement("H2");
+                     weiterInformation.innerHTML = "<br>Weitere Informationen";
+                     document.getElementById("two").appendChild(weiterInformation);
                
                      var website = document.createElement("A");
-                     website.innerHTML = "www.mundart-scuol.ch <br>";
+                     website.innerHTML = "<br>www.mundart-scuol.ch <br>";
                      website.href = "https://www.mundart-scuol.ch/"; 
                      document.getElementById("two").appendChild(website); 
                

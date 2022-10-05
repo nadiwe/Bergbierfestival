@@ -328,12 +328,18 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("layerOne").classList.add('boxDesign');
                       document.getElementById("one").classList.add('layoutDesignText');
 
-
-
+                     
                       var bierVisionMonstein = document.createElement("H1");
                       bierVisionMonstein.innerHTML = "BierVision Monstein";
                       bierVisionMonstein.setAttribute("class", "added");
                       document.getElementById("one").appendChild(bierVisionMonstein);
+
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./img/logo/monsteiner.png");
+                      bild.setAttribute("alt", "startBier");
+                      bild.setAttribute("id", "startBier");
+                      bild.setAttribute("class","added");
+                      document.getElementById("one").appendChild(bild);
                
                       var bierVisionMonsteinT = document.createElement("P");
                       bierVisionMonsteinT.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
@@ -344,11 +350,37 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bieraSorten.innerHTML = "Biersorten";
                       bieraSorten.setAttribute("class", "added");
                       document.getElementById("one").appendChild(bieraSorten);
+
+                      var bieraSortenU = document.createElement("UL");
+                      bieraSortenU.setAttribute("class", "added");
+                      bieraSortenU.setAttribute("id", "ul");
+                      document.getElementById("one").appendChild(bieraSortenU);
+
+                      var bieraSortenL1 = document.createElement("LI");
+                      bieraSortenL1.innerHTML = "<h3>Monsteiner Husbier</h3> Hell, unfiltriert. Bio-Berggerst; untergärig"; 
+                      bieraSortenL1.setAttribute("class", "added");
+                      document.getElementById("ul").appendChild(bieraSortenL1);
+
+                      var bieraSortenL2 = document.createElement("LI");
+                      bieraSortenL2.innerHTML = "<h3>Monsteiner Husbier </h3>Hell, unfiltriert. Bio-Berggerst; untergärig "; 
+                      bieraSortenL2.setAttribute("class", "added");
+                      document.getElementById("ul").appendChild(bieraSortenL2);
+
+                      var bieraSortenL3 = document.createElement("LI");
+                      bieraSortenL3.innerHTML = "<h3>Monsteiner Munga </h3>Leichtbier mit 90% Bündner Gerste; obergärig "; 
+                      bieraSortenL3.setAttribute("class", "added");
+                      document.getElementById("ul").appendChild(bieraSortenL3);
+
+                      var bieraSortenL4 = document.createElement("LI");
+                      bieraSortenT.innerHTML = "<h3>  Monsteiner Steinbock </h3>  Bock-Bier mit 90% Bündner Gerste; untergärig  "; 
+                      bieraSortenL4.setAttribute("class", "added");
+                      document.getElementById("ul").appendChild(bieraSortenL4);
+
                
-                      var bieraSortenT = document.createElement("P");
-                      bieraSortenT.innerHTML = "Monsteiner Husbier - Hell, unfiltriert. Bio-Berggerst; untergärig <br> Monsteiner Mungga -  Leichtbier mit 90% Bündner Gerste; obergärig <br> Monsteiner Steinbock - Bock-Bier mit 90% Bündner Gerste; untergärig <br> Monst.Wätterguoga - Amberbier, mit Rauchmalz; Untergärig "
-                      bieraSortenT.setAttribute("class", "added");
-                      document.getElementById("one").appendChild(bieraSortenT);
+                      var bieraSortenL5 = document.createElement("LI");
+                      bieraSortenL5.innerHTML = "<h3> Monst.Wätterguoga </h3> Amberbier, mit Rauchmalz; Untergärig "
+                      bieraSortenL5.setAttribute("class", "added");
+                      document.getElementById("ul").appendChild(bieraSortenL5);
                
                       
                       var website = document.createElement("A");
@@ -703,20 +735,85 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        bieraSorten.setAttribute("class", "added");
        document.getElementById("two").appendChild(bieraSorten);
 
-       var bieraSortenT = document.createElement("P");
-       bieraSortenT.innerHTML = "Tschlin cler -  naturtrübes BIO-Bier, 100% CH, untergärig <br> Tschlin ambra - Amberbier BIO aus 100% CH, obergärig <br> BE Weizen - Weizen BIO mit einh. Weizenmalz, obergärig <br> Staila Alpina - BIO Bier mit Bündner-Edelweiss, untergärig <br> Engadin Pale Ale -  Pale Ale Bier – 100% CH, obergärig <br> La S-chüra -  Dunkles, citrahaltiges Bio Bier, untergärig <br> Festival-Spezial - Gebraut nach Pilsner-Bierstil";
-       bieraSortenT.setAttribute("class", "added");
-       document.getElementById("two").appendChild(bieraSortenT);
+       var bieraSortenU = document.createElement("UL");
+       bieraSortenU.setAttribute("class", "added");
+       bieraSortenU.setAttribute("id", "ul");
+       document.getElementById("two").appendChild(bieraSortenU);
+
+       var bieraSortenL1 = document.createElement("LI");
+       bieraSortenL1.innerHTML = "<h3>Tschlin cler</h3> naturtrübes BIO-Bier, 100% CH, untergärig"; 
+       bieraSortenL1.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL1);
+
+       var bieraSortenL2 = document.createElement("LI");
+       bieraSortenL2.innerHTML = "<h3>Tschlin ambra</h3> Amberbier BIO aus 100% CH, obergärig"; 
+       bieraSortenL2.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL2);
+
+       var bieraSortenL3 = document.createElement("LI");
+       bieraSortenL3.innerHTML = "<h3>BE Weizen</h3>Weizen BIO mit einh. Weizenmalz, obergärig"; 
+       bieraSortenL3.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL3);
+
+       var bieraSortenL4 = document.createElement("LI");
+       bieraSortenL4.innerHTML = "<h3>Staila Alpina</h3>BIO Bier mit Bündner-Edelweiss, untergärig"; 
+       bieraSortenL4.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL4);
+
+       var bieraSortenL5 = document.createElement("LI");
+       bieraSortenL5.innerHTML = "<h3>Engadin Pale Ale</h3>Pale Ale Bier – 100% CH, obergärig"; 
+       bieraSortenL5.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL5);
+
+       var bieraSortenL6 = document.createElement("LI");
+       bieraSortenL6.innerHTML = "<h3>La S-chüra</h3>Dunkles, citrahaltiges Bio Bier, untergärig"; 
+       bieraSortenL6.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL6);
+
+       var bieraSortenL7 = document.createElement("LI");
+       bieraSortenL7.innerHTML = "<h3>Festival-Spezial</h3>Gebraut nach Pilsner-Bierstil"; 
+       bieraSortenL7.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL7);
 
        var bieraEngiadinaisaSpirituosen = document.createElement("H2");
        bieraEngiadinaisaSpirituosen.innerHTML = "Spirituosen";
        bieraEngiadinaisaSpirituosen.setAttribute("class", "added");
        document.getElementById("two").appendChild(bieraEngiadinaisaSpirituosen);
 
-       var bieraEngiadinaisaSpirituosenT = document.createElement("P");
-       bieraEngiadinaisaSpirituosenT.innerHTML = "Tschliner Single Malt - Single Mal aus Tschliner Bier <br> Dschin da Tschlin - GIN <br> Ofa d’or - Hopfenschnaps <br> Tschliner Bier Brand - Tschliner Bier-Destilat <br> Tschliner Edelweiss - Feines Likör mit Edelweissblumen <br> Tschliner Honig Likör - Likör mit Honig";
-       bieraEngiadinaisaSpirituosenT.setAttribute("class", "added");
-       document.getElementById("two").appendChild(bieraEngiadinaisaSpirituosenT);
+       var bieraEngiadinaisaSpirituosenU = document.createElement("UL");
+       bieraEngiadinaisaSpirituosenU.setAttribute("class", "added");
+       bieraEngiadinaisaSpirituosenU.setAttribute("id", "ulS");
+       document.getElementById("two").appendChild(bieraEngiadinaisaSpirituosenU);
+
+       var bieraEngiadinaisaSpirituosenL1 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL1.innerHTML = "<h3>Tschliner Single Malt</h3>Single Mal aus Tschliner Bier "; 
+       bieraEngiadinaisaSpirituosenL1.setAttribute("class", "added");
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL1);
+
+       var bieraEngiadinaisaSpirituosenL2 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL2.innerHTML = "<h3>Dschin da Tschlin</h3>GIN"; 
+       bieraEngiadinaisaSpirituosenL2.setAttribute("class", "added");
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL2);
+
+       var bieraEngiadinaisaSpirituosenL3 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL3.innerHTML = "<h3>Ofa d’or</h3>Hopfenschnaps"; 
+       bieraEngiadinaisaSpirituosenL3.setAttribute("class", "added");
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL3);
+
+       var bieraEngiadinaisaSpirituosenL4 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL4.innerHTML = "<h3>Tschliner Bier Brand</h3>Tschliner Bier-Destilat"; 
+       bieraEngiadinaisaSpirituosenL4.setAttribute("class", "added");
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL4);
+
+       var bieraEngiadinaisaSpirituosenL5 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL5.innerHTML = "<h3>Tschliner Edelweiss</h3>Feines Likör mit Edelweissblumen "; 
+       bieraEngiadinaisaSpirituosenL5.setAttribute("class", "added");
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL5);
+
+       var bieraEngiadinaisaSpirituosenL6 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL6.innerHTML = "<h3>Tschliner Honig Likör</h3>Likör mit Honig"; 
+       bieraEngiadinaisaSpirituosenL6.setAttribute("class", "added");
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL6);
        
        var website = document.createElement("A");
        website.innerHTML = "www.bieraria.ch <br>";
@@ -768,6 +865,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        doppelleuBoxerAG.setAttribute("class", "added");
        document.getElementById("two").appendChild(doppelleuBoxerAG);
 
+       var bild = document.createElement("IMG");
+       bild.setAttribute("src", "./img/logo/doppeleu.png");
+       bild.setAttribute("class","added");
+       document.getElementById("two").appendChild(bild);
+
        var doppelleuBoxerAGT = document.createElement("P");
        doppelleuBoxerAGT.innerHTML = "2012 gegründet, verheiratete sich die Doppelleu Brauwerkstatt AG mit der Bière du Boxer S.A. im Jahr 2017. So entstand die dynamische Doppelleu Boxer AG. Mit der Vision, die qualitativ hochwertigsten Biere in grosser und abwechslungsreicher Vielfalt zu produzieren sind unsere Mitarbeitenden gefordert, immer wieder neue Wege zu gehen. Diverse – auch internationale – Auszeichnungen bestätigen den Erfolg.";
        doppelleuBoxerAGT.setAttribute("class", "added");
@@ -778,11 +880,40 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        bieraSorten.setAttribute("class", "added");
        document.getElementById("two").appendChild(bieraSorten);
 
-       var bieraSortenT = document.createElement("P");
-       bieraSortenT.innerHTML = "Chopfab Draft - Idealer Durstlöscher, obergärig <br> Chopfab Amber - American Red Ale, rotglänzend, obergärig <br> Chopfab Trüeb - Australian Pale Ale mit tasmanischem Galaxy Hopfen, obergärig <br> Chopfab Weize - Belgian Blanche mir fruchtigem Zitrusaroma, obergärig <br> Doppelleu India Pale Ale - Mit viel charakterstarkem Simcoe- und Chinook-Hopfen, obergärig <br> Doppelleu Citra Double Wit - Fruchtiges, belgisches Wit Bier, obergärig "
-       bieraSortenT.setAttribute("class", "added");
-       document.getElementById("two").appendChild(bieraSortenT);
+       var bieraSortenU = document.createElement("UL");
+       bieraSortenU.setAttribute("class", "added");
+       bieraSortenU.setAttribute("id", "ul");
+       document.getElementById("two").appendChild(bieraSortenU);
 
+       var bieraSortenL1 = document.createElement("LI");
+       bieraSortenL1.innerHTML = "<h3>Chopfab Draft</h3>Idealer Durstlöscher, obergärig"; 
+       bieraSortenL1.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL1);
+
+       var bieraSortenL2 = document.createElement("LI");
+       bieraSortenL2.innerHTML = "<h3>Chopfab Amber</h3>American Red Ale, rotglänzend, obergärig"; 
+       bieraSortenL2.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL2);
+
+       var bieraSortenL3 = document.createElement("LI");
+       bieraSortenL3.innerHTML = "<h3>Chopfab Trüeb</h3>Australian Pale Ale mit tasmanischem Galaxy Hopfen, obergärig"; 
+       bieraSortenL3.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL3);
+
+       var bieraSortenL4 = document.createElement("LI");
+       bieraSortenL4.innerHTML = "<h3>Chopfab Weize</h3>Belgian Blanche mir fruchtigem Zitrusaroma, obergärig"; 
+       bieraSortenL4.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL4);
+
+       var bieraSortenL5 = document.createElement("LI");
+       bieraSortenL5.innerHTML = "<h3>Doppelleu India Pale Ale</h3>Mit viel charakterstarkem Simcoe- und Chinook-Hopfen, obergärig"; 
+       bieraSortenL5.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL5);
+
+       var bieraSortenL6 = document.createElement("LI");
+       bieraSortenL6.innerHTML = "<h3>Doppelleu Citra Double Wit</h3>Fruchtiges, belgisches Wit Bier, obergärig"; 
+       bieraSortenL6.setAttribute("class", "added");
+       document.getElementById("ul").appendChild(bieraSortenL6);
        
        var website = document.createElement("A");
        website.innerHTML = "www.doppelleuboxer.ch <br>";
@@ -851,14 +982,14 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        website.setAttribute("class", "added");
        document.getElementById("two").appendChild(website); 
        break;  
-       case   'simmentaler':
+    case   'simmentaler':
         var simmentaler = document.createElement("H1");
         simmentaler.innerHTML = "Simmentaler Bier";
         simmentaler.setAttribute("class", "added");
        document.getElementById("two").appendChild(simmentaler);
 
       var bild = document.createElement("IMG");
-      bild.setAttribute("src", "./img/logo/mundart.png");
+      bild.setAttribute("src", "./img/logo/simmentaler.png");
       bild.setAttribute("class", "added");
       document.getElementById("two").appendChild(bild);
 
@@ -872,10 +1003,30 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
       bieraSorten.setAttribute("class", "added");
       document.getElementById("two").appendChild(bieraSorten);
 
-      var bieraSortenT = document.createElement("P");
-      bieraSortenT.innerHTML = "Simmentaler Lager - Naturtrübes Lagerbier, untergärig <br> Simmentaler Märzen - Märzen - Kräftiges, naturtrübes Bier, untergärig <br> Simmentaler Red Ale - Red Ale Bier mit Irish Moos, obergärig <br> Mountain Pale Ale - IPA Bier mit Irish Moos, obergärig"
-      bieraSortenT.setAttribute("class", "added");
-      document.getElementById("two").appendChild(bieraSortenT);
+      var bieraSortenU = document.createElement("UL");
+      bieraSortenU.setAttribute("class", "added");
+      bieraSortenU.setAttribute("id", "ul");
+      document.getElementById("two").appendChild(bieraSortenU);
+
+      var bieraSortenL1 = document.createElement("LI");
+      bieraSortenL1.innerHTML = "<h3>Simmentaler Lager</h3>Naturtrübes Lagerbier, untergärig"; 
+      bieraSortenL1.setAttribute("class", "added");
+      document.getElementById("ul").appendChild(bieraSortenL1);
+
+      var bieraSortenL2 = document.createElement("LI");
+      bieraSortenL2.innerHTML = "<h3>Simmentaler Märzen</h3>Märzen - Kräftiges, naturtrübes Bier, untergärig"; 
+      bieraSortenL2.setAttribute("class", "added");
+      document.getElementById("ul").appendChild(bieraSortenL2);
+
+      var bieraSortenL3 = document.createElement("LI");
+      bieraSortenL3.innerHTML = "<h3>Simmentaler Red Ale</h3>Red Ale Bier mit Irish Moos, obergärig"; 
+      bieraSortenL3.setAttribute("class", "added");
+      document.getElementById("ul").appendChild(bieraSortenL3);
+
+      var bieraSortenL4 = document.createElement("LI");
+      bieraSortenL4.innerHTML = "<h3> Mountain Pale Ale</h3>IPA Bier mit Irish Moos, obergärig"; 
+      bieraSortenL4.setAttribute("class", "added");
+      document.getElementById("ul").appendChild(bieraSortenL4);
 
       var website = document.createElement("A");
       website.innerHTML = "www.simmentalerbier.ch <br>";

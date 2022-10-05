@@ -854,6 +854,16 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        etterP.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
        etterP.innerHTML = "Vom Baum, aus dem Kräutergarten oder von der Kuh: Im Weiler San Niclà rechts des Inn gibts Lebensmittel direkt vom Hof. <br><br>Konfitüren, Minzensirup, Johannisbeerlikör, eigene Salsize und eigener Käse: Bei Etters ist alles selbstgemacht und geht aus dem vielfältigen Bauern- betrieb hervor. Das Sortiment variiert je nach Saison."
        document.getElementById("two").appendChild(etterP);
+
+       var weiterInformation = document.createElement("H2");
+       weiterInformation.innerHTML = "<br>Weitere Informationen";
+       document.getElementById("two").appendChild(weiterInformation);
+
+       var website = document.createElement("A");
+       website.innerHTML = "<br>www.buntschlin.ch <br>";
+       website.href = "https://buntschlin.ch/betriebe/prodots-etter/#"; 
+       document.getElementById("two").appendChild(website);   
+
        break;
        case   'standBioSchorta': 
 

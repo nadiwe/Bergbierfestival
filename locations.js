@@ -100,10 +100,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         
 //Click on Map Icons 
     map.on('click', 'locations', (e) =>  {
-      backToImg();
-      backToMap();
-
-            $('#one').empty();
+      reset();
              setImg = e.features[0].properties.Icon;
             console.log(setImg);
 
@@ -1062,8 +1059,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
     }
 //
 function infosGeneral(){
- backToImg();
- backToMap();
+ one();
+ two();
 
   document.getElementById("hiddenInfoGeneral").style.display = "block";
   document.getElementById('circleGeneral').style.backgroundColor = '#a1c9c9';  
@@ -1083,7 +1080,8 @@ function gifStart(){
 }
 
 //Overview Icons - popup Infotext desapear
-    function backToImg(){
+    function one(){
+        document.getElementById("hiddenInfoGeneral").style.display = 'none';
         document.getElementById("layerOne").style.display = 'none';
         document.getElementById("layerOne").classList.remove('boxDesign');
         document.getElementById("layerOne").classList.remove('illusDesign');
@@ -1093,24 +1091,23 @@ function gifStart(){
         document.getElementById("one").classList.remove('layoutDesignText');
         document.getElementById("one").classList.remove('layoutDesignIllus');
 
-
-        
-
+        document.getElementById("circleGeneral").style.background = 'white';
       
 
         $('#one').empty();
     }
 
 //Overview Map - Icons desapear
-    function backToMap(){
+    function two(){
         document.getElementById("layerTwo").style.display = "none";
         document.getElementById("hiddenInfoGeneral").style.display = "none";
-        document.getElementById("layerOne").style.display = 'none';
-        document.getElementById("circleGeneral").style.background = 'white';
 
-
-        $('#two').empty();
+        $('#two').empty();  
     }
+    function reset(){
+      two();
+      one();
+  }
 
 //Informations about the hike
 document.getElementById('bergmassiv').onclick = function(){

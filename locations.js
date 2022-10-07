@@ -124,7 +124,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
 
                         var text = document.createElement("P");
-                        text.innerHTML = "Schön, bist du bei uns. Wir freuen uns, dass wir auch heuer wieder die Bergbierwanderung durchführen können.<br> Die Wanderung ist 11.6 Kilometer lang, gemütlich und aussichtsreich. Auf der gegenüberliegenden Talseite türmen sich die 3000er der Engadiner Dolomiten. Und an diesem speziellen Tag lernt man auch, wie der Schweizer Berg schmeckt, da alle Bergbierbrauereien mit Bergquellwasser produzieren, welche sich mit den Degustationsständen auf der Wanderung präsentieren. Bis zum Festivalgelände kann jedermann/frau etwa 25 Bergbiersorten probieren und auf dem Festivalgelände in Ramosch sein neu erkorenes Lieblingsbier weitertrinken."
+                        text.innerHTML = "Schön, bist du bei uns. Wir freuen uns, dass wir auch heuer wieder die Bergbierwanderung durchführen können.<br> <br> Die Wanderung ist 11.6 Kilometer lang, gemütlich und aussichtsreich. Auf der gegenüberliegenden Talseite türmen sich die 3000er der Engadiner Dolomiten. Und an diesem speziellen Tag lernt man auch, wie der Schweizer Berg schmeckt, da alle Bergbierbrauereien mit Bergquellwasser produzieren, welche sich mit den Degustationsständen auf der Wanderung präsentieren. Bis zum Festivalgelände kann jedermann/frau etwa 25 Bergbiersorten probieren und auf dem Festivalgelände in Ramosch sein neu erkorenes Lieblingsbier weitertrinken."
                         document.getElementById("one").appendChild(text);
 
                         var grillstand = document.createElement("H2");

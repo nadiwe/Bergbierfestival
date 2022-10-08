@@ -255,7 +255,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("one").appendChild(kreis);
                       
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./illustrationen/fleisch.png");
+                      bild.setAttribute("src", "./illustrationen/cullas.png");
                       bild.setAttribute("alt", "matze");
                       bild.setAttribute("id", "matze");
                       bild.setAttribute("onclick", "infoblock()");

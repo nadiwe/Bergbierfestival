@@ -3,8 +3,8 @@
 let marker, posLo,posLa;
 mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5ejl2a2sifQ.GRtniIwJvJYrRsWqMR5MYA';
         const bounds = [
-            [10.3, 46.78], // [west, south]
-            [10.45, 46.9]  // [east, north]
+            [10.25, 46.68], // [west, south]
+            [10.55, 47]  // [east, north]
         ];
 
         let setImg;
@@ -16,7 +16,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             style: 'mapbox://styles/nwfwsb/cl4srws8i002p14lp3up2ng3d',
             center: [10.40000, 46.85009],
             zoom: 11.5,
-            //maxBounds: bounds
+            maxBounds: bounds
         });
         
         navigator.geolocation.watchPosition((pos,err,options) =>{

@@ -503,11 +503,11 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
 
                    var rumantsch = document.createElement("H1");
-                        rumantsch.innerHTML = "Rumauntsch <br> nossa lingua";
+                        rumantsch.innerHTML = "Rumantsch <br> nossa lingua";
                         document.getElementById("one").appendChild(rumantsch);
 
                         var rumantschD = document.createElement("P");
-                        rumantschD.innerHTML = "Rätoromanisch unsere Sprache! Wieso nicht das nächste Bier auf romanisch bestellen?";
+                        rumantschD.innerHTML = "Rätoromanisch ist unsere Sprache! Wieso nicht das nächste Bier auf romanisch bestellen?";
                         document.getElementById("one").appendChild(rumantschD);
 
                        
@@ -527,7 +527,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("one").appendChild(foto);
 
                         var rumantschT = document.createElement("P");
-                        rumantschT.innerHTML = "In nossa regiun discurrina rumantsch e da quai eschna fich superbis. Precis quel character as chatta eir in nossa biera ed in tuot ils prodots da Bun Tschlin. No cumprain il malt dad üerdi in Engiadina, il malt da furmaint illa Val Müstair ed dafatta offa prodüaina per part in nossa regiun. E scha no fain üna biera speciala, sco nossa biera alvetern schi tscherchaina adüna prodots regiunals – in quel cas alveterns dal puschlav. <br> Be pro no daja s-chettas bieras grischunaisas. VIVA nossa regiun! Ed hajat incletta scha quist program es uossa in lingua tudais-cha. Nossa bieraria douvra eir ils giasts d’utrò per pudair surviver ed uschea inclegian eir quels alch. Però, no rumantsch savain daplü!"
+                        rumantschT.innerHTML = "In nossa regiun discurrina rumantsch e da quai eschna fich superbis. Precis quel character as chatta eir in nossa biera ed in tuot ils prodots da Bun Tschlin. No cumprain il malt dad üerdi in Engiadina, il malt da furmaint illa Val Müstair ed dafatta offa Prodüina per part in nossa regiun. E scha no fain üna biera speciala, sco nossa biera alvetern schi tscherchaina adüna prodots regiunals – in quel cas alveterns dal puschlav. <br> Be pro no daja s-chettas bieras grischunaisas. VIVA nossa regiun! Ed hajat incletta scha quist program es uossa in lingua tudais-cha. Nossa bieraria douvra eir ils giasts d’utrò per pudair surviver ed uschea inclegian eir quels alch. Però, no rumantsch savain daplü!"
                         document.getElementById("one").appendChild(rumantschT);
 
                                  
@@ -955,7 +955,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        document.getElementById("two").appendChild(bild);
 
        var paurariaRiatschT = document.createElement("P");
-       paurariaRiatschT.innerHTML = "Berge, feinste Kräuter, glückliche Kühe: Das steckt in den Bio-Alpprodukten aus Vnà. Und nach Wunsch gibts auch eine medizinische Massage dazu.<b>Dreitausend Kilo Käse produzieren Daniela und Fadri Riatsch jede Saison auf der Alp Pradigiant oberhalb von Vnà. Er gilt als einer der besten seiner Art und begrüssen im kleinsten Käseladen der Welt Ihre Kundschaft: In einem Kühlschrank vor dem Hof.<b>"
+       paurariaRiatschT.innerHTML = "Berge, feinste Kräuter, glückliche Kühe: Das steckt in den Bio-Alpprodukten aus Vnà. Und nach Wunsch gibts auch eine medizinische Massage dazu. Dreitausend Kilo Käse produzieren Daniela und Fadri Riatsch jede Saison auf der Alp Pradigiant oberhalb von Vnà. Er gilt als einer der besten seiner Art und sie begrüssen im kleinsten Käseladen der Welt ihre Kundschaft: In einem Kühlschrank vor dem Hof.<b>"
        document.getElementById("two").appendChild(paurariaRiatschT);
 
        var paurariaRiatschA = document.createElement("P");

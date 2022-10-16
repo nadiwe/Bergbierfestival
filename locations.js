@@ -653,7 +653,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
        document.getElementById("two").appendChild(bild);
 
        var bieraEngiadinaisaT = document.createElement("P");
-       bieraEngiadinaisaT.innerHTML = "Die Idee einer Bieraria im Unterengadin «Tschlin» geht auf einen «Zukunfts-Workshop» der Gemeinde Tschlin in den ersten Jahren des neuen Jahrtausends zurück. Dort entstand auch die Idee des Werbe- und Verkaufsförderungsverbunds «Bun Tschlin». Am 30. Juni 2004 wurde die Gründung der Bieraria Tschlin SA notariell beglaubigt. <br> Die Brauerei Tschlin produziert und vermarktet regionale BIO Biersorten aus einheimischem Gerstenmalz, Tschliner Wasser, Hopfen und Hefe. Bei uns werden fast alle Biersorten aus 100% aus Schweizer Rohstoffe hergestellt, so dass wir uns mit gutem Gewissen als «regionalste Brauerei der Schweiz» bezeichnen dürfen.";
+       bieraEngiadinaisaT.innerHTML = "Die Idee, einer Bieraria im Unterengadiner Dorf Tschlin zu gründen, geht auf einen Zukunftsworkshop der Gemeinde Tschlin in den ersten Jahren des neuen Jahrtausends zurück. Dort entstand auch die Idee des Werbe- und Verkaufsförderungsverbunds «Bun Tschlin». Am 30. Juni 2004 wurde die Gründung der Bieraria Tschlin SA notariell beglaubigt.<br> Die Brauerei Tschlin produziert und vermarktet regionale BIO Biersorten aus einheimischem Gerstenmalz, Tschliner Wasser, Hopfen und Hefe. Bei uns werden fast alle Biersorten aus 100% Schweizer Rohstoffe hergestellt, so dass wir uns mit gutem Gewissen als «regionalste Brauerei der Schweiz» bezeichnen dürfen.";
        document.getElementById("two").appendChild(bieraEngiadinaisaT);
 
        var bieraSorten = document.createElement("H2");
@@ -849,7 +849,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
        var etterP = document.createElement("P");
        etterP.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
-       etterP.innerHTML = "Vom Baum, aus dem Kräutergarten oder von der Kuh: Im Weiler San Niclà rechts des Inn gibts Lebensmittel direkt vom Hof. <br><br>Konfitüren, Minzensirup, Johannisbeerlikör, eigene Salsize und eigener Käse: Bei Etters ist alles selbstgemacht und geht aus dem vielfältigen Bauern- betrieb hervor. Das Sortiment variiert je nach Saison."
+       etterP.innerHTML = "Vom Baum, aus dem Kräutergarten oder von der Kuh: Im Weiler San Niclà rechts des Inn gibts Lebensmittel direkt vom Hof. <br><br>Konfitüren, Minzensirup, Johannisbeerlikör, eigene Salsize und eigener Käse: Bei Etters ist alles selbstgemacht und geht aus dem vielfältigen Bauernbetrieb hervor. Das Sortiment variiert je nach Saison."
        document.getElementById("two").appendChild(etterP);
 
        var weiterInformation = document.createElement("H2");
@@ -980,10 +980,22 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                      var bild = document.createElement("IMG");
                      bild.setAttribute("src", "./img/logo/mundart.png");
                      document.getElementById("two").appendChild(bild);
+
+                     var mundartCT = document.createElement("H2");
+                     mundartCT.innerHTML = "<br>Helles Mundart Hausbier Cler";
+                     document.getElementById("two").appendChild(mundartCT);
                
-                     var mundartT = document.createElement("P");
-                     mundartT.innerHTML = "Unser erster eigener Biersud Helles Mundart Hausbier Cler Seit langer Zeit träumt Matze von einer eigenen Bierkreation. Im Juni 2019 ging mit dem eigenen Biersud dieser Traum in Erfüllung und das Mundartbier «Cler», zu Deutsch hell, ist geboren. In Zusammenarbeit mit der Bieraria Tschlin ist ein helles Bier mit einer erfrischenden, leichten Zitrusnote entstanden. <br> Unser zweiter eigener Biersud Schwarzes Mundart Hausbier Dreggsch Nachdem das helle Mundartbier bei den Gästen so gut ankam, hatte Matze die Idee auch noch ein zweites eigenes Bier zu kreieren, aber dieses Mal ein Schwarzes. Nach einigen Versuchen zusammen mit der Bieraria Tschlin entstand das schwarze Mundartbier «Dreggsch». Was heisst Dreggsch? Matzes Frau, Fabrizia, hatte die Idee dieses Bier nach etwas aus Matzes Geburtsort Dresden zu benennen. Da man in Ostdeutschland zu einem schwarzen Bier Dreggsch (dreckig) sagt, wurde dieses Bier so getauft." 
-                     document.getElementById("two").appendChild(mundartT);
+                     var mundartC = document.createElement("P");
+                     mundartC.innerHTML = "Unser erster eigener Biersud Helles Mundart Hausbier. Seit langer Zeit träumt Matze von einer eigenen Bierkreation. Im Juni 2019 ging mit dem eigenen Biersud dieser Traum in Erfüllung und das Mundartbier «Cler», zu Deutsch hell, ist geboren. In Zusammenarbeit mit der Bieraria Tschlin ist ein helles Bier mit einer erfrischenden, leichten Zitrusnote entstanden."
+                     document.getElementById("two").appendChild(mundartC);
+
+                     var mundartDT = document.createElement("H2");
+                     mundartDT.innerHTML = "<br>Schwarzes Mundart Hausbier Dreggsch";
+                     document.getElementById("two").appendChild(mundartDT);
+               
+                     var mundartD = document.createElement("P");
+                     mundartD.innerHTML = "Nachdem das helle Mundartbier bei den Gästen so gut ankam, hatte Matze die Idee auch noch ein zweites eigenes Bier zu kreieren, aber dieses Mal ein Schwarzes. Nach einigen Versuchen zusammen mit der Bieraria Tschlin entstand das schwarze Mundartbier «Dreggsch». Was heisst Dreggsch? Matzes Frau, Fabrizia, hatte die Idee dieses Bier nach etwas aus Matzes Geburtsort Dresden zu benennen. Da man in Ostdeutschland zu einem schwarzen Bier Dreggsch (dreckig) sagt, wurde dieses Bier so getauft."
+                     document.getElementById("two").appendChild(mundartD);
 
                      var weiterInformation = document.createElement("H2");
                      weiterInformation.innerHTML = "<br>Weitere Informationen";
@@ -1073,6 +1085,17 @@ function infosGeneral(){
   
   
 }
+function infosBus(){
+  one();
+  two();
+ 
+   document.getElementById("hiddenBus").style.display = "block";
+   document.getElementById('circleBus').style.backgroundColor = '#d3e9f5';  
+ 
+
+   
+   
+ }
 
 function gifStart(){
   var bild = document.getElementById("startBier");
@@ -1082,6 +1105,7 @@ function gifStart(){
 //Overview Icons - popup Infotext desapear
     function one(){
         document.getElementById("hiddenInfoGeneral").style.display = 'none';
+        document.getElementById("hiddenBus").style.display = 'none';
         document.getElementById("layerOne").style.display = 'none';
         document.getElementById("layerOne").classList.remove('boxDesign');
         document.getElementById("layerOne").classList.remove('illusDesign');
@@ -1092,6 +1116,8 @@ function gifStart(){
         document.getElementById("one").classList.remove('layoutDesignIllus');
 
         document.getElementById("circleGeneral").style.background = 'white';
+        document.getElementById("circleBus").style.background = 'white';
+
       
 
         $('#one').empty();

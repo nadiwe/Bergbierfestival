@@ -142,6 +142,10 @@ svg {
     background-color: #a1c9c9;
 }
 
+#circleBus {
+    background-color: #ffffff;
+}
+
 .layoutDesignText {
     margin: 8vh 6vh 8vh 3vh;
 }
@@ -197,6 +201,11 @@ svg {
 #hiddenInfoGeneral {
     background-color: #a0cfd7;
     display: block;
+}
+
+#hiddenBus {
+    background-color: #d3e9f5;
+    display: none;
 }
 
 
@@ -440,6 +449,12 @@ svg {
     #hiddenInfoGeneral {
         padding: 7vh 4vh 3vh 2vh;
     }
+
+    #hiddenBus {
+        padding: 7vh 4vh 3vh 2vh;
+    }
+
+
 }
 
 @media (min-width:1920px) {

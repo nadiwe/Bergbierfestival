@@ -326,6 +326,22 @@ svg {
     background-color: #0762f5ad;
 }
 
+#nochKeinTicket {
+    z-index: 3;
+    position: fixed;
+    display: block;
+    bottom: 2vh;
+    left: 2vw;
+
+
+    width: 10vw;
+    height: 10vw;
+    border-radius: 1vw;
+    background-color: #e96060;
+
+
+}
+
 
 
 
@@ -364,6 +380,11 @@ svg {
     }
 
     .bottonFixedInfos {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
+
+    #nochKeinTicket {
         width: 3.5vw;
         height: 3.5vw;
     }
@@ -484,6 +505,10 @@ svg {
         height: 4vw;
     }
 
+    #nochKeinTicket {
+        width: 3.5vw;
+        height: 3.5vw;
+    }
 
 
 

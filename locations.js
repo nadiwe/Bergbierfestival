@@ -543,6 +543,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     document.getElementById("layerOne").classList.add('boxDesignSmall');
                     document.getElementById("one").classList.add('layoutDesignText');
 
+                  
+
 
 
                             var h1 = document.createElement("H1");
@@ -550,13 +552,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         document.getElementById("one").appendChild(h1);
                         
 
-                        var foto = document.createElement("IMG");
+                       /* var foto = document.createElement("IMG");
                         foto.setAttribute("src", "./illustrationen/goldenesBierglas.png");
                         foto.setAttribute("alt", "goldenesBierGlas");
                         foto.setAttribute("id", "fotos");
                         foto.setAttribute("id", "gold");
                         document.getElementById("one").appendChild(foto);
-
+*/
                         var h1 = document.createElement("P");
                         h1.innerHTML = "Die Wanderung ist gut mit den Bergbierfestival-Fahnen beschildert und leiten euch den Weg!<br><br>Auf der Digital-Map eingezeichnet findet ihr ein paar spezielle Fahnen - Finde mich! Sucht diese Fahnen auf der Wanderung, darauf ist ein QR-Code zu finden, wenn Ihr diesen einlest, erscheint ein Buchstaben. Wer am Schluss auf dem Festgelände das Lösungswort abgibt, kann an der Verlosung von drei Bun Tschlin Apéro-Boxen teilnehmen. Abgabe bei der Garderobe gleich beim Eingang ins Festzelt. <br> <br>Blera furtüna – viel Glück!";
                         document.getElementById("one").appendChild(h1);
@@ -1064,8 +1066,12 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         matze.innerHTML = "«Cullas da Vnà» – Kugeln von Vnà";
         document.getElementById("two").appendChild(matze);
 
+        var titel = document.createElement("H2");
+        titel.innerHTML = "Cuschina Engiadinaisa - Engadiner Esskultur";
+        document.getElementById("two").appendChild(titel);
+
         var matzeT = document.createElement("P");
-        matzeT.innerHTML = "Cuschina Engiadinaisa - Engadiner Esskultur <br> Jede Familie hat ihre eigene Esstraditionen und die besten Familienrezepte werden von Generation zu Generation weitergegeben. Hier am Stand von Matze kommt ihr in den Genuss der 'Cullas da Vnà' - wie der Name bereits verrät, haben diese ihren Ursprung in Vnà. Für diejenigen von euch, die nicht genug davon bekommen, hier das Rezept zum selber machen! "
+        matzeT.innerHTML = "Jede Familie hat ihre eigenen Esstraditionen und die besten Familienrezepte werden von Generation zu Generation weitergegeben. Hier am Stand von Matze kommt ihr in den Genuss der 'Cullas da Vnà' – in einer etwas abgeänderten vegetarischen Version mit Randen.<br><br>Wie der Name bereits verrät, haben die 'Cullas da Vnà' ihren Ursprung in Vnà. Für diejenigen von euch, die nicht genug davon bekommen, hier das Originalrezept von Iris Riatsch, Bun Tschlin-Mitglied, Gewinnerin Kultsendung von SRF 'die Landfrauenküche' und Köchin des Jahrzehnts, Iris Riatsch, zum selbst machen:"
         document.getElementById("two").appendChild(matzeT);
 
         var zutaten = document.createElement("H2");
@@ -1108,6 +1114,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         var zubereitungT = document.createElement("P")
         zubereitungT.innerHTML = "Die Kartoffeln schälen und mit der Bircherraffel fein raffeln. Gut abtropfen lassen. Speck und Würste in Würfeli schneiden, mit den Kartoffeln mischen. Mehl und Paniermehl dazugeben. Alles zusammen zu einem Teig vermischen, würzen. Mit 2 Esslöffeln oder mit beiden Händen Kugeln formen. Damit der Teig nicht klebt, Löffel oder Hände mit Wasser befeuchten. <br> Die Kugeln in siedendes Wasser geben. Wenn sie auftauchen, sind sie gar und man kann sie aus dem Wasser nehmen. In Butter goldgelb anbraten. <br> Reibkäse darüber streuen, mit Salat oder Gemüse servieren.";
         document.getElementById("two").appendChild(zubereitungT);
+
+      
+
+        var link = document.createElement("A");
+        link.innerHTML = "SRF bi de Lüt";
+        link.href = "https://www.srf.ch/sendungen/srf-bi-de-luet-landfrauenkueche/rezepte-landfrauenkueche-2015/cullas-da-vna-kugeln-von-vna"; 
+        document.getElementById("two").appendChild(link); 
 
         break;
       }

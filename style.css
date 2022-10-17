@@ -162,7 +162,7 @@ svg {
 }
 
 .boxDesignSmall {
-    width: 47vw;
+    width: 67vw;
     background-color: #00a26b;
 }
 
@@ -416,8 +416,8 @@ svg {
     }
 
     .boxDesignSmall {
-        width: 18vw;
-        height: 39vh;
+        width: 30vw;
+        max-height: 60vh;
     }
 
 

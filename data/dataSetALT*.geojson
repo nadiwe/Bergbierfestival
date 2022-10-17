@@ -33,7 +33,7 @@
       "type": "Feature",
       "properties": {
         "Icon": "blue",
-        "art": "fahne2"
+        "art": "bier"
       },
       "geometry": {
         "coordinates": [
@@ -62,7 +62,7 @@
       "type": "Feature",
       "properties": {
         "Icon": "blue",
-        "art": "fahne4"
+        "art": "bier"
       },
       "geometry": {
         "coordinates": [
@@ -137,7 +137,7 @@
       "type": "Feature",
       "properties": {
         "Icon": "blue",
-        "art": "fahne1"
+        "art": "bier"
       },
       "geometry": {
         "coordinates": [
@@ -191,21 +191,6 @@
         "type": "Point"
       },
       "id": "7ade03f97fb52d36b8dc11558f660849"
-    },
-    {
-      "type": "Feature",
-      "properties": {
-        "art": "blue",
-        "Icon": "fahne5"
-      },
-      "geometry": {
-        "coordinates": [
-          10.388261,
-          46.837658
-        ],
-        "type": "Point"
-      },
-      "id": "88ac50810100db3b78ae133fc49133cf"
     },
     {
       "type": "Feature",
@@ -11740,7 +11725,7 @@
       "type": "Feature",
       "properties": {
         "Icon": "blue",
-        "art": "fahne3"
+        "art": "bier"
       },
       "geometry": {
         "coordinates": [

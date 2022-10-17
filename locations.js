@@ -534,6 +534,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         break;
 
                     case   'blue':   
+
+                    setArt = e.features[0].properties.art;
+                    console.log(setArt);
+
                     document.getElementById("layerOne").style.display = 'block';
                     document.getElementById("layerOne").classList.add('boxDesign');
                     document.getElementById("layerOne").classList.add('boxDesignSmall');
@@ -552,6 +556,45 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         foto.setAttribute("id", "fotos");
                         foto.setAttribute("id", "gold");
                         document.getElementById("one").appendChild(foto);
+
+                        var h1 = document.createElement("P");
+                        h1.innerHTML = "Die Wanderung ist gut mit den Bergbierfestival-Fahnen beschildert und leiten euch den Weg!<br><br>Auf der Digital-Map eingezeichnet findet ihr ein paar spezielle Fahnen - Finde mich! Sucht diese Fahnen auf der Wanderung, darauf ist ein QR-Code zu finden, wenn Ihr diesen einlest, erscheint ein Buchstaben. Wer am Schluss auf dem Festgelände das Lösungswort abgibt, kann an der Verlosung von drei Bun Tschlin Apéro-Boxen teilnehmen. Abgabe bei der Garderobe gleich beim Eingang ins Festzelt. <br> <br>Blera furtüna – viel Glück!";
+                        document.getElementById("one").appendChild(h1);
+
+                       
+
+                        var link = document.createElement("A");
+                        link.setAttribute("id", "sponsor");
+                        document.getElementById("one").appendChild(link);
+
+                        var logo = document.createElement("IMG");
+                      
+                        logo.setAttribute("alt", "logo");
+                        logo.setAttribute("id", "fotos");
+                        logo.setAttribute("id", "logo");
+                        document.getElementById("sponsor").appendChild(logo);
+
+
+
+
+                        switch(setArt){
+                          case 'fahne1': case 'fahne5':
+                            link.href = "https://www.bezzola-denoth.ch/home"; 
+                            logo.setAttribute("src", "./img/logo/bezzolaDenoth.png");
+                            break;
+
+                            case 'fahne2': case 'fahne4':
+                              link.href = "https://www.valsot.ch/"; 
+                              logo.setAttribute("src", "./img/logo/valsot.jpg");
+                              break;
+                              case 'fahne3':
+                                link.href = "https://buntschlin.ch/"; 
+                                logo.setAttribute("src", "./img/logo/bt.jpg");
+                                break;
+                               
+                        };
+
+
 
 
                         break;

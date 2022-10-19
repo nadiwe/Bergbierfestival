@@ -161,6 +161,10 @@ svg {
     max-height: 67vh;
 }
 
+.boxAbgesagt {
+    background-color: #fa4c4c;
+}
+
 .boxDesignSmall {
     width: 67vw;
     background-color: #00a26b;

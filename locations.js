@@ -149,13 +149,13 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'startGipfelstuermer':
                        document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
-                      document.getElementById("layerOne").classList.add('boxPiz');
+                      document.getElementById("layerOne").classList.add('boxAbgesagt');
                       document.getElementById("one").classList.add('layoutDesignText');
 
 
                       var h1 = document.createElement("H1");
-                    //  h1.innerHTML = "WETTERBEDINGT ABGESAGT<br>";
-                    h1.innerHTML = "Option Gipfelstürmende <br>Piz Arina";
+                     h1.innerHTML = "WETTERBEDINGT ABGESAGT<br>Option Gipfelstürmende <br>Piz Arina";
+                  
 
                       document.getElementById("one").appendChild(h1);
 

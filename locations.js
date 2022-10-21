@@ -149,18 +149,17 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'startGipfelstuermer':
                        document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
-                      document.getElementById("layerOne").classList.add('boxAbgesagt');
+                      document.getElementById("layerOne").classList.add('boxPiz');
                       document.getElementById("one").classList.add('layoutDesignText');
 
 
                       var h1 = document.createElement("H1");
-                      h1.innerHTML = "WETTERBEDINGT ABGESAGT<br>";
+                    //  h1.innerHTML = "WETTERBEDINGT ABGESAGT<br>";
+                    h1.innerHTML = "Option Gipfelstürmende <br>Piz Arina";
+
                       document.getElementById("one").appendChild(h1);
 
-                      var h2 = document.createElement("H2");
-                      h2.innerHTML = "Option Gipfelbier <br>Piz Arina";
-                      document.getElementById("one").appendChild(h2);
-
+                    
                       var text = document.createElement("P");
                         text.innerHTML = "Diverse Gipfelstürmerinnen und Gipfelstürmer sind bereits unterwegs zum Piz Arina. Sie geniessen dort ein einmaliges Gipfelbier. Ab der Station Bieraria Tschlin werden diese auch wieder auf der Strecke sein und die Wanderung mitlaufen. ";
                         document.getElementById("one").appendChild(text);

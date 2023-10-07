@@ -154,7 +154,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
 
                       var h1 = document.createElement("H1");
-                     h1.innerHTML = "WETTERBEDINGT ABGESAGT<br>Option Gipfelstürmende <br>Piz Arina";
+                     h1.innerHTML = "Option Gipfelstürmende <br>Piz Arina";
                   
 
                       document.getElementById("one").appendChild(h1);

@@ -32,6 +32,21 @@
     {
       "type": "Feature",
       "properties": {
+        "Icon": "blue",
+        "art": "fahne2"
+      },
+      "geometry": {
+        "coordinates": [
+          10.40901,
+          46.863066
+        ],
+        "type": "Point"
+      },
+      "id": "0c9b16763bc96a839f67c7800bd655e7"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "Icon": "konzert"
       },
       "geometry": {
@@ -42,6 +57,21 @@
         "type": "Point"
       },
       "id": "11c164987075cc87b58b2790d24fe1be"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Icon": "blue",
+        "art": "fahne4"
+      },
+      "geometry": {
+        "coordinates": [
+          10.39429,
+          46.838456
+        ],
+        "type": "Point"
+      },
+      "id": "175f06b59c764d4a406d3c9b059e91e7"
     },
     {
       "type": "Feature",
@@ -66,8 +96,8 @@
       },
       "geometry": {
         "coordinates": [
-          10.392758,
-          46.838859
+          10.40287,
+          46.844514
         ],
         "type": "Point"
       },
@@ -91,7 +121,7 @@
     {
       "type": "Feature",
       "properties": {
-        "Icon": "stand4",
+        "Icon": "stand5",
         "art": "loc"
       },
       "geometry": {
@@ -106,6 +136,21 @@
     {
       "type": "Feature",
       "properties": {
+        "Icon": "blue",
+        "art": "fahne1"
+      },
+      "geometry": {
+        "coordinates": [
+          10.421863,
+          46.870509
+        ],
+        "type": "Point"
+      },
+      "id": "43fdc7575b003027fd86251a7fda746d"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "Icon": "startGipfelstuermer"
       },
       "geometry": {
@@ -116,6 +161,21 @@
         "type": "Point"
       },
       "id": "4c5bbb4269e918f02af89c255c9a8d3f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Icon": "stand3",
+        "art": "loc"
+      },
+      "geometry": {
+        "coordinates": [
+          10.397795,
+          46.866041
+        ],
+        "type": "Point"
+      },
+      "id": "55660bb521f930b393c260a90b0fd3a2"
     },
     {
       "type": "Feature",
@@ -135,7 +195,22 @@
     {
       "type": "Feature",
       "properties": {
-        "Icon": "stand3",
+        "Icon": "blue",
+        "art": "fahne5"
+      },
+      "geometry": {
+        "coordinates": [
+          10.388261,
+          46.837658
+        ],
+        "type": "Point"
+      },
+      "id": "88ac50810100db3b78ae133fc49133cf"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Icon": "stand4",
         "art": "loc"
       },
       "geometry": {
@@ -11634,13 +11709,13 @@
     {
       "type": "Feature",
       "properties": {
-        "Icon": "stand5",
+        "Icon": "stand6",
         "art": "loc"
       },
       "geometry": {
         "coordinates": [
-          10.401823,
-          46.843645
+          10.399923,
+          46.840982
         ],
         "type": "Point"
       },
@@ -11660,6 +11735,21 @@
         "type": "Point"
       },
       "id": "cf907d6ddbd5bba2aeb5bd6c458da70f"
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "Icon": "blue",
+        "art": "fahne3"
+      },
+      "geometry": {
+        "coordinates": [
+          10.403166,
+          46.851064
+        ],
+        "type": "Point"
+      },
+      "id": "d047a89a54275851c6cc5bd92f8aab5f"
     }
   ],
   "type": "FeatureCollection"

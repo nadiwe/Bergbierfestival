@@ -149,7 +149,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     case   'startGipfelstuermer':
                        document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
-                      document.getElementById("layerOne").classList.add('boxAbgesagt');
+                      document.getElementById("layerOne").classList.add('boxPiz'); 
                       document.getElementById("one").classList.add('layoutDesignText');
 
 
@@ -1174,6 +1174,7 @@ function gifStart(){
         document.getElementById("layerOne").classList.remove('boxDesignKonzert');
         document.getElementById("one").classList.remove('layoutDesignText');
         document.getElementById("one").classList.remove('layoutDesignIllus');
+        document.getElementById("layerOne").classList.remove('boxPiz'); 
 
         document.getElementById("circleGeneral").style.background = 'white';
         document.getElementById("circleBus").style.background = 'white';

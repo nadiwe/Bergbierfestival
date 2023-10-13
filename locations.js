@@ -217,8 +217,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                      
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/bier.png");
-                      bild.setAttribute("alt", "simmentaler");
-                      bild.setAttribute("id", "simmentaler");
+                      bild.setAttribute("alt", "chopfab");
+                      bild.setAttribute("id", "chopfab");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
 
@@ -1030,14 +1030,28 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
       document.getElementById("two").appendChild(domleschgerT);
 
       var website = document.createElement("A");
-      website.innerHTML = "<br>www.simmentalerbier.ch <br>";
-      website.href = "https://simmentalerbier.ch/"; 
-      document.getElementById("two").appendChild(website); 
+      website.innerHTML = "<br>www.bierliebe.ch<br>";
+      website.href = "https://shop.bierliebe.ch/produkt-kategorie/brauerei/domleschger-bier/"
+      document.getElementById("two").appendChild(website);
+         
+                     break;
+       case 'chopfab':
+        var chopfab = document.createElement("H1");
+        chopfab.innerHTML = "Chopfab Boxer";
+       document.getElementById("two").appendChild(chopfab);
 
-      var instagram = document.createElement("A");
-      instagram.innerHTML = "Instagram <br>";
-      instagram.href = "https://shop.bierliebe.ch/produkt-kategorie/brauerei/domleschger-bier/"; 
-      document.getElementById("two").appendChild(instagram); 
+      var bild = document.createElement("IMG");
+      bild.setAttribute("src", "./img/logo/chopfabBoxer.png");
+      document.getElementById("two").appendChild(bild);
+
+      var chopfabT = document.createElement("P");
+      chopfabT.innerHTML = "Seit 2012 prägt Kopfab boxer als führende unabhängige Craft-Brauerei der Schweiz mit den Produktionsstandorten Winterthur und Yverdon-les-Bains den Schweizer Biermarkt nachhaltig. Auf die Qualität legt die Brauerei einen hohen Wert. Zudem bietet die Brauerei verschiedene Biersorten vom naturtrüben Lagerbier über das Weizenbier bis zum speziellen Edelweissbier."
+      document.getElementById("two").appendChild(chopfabT);
+
+      var website = document.createElement("A");
+      website.innerHTML = "<br>www.chopfabboxer.ch<br>";
+      website.href = "https://www.chopfabboxer.ch/de/"; 
+      document.getElementById("two").appendChild(website); 
 
          
                      break;

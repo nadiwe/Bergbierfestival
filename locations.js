@@ -1017,45 +1017,17 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                      document.getElementById("two").appendChild(facebook); 
                      break;
        case 'domleschger':
-        var simmentaler = document.createElement("H1");
-        simmentaler.innerHTML = "Simmentaler Bier";
-       document.getElementById("two").appendChild(simmentaler);
+        var domleschger = document.createElement("H1");
+        domleschger.innerHTML = "Domleschger Bier";
+       document.getElementById("two").appendChild(domleschger);
 
       var bild = document.createElement("IMG");
-      bild.setAttribute("src", "./img/logo/simmentaler.png");
+      bild.setAttribute("src", "./img/logo/DomleschgerBier.jpg");
       document.getElementById("two").appendChild(bild);
 
-      var simmentalerT = document.createElement("P");
-      simmentalerT.innerHTML = "Am Fusse des Wildstrubelmassivs im Simmental entsteht das Simmentaler Bier. Seit dem ersten Sud wird das Bier handwerklich, nach traditioneller Art gebraut und abgefüllt. <br> Die Simmentaler Brauerei setzt auf Innovationen und erbringt beste Dienstleistungen. Die Produkte überzeugen durch Qualität und sorgfältig ausgesuchte Rohstoffe. Die Partnerschaften mit Kunden, Mitarbeitern und Lieferanten sind für die Brauerei von zentraler Bedeutung und finden immer auf Augenhöhe statt. So entstehen zwischen den Anspruchsgruppen starke und langjährige Partnerschaften. "
-      document.getElementById("two").appendChild(simmentalerT);
-
-      var bieraSorten = document.createElement("H2");
-      bieraSorten.innerHTML = "Biersorten";
-      document.getElementById("two").appendChild(bieraSorten);
-
-      var bieraSortenU = document.createElement("UL");
-      bieraSortenU.setAttribute("id", "ul");
-      document.getElementById("two").appendChild(bieraSortenU);
-
-      var weiterInformation = document.createElement("H2");
-      weiterInformation.innerHTML = "<br>Weitere Informationen";
-      document.getElementById("two").appendChild(weiterInformation);
-
-      var bieraSortenL1 = document.createElement("LI");
-      bieraSortenL1.innerHTML = "<h3>Simmentaler Lager</h3>Naturtrübes Lagerbier, untergärig"; 
-      document.getElementById("ul").appendChild(bieraSortenL1);
-
-      var bieraSortenL2 = document.createElement("LI");
-      bieraSortenL2.innerHTML = "<h3>Simmentaler Märzen</h3>Märzen - Kräftiges, naturtrübes Bier, untergärig"; 
-      document.getElementById("ul").appendChild(bieraSortenL2);
-
-      var bieraSortenL3 = document.createElement("LI");
-      bieraSortenL3.innerHTML = "<h3>Simmentaler Red Ale</h3>Red Ale Bier mit Irish Moos, obergärig"; 
-      document.getElementById("ul").appendChild(bieraSortenL3);
-
-      var bieraSortenL4 = document.createElement("LI");
-      bieraSortenL4.innerHTML = "<h3> Mountain Pale Ale</h3>IPA Bier mit Irish Moos, obergärig"; 
-      document.getElementById("ul").appendChild(bieraSortenL4);
+      var domleschgerT = document.createElement("P");
+      domleschgerT.innerHTML = "Das Domleschger Bier ist eine Erfolgsgeschichte, die im Jahr 2006 begann. Mit viel Ehrgeiz und einer eigenen Brauanlage wurde das erste Bier im Jahr 2008 unter dem Namen Domleschger Bier verkauft. Nach einigen Herausforderungen fand die Brauerei schließlich in Feldis einen neuen Standort und hat heute über 30 Verkaufsstellen. Von dem goldfarbenen, naturtrüben Amber Bier wird jährlich ca. 5000 Liter Bier gebraut und mit einer Flaschengärung hergestellt."
+      document.getElementById("two").appendChild(domleschgerT);
 
       var website = document.createElement("A");
       website.innerHTML = "<br>www.simmentalerbier.ch <br>";
@@ -1064,13 +1036,10 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
       var instagram = document.createElement("A");
       instagram.innerHTML = "Instagram <br>";
-      instagram.href = "https://www.instagram.com/simmentaler_bier/"; 
+      instagram.href = "https://shop.bierliebe.ch/produkt-kategorie/brauerei/domleschger-bier/"; 
       document.getElementById("two").appendChild(instagram); 
 
-      var facebook = document.createElement("A");
-      facebook.innerHTML = "Facebook";
-      facebook.href = "https://www.facebook.com/simmentalerbier"; 
-      document.getElementById("two").appendChild(facebook);       
+         
                      break;
       case 'matze':
         var matze = document.createElement("H1");

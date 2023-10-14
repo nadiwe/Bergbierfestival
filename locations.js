@@ -119,7 +119,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         var video = document.createElement("IFRAME");
                         video.setAttribute("frameborder", "0"); 
                         video.setAttribute('allowFullScreen', '')
-                        video.setAttribute("src", " https://www.youtube.com/embed/3g70Ol0KR9Q");
+                        video.setAttribute("src", "https://www.youtube.com/embed/3g70Ol0KR9Q");
                         document.getElementById("one").appendChild(video);
                         
 
@@ -186,8 +186,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/bier.png");
-                      bild.setAttribute("alt", "domleschger");
-                      bild.setAttribute("id", "domleschger");
+                      bild.setAttribute("alt", "steimandli");
+                      bild.setAttribute("id", "steimandli");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
 
@@ -228,9 +228,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("one").appendChild(kreis);
                       
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./illustrationen/kaese.png");
-                      bild.setAttribute("alt", "paurariaRiatsch");
-                      bild.setAttribute("id", "paurariaRiatsch");
+                      bild.setAttribute("src", "./illustrationen/sandwitch.png");
+                      bild.setAttribute("alt", "cilgiaEtter");
+                      bild.setAttribute("id", "cilgiaEtter");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
 
@@ -316,46 +316,60 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("alt", "startBier");
                       bild.setAttribute("id", "startBier");
                       document.getElementById("one").appendChild(bild);
-
-                     
-               
-                     
                     
 
                           break;
                     //_____________________illu
                     case   'stand6':
                       document.getElementById("layerOne").style.display = 'block';
-                      document.getElementById("layerOne").classList.add('illusDesign');
-                      document.getElementById("one").classList.add('layoutDesignIllus');
+                      document.getElementById("layerOne").classList.add('boxDesign');
+                      document.getElementById("one").classList.add('layoutDesignText');
+
+                      var mundart = document.createElement("H1");
+                      mundart.innerHTML = "Mundart";
+                      document.getElementById("one").appendChild(mundart);
+               
+                     var bild = document.createElement("IMG");
+                     bild.setAttribute("src", "./img/logo/mundart.png");
+                     document.getElementById("one").appendChild(bild);
+
+                     var mundartCT = document.createElement("H2");
+                     mundartCT.innerHTML = "<br>Helles Mundart Hausbier Cler";
+                     document.getElementById("one").appendChild(mundartCT);
+               
+                     var mundartC = document.createElement("P");
+                     mundartC.innerHTML = "Unser erster eigener Biersud Helles Mundart Hausbier. Seit langer Zeit träumt Matze von einer eigenen Bierkreation. Im Juni 2019 ging mit dem eigenen Biersud dieser Traum in Erfüllung und das Mundartbier «Cler», zu Deutsch hell, ist geboren. In Zusammenarbeit mit der Bieraria Tschlin ist ein helles Bier mit einer erfrischenden, leichten Zitrusnote entstanden."
+                     document.getElementById("one").appendChild(mundartC);
+
+                     var mundartDT = document.createElement("H2");
+                     mundartDT.innerHTML = "<br>Schwarzes Mundart Hausbier Dreggsch";
+                     document.getElementById("one").appendChild(mundartDT);
+               
+                     var mundartD = document.createElement("P");
+                     mundartD.innerHTML = "Nachdem das helle Mundartbier bei den Gästen so gut ankam, hatte Matze die Idee auch noch ein zweites eigenes Bier zu kreieren, aber dieses Mal ein Schwarzes. Nach einigen Versuchen zusammen mit der Bieraria Tschlin entstand das schwarze Mundartbier «Dreggsch». Was heisst Dreggsch? Matzes Frau, Fabrizia, hatte die Idee dieses Bier nach etwas aus Matzes Geburtsort Dresden zu benennen. Da man in Ostdeutschland zu einem schwarzen Bier Dreggsch (dreckig) sagt, wurde dieses Bier so getauft."
+                     document.getElementById("one").appendChild(mundartD);
+
+                     var weiterInformation = document.createElement("H2");
+                     weiterInformation.innerHTML = "<br>Weitere Informationen";
+                     document.getElementById("one").appendChild(weiterInformation);
+               
+                     var website = document.createElement("A");
+                     website.innerHTML = "<br>www.mundart-scuol.ch <br>";
+                     website.href = "https://www.mundart-scuol.ch/"; 
+                     document.getElementById("one").appendChild(website); 
+               
+                     var instagram = document.createElement("A");
+                     instagram.innerHTML = "Instagram <br>";
+                     instagram.href = "https://www.instagram.com/mundartscuol/"; 
+                     document.getElementById("one").appendChild(instagram); 
+               
+                     var facebook = document.createElement("A");
+                     facebook.innerHTML = "Facebook";
+                     facebook.href = "https://www.facebook.com/mundartscuol"; 
+                     document.getElementById("one").appendChild(facebook); 
 
 
-
-                            var kreis = document.createElement("div");
-                            kreis.setAttribute("id","circle");
-                            document.getElementById("one").appendChild(kreis);
-                           
-                            var bild = document.createElement("IMG");
-                            bild.setAttribute("src", "./illustrationen/bier.png");
-                            bild.setAttribute("alt", "doppelleuBoxerAG");
-                            bild.setAttribute("id", "doppelleuBoxerAG");
-                            bild.setAttribute("onclick", "infoblock()");
-                            document.getElementById("circle").appendChild(bild);
-                            var kreis = document.createElement("div");
-                            
-                            var kreis = document.createElement("div");
-                            kreis.setAttribute("id","circle2");
-                            document.getElementById("one").appendChild(kreis);
-
-                            var bild = document.createElement("IMG");
-                            bild.setAttribute("src", "./illustrationen/kunfi.png");
-                            bild.setAttribute("alt", "etter");
-                            bild.setAttribute("id", "etter");
-                            bild.setAttribute("onclick", "infoblock()");
-                            document.getElementById("circle2").appendChild(bild);
-    
-                       
-  
+               
                             break;
                    //_________________text
                    case   'stand8':
@@ -396,10 +410,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                      facebook.innerHTML = "Facebook";
                      facebook.href = "https://www.facebook.com/bieratschlin"; 
                      document.getElementById("one").appendChild(facebook);
-                              
-  
                               break;    
-                    
+                  
                    case   'foto1': 
                    document.getElementById("layerOne").style.display = 'block';
                    document.getElementById("layerOne").classList.add('boxDesign');
@@ -565,19 +577,21 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
 
                             var h1 = document.createElement("H1");
-                        h1.innerHTML = "Festival in Ramosch – MEGAWATT";
+                        h1.innerHTML = "Festival in Ramosch – DRAUFGÄNGER";
                         document.getElementById("one").appendChild(h1);
+
+                        var text = document.createElement("P");
+                        text.innerHTML = "Türöffnung: 16:00 Uhr  <br><br> Seit mehr als 20 Jahren sind die Draufgänger ein fester Bestandteil auf allen Bühnen im deutschsprachigen Raum. Für die Karriere wird das Jahr 2023 ein aufregendes werden. Chiara wird aus eigener Entscheidung eine Ex-Draufgängerin und die 4 Draufgänger-Bürschen machen weiter mit einer ganz klaren Mission: Sie wollen die erfolgreichste und bekannteste Boyband der gesamten Partyszene werden. Umso aufregender, dass die Band in diesem Jahr Teil des Bergbierfestivals ist und am Abend nach der Bergbierwanderung im Festzelt auftretet!"
+                        document.getElementById("one").appendChild(text);
                         
 
-                        var video = document.createElement("IFRAME");
+              /*          var video = document.createElement("IFRAME");
                         video.setAttribute("frameborder", "0"); 
                         video.setAttribute('allowFullScreen', '');
                         video.setAttribute("src", "https://www.youtube.com/embed/GoY4dkOD2iE");
                         document.getElementById("one").appendChild(video);
 
-                        var text = document.createElement("P");
-                        text.innerHTML = "Dieses Jahr können sich alle Partygänger/innen freuen – denn das Fest am Abend findet mit der Band «MEGAWATT» statt. Leidenschaftlich, rockig, modern und eingängig gesungen in Thomas' unverwechselbarem Dialekt sorgt die Band für noch mehr Heimatgefühl. Alle Bergbierwanderer und -Wanderinnen können am Abend noch zur Musik tanzen und das degustierte Bier weiter geniessen. Natürlich sind auch alle Gäste willkommen, die nicht an der Wanderung teilgenommen haben. "
-                        document.getElementById("one").appendChild(text);
+                      
 
                         var foto1 = document.createElement("IMG");
                         foto1.setAttribute("src", "./img/megawatt/Megawatt1.jpg");
@@ -594,7 +608,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         var foto4 = document.createElement("IMG");
                         foto4.setAttribute("src", "./img/megawatt/Megawatt4.jpg");
                         document.getElementById("one").appendChild(foto4);
-                      
+                   */   
                         break;
             }
             
@@ -839,18 +853,17 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
        
        break;  
-       case   'etter': 
+       case   'cilgiaEtter': 
        var etter = document.createElement("H1");
-       etter.innerHTML = "Prodots Etter";
+       etter.innerHTML = "Cilgia Etter";
        document.getElementById("two").appendChild(etter);
 
        var bild = document.createElement("IMG");
-       bild.setAttribute("src", "./img/logo/peEtter.jpg");
+       bild.setAttribute("src", "./img/logo/cilgiaEtter.jpg");
        document.getElementById("two").appendChild(bild);
 
        var etterP = document.createElement("P");
-       etterP.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
-       etterP.innerHTML = "Vom Baum, aus dem Kräutergarten oder von der Kuh: Im Weiler San Niclà rechts des Inn gibts Lebensmittel direkt vom Hof. <br><br>Konfitüren, Minzensirup, Johannisbeerlikör, eigene Salsize und eigener Käse: Bei Etters ist alles selbstgemacht und geht aus dem vielfältigen Bauernbetrieb hervor. Das Sortiment variiert je nach Saison."
+       etterP.innerHTML = "Das charmante Alpenbistro, Café Etter, verwöhnt seine Gäste mit einer vielfältigen Auswahl an hauseigenen Spezialitäten. Das sind Nusstorten, verschiedene Konfitüren und Sirupsorten und vieles mehr. Darüber hinaus bietet es sieben Gästezimmer in der liebevoll gestalteten Pension."
        document.getElementById("two").appendChild(etterP);
 
        var weiterInformation = document.createElement("H2");
@@ -859,7 +872,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
        var website = document.createElement("A");
        website.innerHTML = "<br>www.buntschlin.ch <br>";
-       website.href = "https://buntschlin.ch/betriebe/prodots-etter/#"; 
+       website.href = "https://buntschlin.ch/betriebe/cafe-etter/"; 
        document.getElementById("two").appendChild(website);   
 
        break;
@@ -1117,6 +1130,41 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         document.getElementById("two").appendChild(link); 
 
         break;
+        case   'steimandli':
+          
+          var steimandliBier = document.createElement("H1");
+          steimandliBier.innerHTML = "Steimandli Bier";
+         document.getElementById("two").appendChild(steimandliBier);
+
+         var bild = document.createElement("IMG");
+         bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
+         document.getElementById("two").appendChild(bild);
+  
+  
+         var steimandliBierT = document.createElement("P");
+         steimandliBierT.innerHTML = "Beim Grünhopfenbier, auch Wet Hop Beer genannt, wird die Hopfengabe mit frischen, ungedarrten Hopfendolden vorgenommen - innert 5 Stunden nach der Ernte. Vom Feld ins Bier sozusagen, und das möglichst ohne Umwege. Und natürlich arbeiten wir mit einheimischem Hopfen aus dem Prättigau. Das 'weltweit' einzige Bier mit Bündner Hopfen."
+         document.getElementById("two").appendChild(steimandliBierT);
+
+         var weiterInformation = document.createElement("H2");
+         weiterInformation.innerHTML = "<br>Weitere Informationen";
+         document.getElementById("two").appendChild(weiterInformation);
+
+
+         var website = document.createElement("A");
+         website.innerHTML = "<br>www.bieraria.ch <br>";
+         website.href = "https://www.bieraria.ch/"; 
+         document.getElementById("two").appendChild(website);   
+  
+         var instagram = document.createElement("A");
+         instagram.innerHTML = "Instagram  <br>";
+         instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+         document.getElementById("two").appendChild(instagram);
+         
+         var facebook = document.createElement("A");
+         facebook.innerHTML = "Facebook";
+         facebook.href = "https://www.facebook.com/bieratschlin"; 
+         document.getElementById("two").appendChild(facebook);
+                  break;    
       }
     }
 //

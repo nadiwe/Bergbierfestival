@@ -316,6 +316,58 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       bild.setAttribute("alt", "startBier");
                       bild.setAttribute("id", "startBier");
                       document.getElementById("one").appendChild(bild);
+
+                      var bierVisionMonsteinT = document.createElement("P");
+                      bierVisionMonsteinT.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
+                      document.getElementById("one").appendChild(bierVisionMonsteinT);
+
+                      var bieraSorten = document.createElement("H2");
+                      bieraSorten.innerHTML = "Biersorten";
+                      document.getElementById("one").appendChild(bieraSorten);
+
+                      var bieraSortenU = document.createElement("UL");
+                      bieraSortenU.setAttribute("id", "ul");
+                      document.getElementById("one").appendChild(bieraSortenU);
+
+                      var weiterInformation = document.createElement("H2");
+                      weiterInformation.innerHTML = "<br>Weitere Informationen";
+                      document.getElementById("one").appendChild(weiterInformation);
+
+                      var website = document.createElement("A");
+                      website.innerHTML = "<br>www.monsteiner.ch <br>";
+                      website.href = "https://monsteiner.ch/"; 
+                      document.getElementById("one").appendChild(website);   
+
+                      var instagram = document.createElement("A");
+                      instagram.innerHTML = "Instagram  <br>";
+                      instagram.href = "https://www.instagram.com/monsteiner_bier/"; 
+                      document.getElementById("one").appendChild(instagram);
+
+                      var facebook = document.createElement("A");
+                      facebook.innerHTML = "Facebook  ";
+                      facebook.href = "https://www.facebook.com/biervision/"; 
+                      document.getElementById("one").appendChild(facebook);
+
+                      var bieraSortenL1 = document.createElement("LI");
+                      bieraSortenL1.innerHTML = "<h3>Monsteiner Husbier</h3> Hell, unfiltriert. Bio-Berggerst; untergärig"; 
+                      document.getElementById("ul").appendChild(bieraSortenL1);
+
+                      var bieraSortenL2 = document.createElement("LI");
+                      bieraSortenL2.innerHTML = "<h3>Monsteiner Husbier </h3>Hell, unfiltriert. Bio-Berggerst; untergärig "; 
+                      document.getElementById("ul").appendChild(bieraSortenL2);
+
+                      var bieraSortenL3 = document.createElement("LI");
+                      bieraSortenL3.innerHTML = "<h3>Monsteiner Munga </h3>Leichtbier mit 90% Bündner Gerste; obergärig "; 
+                      document.getElementById("ul").appendChild(bieraSortenL3);
+
+                      var bieraSortenL4 = document.createElement("LI");
+                      bieraSortenT.innerHTML = "<h3>  Monsteiner Steinbock </h3>  Bock-Bier mit 90% Bündner Gerste; untergärig  "; 
+                      document.getElementById("ul").appendChild(bieraSortenL4);
+
+
+                      var bieraSortenL5 = document.createElement("LI");
+                      bieraSortenL5.innerHTML = "<h3> Monst.Wätterguoga </h3> Amberbier, mit Rauchmalz; Untergärig ";
+                      document.getElementById("ul").appendChild(bieraSortenL5);
                     
 
                           break;
@@ -1069,7 +1121,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
          
                      break;
-      case 'matze':
+       case 'matze':
         var matze = document.createElement("H1");
         matze.innerHTML = "«Cullas da Vnà» – Kugeln von Vnà";
         document.getElementById("two").appendChild(matze);
@@ -1130,7 +1182,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         document.getElementById("two").appendChild(link); 
 
         break;
-        case   'steimandli':
+       case   'steimandli':
           
           var steimandliBier = document.createElement("H1");
           steimandliBier.innerHTML = "Steimandli Bier";

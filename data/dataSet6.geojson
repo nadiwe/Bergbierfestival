@@ -17,6 +17,21 @@
     {
       "type": "Feature",
       "properties": {
+        "Icon": "stand8",
+        "art": "loc"
+      },
+      "geometry": {
+        "coordinates": [
+          10.370954,
+          46.867692
+        ],
+        "type": "Point"
+      },
+      "id": "0b03e3f6db11480ec7386a51e22d66b2"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "Icon": "konzert"
       },
       "geometry": {

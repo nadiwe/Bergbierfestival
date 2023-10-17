@@ -306,69 +306,22 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                       document.getElementById("layerOne").classList.add('boxDesign');
                       document.getElementById("one").classList.add('layoutDesignText');
 
-                     
-                      var bierVisionMonstein = document.createElement("H1");
-                      bierVisionMonstein.innerHTML = "BierVision Monstein";
-                      document.getElementById("one").appendChild(bierVisionMonstein);
-
-                      var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./img/logo/monsteiner.png");
-                      bild.setAttribute("alt", "startBier");
-                      bild.setAttribute("id", "startBier");
-                      document.getElementById("one").appendChild(bild);
-
-                      var bierVisionMonsteinT = document.createElement("P");
-                      bierVisionMonsteinT.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
-                      document.getElementById("one").appendChild(bierVisionMonsteinT);
-
-                      var bieraSorten = document.createElement("H2");
-                      bieraSorten.innerHTML = "Biersorten";
-                      document.getElementById("one").appendChild(bieraSorten);
-
-                      var bieraSortenU = document.createElement("UL");
-                      bieraSortenU.setAttribute("id", "ul");
-                      document.getElementById("one").appendChild(bieraSortenU);
-
-                      var weiterInformation = document.createElement("H2");
-                      weiterInformation.innerHTML = "<br>Weitere Informationen";
-                      document.getElementById("one").appendChild(weiterInformation);
-
-                      var website = document.createElement("A");
-                      website.innerHTML = "<br>www.monsteiner.ch <br>";
-                      website.href = "https://monsteiner.ch/"; 
-                      document.getElementById("one").appendChild(website);   
-
-                      var instagram = document.createElement("A");
-                      instagram.innerHTML = "Instagram  <br>";
-                      instagram.href = "https://www.instagram.com/monsteiner_bier/"; 
-                      document.getElementById("one").appendChild(instagram);
-
-                      var facebook = document.createElement("A");
-                      facebook.innerHTML = "Facebook  ";
-                      facebook.href = "https://www.facebook.com/biervision/"; 
-                      document.getElementById("one").appendChild(facebook);
-
-                      var bieraSortenL1 = document.createElement("LI");
-                      bieraSortenL1.innerHTML = "<h3>Monsteiner Husbier</h3> Hell, unfiltriert. Bio-Berggerst; untergärig"; 
-                      document.getElementById("ul").appendChild(bieraSortenL1);
-
-                      var bieraSortenL2 = document.createElement("LI");
-                      bieraSortenL2.innerHTML = "<h3>Monsteiner Husbier </h3>Hell, unfiltriert. Bio-Berggerst; untergärig "; 
-                      document.getElementById("ul").appendChild(bieraSortenL2);
-
-                      var bieraSortenL3 = document.createElement("LI");
-                      bieraSortenL3.innerHTML = "<h3>Monsteiner Munga </h3>Leichtbier mit 90% Bündner Gerste; obergärig "; 
-                      document.getElementById("ul").appendChild(bieraSortenL3);
-
-                      var bieraSortenL4 = document.createElement("LI");
-                      bieraSortenT.innerHTML = "<h3>  Monsteiner Steinbock </h3>  Bock-Bier mit 90% Bündner Gerste; untergärig  "; 
-                      document.getElementById("ul").appendChild(bieraSortenL4);
-
-
-                      var bieraSortenL5 = document.createElement("LI");
-                      bieraSortenL5.innerHTML = "<h3> Monst.Wätterguoga </h3> Amberbier, mit Rauchmalz; Untergärig ";
-                      document.getElementById("ul").appendChild(bieraSortenL5);
-                    
+                      var domleschger = document.createElement("H1");
+                      domleschger.innerHTML = "Domleschger Bier";
+                     document.getElementById("one").appendChild(domleschger);
+              
+                    var bild = document.createElement("IMG");
+                    bild.setAttribute("src", "./img/logo/DomleschgerBier.jpg");
+                    document.getElementById("one").appendChild(bild);
+              
+                    var domleschgerT = document.createElement("P");
+                    domleschgerT.innerHTML = "Das Domleschger Bier ist eine Erfolgsgeschichte, die im Jahr 2006 begann. Mit viel Ehrgeiz und einer eigenen Brauanlage wurde das erste Bier im Jahr 2008 unter dem Namen Domleschger Bier verkauft. Nach einigen Herausforderungen fand die Brauerei schließlich in Feldis einen neuen Standort und hat heute über 30 Verkaufsstellen. Von dem goldfarbenen, naturtrüben Amber Bier wird jährlich ca. 5000 Liter Bier gebraut und mit einer Flaschengärung hergestellt."
+                    document.getElementById("one").appendChild(domleschgerT);
+              
+                    var website = document.createElement("A");
+                    website.innerHTML = "<br>www.bierliebe.ch<br>";
+                    website.href = "https://shop.bierliebe.ch/produkt-kategorie/brauerei/domleschger-bier/"
+                    document.getElementById("one").appendChild(website);
 
                           break;
                     //_____________________illu
@@ -1183,6 +1136,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
 
         break;
        case   'steimandli':
+
           
           var steimandliBier = document.createElement("H1");
           steimandliBier.innerHTML = "Steimandli Bier";
@@ -1217,7 +1171,70 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
          facebook.href = "https://www.facebook.com/bieratschlin"; 
          document.getElementById("two").appendChild(facebook);
                   break;    
-      }
+      case 'monstein':
+      var bierVisionMonstein = document.createElement("H1");
+                      bierVisionMonstein.innerHTML = "BierVision Monstein";
+                      document.getElementById("two").appendChild(bierVisionMonstein);
+
+                      var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./img/logo/monsteiner.png");
+                      bild.setAttribute("alt", "startBier");
+                      bild.setAttribute("id", "startBier");
+                      document.getElementById("two").appendChild(bild);
+
+                      var bierVisionMonsteinT = document.createElement("P");
+                      bierVisionMonsteinT.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
+                      document.getElementById("two").appendChild(bierVisionMonsteinT);
+
+                      var bieraSorten = document.createElement("H2");
+                      bieraSorten.innerHTML = "Biersorten";
+                      document.getElementById("two").appendChild(bieraSorten);
+
+                      var bieraSortenU = document.createElement("UL");
+                      bieraSortenU.setAttribute("id", "ul");
+                      document.getElementById("two").appendChild(bieraSortenU);
+
+                      var weiterInformation = document.createElement("H2");
+                      weiterInformation.innerHTML = "<br>Weitere Informationen";
+                      document.getElementById("two").appendChild(weiterInformation);
+
+                      var website = document.createElement("A");
+                      website.innerHTML = "<br>www.monsteiner.ch <br>";
+                      website.href = "https://monsteiner.ch/"; 
+                      document.getElementById("two").appendChild(website);   
+
+                      var instagram = document.createElement("A");
+                      instagram.innerHTML = "Instagram  <br>";
+                      instagram.href = "https://www.instagram.com/monsteiner_bier/"; 
+                      document.getElementById("two").appendChild(instagram);
+
+                      var facebook = document.createElement("A");
+                      facebook.innerHTML = "Facebook  ";
+                      facebook.href = "https://www.facebook.com/biervision/"; 
+                      document.getElementById("two").appendChild(facebook);
+
+                      var bieraSortenL1 = document.createElement("LI");
+                      bieraSortenL1.innerHTML = "<h3>Monsteiner Husbier</h3> Hell, unfiltriert. Bio-Berggerst; untergärig"; 
+                      document.getElementById("ul").appendChild(bieraSortenL1);
+
+                      var bieraSortenL2 = document.createElement("LI");
+                      bieraSortenL2.innerHTML = "<h3>Monsteiner Husbier </h3>Hell, unfiltriert. Bio-Berggerst; untergärig "; 
+                      document.getElementById("ul").appendChild(bieraSortenL2);
+
+                      var bieraSortenL3 = document.createElement("LI");
+                      bieraSortenL3.innerHTML = "<h3>Monsteiner Munga </h3>Leichtbier mit 90% Bündner Gerste; obergärig "; 
+                      document.getElementById("ul").appendChild(bieraSortenL3);
+
+                      var bieraSortenL4 = document.createElement("LI");
+                      bieraSortenT.innerHTML = "<h3>  Monsteiner Steinbock </h3>  Bock-Bier mit 90% Bündner Gerste; untergärig  "; 
+                      document.getElementById("ul").appendChild(bieraSortenL4);
+
+
+                      var bieraSortenL5 = document.createElement("LI");
+                      bieraSortenL5.innerHTML = "<h3> Monst.Wätterguoga </h3> Amberbier, mit Rauchmalz; Untergärig ";
+                      document.getElementById("ul").appendChild(bieraSortenL5); 
+                      break;
+    }
     }
 //
 function infosGeneral(){

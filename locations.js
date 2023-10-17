@@ -1286,7 +1286,7 @@ function gifStart(){
         document.getElementById("layerOne").classList.remove('boxDesignKonzert');
         document.getElementById("one").classList.remove('layoutDesignText');
         document.getElementById("one").classList.remove('layoutDesignIllus');
-        document.getElementById("layerOne").classList.remove('boxPiz'); 
+        document.getElementById("layerOne").classList.remove('boxAbgesagt'); 
 
         document.getElementById("circleGeneral").style.background = 'white';
         document.getElementById("circleBus").style.background = 'white';

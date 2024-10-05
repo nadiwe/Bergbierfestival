@@ -1140,9 +1140,9 @@ ABSAGE
                      bild.setAttribute("src", "./img/logo/stadtbierChur.jpg");
                      document.getElementById("two").appendChild(bild);
               
-                    var girunC = document.createElement("P");
-                    girunC.innerHTML = "Das Ziel der Stadtbier Brauerei Chur ist es, die Konsumenten mit einem ehrlichen, gehaltvollen und naturbelassenen Bier von hier zu begeistern. Die Hausbrauerei Stadtbier Chur AG setzt auf erstklassige Rohprodukte, auf Leidenschaft und Handwerk."
-                    document.getElementById("two").appendChild(girunC);
+                    var content = document.createElement("P");
+                    content.innerHTML = "Das Ziel der Stadtbier Brauerei Chur ist es, die Konsumenten mit einem ehrlichen, gehaltvollen und naturbelassenen Bier von hier zu begeistern. Die Hausbrauerei Stadtbier Chur AG setzt auf erstklassige Rohprodukte, auf Leidenschaft und Handwerk."
+                    document.getElementById("two").appendChild(content);
 
                     var weiterInformation = document.createElement("H2");
                     weiterInformation.innerHTML = "<br>Weitere Informationen";

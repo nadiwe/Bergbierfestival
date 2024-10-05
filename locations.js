@@ -640,20 +640,18 @@ ABSAGE
                 var subtitel = document.createElement("H2");
                 subtitel.innerHTML = "<br>Weitere Informationen";
                 document.getElementById("two").appendChild(subtitel);
-         
-                var website1 = document.createElement("A");
-                website1.innerHTML = "Webseite Frisch Wild";
-                website1.href = "http://www.frisch-wild.ch/"; 
-                website1.target = "_blank";
-                document.getElementById("two").appendChild(website1); 
 
-                var website2 = document.createElement("A");
-                website2.innerHTML = "Webseite Buntschlin";
-                website2.href = "https://buntschlin.ch/betriebe/bacharia-zanetti/#"; 
-                website2.target = "_blank";
-                document.getElementById("two").appendChild(website2); 
-         
-               
+                var website = document.createElement("A");
+                website.innerHTML = "<br>Webseite Frisch Wild<br>"; 
+                website.href = "http://www.frisch-wild.ch/";
+                website.target = "_blank";
+                document.getElementById("two").appendChild(website); 
+
+                var websiteSecond = document.createElement("A");
+                websiteSecond.innerHTML = "<br>Webseite Buntschlin<br>"; 
+                websiteSecond.href = "https://buntschlin.ch/betriebe/bacharia-zanetti/#";
+                websiteSecond.target = "_blank";
+                document.getElementById("two").appendChild(websiteSecond); 
                 
          break;    
        case 'mayer':

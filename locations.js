@@ -636,18 +636,22 @@ ABSAGE
                 var zanettiA = document.createElement("P");
                 zanettiA.innerHTML = "Bacharia Zanetti <br> Quadra Secha <br> 7556 Ramosch <br> Tel. +41 (0)81 864 86 50 <br> info@frischwild.ch"
                 document.getElementById("two").appendChild(zanettiA);
-         
-                var websiteZ = document.createElement("A");
-                websiteZ.innerHTML = " www.frisch-wild.ch";
-                websiteZ.href = "http://www.frisch-wild.ch/"; 
-                website.target = "_blank";
-                document.getElementById("two").appendChild(websiteZ); 
 
-                var website = document.createElement("A");
-                website.innerHTML = "Webseite";
-                website.href = "https://buntschlin.ch/betriebe/bacharia-zanetti/#"; 
-                website.target = "_blank";
-                document.getElementById("two").appendChild(website); 
+                var subtitel = document.createElement("H2");
+                subtitel.innerHTML = "<br>Weitere Informationen";
+                document.getElementById("two").appendChild(subtitel);
+         
+                var website1 = document.createElement("A");
+                website1.innerHTML = "Webseite Frisch Wild";
+                website1.href = "http://www.frisch-wild.ch/"; 
+                website1.target = "_blank";
+                document.getElementById("two").appendChild(website1); 
+
+                var website2 = document.createElement("A");
+                website2.innerHTML = "Webseite Buntschlin";
+                website2.href = "https://buntschlin.ch/betriebe/bacharia-zanetti/#"; 
+                website2.target = "_blank";
+                document.getElementById("two").appendChild(website2); 
          
                
                 

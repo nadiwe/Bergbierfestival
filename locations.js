@@ -1207,7 +1207,7 @@ ABSAGE
              
                    var facebook = document.createElement("A");
                    facebook.innerHTML = "<br>Facebook<br>";
-                   facebook.href = "https://www.facebook.com/liechtensteinerbrauhaus"; 
+                   facebook.href = "https://www.facebook.com/BirrariaPoschiavina"; 
                    facebook.target = "_blank";
                    document.getElementById("two").appendChild(facebook); 
                    break;

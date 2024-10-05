@@ -1173,10 +1173,16 @@ ABSAGE
                    var weiterInformation = document.createElement("H2");
                    weiterInformation.innerHTML = "<br>Weitere Informationen";
                    document.getElementById("two").appendChild(weiterInformation);
+
+                   var website = document.createElement("A");
+                   website.innerHTML = "<br>Webseite<br>";
+                   website.href = "https://brauhaus.li/"; 
+                   website.target = "_blank";
+                   document.getElementById("two").appendChild(website); 
              
                    var facebook = document.createElement("A");
                    facebook.innerHTML = "Facebook";
-                   facebook.href = "https://www.facebook.com/BirrariaPoschiavina"; 
+                   facebook.href = "https://www.facebook.com/liechtensteinerbrauhaus"; 
                    facebook.target = "_blank";
                    document.getElementById("two").appendChild(facebook); 
                    break;

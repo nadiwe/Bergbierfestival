@@ -633,16 +633,13 @@ ABSAGE
                 content.innerHTML = "Die Metzgerei Zanetti wurde 1992 gegründet. Neben dem Trockenfleisch, das nach einer eigenen Rezeptur hergestellt wird, hat sich die Bacharia auch auf die Veredelung von Wildfleisch spezialisiert. Die Spezialitäten sind Wurstwaren (Salsiz und Siedwürste) sowie Geräuchtes. <br> Die Produkte werden nach überliefertem Rezept mit viel Liebe und Sorgfalt zubereitet. Es werden nur beste Zutaten verwendet. Das Fleisch stammt so weit möglich aus Betrieben der Region."
                 document.getElementById("two").appendChild(content);
          
-                var zanettiA = document.createElement("P");
-                zanettiA.innerHTML = "Bacharia Zanetti <br> Quadra Secha <br> 7556 Ramosch <br> Tel. +41 (0)81 864 86 50 <br> info@frischwild.ch"
-                document.getElementById("two").appendChild(zanettiA);
 
                 var subtitel = document.createElement("H2");
                 subtitel.innerHTML = "<br>Weitere Informationen";
                 document.getElementById("two").appendChild(subtitel);
 
                 var website = document.createElement("A");
-                website.innerHTML = "<br>Webseite Frisch Wild<br>"; 
+                website.innerHTML = "<br>Webseite Frisch Wild"; 
                 website.href = "http://www.frisch-wild.ch/";
                 website.target = "_blank";
                 document.getElementById("two").appendChild(website); 

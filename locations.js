@@ -1245,7 +1245,7 @@ ABSAGE
      document.getElementById("two").appendChild(chopfabT);
 
      var website = document.createElement("A");
-     website.innerHTML = "<br>Webseiteh<br>";
+     website.innerHTML = "<br>Webseite<br>";
      website.href = "https://www.chopfabboxer.ch/de/"; 
      website.target = "_blank";
      document.getElementById("two").appendChild(website); 

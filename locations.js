@@ -191,8 +191,8 @@ ABSAGE
 
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/bier.png");
-                      bild.setAttribute("alt", "steimandli");
-                      bild.setAttribute("id", "steimandli");
+                      bild.setAttribute("alt", "girun");
+                      bild.setAttribute("id", "girun");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
 
@@ -882,7 +882,7 @@ ABSAGE
 
        var website = document.createElement("A");
        website.innerHTML = "<br>www.buntschlin.ch <br>";
-       website.href = "https://buntschlin.ch/betriebe/cafe-etter/"; 
+       website.href = "https://buntschlin.ch/betriebe/prodots-etter/";
        document.getElementById("two").appendChild(website);   
 
        break;
@@ -997,6 +997,7 @@ ABSAGE
        break;
        case 'mundart':
 
+
                       var mundart = document.createElement("H1");
                       mundart.innerHTML = "Mundart";
                       document.getElementById("two").appendChild(mundart);
@@ -1040,7 +1041,37 @@ ABSAGE
                      facebook.href = "https://www.facebook.com/mundartscuol"; 
                      document.getElementById("two").appendChild(facebook); 
                      break;
-       case 'domleschger':
+
+       case 'girun':
+
+                     var girun = document.createElement("H1");
+                     girun.innerHTML = "Alpenbrauerei Girun";
+                     document.getElementById("two").appendChild(girun);
+              
+                    var bild = document.createElement("IMG");
+                    bild.setAttribute("src", "./img/logo/girun.webp");
+                    document.getElementById("two").appendChild(bild);
+              
+                    var girunC = document.createElement("P");
+                    girunC.innerHTML = "Er ist lange gekreist. Viele haben ihn beobachtet und seinen Balzruf gehört. Jetzt sind die Jungvögel flügge. Der Horst befindet sich in Tschlin und lädt zur Degustation mit herrlicher Panorama-Aussicht ein. Nach einer Wanderung oder der Dorfbesichtigung von Tschlin kann ein Durstlöscher oder Feierabendbier bei uns genossen werden."
+                    document.getElementById("two").appendChild(girunC);
+
+                    var weiterInformation = document.createElement("H2");
+                    weiterInformation.innerHTML = "<br>Weitere Informationen";
+                    document.getElementById("two").appendChild(weiterInformation);
+              
+                    var website = document.createElement("A");
+                    website.innerHTML = "<br>www.girun.ch<br>";
+                    website.href = "https://www.girun.ch/"; 
+                    document.getElementById("two").appendChild(website); 
+              
+                    var facebook = document.createElement("A");
+                    facebook.innerHTML = "Facebook";
+                    facebook.href = "https://www.facebook.com/AlpenbrauereiGIRUN"; 
+                    document.getElementById("two").appendChild(facebook); 
+                    break;
+
+                     case 'domleschger':
         var domleschger = document.createElement("H1");
         domleschger.innerHTML = "Domleschger Bier";
        document.getElementById("two").appendChild(domleschger);
@@ -1076,6 +1107,11 @@ ABSAGE
       website.innerHTML = "<br>www.chopfabboxer.ch<br>";
       website.href = "https://www.chopfabboxer.ch/de/"; 
       document.getElementById("two").appendChild(website); 
+
+      var facebook = document.createElement("A");
+      facebook.innerHTML = "Facebook";
+      facebook.href = "https://www.facebook.com/chopfabschweiz";
+      document.getElementById("two").appendChild(facebook); 
 
          
                      break;

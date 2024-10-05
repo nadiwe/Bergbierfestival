@@ -1141,7 +1141,7 @@ ABSAGE
                      document.getElementById("two").appendChild(bild);
               
                     var girunC = document.createElement("P");
-                    girunC.innerHTML = "Er ist lange gekreist. Viele haben ihn beobachtet und seinen Balzruf gehört. Jetzt sind die Jungvögel flügge. Der Horst befindet sich in Tschlin und lädt zur Degustation mit herrlicher Panorama-Aussicht ein. Nach einer Wanderung oder der Dorfbesichtigung von Tschlin kann ein Durstlöscher oder Feierabendbier bei uns genossen werden."
+                    girunC.innerHTML = "Das Ziel der Stadtbier Brauerei Chur ist es, die Konsumenten mit einem ehrlichen, gehaltvollen und naturbelassenen Bier von hier zu begeistern. Die Hausbrauerei Stadtbier Chur AG setzt auf erstklassige Rohprodukte, auf Leidenschaft und Handwerk."
                     document.getElementById("two").appendChild(girunC);
 
                     var weiterInformation = document.createElement("H2");
@@ -1201,7 +1201,7 @@ ABSAGE
                    document.getElementById("two").appendChild(bild);
              
                    var brauhausC = document.createElement("P");
-                   brauhausC.innerHTML = "<br>Die Geschichte der Birraria Poschiavina geht auf das Jahr 1850 zurück, als die Familie Hosig-Lardi beschloss, dass auch die Valposchiavo ein eigenes Bier verdiente.<br><br><br>2020 wurde diese Geschichte wieder aufgenommen und heute produziert die Brauerei mit der gleichen Leidenschaft und den gleichen lokalen Zutaten der Vergangenheit La Bira ('100% Valposchiavo') und Na Bira ('Fait sü in Valposchiavo')."
+                   brauhausC.innerHTML = "<br>Die Geschichte der Birraria Poschiavina geht auf das Jahr 1850 zurück, als die Familie Hosig-Lardi beschloss, dass auch die Valposchiavo ein eigenes Bier verdiente.<br><br>2020 wurde diese Geschichte wieder aufgenommen und heute produziert die Brauerei mit der gleichen Leidenschaft und den gleichen lokalen Zutaten der Vergangenheit La Bira ('100% Valposchiavo') und Na Bira ('Fait sü in Valposchiavo')."
 
                    document.getElementById("two").appendChild(brauhausC);
 

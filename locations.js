@@ -1244,6 +1244,10 @@ ABSAGE
      chopfabT.innerHTML = "Seit 2012 prägt Kopfab boxer als führende unabhängige Craft-Brauerei der Schweiz mit den Produktionsstandorten Winterthur und Yverdon-les-Bains den Schweizer Biermarkt nachhaltig. Auf die Qualität legt die Brauerei einen hohen Wert. Zudem bietet die Brauerei verschiedene Biersorten vom naturtrüben Lagerbier über das Weizenbier bis zum speziellen Edelweissbier."
      document.getElementById("two").appendChild(chopfabT);
 
+     var subtitel = document.createElement("H2");
+     subtitel.innerHTML = "<br>Weitere Informationen";
+     document.getElementById("two").appendChild(subtitel);
+     
      var website = document.createElement("A");
      website.innerHTML = "<br>Webseite<br>";
      website.href = "https://www.chopfabboxer.ch/de/"; 

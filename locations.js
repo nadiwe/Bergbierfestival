@@ -147,7 +147,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     
                    
                     break;
-                    case   'startGipfelstuermer':
+               /*     case   'startGipfelstuermer':
                        document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
                       document.getElementById("layerOne").classList.add('boxAbgesagt'); 
@@ -165,7 +165,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         text.innerHTML = "Diverse Gipfelstürmerinnen und Gipfelstürmer sind bereits unterwegs zum Piz Arina. Sie geniessen dort ein einmaliges Gipfelbier. Ab der Station Bieraria Tschlin werden diese auch wieder auf der Strecke sein und die Wanderung mitlaufen. ";
                         document.getElementById("one").appendChild(text);
 ABSAGE
-        */                var text = document.createElement("P");
+                       var text = document.createElement("P");
                         text.innerHTML = "Wegen Schlechtwetteraussichten und aufgrund von Schnee bis in tiefere Lagen, wird es dieses Jahr leider keine Gipfelstürmerroute geben!"
                         document.getElementById("one").appendChild(text);
 
@@ -174,7 +174,7 @@ ABSAGE
                   
                  
                   break;
-                 
+         */        
                     case   'stand1':       
             document.getElementById("layerOne").style.display = "block";
             document.getElementById("layerOne").classList.add('illusDesign');

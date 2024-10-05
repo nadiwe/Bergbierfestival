@@ -692,9 +692,9 @@ ABSAGE
        
        document.getElementById("two").appendChild(content);
 
-       var weiterInformation = document.createElement("H2");
-       weiterInformation.innerHTML = "<br>Weitere Informationen";
-       document.getElementById("two").appendChild(weiterInformation);
+       var subtitel = document.createElement("H2");
+       subtitel.innerHTML = "<br>Weitere Informationen";
+       document.getElementById("two").appendChild(subtitel);
  
        var website = document.createElement("A");
        website.innerHTML = "<br>Webseite<br>"; 

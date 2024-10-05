@@ -147,7 +147,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     
                    
                     break;
-               /*     case   'startGipfelstuermer':
+               /*   
+                 case   'startGipfelstuermer':
                        document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
                       document.getElementById("layerOne").classList.add('boxAbgesagt'); 
@@ -256,7 +257,7 @@ ABSAGE
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/bier.png");
                       bild.setAttribute("alt", "");
-                      bild.setAttribute("id", "simmentaler");
+                      bild.setAttribute("id", "brauhaus");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
                      
@@ -305,83 +306,63 @@ ABSAGE
 
 
                         break;
-                        //_________________text
                     case   'stand5':
-                      document.getElementById("layerOne").style.display = 'block';
-                      document.getElementById("layerOne").classList.add('boxDesign');
-                      document.getElementById("one").classList.add('layoutDesignText');
+                      document.getElementById("layerOne").style.display = "block";
+                      document.getElementById("layerOne").classList.add('illusDesign');
+                      document.getElementById("one").classList.add('layoutDesignIllus');
 
-                      var domleschger = document.createElement("H1");
-                      domleschger.innerHTML = "Domleschger Bier";
-                     document.getElementById("one").appendChild(domleschger);
-              
-                    var bild = document.createElement("IMG");
-                    bild.setAttribute("src", "./img/logo/DomleschgerBier.jpg");
-                    document.getElementById("one").appendChild(bild);
-              
-                    var domleschgerT = document.createElement("P");
-                    domleschgerT.innerHTML = "Das Domleschger Bier ist eine Erfolgsgeschichte, die im Jahr 2006 begann. Mit viel Ehrgeiz und einer eigenen Brauanlage wurde das erste Bier im Jahr 2008 unter dem Namen Domleschger Bier verkauft. Nach einigen Herausforderungen fand die Brauerei schließlich in Feldis einen neuen Standort und hat heute über 30 Verkaufsstellen. Von dem goldfarbenen, naturtrüben Amber Bier wird jährlich ca. 5000 Liter Bier gebraut und mit einer Flaschengärung hergestellt."
-                    document.getElementById("one").appendChild(domleschgerT);
-              
-                    var website = document.createElement("A");
-                    website.innerHTML = "<br>www.bierliebe.ch<br>";
-                    website.href = "https://shop.bierliebe.ch/produkt-kategorie/brauerei/domleschger-bier/"
-                    document.getElementById("one").appendChild(website);
+                        var kreis = document.createElement("div");
+                        kreis.setAttribute("id","circle");
+                        document.getElementById("one").appendChild(kreis);
+ 
+                        var bild = document.createElement("IMG");
+                        bild.setAttribute("src", "./illustrationen/bier.png");
+                        bild.setAttribute("alt", "poschiavini");
+                        bild.setAttribute("id", "poschiavini");
+                        bild.setAttribute("onclick", "infoblock()");
+                        document.getElementById("circle").appendChild(bild);
+
+                        var kreis = document.createElement("div");
+                        kreis.setAttribute("id","circle2");
+                        document.getElementById("one").appendChild(kreis);
+
+                        var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./illustrationen/fleisch.png");
+                      bild.setAttribute("alt", "mayer");
+                      bild.setAttribute("id", "mayer");
+                      bild.setAttribute("onclick", "infoblock()");
+                      document.getElementById("circle2").appendChild(bild);
 
                           break;
-                    //_____________________illu
                     case   'stand6':
-                      document.getElementById("layerOne").style.display = 'block';
-                      document.getElementById("layerOne").classList.add('boxDesign');
-                      document.getElementById("one").classList.add('layoutDesignText');
+                      document.getElementById("layerOne").style.display = "block";
+                      document.getElementById("layerOne").classList.add('illusDesign');
+                      document.getElementById("one").classList.add('layoutDesignIllus');
 
-                      var mundart = document.createElement("H1");
-                      mundart.innerHTML = "Mundart";
-                      document.getElementById("one").appendChild(mundart);
-               
-                     var bild = document.createElement("IMG");
-                     bild.setAttribute("src", "./img/logo/mundart.png");
-                     document.getElementById("one").appendChild(bild);
+                        var kreis = document.createElement("div");
+                        kreis.setAttribute("id","circle");
+                        document.getElementById("one").appendChild(kreis);
+ 
+                        var bild = document.createElement("IMG");
+                        bild.setAttribute("src", "./illustrationen/bier.png");
+                        bild.setAttribute("alt", "stadtbier");
+                        bild.setAttribute("id", "stadtbier");
+                        bild.setAttribute("onclick", "infoblock()");
+                        document.getElementById("circle").appendChild(bild);
 
-                     var mundartCT = document.createElement("H2");
-                     mundartCT.innerHTML = "<br>Helles Mundart Hausbier Cler";
-                     document.getElementById("one").appendChild(mundartCT);
-               
-                     var mundartC = document.createElement("P");
-                     mundartC.innerHTML = "Unser erster eigener Biersud Helles Mundart Hausbier. Seit langer Zeit träumt Matze von einer eigenen Bierkreation. Im Juni 2019 ging mit dem eigenen Biersud dieser Traum in Erfüllung und das Mundartbier «Cler», zu Deutsch hell, ist geboren. In Zusammenarbeit mit der Bieraria Tschlin ist ein helles Bier mit einer erfrischenden, leichten Zitrusnote entstanden."
-                     document.getElementById("one").appendChild(mundartC);
+                        var kreis = document.createElement("div");
+                        kreis.setAttribute("id","circle2");
+                        document.getElementById("one").appendChild(kreis);
 
-                     var mundartDT = document.createElement("H2");
-                     mundartDT.innerHTML = "<br>Schwarzes Mundart Hausbier Dreggsch";
-                     document.getElementById("one").appendChild(mundartDT);
-               
-                     var mundartD = document.createElement("P");
-                     mundartD.innerHTML = "Nachdem das helle Mundartbier bei den Gästen so gut ankam, hatte Matze die Idee auch noch ein zweites eigenes Bier zu kreieren, aber dieses Mal ein Schwarzes. Nach einigen Versuchen zusammen mit der Bieraria Tschlin entstand das schwarze Mundartbier «Dreggsch». Was heisst Dreggsch? Matzes Frau, Fabrizia, hatte die Idee dieses Bier nach etwas aus Matzes Geburtsort Dresden zu benennen. Da man in Ostdeutschland zu einem schwarzen Bier Dreggsch (dreckig) sagt, wurde dieses Bier so getauft."
-                     document.getElementById("one").appendChild(mundartD);
-
-                     var weiterInformation = document.createElement("H2");
-                     weiterInformation.innerHTML = "<br>Weitere Informationen";
-                     document.getElementById("one").appendChild(weiterInformation);
-               
-                     var website = document.createElement("A");
-                     website.innerHTML = "<br>www.mundart-scuol.ch <br>";
-                     website.href = "https://www.mundart-scuol.ch/"; 
-                     document.getElementById("one").appendChild(website); 
-               
-                     var instagram = document.createElement("A");
-                     instagram.innerHTML = "Instagram <br>";
-                     instagram.href = "https://www.instagram.com/mundartscuol/"; 
-                     document.getElementById("one").appendChild(instagram); 
-               
-                     var facebook = document.createElement("A");
-                     facebook.innerHTML = "Facebook";
-                     facebook.href = "https://www.facebook.com/mundartscuol"; 
-                     document.getElementById("one").appendChild(facebook); 
-
+                        var bild = document.createElement("IMG");
+                      bild.setAttribute("src", "./illustrationen/fleisch.png");
+                      bild.setAttribute("alt", "mia");
+                      bild.setAttribute("id", "mia");
+                      bild.setAttribute("onclick", "infoblock()");
+                      document.getElementById("circle2").appendChild(bild);
 
                
                             break;
-                   //_________________text
                    case   'stand8':
                       document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
@@ -409,6 +390,7 @@ ABSAGE
                      var website = document.createElement("A");
                      website.innerHTML = "<br>www.bieraria.ch <br>";
                      website.href = "https://www.bieraria.ch/"; 
+                     website.target = "_blank";
                      document.getElementById("one").appendChild(website);   
               
                      var instagram = document.createElement("A");
@@ -419,9 +401,10 @@ ABSAGE
                      var facebook = document.createElement("A");
                      facebook.innerHTML = "Facebook";
                      facebook.href = "https://www.facebook.com/bieratschlin"; 
+                     facebook.target = "_blank";
                      document.getElementById("one").appendChild(facebook);
                               break;    
-                  
+
                    case   'foto1': 
                    document.getElementById("layerOne").style.display = 'block';
                    document.getElementById("layerOne").classList.add('boxDesign');
@@ -587,22 +570,22 @@ ABSAGE
 
 
                             var h1 = document.createElement("H1");
-                        h1.innerHTML = "Festival in Ramosch – DRAUFGÄNGER";
+                        h1.innerHTML = "Festival in Ramosch – VolXRoX";
                         document.getElementById("one").appendChild(h1);
 
-                        var text = document.createElement("P");
-                        text.innerHTML = "Türöffnung: 16:00 Uhr  <br><br> Seit mehr als 20 Jahren sind die Draufgänger ein fester Bestandteil auf allen Bühnen im deutschsprachigen Raum. Für die Karriere wird das Jahr 2023 ein aufregendes werden. Chiara wird aus eigener Entscheidung eine Ex-Draufgängerin und die 4 Draufgänger-Bürschen machen weiter mit einer ganz klaren Mission: Sie wollen die erfolgreichste und bekannteste Boyband der gesamten Partyszene werden. Umso aufregender, dass die Band in diesem Jahr Teil des Bergbierfestivals ist und am Abend nach der Bergbierwanderung im Festzelt auftretet!"
-                        document.getElementById("one").appendChild(text);
-                        
-
-              /*          var video = document.createElement("IFRAME");
+                       var video = document.createElement("IFRAME");
                         video.setAttribute("frameborder", "0"); 
                         video.setAttribute('allowFullScreen', '');
-                        video.setAttribute("src", "https://www.youtube.com/embed/GoY4dkOD2iE");
+                        video.setAttribute("src", "https://www.youtube.com/embed/9d6gbVabPVo?si=fOr6m92HKSArKZ5O");
+                      
                         document.getElementById("one").appendChild(video);
 
-                      
+                        var text = document.createElement("P");
+                        text.innerHTML = "Türöffnung: 16:00 Uhr  <br><br> Stimmungsgeladen und vielseitig wie keine andere Band der Schweiz – das ist VolXRoX! Wo diese 5 Mannen aufkreuzen, ist am Tag danach mit Muskelkater und heiserer Stimme zu rechnen. Mit der Kombination der unterschiedlichsten Stilrichtungen von Rock über Rap, Boogie Woogie über Punk oder Country über Latin Pop schafft es VolXRoX auf unvergleichliche Weise, das Publikum mitzureissen. Im wunderbaren Berndeutsch, aber auch das eine oder andere Mal auf Französisch, meist energetisch, aber auch Mal ganz ruhig und mit viel Tiefgang. Kurzum: Wer Mundart mag wird VolXRoX lieben! 2014 gegründet, tourte die Band in damals noch leicht anderer Besetzung durch das Mittelland und spielte anfänglich vor allem Coversongs. Als 2016 das erste Album «VolXRoX» erschien, gelang mit der Schwingerhymne «Kampf ume Thron» der nationale Durchbruch. Das Debüt-Album stieg von 0 auf Platz 7 der Album-Charts ein und hielt sich sagenhafte 11 Wochen in den Charts. Rund 60 Konzerte jährlich resultierten in den folgenden Jahren, bevor 2019 mit «Familie-Fescht» das zweite VolXRoX-Album erschien – und wieder landete das Album in Mitten der Top10!"
+                        document.getElementById("one").appendChild(text);
 
+                      
+/*
                         var foto1 = document.createElement("IMG");
                         foto1.setAttribute("src", "./img/megawatt/Megawatt1.jpg");
                         document.getElementById("one").appendChild(foto1);
@@ -636,19 +619,19 @@ ABSAGE
         console.log(stand);
        
          switch(stand){
-       case   'zanetti': 
+       case 'zanetti': 
 
-                var zanetti = document.createElement("H1");
-                zanetti.innerHTML = "Bacharia Zanetti";
-                document.getElementById("two").appendChild(zanetti);
+                var titel = document.createElement("H1");
+                titel.innerHTML = "Bacharia Zanetti";
+                document.getElementById("two").appendChild(titel);
 
                 var bild = document.createElement("IMG");
                 bild.setAttribute("src", "./img/logo/bzZanetti.jpg");
                 document.getElementById("two").appendChild(bild);
          
-                var zanettiT = document.createElement("P");
-                zanettiT.innerHTML = "Die Metzgerei Zanetti wurde 1992 gegründet. Neben dem Trockenfleisch, das nach einer eigenen Rezeptur hergestellt wird, hat sich die Bacharia auch auf die Veredelung von Wildfleisch spezialisiert. Die Spezialitäten sind Wurstwaren (Salsiz und Siedwürste) sowie Geräuchtes. <br> Die Produkte werden nach überliefertem Rezept mit viel Liebe und Sorgfalt zubereitet. Es werden nur beste Zutaten verwendet. Das Fleisch stammt so weit möglich aus Betrieben der Region."
-                document.getElementById("two").appendChild(zanettiT);
+                var content = document.createElement("P");
+                content.innerHTML = "Die Metzgerei Zanetti wurde 1992 gegründet. Neben dem Trockenfleisch, das nach einer eigenen Rezeptur hergestellt wird, hat sich die Bacharia auch auf die Veredelung von Wildfleisch spezialisiert. Die Spezialitäten sind Wurstwaren (Salsiz und Siedwürste) sowie Geräuchtes. <br> Die Produkte werden nach überliefertem Rezept mit viel Liebe und Sorgfalt zubereitet. Es werden nur beste Zutaten verwendet. Das Fleisch stammt so weit möglich aus Betrieben der Region."
+                document.getElementById("two").appendChild(content);
          
                 var zanettiA = document.createElement("P");
                 zanettiA.innerHTML = "Bacharia Zanetti <br> Quadra Secha <br> 7556 Ramosch <br> Tel. +41 (0)81 864 86 50 <br> info@frischwild.ch"
@@ -657,29 +640,89 @@ ABSAGE
                 var websiteZ = document.createElement("A");
                 websiteZ.innerHTML = " www.frisch-wild.ch";
                 websiteZ.href = "http://www.frisch-wild.ch/"; 
+                website.target = "_blank";
                 document.getElementById("two").appendChild(websiteZ); 
 
                 var website = document.createElement("A");
-                website.innerHTML = " www.buntschlin.ch";
+                website.innerHTML = "Webseite";
                 website.href = "https://buntschlin.ch/betriebe/bacharia-zanetti/#"; 
+                website.target = "_blank";
                 document.getElementById("two").appendChild(website); 
          
                
                 
          break;    
-       case   'bieraEngiadinaisa':
+       case 'mayer':
 
-       var bieraEngiadinaisa = document.createElement("H1");
-       bieraEngiadinaisa.innerHTML = "Biera Engiadinaisa";
-       document.getElementById("two").appendChild(bieraEngiadinaisa);
+         var titel = document.createElement("H1");
+         titel.innerHTML = "Övs Mayer";
+         document.getElementById("two").appendChild(titel);
+  
+         var bild = document.createElement("IMG");
+         bild.setAttribute("src", "./img/logo/ovs.jpg");
+         document.getElementById("two").appendChild(bild);
+  
+        var content = document.createElement("P");
+        content.innerHTML = "<br>Frische Eier sind ein fragiles Transportgut. Mit der Rhätischen Bahn fahren die Mayer-Eier sicher ins Unterland und erfreuen auch dort die Bio-Kunden.<br><br>Zwei Hühner-Herden von je 500 Tieren sind in Strada bei Familie Mayer zuhause. Deren Eier mit Bio Suisse-Knospe versorgen viele regionale Dorfläden und Hotels im Unterengadin, gehen aber auch in den Grosshandel."
+        document.getElementById("two").appendChild(content);
+
+        var weiterInformation = document.createElement("H2");
+        weiterInformation.innerHTML = "<br>Weitere Informationen";
+        document.getElementById("two").appendChild(weiterInformation);
+  
+        var website = document.createElement("A");
+        website.innerHTML = "<br>Webseite<br>"; 
+        website.href = "https://buntschlin.ch/betriebe/oevs-mayer/";
+        website.target = "_blank";
+        document.getElementById("two").appendChild(website); 
+     
+        break;
+       case 'mia':
+
+        var titel = document.createElement("H1");
+        titel.innerHTML = "Mia Iva";
+        document.getElementById("two").appendChild(titel);
+ 
+        var bild = document.createElement("IMG");
+        bild.setAttribute("src", "./img/logo/mia.jpg");
+        document.getElementById("two").appendChild(bild);
+ 
+       var content = document.createElement("P");
+       content.innerHTML = "<br>Mia Iva produziert in der eigenen Manufaktur in Tschlin den traditionellen Engadiner Kräuterlikör iva.<br><br>In der ehemaligen Brauerei in Tschlin produziert Andi Brechbühl iva. Dieser bitterüsse Likör wird im Engadin seit jahrhunderten nach alten Familienrezepten aus Moschus Schafgarbe (romanisch: iva) hergestellt. Eine Hommage an die Natur, das Engadin und seine Traditionen."
+       
+       document.getElementById("two").appendChild(content);
+
+       var weiterInformation = document.createElement("H2");
+       weiterInformation.innerHTML = "<br>Weitere Informationen";
+       document.getElementById("two").appendChild(weiterInformation);
+ 
+       var website = document.createElement("A");
+       website.innerHTML = "<br>Webseite<br>"; 
+       website.href = "https://buntschlin.ch/betriebe/mia-iva"; 
+       website.target = "_blank";
+       document.getElementById("two").appendChild(website); 
+
+       var facebook = document.createElement("A");
+       facebook.innerHTML = "Facebook";
+       facebook.href = "https://www.facebook.com/miaiva.ch"; 
+       facebook.target = "_blank";
+       document.getElementById("two").appendChild(facebook);
+ 
+    
+       break;
+       case 'bieraEngiadinaisa':
+
+       var titel = document.createElement("H1");
+       titel.innerHTML = "Biera Engiadinaisa";
+       document.getElementById("two").appendChild(titel);
 
        var bild = document.createElement("IMG");
        bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
        document.getElementById("two").appendChild(bild);
 
-       var bieraEngiadinaisaT = document.createElement("P");
-       bieraEngiadinaisaT.innerHTML = "Die Idee, einer Bieraria im Unterengadiner Dorf Tschlin zu gründen, geht auf einen Zukunftsworkshop der Gemeinde Tschlin in den ersten Jahren des neuen Jahrtausends zurück. Dort entstand auch die Idee des Werbe- und Verkaufsförderungsverbunds «Bun Tschlin». Am 30. Juni 2004 wurde die Gründung der Bieraria Tschlin SA notariell beglaubigt.<br> Die Brauerei Tschlin produziert und vermarktet regionale BIO Biersorten aus einheimischem Gerstenmalz, Tschliner Wasser, Hopfen und Hefe. Bei uns werden fast alle Biersorten aus 100% Schweizer Rohstoffe hergestellt, so dass wir uns mit gutem Gewissen als «regionalste Brauerei der Schweiz» bezeichnen dürfen.";
-       document.getElementById("two").appendChild(bieraEngiadinaisaT);
+       var content = document.createElement("P");
+       content.innerHTML = "Die Idee, einer Bieraria im Unterengadiner Dorf Tschlin zu gründen, geht auf einen Zukunftsworkshop der Gemeinde Tschlin in den ersten Jahren des neuen Jahrtausends zurück. Dort entstand auch die Idee des Werbe- und Verkaufsförderungsverbunds «Bun Tschlin». Am 30. Juni 2004 wurde die Gründung der Bieraria Tschlin SA notariell beglaubigt.<br> Die Brauerei Tschlin produziert und vermarktet regionale BIO Biersorten aus einheimischem Gerstenmalz, Tschliner Wasser, Hopfen und Hefe. Bei uns werden fast alle Biersorten aus 100% Schweizer Rohstoffe hergestellt, so dass wir uns mit gutem Gewissen als «regionalste Brauerei der Schweiz» bezeichnen dürfen.";
+       document.getElementById("two").appendChild(content);
 
        var bieraSorten = document.createElement("H2");
        bieraSorten.innerHTML = "Biersorten";
@@ -730,8 +773,9 @@ ABSAGE
        document.getElementById("two").appendChild(weiterInformation);
 
        var website = document.createElement("A");
-       website.innerHTML = "<br>www.bieraria.ch <br>";
+       website.innerHTML = "<br>Webseite<br>";
        website.href = "https://www.bieraria.ch/"; 
+       website.target = "_blank";
        document.getElementById("two").appendChild(website);   
 
        var instagram = document.createElement("A");
@@ -742,6 +786,7 @@ ABSAGE
        var facebook = document.createElement("A");
        facebook.innerHTML = "Facebook";
        facebook.href = "https://www.facebook.com/bieratschlin"; 
+       facebook.target = "_blank";
        document.getElementById("two").appendChild(facebook);
 
        var bieraEngiadinaisaSpirituosenL1 = document.createElement("LI");
@@ -773,11 +818,11 @@ ABSAGE
 
        
        break;        
-       case   'bierariaTschlinSA': 
+       case 'bierariaTschlinSA': 
 
-       var bierariaTschlinSA = document.createElement("H1");
-       bierariaTschlinSA.innerHTML = "Bieraria Tschlin SA";
-       document.getElementById("two").appendChild(bierariaTschlinSA);
+       var titel = document.createElement("H1");
+       titel.innerHTML = "Bieraria Tschlin SA";
+       document.getElementById("two").appendChild(titel);
 
        var bierariaTschlinSAT = document.createElement("P");
        bierariaTschlinSAT.innerHTML = "Via Dal Dazi 233 <br> 7560 Martina <br> Tel. +41 (0)81 860 12 50 <br> Fax +41 (0)81 860 12 51";
@@ -788,14 +833,15 @@ ABSAGE
        document.getElementById("two").appendChild(weiterInformation);
 
        var website = document.createElement("A");
-       website.innerHTML = "www.bieraria.ch  mit Onlineshop ";
+       website.innerHTML = "Webseite";
        website.href = "https://www.bieraria.ch/"; 
+       website.target = "_blank";
        document.getElementById("two").appendChild(website);   
 
 
        
        break;  
-       case   'doppelleuBoxerAG': 
+       case 'doppelleuBoxerAG': 
 
        var doppelleuBoxerAG = document.createElement("H1");
        doppelleuBoxerAG.innerHTML = "Doppelleu Boxer AG";
@@ -846,8 +892,9 @@ ABSAGE
        document.getElementById("ul").appendChild(bieraSortenL6);
        
        var website = document.createElement("A");
-       website.innerHTML = "<br>www.doppelleuboxer.ch <br>";
+       website.innerHTML = "<br>Webseite<br>";
        website.href = "https://www.doppelleuboxer.ch/de/bier/doppelleu/"; 
+       website.target = "_blank";
        document.getElementById("two").appendChild(website);   
 
        var instagram = document.createElement("A");
@@ -858,12 +905,13 @@ ABSAGE
        var facebook = document.createElement("A");
        facebook.innerHTML = "Facebook  ";
        facebook.href = "https://www.facebook.com/doppelleuboxer/"; 
+       facebook.target = "_blank";
        document.getElementById("two").appendChild(facebook);
 
 
        
        break;  
-       case   'cilgiaEtter': 
+       case 'cilgiaEtter': 
        var etter = document.createElement("H1");
        etter.innerHTML = "Cilgia Etter";
        document.getElementById("two").appendChild(etter);
@@ -881,12 +929,13 @@ ABSAGE
        document.getElementById("two").appendChild(weiterInformation);
 
        var website = document.createElement("A");
-       website.innerHTML = "<br>www.buntschlin.ch <br>";
+       website.innerHTML = "<br>Webseite<br>";
        website.href = "https://buntschlin.ch/betriebe/prodots-etter/";
+       website.target = "_blank";
        document.getElementById("two").appendChild(website);   
 
        break;
-       case   'standBioSchorta': 
+       case 'standBioSchorta': 
 
        var standBioSchorta = document.createElement("H1");
        standBioSchorta.innerHTML = "Stand Bio Schorta";
@@ -909,11 +958,12 @@ ABSAGE
        document.getElementById("two").appendChild(weiterInformation);
 
        var website = document.createElement("A");
-       website.innerHTML = "<br>www.buntschlin.ch";
+       website.innerHTML = "<br>Webseite";
        website.href = "https://buntschlin.ch/betriebe/bio-schorta/#"; 
+       website.target = "_blank";
        document.getElementById("two").appendChild(website); 
        break;  
-       case   'simmentaler':
+       case 'simmentaler':
         var simmentaler = document.createElement("H1");
         simmentaler.innerHTML = "Simmentaler Bier";
        document.getElementById("two").appendChild(simmentaler);
@@ -955,8 +1005,9 @@ ABSAGE
       document.getElementById("ul").appendChild(bieraSortenL4);
 
       var website = document.createElement("A");
-      website.innerHTML = "<br>www.simmentalerbier.ch <br>";
+      website.innerHTML = "<br>Webseite<br>";
       website.href = "https://simmentalerbier.ch/"; 
+      website.target = "_blank";
       document.getElementById("two").appendChild(website); 
 
       var instagram = document.createElement("A");
@@ -967,9 +1018,10 @@ ABSAGE
       var facebook = document.createElement("A");
       facebook.innerHTML = "Facebook";
       facebook.href = "https://www.facebook.com/simmentalerbier"; 
+      facebook.target = "_blank";
       document.getElementById("two").appendChild(facebook); 
        break;
-       case   'paurariaRiatsch':
+       case 'paurariaRiatsch':
         var paurariaRiatsch = document.createElement("H1");
         paurariaRiatsch.innerHTML = "Pauraria Riatsch";
        document.getElementById("two").appendChild(paurariaRiatsch);
@@ -991,8 +1043,9 @@ ABSAGE
        document.getElementById("two").appendChild(weiterInformation);
 
        var website = document.createElement("A");
-       website.innerHTML = "<br>www.buntschlin.ch";
+       website.innerHTML = "<br>Webseite";
        website.href = "https://buntschlin.ch/betriebe/pauraria-riatsch/#"; 
+       website.target = "_blank";
        document.getElementById("two").appendChild(website); 
        break;
        case 'mundart':
@@ -1027,8 +1080,9 @@ ABSAGE
                      document.getElementById("two").appendChild(weiterInformation);
                
                      var website = document.createElement("A");
-                     website.innerHTML = "<br>www.mundart-scuol.ch <br>";
-                     website.href = "https://www.mundart-scuol.ch/"; 
+                     website.innerHTML = "<br>Webseite<br>";
+                     website.href = "https://www.mundart-scuol.ch/";
+                     website.target = "_blank"; 
                      document.getElementById("two").appendChild(website); 
                
                      var instagram = document.createElement("A");
@@ -1039,9 +1093,9 @@ ABSAGE
                      var facebook = document.createElement("A");
                      facebook.innerHTML = "Facebook";
                      facebook.href = "https://www.facebook.com/mundartscuol"; 
+                     facebook.target = "_blank";
                      document.getElementById("two").appendChild(facebook); 
                      break;
-
        case 'girun':
 
                      var girun = document.createElement("H1");
@@ -1061,17 +1115,144 @@ ABSAGE
                     document.getElementById("two").appendChild(weiterInformation);
               
                     var website = document.createElement("A");
-                    website.innerHTML = "<br>www.girun.ch<br>";
+                    website.innerHTML = "<br>Webseite<br>";
                     website.href = "https://www.girun.ch/"; 
+                    website.target = "_blank";
                     document.getElementById("two").appendChild(website); 
               
                     var facebook = document.createElement("A");
                     facebook.innerHTML = "Facebook";
                     facebook.href = "https://www.facebook.com/AlpenbrauereiGIRUN"; 
+                    facebook.target = "_blank";
                     document.getElementById("two").appendChild(facebook); 
                     break;
+       case 'stadtbier':
 
-                     case 'domleschger':
+                     var titel = document.createElement("H1");
+                     titel.innerHTML = "Churer Stadtbier";
+                     document.getElementById("two").appendChild(titel);
+              
+                     var bild = document.createElement("IMG");
+                     bild.setAttribute("src", "./img/logo/stadtbierChur.jpg");
+                     document.getElementById("two").appendChild(bild);
+              
+                    var girunC = document.createElement("P");
+                    girunC.innerHTML = "Er ist lange gekreist. Viele haben ihn beobachtet und seinen Balzruf gehört. Jetzt sind die Jungvögel flügge. Der Horst befindet sich in Tschlin und lädt zur Degustation mit herrlicher Panorama-Aussicht ein. Nach einer Wanderung oder der Dorfbesichtigung von Tschlin kann ein Durstlöscher oder Feierabendbier bei uns genossen werden."
+                    document.getElementById("two").appendChild(girunC);
+
+                    var weiterInformation = document.createElement("H2");
+                    weiterInformation.innerHTML = "<br>Weitere Informationen";
+                    document.getElementById("two").appendChild(weiterInformation);
+              
+                    var website = document.createElement("A");
+                    website.innerHTML = "<br>Webseite<br>";
+                    website.href = "https://www.stadtbier.ch/"; 
+                    website.target = "_blank";
+                    document.getElementById("two").appendChild(website); 
+              
+                    var facebook = document.createElement("A");
+                    facebook.innerHTML = "Facebook";
+                    facebook.href = "https://www.facebook.com/profile.php?id=100063726575014"; 
+                    facebook.target = "_blank";
+                    document.getElementById("two").appendChild(facebook); 
+                    break;
+       case 'brauhaus':
+
+                    var titel = document.createElement("H1");
+                    titel.innerHTML = "Liechtensteiner Brauhaus";
+                    document.getElementById("two").appendChild(titel);
+             
+                   var bild = document.createElement("IMG");
+                   bild.setAttribute("src", "./img/logo/liechtensteiner.png");
+                   document.getElementById("two").appendChild(bild);
+             
+                   var content = document.createElement("P");
+                   content.innerHTML = "<br>Unser ganzes Sortiment auf einen Blick:<br>Ein fruchtiger Radler, ein leckeres Lagerbier, Exquisites für den anspruchsvollen Gaumen oder einfach mal etwas Neues ausprobieren. Bei uns findet die Craft Beer Queen und der Bierliebhaber das Richtige!"
+                   document.getElementById("two").appendChild(content);
+
+                   var weiterInformation = document.createElement("H2");
+                   weiterInformation.innerHTML = "<br>Weitere Informationen";
+                   document.getElementById("two").appendChild(weiterInformation);
+             
+                   var facebook = document.createElement("A");
+                   facebook.innerHTML = "Facebook";
+                   facebook.href = "https://www.facebook.com/BirrariaPoschiavina"; 
+                   facebook.target = "_blank";
+                   document.getElementById("two").appendChild(facebook); 
+                   break;
+       case 'poschiavini':
+
+                    var brauhaus = document.createElement("H1");
+                    brauhaus.innerHTML = "Birraria Poschiavini";
+                    document.getElementById("two").appendChild(brauhaus);
+             
+                   var bild = document.createElement("IMG");
+                   bild.setAttribute("src", "./img/logo/BP1.png");
+                   document.getElementById("two").appendChild(bild);
+             
+                   var brauhausC = document.createElement("P");
+                   brauhausC.innerHTML = "<br>Die Geschichte der Birraria Poschiavina geht auf das Jahr 1850 zurück, als die Familie Hosig-Lardi beschloss, dass auch die Valposchiavo ein eigenes Bier verdiente.<br><br><br>2020 wurde diese Geschichte wieder aufgenommen und heute produziert die Brauerei mit der gleichen Leidenschaft und den gleichen lokalen Zutaten der Vergangenheit La Bira ('100% Valposchiavo') und Na Bira ('Fait sü in Valposchiavo')."
+
+                   document.getElementById("two").appendChild(brauhausC);
+
+                   var weiterInformation = document.createElement("H2");
+                   weiterInformation.innerHTML = "<br>Weitere Informationen";
+                   document.getElementById("two").appendChild(weiterInformation);
+             
+                   var facebook = document.createElement("A");
+                   facebook.innerHTML = "<br>Facebook<br>";
+                   facebook.href = "https://www.facebook.com/liechtensteinerbrauhaus"; 
+                   facebook.target = "_blank";
+                   document.getElementById("two").appendChild(facebook); 
+                   break;
+       case 'domleschger':
+       var domleschger = document.createElement("H1");
+       domleschger.innerHTML = "Domleschger Bier";
+      document.getElementById("two").appendChild(domleschger);
+
+     var bild = document.createElement("IMG");
+     bild.setAttribute("src", "./img/logo/DomleschgerBier.jpg");
+     document.getElementById("two").appendChild(bild);
+
+     var domleschgerT = document.createElement("P");
+     domleschgerT.innerHTML = "Das Domleschger Bier ist eine Erfolgsgeschichte, die im Jahr 2006 begann. Mit viel Ehrgeiz und einer eigenen Brauanlage wurde das erste Bier im Jahr 2008 unter dem Namen Domleschger Bier verkauft. Nach einigen Herausforderungen fand die Brauerei schließlich in Feldis einen neuen Standort und hat heute über 30 Verkaufsstellen. Von dem goldfarbenen, naturtrüben Amber Bier wird jährlich ca. 5000 Liter Bier gebraut und mit einer Flaschengärung hergestellt."
+     document.getElementById("two").appendChild(domleschgerT);
+
+     var website = document.createElement("A");
+     website.innerHTML = "<br>Webseite<br>";
+     website.href = "https://shop.bierliebe.ch/produkt-kategorie/brauerei/domleschger-bier/"
+     website.target = "_blank";
+     document.getElementById("two").appendChild(website);
+        
+                    break;
+       case 'chopfab':
+       var chopfab = document.createElement("H1");
+       chopfab.innerHTML = "Chopfab Boxer";
+      document.getElementById("two").appendChild(chopfab);
+
+     var bild = document.createElement("IMG");
+     bild.setAttribute("src", "./img/logo/chopfabBoxer.png");
+     document.getElementById("two").appendChild(bild);
+
+     var chopfabT = document.createElement("P");
+     chopfabT.innerHTML = "Seit 2012 prägt Kopfab boxer als führende unabhängige Craft-Brauerei der Schweiz mit den Produktionsstandorten Winterthur und Yverdon-les-Bains den Schweizer Biermarkt nachhaltig. Auf die Qualität legt die Brauerei einen hohen Wert. Zudem bietet die Brauerei verschiedene Biersorten vom naturtrüben Lagerbier über das Weizenbier bis zum speziellen Edelweissbier."
+     document.getElementById("two").appendChild(chopfabT);
+
+     var website = document.createElement("A");
+     website.innerHTML = "<br>Webseiteh<br>";
+     website.href = "https://www.chopfabboxer.ch/de/"; 
+     website.target = "_blank";
+     document.getElementById("two").appendChild(website); 
+
+     var facebook = document.createElement("A");
+     facebook.innerHTML = "Facebook";
+     facebook.href = "https://www.facebook.com/chopfabschweiz";
+     facebook.target = "_blank";
+     document.getElementById("two").appendChild(facebook); 
+
+        
+                    break;
+       case 'domleschger':
         var domleschger = document.createElement("H1");
         domleschger.innerHTML = "Domleschger Bier";
        document.getElementById("two").appendChild(domleschger);
@@ -1085,8 +1266,9 @@ ABSAGE
       document.getElementById("two").appendChild(domleschgerT);
 
       var website = document.createElement("A");
-      website.innerHTML = "<br>www.bierliebe.ch<br>";
+      website.innerHTML = "<br>Webseite<br>";
       website.href = "https://shop.bierliebe.ch/produkt-kategorie/brauerei/domleschger-bier/"
+      website.target = "_blank";
       document.getElementById("two").appendChild(website);
          
                      break;
@@ -1104,17 +1286,19 @@ ABSAGE
       document.getElementById("two").appendChild(chopfabT);
 
       var website = document.createElement("A");
-      website.innerHTML = "<br>www.chopfabboxer.ch<br>";
+      website.innerHTML = "<br>Webseite<br>";
       website.href = "https://www.chopfabboxer.ch/de/"; 
+      website.target = "_blank";
       document.getElementById("two").appendChild(website); 
 
       var facebook = document.createElement("A");
       facebook.innerHTML = "Facebook";
       facebook.href = "https://www.facebook.com/chopfabschweiz";
+      facebook.target = "_blank";
       document.getElementById("two").appendChild(facebook); 
 
          
-                     break;
+                     break;                     
        case 'matze':
         var matze = document.createElement("H1");
         matze.innerHTML = "«Cullas da Vnà» – Kugeln von Vnà";
@@ -1176,7 +1360,7 @@ ABSAGE
         document.getElementById("two").appendChild(link); 
 
         break;
-       case   'steimandli':
+       case 'steimandli':
 
           
           var steimandliBier = document.createElement("H1");
@@ -1198,8 +1382,9 @@ ABSAGE
 
 
          var website = document.createElement("A");
-         website.innerHTML = "<br>www.bieraria.ch <br>";
+         website.innerHTML = "<br>Webseite<br>";
          website.href = "https://www.bieraria.ch/"; 
+         website.target = "_blank";
          document.getElementById("two").appendChild(website);   
   
          var instagram = document.createElement("A");
@@ -1210,9 +1395,10 @@ ABSAGE
          var facebook = document.createElement("A");
          facebook.innerHTML = "Facebook";
          facebook.href = "https://www.facebook.com/bieratschlin"; 
+         facebook.target = "_blank";
          document.getElementById("two").appendChild(facebook);
                   break;    
-      case 'monstein':
+       case 'monstein':
       var bierVisionMonstein = document.createElement("H1");
                       bierVisionMonstein.innerHTML = "BierVision Monstein";
                       document.getElementById("two").appendChild(bierVisionMonstein);
@@ -1240,8 +1426,9 @@ ABSAGE
                       document.getElementById("two").appendChild(weiterInformation);
 
                       var website = document.createElement("A");
-                      website.innerHTML = "<br>www.monsteiner.ch <br>";
+                      website.innerHTML = "<br>Webseite<br>";
                       website.href = "https://monsteiner.ch/"; 
+                      website.target = "_blank";
                       document.getElementById("two").appendChild(website);   
 
                       var instagram = document.createElement("A");
@@ -1252,6 +1439,7 @@ ABSAGE
                       var facebook = document.createElement("A");
                       facebook.innerHTML = "Facebook  ";
                       facebook.href = "https://www.facebook.com/biervision/"; 
+                      facebook.target = "_blank";
                       document.getElementById("two").appendChild(facebook);
 
                       var bieraSortenL1 = document.createElement("LI");

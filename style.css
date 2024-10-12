@@ -260,7 +260,7 @@ svg {
 
 #circle {
     margin: 2vw;
-    background-color: #4d8f79;
+    background-color: rgb(77, 143, 121);
     width: 40vw;
     height: 40vw;
     border-radius: 100%;

@@ -327,7 +327,7 @@ ABSAGE
                         document.getElementById("one").appendChild(kreis);
 
                         var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./illustrationen/fleisch.png");
+                      bild.setAttribute("src", "./illustrationen/eier.png");
                       bild.setAttribute("alt", "mayer");
                       bild.setAttribute("id", "mayer");
                       bild.setAttribute("onclick", "infoblock()");
@@ -355,7 +355,7 @@ ABSAGE
                         document.getElementById("one").appendChild(kreis);
 
                         var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./illustrationen/fleisch.png");
+                      bild.setAttribute("src", "./illustrationen/iva.png");
                       bild.setAttribute("alt", "mia");
                       bild.setAttribute("id", "mia");
                       bild.setAttribute("onclick", "infoblock()");

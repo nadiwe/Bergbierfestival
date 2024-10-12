@@ -1549,6 +1549,14 @@ function gifStart(){
       one();
   }
 
+  function downloadPDF() {
+    const link = document.createElement('a');
+    link.href  = "./img/busfahrplan/Busfahrplan.pdf"; 
+    link.download = 'Busfahrplan_BBF24.pdf';           
+    link.click();
+    return false; 
+}
+
 //Informations about the hike
 document.getElementById('bergmassiv').onclick = function(){
   document.getElementById('actionHoehenprofil').classList.toggle('fade');

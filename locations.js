@@ -327,7 +327,7 @@ ABSAGE
                         document.getElementById("one").appendChild(kreis);
 
                         var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./illustrationen/eier.png");
+                      bild.setAttribute("src", "./illustrationen/egg.png");
                       bild.setAttribute("alt", "mayer");
                       bild.setAttribute("id", "mayer");
                       bild.setAttribute("onclick", "infoblock()");

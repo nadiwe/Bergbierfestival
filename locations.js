@@ -192,8 +192,8 @@ ABSAGE
 
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/bier.png");
-                      bild.setAttribute("alt", "girun");
-                      bild.setAttribute("id", "girun");
+                      bild.setAttribute("alt", "bieraEngiadinaisaReduziert");
+                      bild.setAttribute("id", "bieraEngiadinaisaReduziert");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
 
@@ -322,16 +322,6 @@ ABSAGE
                         bild.setAttribute("onclick", "infoblock()");
                         document.getElementById("circle").appendChild(bild);
 
-                        var kreis = document.createElement("div");
-                        kreis.setAttribute("id","circle2");
-                        document.getElementById("one").appendChild(kreis);
-
-                        var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./illustrationen/eier.png");
-                      bild.setAttribute("alt", "mayer");
-                      bild.setAttribute("id", "mayer");
-                      bild.setAttribute("onclick", "infoblock()");
-                      document.getElementById("circle2").appendChild(bild);
 
                           break;
                     case   'stand6':
@@ -766,6 +756,70 @@ ABSAGE
        var bieraEngiadinaisaSpirituosenU = document.createElement("UL");
        bieraEngiadinaisaSpirituosenU.setAttribute("id", "ulS");
        document.getElementById("two").appendChild(bieraEngiadinaisaSpirituosenU);
+
+       var weiterInformation = document.createElement("H2");
+       weiterInformation.innerHTML = "<br>Weitere Informationen";
+       document.getElementById("two").appendChild(weiterInformation);
+
+       var website = document.createElement("A");
+       website.innerHTML = "<br>Webseite<br>";
+       website.href = "https://www.bieraria.ch/"; 
+       website.target = "_blank";
+       document.getElementById("two").appendChild(website);   
+
+       var instagram = document.createElement("A");
+       instagram.innerHTML = "Instagram  <br>";
+       instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+       document.getElementById("two").appendChild(instagram);
+       
+       var facebook = document.createElement("A");
+       facebook.innerHTML = "Facebook";
+       facebook.href = "https://www.facebook.com/bieratschlin"; 
+       facebook.target = "_blank";
+       document.getElementById("two").appendChild(facebook);
+
+       var bieraEngiadinaisaSpirituosenL1 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL1.innerHTML = "<h3>Tschliner Single Malt</h3>Single Mal aus Tschliner Bier "; 
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL1);
+
+       var bieraEngiadinaisaSpirituosenL2 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL2.innerHTML = "<h3>Dschin da Tschlin</h3>GIN"; 
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL2);
+
+       var bieraEngiadinaisaSpirituosenL3 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL3.innerHTML = "<h3>Ofa d’or</h3>Hopfenschnaps"; 
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL3);
+
+       var bieraEngiadinaisaSpirituosenL4 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL4.innerHTML = "<h3>Tschliner Bier Brand</h3>Tschliner Bier-Destilat"; 
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL4);
+
+       var bieraEngiadinaisaSpirituosenL5 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL5.innerHTML = "<h3>Tschliner Edelweiss</h3>Feines Likör mit Edelweissblumen "; 
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL5);
+
+       var bieraEngiadinaisaSpirituosenL6 = document.createElement("LI");
+       bieraEngiadinaisaSpirituosenL6.innerHTML = "<h3>Tschliner Honig Likör</h3>Likör mit Honig"; 
+       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL6);
+       
+      
+
+
+       
+       break;  
+       case 'bieraEngiadinaisaReduziert':
+
+       var titel = document.createElement("H1");
+       titel.innerHTML = "Biera Engiadinaisa";
+       document.getElementById("two").appendChild(titel);
+
+       var bild = document.createElement("IMG");
+       bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
+       document.getElementById("two").appendChild(bild);
+
+       var content = document.createElement("P");
+       content.innerHTML = "Die Idee, einer Bieraria im Unterengadiner Dorf Tschlin zu gründen, geht auf einen Zukunftsworkshop der Gemeinde Tschlin in den ersten Jahren des neuen Jahrtausends zurück. Dort entstand auch die Idee des Werbe- und Verkaufsförderungsverbunds «Bun Tschlin». Am 30. Juni 2004 wurde die Gründung der Bieraria Tschlin SA notariell beglaubigt.<br> Die Brauerei Tschlin produziert und vermarktet regionale BIO Biersorten aus einheimischem Gerstenmalz, Tschliner Wasser, Hopfen und Hefe. Bei uns werden fast alle Biersorten aus 100% Schweizer Rohstoffe hergestellt, so dass wir uns mit gutem Gewissen als «regionalste Brauerei der Schweiz» bezeichnen dürfen.";
+       document.getElementById("two").appendChild(content);
 
        var weiterInformation = document.createElement("H2");
        weiterInformation.innerHTML = "<br>Weitere Informationen";

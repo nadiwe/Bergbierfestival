@@ -226,8 +226,8 @@ ABSAGE
                      
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/bier.png");
-                      bild.setAttribute("alt", "chopfab");
-                      bild.setAttribute("id", "chopfab");
+                      bild.setAttribute("alt", "monstein");
+                      bild.setAttribute("id", "monstein");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
 
@@ -1473,20 +1473,20 @@ ABSAGE
                   break;    
        case 'monstein':
       var bierVisionMonstein = document.createElement("H1");
-                      bierVisionMonstein.innerHTML = "BierVision Monstein";
+                      bierVisionMonstein.innerHTML = "Monsteiner Bier";
                       document.getElementById("two").appendChild(bierVisionMonstein);
 
                       var bild = document.createElement("IMG");
-                      bild.setAttribute("src", "./img/logo/monsteiner.png");
+                      bild.setAttribute("src", "./img/logo/monsteiner-logo.png");
                       bild.setAttribute("alt", "startBier");
                       bild.setAttribute("id", "startBier");
                       document.getElementById("two").appendChild(bild);
 
                       var bierVisionMonsteinT = document.createElement("P");
-                      bierVisionMonsteinT.innerHTML = "Im Oktober 2000 wurde die BierVision Monstein AG gegründet, welche am 6. Juni 2001 in Monstein als die damals höchstgelegene Brauerei der Schweiz und erste Schaubrauerei des Kantons Graubünden den Betrieb aufnahm. Sie befindet sich in der ehemaligen Dorfsennerei, einem Gebäude, das vor über 100 Jahren errichtet worden ist und sich an zentraler Lage in der Mitte des Walserdorfes Monstein befindet. <br> Heute braut die BierVision Monstein AG aus kristallklarem Bergquellwasser, Schweizer Hopfen und unter anderem einheimischem Bio-Berggerstenmalz von Gran Alpin verschiedene Monsteiner Bierspezialitäten im Kleinformat. «Craft Beer» aus den Bergen sozusagen. "
+                      bierVisionMonsteinT.innerHTML = "Willkommen in einer der schönst gelegenen Brauereien Europas. Die Monsteiner Bierspezialitäten werden mit kristallklarem Wasser, Schweizer Hopfen und aus einheimischem Gerstenmalz von Gran Alpin gebraut."
                       document.getElementById("two").appendChild(bierVisionMonsteinT);
 
-                      var bieraSorten = document.createElement("H2");
+                     /* var bieraSorten = document.createElement("H2");
                       bieraSorten.innerHTML = "Biersorten";
                       document.getElementById("two").appendChild(bieraSorten);
 
@@ -1494,7 +1494,7 @@ ABSAGE
                       bieraSortenU.setAttribute("id", "ul");
                       document.getElementById("two").appendChild(bieraSortenU);
 
-                      var weiterInformation = document.createElement("H2");
+                      */ var weiterInformation = document.createElement("H2");
                       weiterInformation.innerHTML = "<br>Weitere Informationen";
                       document.getElementById("two").appendChild(weiterInformation);
 
@@ -1511,7 +1511,7 @@ ABSAGE
 
                       var facebook = document.createElement("A");
                       facebook.innerHTML = "Facebook  ";
-                      facebook.href = "https://www.facebook.com/biervision/"; 
+                      facebook.href = "https://www.facebook.com/biervision/?locale=de_DE"; 
                       facebook.target = "_blank";
                       document.getElementById("two").appendChild(facebook);
 

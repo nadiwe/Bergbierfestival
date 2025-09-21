@@ -562,20 +562,25 @@ ABSAGE
                       document.getElementById("one").classList.add('layoutDesignText');
 
 
-                            var h1 = document.createElement("H1");
-                        h1.innerHTML = "Festival in Ramosch – VolXRoX";
+                    
+//Titel
+                        var h1 = document.createElement("H1");
+                        h1.innerHTML = "Festival in Ramosch – HALUNKE";
                         document.getElementById("one").appendChild(h1);
-
-                       var video = document.createElement("IFRAME");
+                        
+                        // Video
+                        var video = document.createElement("IFRAME");
                         video.setAttribute("frameborder", "0"); 
-                        video.setAttribute('allowFullScreen', '');
-                        video.setAttribute("src", "https://www.youtube.com/embed/9d6gbVabPVo?si=fOr6m92HKSArKZ5O");
-                      
+                        video.setAttribute("allowFullScreen", "");
+                        video.setAttribute("src", "https://www.youtube.com/embed/8A2ZEHQFFKs");
                         document.getElementById("one").appendChild(video);
-
+                        
+                        // Text
                         var text = document.createElement("P");
-                        text.innerHTML = "Türöffnung: 16:00 Uhr  <br><br> Stimmungsgeladen und vielseitig wie keine andere Band der Schweiz – das ist VolXRoX! Wo diese 5 Mannen aufkreuzen, ist am Tag danach mit Muskelkater und heiserer Stimme zu rechnen. Mit der Kombination der unterschiedlichsten Stilrichtungen von Rock über Rap, Boogie Woogie über Punk oder Country über Latin Pop schafft es VolXRoX auf unvergleichliche Weise, das Publikum mitzureissen. Im wunderbaren Berndeutsch, aber auch das eine oder andere Mal auf Französisch, meist energetisch, aber auch Mal ganz ruhig und mit viel Tiefgang. Kurzum: Wer Mundart mag wird VolXRoX lieben! 2014 gegründet, tourte die Band in damals noch leicht anderer Besetzung durch das Mittelland und spielte anfänglich vor allem Coversongs. Als 2016 das erste Album «VolXRoX» erschien, gelang mit der Schwingerhymne «Kampf ume Thron» der nationale Durchbruch. Das Debüt-Album stieg von 0 auf Platz 7 der Album-Charts ein und hielt sich sagenhafte 11 Wochen in den Charts. Rund 60 Konzerte jährlich resultierten in den folgenden Jahren, bevor 2019 mit «Familie-Fescht» das zweite VolXRoX-Album erschien – und wieder landete das Album in Mitten der Top10!"
+                        text.innerHTML = "Türöffnung: 16:00 Uhr <br><br> Die Band <strong>HALUNKE</strong> feiert im 2025 ihr 15-jähriges Bestehen. Über 300 Konzerte haben sie bereits gespielt. Egal auf welcher Bühne sie stehen, mit ihrer authentischen Art und ihren eingängigen Songs reissen sie jedes Publikum mit. Da bleibt kein Fuss auf dem Boden und keine Hand in der Hosentasche.<br><br> Die sympathischen HALUNKE – von SRF 3 zum «BestTalent» erkoren und mit vier Alben in den Top 10 der Schweizer Charts platziert – sind mit einer brandneuen und mitreissenden Liveshow auf grosser Jubiläumstour.";
                         document.getElementById("one").appendChild(text);
+
+
 
                       
 /*

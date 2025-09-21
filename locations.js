@@ -119,7 +119,9 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         var video = document.createElement("IFRAME");
                         video.setAttribute("frameborder", "0"); 
                         video.setAttribute('allowFullScreen', '')
-                        video.setAttribute("src", "https://www.youtube.com/embed/9H_T2G9_0sA?si=zVqN_U1514fVHU0y");
+                        video.setAttribute("src", "https://www.youtube.com/embed/_Ly2PQjbu-I");
+                       
+
                         document.getElementById("one").appendChild(video);
                         
 

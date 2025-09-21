@@ -337,8 +337,8 @@ ABSAGE
  
                         var bild = document.createElement("IMG");
                         bild.setAttribute("src", "./illustrationen/bier.png");
-                        bild.setAttribute("alt", "stadtbier");
-                        bild.setAttribute("id", "stadtbier");
+                        bild.setAttribute("alt", "brauhaus");
+                        bild.setAttribute("id", "brauhaus");
                         bild.setAttribute("onclick", "infoblock()");
                         document.getElementById("circle").appendChild(bild);
 

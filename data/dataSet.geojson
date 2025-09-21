@@ -120,6 +120,21 @@
     {
       "type": "Feature",
       "properties": {
+        "Icon": "stand7",
+        "art": "loc"
+      },
+      "geometry": {
+        "coordinates": [
+          10.381968,
+          46.830804
+        ],
+        "type": "Point"
+      },
+      "id": "60dc445bbc3096064fa25cedb783876e"
+    },
+    {
+      "type": "Feature",
+      "properties": {
         "Icon": "stand2",
         "art": "loc"
       },

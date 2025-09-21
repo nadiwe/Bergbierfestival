@@ -355,6 +355,35 @@ ABSAGE
 
                
                             break;
+                    case   'stand7':
+                              document.getElementById("layerOne").style.display = "block";
+                              document.getElementById("layerOne").classList.add('illusDesign');
+                              document.getElementById("one").classList.add('layoutDesignIllus');
+        
+                                var kreis = document.createElement("div");
+                                kreis.setAttribute("id","circle");
+                                document.getElementById("one").appendChild(kreis);
+         
+                                var bild = document.createElement("IMG");
+                                bild.setAttribute("src", "./illustrationen/bier.png");
+                                bild.setAttribute("alt", "chopfab");
+                                bild.setAttribute("id", "chopfab");
+                                bild.setAttribute("onclick", "infoblock()");
+                                document.getElementById("circle").appendChild(bild);
+        
+                                var kreis = document.createElement("div");
+                                kreis.setAttribute("id","circle2");
+                                document.getElementById("one").appendChild(kreis);
+        
+                                var bild = document.createElement("IMG");
+                              bild.setAttribute("src", "./illustrationen/cullas.png");
+                              bild.setAttribute("alt", "abendmenu");
+                              bild.setAttribute("id", "abendmenu");
+                              bild.setAttribute("onclick", "infoblock()");
+                              document.getElementById("circle2").appendChild(bild);
+        
+                       
+                                    break;
                    case   'stand8':
                       document.getElementById("layerOne").style.display = 'block';
                       document.getElementById("layerOne").classList.add('boxDesign');
@@ -1222,6 +1251,32 @@ case 'bieraEngiadinaisa':
                     facebook.target = "_blank";
                     document.getElementById("two").appendChild(facebook); 
                     break;
+      case 'abendmenu':
+
+                   // Titel
+var titel = document.createElement("H1");
+titel.innerHTML = "Abendmenü";
+document.getElementById("two").appendChild(titel);
+
+
+
+var bild = document.createElement("IMG");
+bild.setAttribute("src", "./img/logo/Suppe_knoedel.jpg");
+document.getElementById("two").appendChild(bild);
+
+// Text
+var content = document.createElement("P");
+content.innerHTML = "Läuft euch schon das Wasser im Mund zusammen? Am Ziel stärkt ihr euch mit einer herzhaften Knödelsuppe.<br><br>" + 
+"Und im Festzelt geht’s weiter:<br>" +
+"🥘 Engadiner Würste mit Kartoffeln & Sauerkraut (Ravitscha)<br>" +
+"🥪 Schnitzel-Brot<br>" +
+"🥗 Frischer Salat<br>" +
+"🍰 Cremeschnitte & Nusstorte<br><br>" +
+"👉 Natürlich auch mit leckeren vegetarischen Optionen!";
+document.getElementById("two").appendChild(content);
+
+                  
+                   break;
        case 'brauhaus':
 
                     var titel = document.createElement("H1");
@@ -1352,7 +1407,6 @@ case 'bieraEngiadinaisa':
       document.getElementById("two").appendChild(website);
          
                      break;
-       case 'chopfab':
         var chopfab = document.createElement("H1");
         chopfab.innerHTML = "Chopfab Boxer";
        document.getElementById("two").appendChild(chopfab);

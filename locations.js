@@ -388,6 +388,7 @@ ABSAGE
                      var instagram = document.createElement("A");
                      instagram.innerHTML = "Instagram  <br>";
                      instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+                     instagram.target = "_blank";
                      document.getElementById("one").appendChild(instagram);
                      
                      var facebook = document.createElement("A");
@@ -772,6 +773,7 @@ case 'bieraEngiadinaisa':
        var instagram = document.createElement("A");
        instagram.innerHTML = "Instagram  <br>";
        instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+       instagram.target = "_blank";
        document.getElementById("two").appendChild(instagram);
        
        var facebook = document.createElement("A");
@@ -836,6 +838,7 @@ case 'bieraEngiadinaisa':
        var instagram = document.createElement("A");
        instagram.innerHTML = "Instagram  <br>";
        instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+       instagram.target = "_blank";
        document.getElementById("two").appendChild(instagram);
        
        var facebook = document.createElement("A");
@@ -955,6 +958,7 @@ case 'bieraEngiadinaisa':
        var instagram = document.createElement("A");
        instagram.innerHTML = "Instagram  <br>";
        instagram.href = "https://www.instagram.com/doppelleu_boxer/"; 
+       instagram.target = "_blank";
        document.getElementById("two").appendChild(instagram);
        
        var facebook = document.createElement("A");
@@ -1068,6 +1072,7 @@ case 'bieraEngiadinaisa':
       var instagram = document.createElement("A");
       instagram.innerHTML = "Instagram <br>";
       instagram.href = "https://www.instagram.com/simmentaler_bier/"; 
+      instagram.target = "_blank";
       document.getElementById("two").appendChild(instagram); 
 
       var facebook = document.createElement("A");
@@ -1143,6 +1148,7 @@ case 'bieraEngiadinaisa':
                      var instagram = document.createElement("A");
                      instagram.innerHTML = "Instagram <br>";
                      instagram.href = "https://www.instagram.com/mundartscuol/"; 
+                     instagram.target = "_blank";
                      document.getElementById("two").appendChild(instagram); 
                
                      var facebook = document.createElement("A");
@@ -1463,6 +1469,7 @@ case 'bieraEngiadinaisa':
          var instagram = document.createElement("A");
          instagram.innerHTML = "Instagram  <br>";
          instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+         instagram.target = "_blank";
          document.getElementById("two").appendChild(instagram);
          
          var facebook = document.createElement("A");
@@ -1501,6 +1508,7 @@ case 'bieraEngiadinaisa':
                  var instagram = document.createElement("A");
                  instagram.innerHTML = "Instagram  <br>";
                  instagram.href = "https://www.instagram.com/explore/locations/947773904/brauerei-engadiner-bier/"; 
+                 instagram.target = "_blank";
                  document.getElementById("two").appendChild(instagram);
                  
           
@@ -1541,6 +1549,7 @@ case 'bieraEngiadinaisa':
                       var instagram = document.createElement("A");
                       instagram.innerHTML = "Instagram  <br>";
                       instagram.href = "https://www.instagram.com/monsteiner_bier/"; 
+                      instagram.target = "_blank";
                       document.getElementById("two").appendChild(instagram);
 
                       var facebook = document.createElement("A");

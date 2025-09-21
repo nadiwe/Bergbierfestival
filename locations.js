@@ -258,8 +258,8 @@ ABSAGE
 
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/bier.png");
-                      bild.setAttribute("alt", "");
-                      bild.setAttribute("id", "brauhaus");
+                      bild.setAttribute("alt", "engadinerbier");
+                      bild.setAttribute("id", "engadinerbier");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
                      
@@ -701,7 +701,7 @@ ABSAGE
  
     
        break;
-       case 'bieraEngiadinaisa':
+       
 
        var titel = document.createElement("H1");
        titel.innerHTML = "Biera Engiadinaisa";
@@ -714,7 +714,7 @@ ABSAGE
        var content = document.createElement("P");
        content.innerHTML = "Die Idee, einer Bieraria im Unterengadiner Dorf Tschlin zu gründen, geht auf einen Zukunftsworkshop der Gemeinde Tschlin in den ersten Jahren des neuen Jahrtausends zurück. Dort entstand auch die Idee des Werbe- und Verkaufsförderungsverbunds «Bun Tschlin». Am 30. Juni 2004 wurde die Gründung der Bieraria Tschlin SA notariell beglaubigt.<br> Die Brauerei Tschlin produziert und vermarktet regionale BIO Biersorten aus einheimischem Gerstenmalz, Tschliner Wasser, Hopfen und Hefe. Bei uns werden fast alle Biersorten aus 100% Schweizer Rohstoffe hergestellt, so dass wir uns mit gutem Gewissen als «regionalste Brauerei der Schweiz» bezeichnen dürfen.";
        document.getElementById("two").appendChild(content);
-
+case 'bieraEngiadinaisa':
        var bieraSorten = document.createElement("H2");
        bieraSorten.innerHTML = "Biersorten";
        document.getElementById("two").appendChild(bieraSorten);
@@ -1471,6 +1471,40 @@ ABSAGE
          facebook.target = "_blank";
          document.getElementById("two").appendChild(facebook);
                   break;    
+      case 'engadinerbier':
+
+          
+                  var steimandliBier = document.createElement("H1");
+                  steimandliBier.innerHTML = "Engadiner Bier";
+                 document.getElementById("two").appendChild(steimandliBier);
+        
+                 var bild = document.createElement("IMG");
+                 bild.setAttribute("src", "./img/logo/EngadinerBier.jpg");
+                 document.getElementById("two").appendChild(bild);
+          
+                 var bergBierText = document.createElement("P");
+                 bergBierText.innerHTML = "Hier oben, wo klare Bergluft und sprudelndes Quellwasser auf echte Handwerkskunst treffen, brauen wir Biere, die nach Engadin schmecken: frisch, aromatisch und unverwechselbar. <br> Aus besten Rohstoffen und mit viel Leidenschaft entsteht bei uns kein Massenprodukt, sondern ein Stück Heimat, das du mit jedem Schluck spürst.<br><br><strong>Komm ans Bergbierfest</strong>, probiere unsere Vielfalt und lass dich von der Kraft der Engadiner Berge begeistern: für Momente, die bleiben.";
+                 document.getElementById("two").appendChild(bergBierText);
+                 
+        
+                 var weiterInformation = document.createElement("H2");
+                 weiterInformation.innerHTML = "<br>Weitere Informationen";
+                 document.getElementById("two").appendChild(weiterInformation);
+        
+        
+                 var website = document.createElement("A");
+                 website.innerHTML = "<br>Webseite<br>";
+                 website.href = "https://www.engadinerbier.ch/brauerei";
+                 website.target = "_blank";
+                 document.getElementById("two").appendChild(website);   
+          
+                 var instagram = document.createElement("A");
+                 instagram.innerHTML = "Instagram  <br>";
+                 instagram.href = "https://www.instagram.com/explore/locations/947773904/brauerei-engadiner-bier/"; 
+                 document.getElementById("two").appendChild(instagram);
+                 
+          
+                          break;  
        case 'monstein':
       var bierVisionMonstein = document.createElement("H1");
                       bierVisionMonstein.innerHTML = "Monsteiner Bier";

@@ -609,6 +609,16 @@ ABSAGE
                         text.innerHTML = "Türöffnung: 16:00 Uhr <br><br> Die Band <strong>HALUNKE</strong> feiert im 2025 ihr 15-jähriges Bestehen. Über 300 Konzerte haben sie bereits gespielt. Egal auf welcher Bühne sie stehen, mit ihrer authentischen Art und ihren eingängigen Songs reissen sie jedes Publikum mit. Da bleibt kein Fuss auf dem Boden und keine Hand in der Hosentasche.<br><br> Die sympathischen HALUNKE – von SRF 3 zum «BestTalent» erkoren und mit vier Alben in den Top 10 der Schweizer Charts platziert – sind mit einer brandneuen und mitreissenden Liveshow auf grosser Jubiläumstour.";
                         document.getElementById("one").appendChild(text);
 
+                        var weiterInformation = document.createElement("P");
+                        weiterInformation.innerHTML = "Sponsoren";
+                        document.getElementById("one").appendChild(weiterInformation);
+                 
+                        var bild = document.createElement("IMG");
+                        bild.setAttribute("src", "./img/logo/sponsoren.png");
+                        document.getElementById("one").appendChild(bild);
+                      
+                        
+
 
 
                       
@@ -815,7 +825,7 @@ document.getElementById("two").appendChild(bild);
 
        var instagram = document.createElement("A");
        instagram.innerHTML = "Instagram  <br>";
-       instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+       instagram.href = "https://www.instagram.com/be_bierariatschlin/"; 
        instagram.target = "_blank";
        document.getElementById("two").appendChild(instagram);
        
@@ -880,7 +890,7 @@ document.getElementById("two").appendChild(bild);
 
        var instagram = document.createElement("A");
        instagram.innerHTML = "Instagram  <br>";
-       instagram.href = "https://www.instagram.com/bierariatschlin/"; 
+       instagram.href = "https://www.instagram.com/be_bierariatschlin/"; 
        instagram.target = "_blank";
        document.getElementById("two").appendChild(instagram);
        

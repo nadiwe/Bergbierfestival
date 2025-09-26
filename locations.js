@@ -752,7 +752,7 @@ ABSAGE
 case 'bieraEngiadinaisa':
 
 var titel = document.createElement("H1");
-titel.innerHTML = "Biera Engiadinaisa";
+titel.innerHTML = "Bieraria Tschlin";
 document.getElementById("two").appendChild(titel);
 
 var bild = document.createElement("IMG");

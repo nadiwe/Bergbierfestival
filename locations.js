@@ -750,6 +750,15 @@ ABSAGE
        content.innerHTML = "Die Idee, einer Bieraria im Unterengadiner Dorf Tschlin zu gründen, geht auf einen Zukunftsworkshop der Gemeinde Tschlin in den ersten Jahren des neuen Jahrtausends zurück. Dort entstand auch die Idee des Werbe- und Verkaufsförderungsverbunds «Bun Tschlin». Am 30. Juni 2004 wurde die Gründung der Bieraria Tschlin SA notariell beglaubigt.<br> Die Brauerei Tschlin produziert und vermarktet regionale BIO Biersorten aus einheimischem Gerstenmalz, Tschliner Wasser, Hopfen und Hefe. Bei uns werden fast alle Biersorten aus 100% Schweizer Rohstoffe hergestellt, so dass wir uns mit gutem Gewissen als «regionalste Brauerei der Schweiz» bezeichnen dürfen.";
        document.getElementById("two").appendChild(content);
 case 'bieraEngiadinaisa':
+
+var titel = document.createElement("H1");
+titel.innerHTML = "Biera Engiadinaisa";
+document.getElementById("two").appendChild(titel);
+
+var bild = document.createElement("IMG");
+bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
+document.getElementById("two").appendChild(bild);
+
        var bieraSorten = document.createElement("H2");
        bieraSorten.innerHTML = "Biersorten";
        document.getElementById("two").appendChild(bieraSorten);

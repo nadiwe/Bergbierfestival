@@ -1326,7 +1326,7 @@ document.getElementById("two").appendChild(content);
        case 'poschiavini':
 
                     var brauhaus = document.createElement("H1");
-                    brauhaus.innerHTML = "Birraria Poschiavini";
+                    brauhaus.innerHTML = "Birraria Poschiavina";
                     document.getElementById("two").appendChild(brauhaus);
              
                    var bild = document.createElement("IMG");

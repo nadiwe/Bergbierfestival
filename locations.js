@@ -19,19 +19,51 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             maxBounds: bounds
         });
         
-        let geoError;
-        if (navigator.geolocation) {
-          navigator.geolocation.watchPosition((pos) => {
+        //Standort des Geräts laufend verfolgen
+        let geoError, geoWatch = null, wartetAufStandort = false;
+
+        function starteStandort() {
+          if (!navigator.geolocation || geoWatch !== null) return;
+          geoWatch = navigator.geolocation.watchPosition((pos) => {
             posLo = pos.coords.longitude;
             posLa = pos.coords.latitude;
             geoError = null;
+            //Marker läuft während der Wanderung mit
+            if (marker && imKartengebiet()) marker.setLngLat([posLo, posLa]);
+            if (wartetAufStandort) {
+              wartetAufStandort = false;
+              geoFindMe();
+            }
           }, (err) => {
             geoError = err;
             console.log(err);
+            //bei blockiertem Zugriff neu starten können, falls später erlaubt wird
+            if (err.code === 1) {
+              navigator.geolocation.clearWatch(geoWatch);
+              geoWatch = null;
+            }
+            if (wartetAufStandort) {
+              wartetAufStandort = false;
+              zeigeStandortFehler();
+            }
           }, {
             enableHighAccuracy: true,
             maximumAge: 60000
           });
+        }
+        starteStandort();
+
+        function imKartengebiet() {
+          return posLo >= bounds[0][0] && posLo <= bounds[1][0] &&
+                 posLa >= bounds[0][1] && posLa <= bounds[1][1];
+        }
+
+        function zeigeStandortFehler() {
+          if (geoError && geoError.code === 1) {
+            zeigeHinweis("Standortzugriff blockiert – bitte im Browser und in den Einstellungen des Geräts (Ortungsdienste) erlauben.");
+          } else {
+            zeigeHinweis("Standort konnte nicht bestimmt werden – ist die Ortung am Gerät eingeschaltet?");
+          }
         }
 
         //kurzer Hinweis unten am Bildschirm
@@ -54,19 +86,29 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
         function geoFindMe() {
           console.log("get location")
 
-          if (posLo === undefined) {
-            if (!navigator.geolocation) {
-              zeigeHinweis("Dein Browser kann den Standort leider nicht bestimmen.");
-            } else if (geoError && geoError.code === 1) {
-              zeigeHinweis("Standort nicht verfügbar – bitte Standortzugriff für diese Seite erlauben.");
-            } else {
-              zeigeHinweis("Standort wird gesucht … bitte in ein paar Sekunden nochmals versuchen.");
-            }
+          if (!navigator.geolocation) {
+            zeigeHinweis("Dein Browser kann den Standort leider nicht bestimmen.");
             return;
           }
-          
 
-        
+          //noch kein Standort: Suche (neu) starten und anzeigen, sobald er da ist
+          if (posLo === undefined) {
+            wartetAufStandort = true;
+            if (geoError && geoError.code !== 1) {
+              zeigeStandortFehler();
+            } else {
+              zeigeHinweis("Standort wird gesucht …");
+            }
+            starteStandort();
+            return;
+          }
+
+          if (!imKartengebiet()) {
+            zeigeHinweis("Du bist ausserhalb des Kartengebiets. Dein Standort erscheint, sobald du in der Region Tschlin–Ramosch bist.");
+            return;
+          }
+
+          document.getElementById("hinweis") && document.getElementById("hinweis").classList.remove("sichtbar");
 
           if ( marker){
             console.log("remove marker");

@@ -211,6 +211,22 @@ svg {
     display: none;
 }
 
+.downloadButton {
+    display: inline-block;
+    margin-top: 2vh;
+    padding: 1.2vh 2.5vh;
+    border-radius: 3vh;
+    background-color: white;
+    color: black;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: 0 0.3vh 0.8vh rgba(0, 0, 0, 0.2);
+}
+
+.downloadButton:hover {
+    background-color: #a0cfd7;
+}
+
 
 .legende {
     display: flex;
@@ -498,4 +514,34 @@ svg {
 
 
 
+}
+
+/* Hover für alle Icons (nur auf Geräten mit Maus) */
+.buttonDesign,
+#circle img,
+#circle2 img,
+#bergmassiv,
+.arrow {
+    cursor: pointer;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out, opacity 0.2s ease-in-out;
+}
+
+@media (hover: hover) {
+    .buttonDesign:hover {
+        transform: scale(1.08);
+        box-shadow: 0 0.4vh 1.2vh rgba(0, 0, 0, 0.3);
+    }
+
+    #circle img:hover,
+    #circle2 img:hover {
+        transform: scale(1.08);
+    }
+
+    .arrow:hover {
+        opacity: 0.6;
+    }
+
+    #bergmassiv:hover {
+        transform: translateY(-0.5vh);
+    }
 }

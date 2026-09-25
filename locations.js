@@ -73,7 +73,8 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                 
                 map.addSource('map', {
                 'type': 'geojson',
-                'data': './data/dataSet.geojson'
+                'data': './data/dataSet.geojson',
+                'generateId': true
 //...until here
 
                 });
@@ -86,11 +87,25 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                     'source': 'map',
                     'paint': {
                     'circle-radius': 20,
-                    'circle-color': 'blue',
-                    'circle-opacity': 0
+                    'circle-color': 'white',
+                    'circle-opacity': ['case', ['boolean', ['feature-state', 'hover'], false], 0.4, 0]
                     },
                 'filter': ['==', '$type', 'Point']
 
+    });
+
+//Hover on Map Icons
+    let hoveredId = null;
+    map.on('mousemove', 'locations', (e) => {
+      map.getCanvas().style.cursor = 'pointer';
+      if (hoveredId !== null) map.setFeatureState({ source: 'map', id: hoveredId }, { hover: false });
+      hoveredId = e.features[0].id;
+      map.setFeatureState({ source: 'map', id: hoveredId }, { hover: true });
+    });
+    map.on('mouseleave', 'locations', () => {
+      map.getCanvas().style.cursor = '';
+      if (hoveredId !== null) map.setFeatureState({ source: 'map', id: hoveredId }, { hover: false });
+      hoveredId = null;
     });
    
    
@@ -119,7 +134,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         var video = document.createElement("IFRAME");
                         video.setAttribute("frameborder", "0"); 
                         video.setAttribute('allowFullScreen', '')
-                        video.setAttribute("src", "https://www.youtube.com/embed/_Ly2PQjbu-I");
+                        video.setAttribute("src", "https://www.youtube.com/embed/drDu3fKYQ5o");
                        
 
                         document.getElementById("one").appendChild(video);
@@ -130,24 +145,34 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         text.innerHTML = "Schön, bist du bei uns. Wir freuen uns, dass wir auch heuer wieder die Bergbierwanderung durchführen können.<br> <br> Die Wanderung ist 11.6 Kilometer lang, gemütlich und aussichtsreich. Auf der gegenüberliegenden Talseite türmen sich die 3000er der Engadiner Dolomiten. Und an diesem speziellen Tag lernt man auch, wie der Schweizer Berg schmeckt, da alle Bergbierbrauereien mit Bergquellwasser produzieren, welche sich mit den Degustationsständen auf der Wanderung präsentieren. Bis zum Festivalgelände kann jedermann/frau etwa 25 Bergbiersorten probieren und auf dem Festivalgelände in Ramosch sein neu erkorenes Lieblingsbier weitertrinken."
                         document.getElementById("one").appendChild(text);
 
-                        var grillstand = document.createElement("H2");
-                        grillstand.innerHTML = "Auch für Familien geeignet";
-                        document.getElementById("one").appendChild(grillstand);
+                        // Kindschi
+                        var kindschiLogo = document.createElement("IMG");
+                        kindschiLogo.setAttribute("src", "./img/logo/kindschi.png");
+                        kindschiLogo.setAttribute("alt", "Kindschi indschegners e geometers SA");
+                        kindschiLogo.style.width = "60%";
+                        kindschiLogo.style.marginTop = "4vh";
+                        document.getElementById("one").appendChild(kindschiLogo);
 
-                        var grillstandT = document.createElement("P");
-                        grillstandT.innerHTML = "Die Wanderung ist auch für Kinder sehr geeignet. Einzig kinderwagentauglich ist der Wanderweg nicht. Laufzeit: ca. 3.5 Stunden. Bequeme Wanderschuhe empfohlen. "
-                        document.getElementById("one").appendChild(grillstandT);
+                        var kindschi = document.createElement("H2");
+                        kindschi.innerHTML = "Lavurs d’indschegners cun paschiun: Kindschi indschegners e geometers SA";
+                        document.getElementById("one").appendChild(kindschi);
 
-                        var verkaufsstand = document.createElement("H2");
-                        verkaufsstand.innerHTML = "Verkaufsstand";
-                        document.getElementById("one").appendChild(verkaufsstand);
+                        var kindschiT = document.createElement("P");
+                        kindschiT.innerHTML = "Wo anspruchsvolle Topografie auf zukunftsweisende Technik trifft, stehen wir für Kompetenz und Kontinuität. Ob präzise Vermessungen für komplexe Bauvorhaben, innovative Ingenieurlösungen im Tiefbau oder die professionelle Begleitung von Meliorations- und Infrastrukturprojekten – wir schaffen solide Grundlagen.<br><br>Als lokaler Anbieter gestalten wir den Lebensraum im Unterengadin aktiv mit und setzen dabei auf Qualität, digitale Kompetenz und nachhaltige Lösungen direkt vor Ort.<br><br>Übrigens: Auch den Weg, auf dem ihr gerade unterwegs seid, haben wir im Rahmen der Gesamtmelioration Tschlin von der Planung bis zur Ausführung begleitet – ihr wandert also auf sicherem Grund!<br><br>Daplü infuormaziuns natüramlaing eir in rumantsch – ma uossa co prüm ün VIVA e giodai il di!";
+                        document.getElementById("one").appendChild(kindschiT);
 
-                        var verkaufsstandT = document.createElement("P");
-                        verkaufsstandT.innerHTML = "In Ramosch können am Ende der Wanderung alle Produkte eingekauft werden, die auf der Wanderung zur Degustation angeboten werden und Sie finden dort noch weitere Spezialitäten der Bun Tschlin Produzenten. ";
-                        document.getElementById("one").appendChild(verkaufsstandT);
+                        var kindschiL = document.createElement("A");
+                        kindschiL.innerHTML = "www.kindschi-ing.ch";
+                        kindschiL.href = "https://kindschi-ing.ch/";
+                        kindschiL.target = "_blank";
+                        document.getElementById("one").appendChild(kindschiL);
 
-                    
-                   
+                        var kindschiFoto = document.createElement("IMG");
+                        kindschiFoto.setAttribute("src", "./img/memories/kindschi-bergbierfestival.jpg");
+                        kindschiFoto.setAttribute("alt", "Wanderweg Gesamtmelioration Tschlin");
+                        kindschiFoto.style.marginTop = "3vh";
+                        document.getElementById("one").appendChild(kindschiFoto);
+
                     break;
                /*   
                  case   'startGipfelstuermer':
@@ -337,7 +362,7 @@ ABSAGE
  
                         var bild = document.createElement("IMG");
                         bild.setAttribute("src", "./illustrationen/bier.png");
-                        bild.setAttribute("alt", "brauhaus");
+                        bild.setAttribute("alt", "Appenzeller Bier");
                         bild.setAttribute("id", "brauhaus");
                         bild.setAttribute("onclick", "infoblock()");
                         document.getElementById("circle").appendChild(bild);
@@ -363,24 +388,13 @@ ABSAGE
                                 var kreis = document.createElement("div");
                                 kreis.setAttribute("id","circle");
                                 document.getElementById("one").appendChild(kreis);
-         
-                                var bild = document.createElement("IMG");
-                                bild.setAttribute("src", "./illustrationen/bier.png");
-                                bild.setAttribute("alt", "chopfab");
-                                bild.setAttribute("id", "chopfab");
-                                bild.setAttribute("onclick", "infoblock()");
-                                document.getElementById("circle").appendChild(bild);
-        
-                                var kreis = document.createElement("div");
-                                kreis.setAttribute("id","circle2");
-                                document.getElementById("one").appendChild(kreis);
         
                                 var bild = document.createElement("IMG");
                               bild.setAttribute("src", "./illustrationen/cullas.png");
                               bild.setAttribute("alt", "abendmenu");
                               bild.setAttribute("id", "abendmenu");
                               bild.setAttribute("onclick", "infoblock()");
-                              document.getElementById("circle2").appendChild(bild);
+                              document.getElementById("circle").appendChild(bild);
         
                        
                                     break;
@@ -452,6 +466,7 @@ ABSAGE
                     var bunTschlinL = document.createElement("A");
                     bunTschlinL.innerHTML = " www.buntschlin.ch";
                     bunTschlinL.href = "https://buntschlin.ch/"; 
+                    bunTschlinL.target = "_blank";
                     document.getElementById("one").appendChild(bunTschlinL);
 
                     break;
@@ -501,6 +516,7 @@ ABSAGE
                         var rumantschL = document.createElement("A");
                         rumantschL.innerHTML = "www.curs.ch";
                         rumantschL.href = "https://www.curs.ch/biera"; 
+                        rumantschL.target = "_blank";
                         document.getElementById("one").appendChild(rumantschL);     
 
                         var foto = document.createElement("IMG");
@@ -550,6 +566,7 @@ ABSAGE
 
                         var link = document.createElement("A");
                         link.setAttribute("id", "sponsor");
+                        link.target = "_blank";
                         document.getElementById("one").appendChild(link);
 
                         var logo = document.createElement("IMG");
@@ -594,24 +611,24 @@ ABSAGE
                     
 //Titel
                         var h1 = document.createElement("H1");
-                        h1.innerHTML = "Festival in Ramosch – HALUNKE";
+                        h1.innerHTML = "Festival in Ramosch – Kitsch";
                         document.getElementById("one").appendChild(h1);
                         
                         // Video
                         var video = document.createElement("IFRAME");
                         video.setAttribute("frameborder", "0"); 
                         video.setAttribute("allowFullScreen", "");
-                        video.setAttribute("src", "https://www.youtube.com/embed/8A2ZEHQFFKs");
+                        video.setAttribute("src", "https://www.youtube.com/embed/sYlYIlP9wwk");
                         document.getElementById("one").appendChild(video);
                         
                         // Text
                         var text = document.createElement("P");
-                        text.innerHTML = "Türöffnung: 16:00 Uhr <br><br> Die Band <strong>HALUNKE</strong> feiert im 2025 ihr 15-jähriges Bestehen. Über 300 Konzerte haben sie bereits gespielt. Egal auf welcher Bühne sie stehen, mit ihrer authentischen Art und ihren eingängigen Songs reissen sie jedes Publikum mit. Da bleibt kein Fuss auf dem Boden und keine Hand in der Hosentasche.<br><br> Die sympathischen HALUNKE – von SRF 3 zum «BestTalent» erkoren und mit vier Alben in den Top 10 der Schweizer Charts platziert – sind mit einer brandneuen und mitreissenden Liveshow auf grosser Jubiläumstour.";
+                        text.innerHTML = "Türöffnung: 16:00 Uhr <br><br> Party auf Mundart? Bei uns auf jeden Fall! <strong>Kitsch</strong> bringt die grössten Schweizerhits im Partymodus auf die Bühne und lässt die Meitschi tanzen und die Giele festen wie sich’s gehört – wenn du da nicht heiser nach Hause gehst, hast du etwas falsch gemacht!<br><br> Kitsch besticht durch freches Auftreten und den unverkennbaren Festhütten-Sound – ein Gemisch aus den bekanntesten Mundart-Hits von früher bis heute, zusammen mit Steirischer Harmonika und Bariton. Man könnte auch sagen: «Oktoberfest auf Schweizerdeutsch»! Dazu gibt’s rockige Gitarrenklänge und satte Drum-Beats – hier bleibt ganz sicher kein Füdle auf dem Bank!";
                         document.getElementById("one").appendChild(text);
 
                  
                         var bild = document.createElement("IMG");
-                        bild.setAttribute("src", "./img/logo/sponsoren.png");
+                        bild.setAttribute("src", "./img/logo/sponsoren2026.png");
                         document.getElementById("one").appendChild(bild);
                       
                         
@@ -786,21 +803,9 @@ document.getElementById("two").appendChild(bild);
        bieraSortenL3.innerHTML = "<h3>BE Weizen</h3>Weizen BIO mit einh. Weizenmalz, obergärig"; 
        document.getElementById("ul").appendChild(bieraSortenL3);
 
-       var bieraSortenL4 = document.createElement("LI");
-       bieraSortenL4.innerHTML = "<h3>Staila Alpina</h3>BIO Bier mit Bündner-Edelweiss, untergärig"; 
-       document.getElementById("ul").appendChild(bieraSortenL4);
 
-       var bieraSortenL5 = document.createElement("LI");
-       bieraSortenL5.innerHTML = "<h3>Engadin Pale Ale</h3>Pale Ale Bier – 100% CH, obergärig"; 
-       document.getElementById("ul").appendChild(bieraSortenL5);
 
-       var bieraSortenL6 = document.createElement("LI");
-       bieraSortenL6.innerHTML = "<h3>La S-chüra</h3>Dunkles, citrahaltiges Bio Bier, untergärig"; 
-       document.getElementById("ul").appendChild(bieraSortenL6);
 
-       var bieraSortenL7 = document.createElement("LI");
-       bieraSortenL7.innerHTML = "<h3>Festival-Spezial</h3>Gebraut nach Pilsner-Bierstil"; 
-       document.getElementById("ul").appendChild(bieraSortenL7);
 
        var bieraEngiadinaisaSpirituosen = document.createElement("H2");
        bieraEngiadinaisaSpirituosen.innerHTML = "Spirituosen";
@@ -840,21 +845,12 @@ document.getElementById("two").appendChild(bild);
        bieraEngiadinaisaSpirituosenL2.innerHTML = "<h3>Dschin da Tschlin</h3>GIN"; 
        document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL2);
 
-       var bieraEngiadinaisaSpirituosenL3 = document.createElement("LI");
-       bieraEngiadinaisaSpirituosenL3.innerHTML = "<h3>Ofa d’or</h3>Hopfenschnaps"; 
-       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL3);
 
        var bieraEngiadinaisaSpirituosenL4 = document.createElement("LI");
        bieraEngiadinaisaSpirituosenL4.innerHTML = "<h3>Tschliner Bier Brand</h3>Tschliner Bier-Destilat"; 
        document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL4);
 
-       var bieraEngiadinaisaSpirituosenL5 = document.createElement("LI");
-       bieraEngiadinaisaSpirituosenL5.innerHTML = "<h3>Tschliner Edelweiss</h3>Feines Likör mit Edelweissblumen "; 
-       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL5);
 
-       var bieraEngiadinaisaSpirituosenL6 = document.createElement("LI");
-       bieraEngiadinaisaSpirituosenL6.innerHTML = "<h3>Tschliner Honig Likör</h3>Likör mit Honig"; 
-       document.getElementById("ulS").appendChild(bieraEngiadinaisaSpirituosenL6);
        
       
 
@@ -1284,9 +1280,9 @@ document.getElementById("two").appendChild(bild);
 var content = document.createElement("P");
 content.innerHTML = "Läuft euch schon das Wasser im Mund zusammen? Am Ziel stärkt ihr euch mit einer herzhaften Knödelsuppe.<br><br>" + 
 "Und im Festzelt geht’s weiter:<br>" +
-"🥘 Engadiner Würste mit Kartoffeln & Sauerkraut (Ravitscha)<br>" +
-"🥪 Schnitzel-Brot<br>" +
-"🥗 Frischer Salat<br>" +
+"🥘 Knödel von Cilgia Etter<br>" +
+"🥪 Schnitzelbrot BE Marinade<br>" +
+"🌭 Bierbratwurst Hot Dog<br>" +
 "🍰 Cremeschnitte & Nusstorte<br><br>" +
 "👉 Natürlich auch mit leckeren vegetarischen Optionen!";
 document.getElementById("two").appendChild(content);
@@ -1296,15 +1292,15 @@ document.getElementById("two").appendChild(content);
        case 'brauhaus':
 
                     var titel = document.createElement("H1");
-                    titel.innerHTML = "Liechtensteiner Brauhaus";
+                    titel.innerHTML = "Appenzeller Bier";
                     document.getElementById("two").appendChild(titel);
              
                    var bild = document.createElement("IMG");
-                   bild.setAttribute("src", "./img/logo/liechtensteiner.png");
+                   bild.setAttribute("src", "./img/logo/appenzeller.png");
                    document.getElementById("two").appendChild(bild);
              
                    var content = document.createElement("P");
-                   content.innerHTML = "<br>Unser ganzes Sortiment auf einen Blick:<br>Ein fruchtiger Radler, ein leckeres Lagerbier, Exquisites für den anspruchsvollen Gaumen oder einfach mal etwas Neues ausprobieren. Bei uns findet die Craft Beer Queen und der Bierliebhaber das Richtige!"
+                   content.innerHTML = "<br>Seit 1886 und bereits in der fünften Generation braut die Familie Locher das Appenzeller Bier. Heute umfasst das preisgekrönte Sortiment über 40 verschiedene Bierspezialitäten.";
                    document.getElementById("two").appendChild(content);
 
                    var weiterInformation = document.createElement("H2");
@@ -1313,13 +1309,13 @@ document.getElementById("two").appendChild(content);
 
                    var website = document.createElement("A");
                    website.innerHTML = "<br>Webseite<br>";
-                   website.href = "https://brauhaus.li/"; 
+                   website.href = "https://appenzellerbier.ch"; 
                    website.target = "_blank";
                    document.getElementById("two").appendChild(website); 
              
                    var facebook = document.createElement("A");
                    facebook.innerHTML = "Facebook";
-                   facebook.href = "https://www.facebook.com/liechtensteinerbrauhaus"; 
+                   facebook.href = "https://www.facebook.com/appenzellerbier"; 
                    facebook.target = "_blank";
                    document.getElementById("two").appendChild(facebook); 
                    break;
@@ -1368,37 +1364,6 @@ document.getElementById("two").appendChild(content);
      document.getElementById("two").appendChild(website);
         
                     break;
-       case 'chopfab':
-       var chopfab = document.createElement("H1");
-       chopfab.innerHTML = "Chopfab Boxer";
-      document.getElementById("two").appendChild(chopfab);
-
-     var bild = document.createElement("IMG");
-     bild.setAttribute("src", "./img/logo/chopfabBoxer.png");
-     document.getElementById("two").appendChild(bild);
-
-     var chopfabT = document.createElement("P");
-     chopfabT.innerHTML = "Seit 2012 prägt Kopfab boxer als führende unabhängige Craft-Brauerei der Schweiz mit den Produktionsstandorten Winterthur und Yverdon-les-Bains den Schweizer Biermarkt nachhaltig. Auf die Qualität legt die Brauerei einen hohen Wert. Zudem bietet die Brauerei verschiedene Biersorten vom naturtrüben Lagerbier über das Weizenbier bis zum speziellen Edelweissbier."
-     document.getElementById("two").appendChild(chopfabT);
-
-     var subtitel = document.createElement("H2");
-     subtitel.innerHTML = "<br>Weitere Informationen";
-     document.getElementById("two").appendChild(subtitel);
-     
-     var website = document.createElement("A");
-     website.innerHTML = "<br>Webseite<br>";
-     website.href = "https://www.chopfabboxer.ch/de/"; 
-     website.target = "_blank";
-     document.getElementById("two").appendChild(website); 
-
-     var facebook = document.createElement("A");
-     facebook.innerHTML = "Facebook";
-     facebook.href = "https://www.facebook.com/chopfabschweiz";
-     facebook.target = "_blank";
-     document.getElementById("two").appendChild(facebook); 
-
-        
-                    break;
        case 'domleschger':
         var domleschger = document.createElement("H1");
         domleschger.innerHTML = "Domleschger Bier";
@@ -1423,34 +1388,6 @@ document.getElementById("two").appendChild(content);
       document.getElementById("two").appendChild(website);
          
                      break;
-        var chopfab = document.createElement("H1");
-        chopfab.innerHTML = "Chopfab Boxer";
-       document.getElementById("two").appendChild(chopfab);
-
-      var bild = document.createElement("IMG");
-      bild.setAttribute("src", "./img/logo/chopfabBoxer.png");
-      document.getElementById("two").appendChild(bild);
-
-      var chopfabT = document.createElement("P");
-      chopfabT.innerHTML = "Seit 2012 prägt Kopfab boxer als führende unabhängige Craft-Brauerei der Schweiz mit den Produktionsstandorten Winterthur und Yverdon-les-Bains den Schweizer Biermarkt nachhaltig. Auf die Qualität legt die Brauerei einen hohen Wert. Zudem bietet die Brauerei verschiedene Biersorten vom naturtrüben Lagerbier über das Weizenbier bis zum speziellen Edelweissbier."
-      document.getElementById("two").appendChild(chopfabT);
-
-      var weiterInformation = document.createElement("H2");
-      weiterInformation.innerHTML = "<br>Weitere Informationen";
-      document.getElementById("two").appendChild(weiterInformation);
-
-      var website = document.createElement("A");
-      website.innerHTML = "<br>Webseite<br>";
-      website.href = "https://www.chopfabboxer.ch/de/"; 
-      website.target = "_blank";
-      document.getElementById("two").appendChild(website); 
-
-      var facebook = document.createElement("A");
-      facebook.innerHTML = "Facebook";
-      facebook.href = "https://www.facebook.com/chopfabschweiz";
-      facebook.target = "_blank";
-      document.getElementById("two").appendChild(facebook); 
-
          
                      break;                     
        case 'matze':
@@ -1511,6 +1448,7 @@ document.getElementById("two").appendChild(content);
         var link = document.createElement("A");
         link.innerHTML = "SRF bi de Lüt";
         link.href = "https://www.srf.ch/sendungen/srf-bi-de-luet-landfrauenkueche/rezepte-landfrauenkueche-2015/cullas-da-vna-kugeln-von-vna"; 
+        link.target = "_blank";
         document.getElementById("two").appendChild(link); 
 
         break;
@@ -1723,13 +1661,6 @@ function gifStart(){
       one();
   }
 
-  function downloadPDF() {
-    const link = document.createElement('a');
-    link.href  = "./img/busfahrplan/Busfahrplan.pdf"; 
-    link.download = 'Busfahrplan_BBF24.pdf';           
-    link.click();
-    return false; 
-}
 
 //Informations about the hike
 document.getElementById('bergmassiv').onclick = function(){

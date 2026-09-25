@@ -545,3 +545,52 @@ svg {
         transform: translateY(-0.5vh);
     }
 }
+
+/* Beschriftung der Icons beim Hover */
+.buttonDesign[data-tooltip] {
+    position: relative;
+}
+
+@media (hover: hover) {
+    .buttonDesign[data-tooltip]::after {
+        content: attr(data-tooltip);
+        position: absolute;
+        bottom: calc(100% + 1vh);
+        left: 50%;
+        transform: translateX(-50%) translateY(0.5vh);
+        padding: 0.6vh 0.8vw;
+        border-radius: 0.5vw;
+        background-color: rgba(0, 0, 0, 0.8);
+        color: #ffffff;
+        font-size: 1.5vh;
+        white-space: nowrap;
+        pointer-events: none;
+        opacity: 0;
+        transition: opacity 0.2s ease-in-out, transform 0.2s ease-in-out;
+    }
+
+    .buttonDesign[data-tooltip]:hover::after {
+        opacity: 1;
+        transform: translateX(-50%) translateY(0);
+    }
+
+    /* äusserste Icons: Beschriftung nicht über den Bildschirmrand hinaus */
+    #left .buttonDesign[data-tooltip]:first-child::after {
+        left: 0;
+        transform: translateY(0.5vh);
+    }
+
+    #left .buttonDesign[data-tooltip]:first-child:hover::after {
+        transform: translateY(0);
+    }
+
+    #right .buttonDesign[data-tooltip]:last-child::after {
+        left: auto;
+        right: 0;
+        transform: translateY(0.5vh);
+    }
+
+    #right .buttonDesign[data-tooltip]:last-child:hover::after {
+        transform: translateY(0);
+    }
+}

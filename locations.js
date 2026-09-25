@@ -19,25 +19,51 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
             maxBounds: bounds
         });
         
-        navigator.geolocation.watchPosition((pos,err,options) =>{
-          (err) =>{
-            console.log(error);
-        },
+        let geoError;
+        if (navigator.geolocation) {
+          navigator.geolocation.watchPosition((pos) => {
+            posLo = pos.coords.longitude;
+            posLa = pos.coords.latitude;
+            geoError = null;
+          }, (err) => {
+            geoError = err;
+            console.log(err);
+          }, {
+            enableHighAccuracy: true,
+            maximumAge: 60000
+          });
+        }
 
-    
-         {
-        enableHighAccuracy: true,
-        maximumAge: 60000,
-        timeout: 50
-      }
-      posLo = pos.coords.longitude
-      posLa = pos.coords.latitude
-      console.log(posLo, posLa);
-    });
+        //kurzer Hinweis unten am Bildschirm
+        let hinweisTimer;
+        function zeigeHinweis(text) {
+          var hinweis = document.getElementById("hinweis");
+          if (!hinweis) {
+            hinweis = document.createElement("div");
+            hinweis.id = "hinweis";
+            hinweis.setAttribute("role", "status");
+            document.body.appendChild(hinweis);
+          }
+          hinweis.textContent = text;
+          hinweis.classList.add("sichtbar");
+          clearTimeout(hinweisTimer);
+          hinweisTimer = setTimeout(() => hinweis.classList.remove("sichtbar"), 5000);
+        }
 
          
         function geoFindMe() {
           console.log("get location")
+
+          if (posLo === undefined) {
+            if (!navigator.geolocation) {
+              zeigeHinweis("Dein Browser kann den Standort leider nicht bestimmen.");
+            } else if (geoError && geoError.code === 1) {
+              zeigeHinweis("Standort nicht verfügbar – bitte Standortzugriff für diese Seite erlauben.");
+            } else {
+              zeigeHinweis("Standort wird gesucht … bitte in ein paar Sekunden nochmals versuchen.");
+            }
+            return;
+          }
           
 
         
@@ -1664,8 +1690,17 @@ function gifStart(){
 
 //Informations about the hike
 document.getElementById('bergmassiv').onclick = function(){
-  document.getElementById('actionHoehenprofil').classList.toggle('fade');
+  var offen = document.getElementById('actionHoehenprofil').classList.toggle('fade');
+  this.setAttribute('data-tooltip', offen ? 'Höhenprofil ausblenden' : 'Höhenprofil anzeigen');
 }
+
+//Esc schliesst alle Fenster und das Höhenprofil
+document.addEventListener('keydown', function(event){
+  if (event.key !== 'Escape') return;
+  reset();
+  document.getElementById('actionHoehenprofil').classList.remove('fade');
+  document.getElementById('bergmassiv').setAttribute('data-tooltip', 'Höhenprofil anzeigen');
+});
 
 
  

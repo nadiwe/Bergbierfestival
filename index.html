@@ -6,15 +6,12 @@
     <title>Bergbierfestival Karte</title>
     <meta name='viewport' content='width=device-width, initial-scale=1' />
     <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.js'></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
 
     <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css' rel='stylesheet' />
 
-    <link rel="preload" href="./font/proxima-nova-extrabold.woff" as="font" type="font/woff" crossorigin>
-    <link rel="preload" href="./font/proximanova-extrabold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./font/figtree-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="./font/figtree-latin-800-normal.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" as="style" href="style.css">
     <link rel="stylesheet" href="style.css">
 
@@ -30,32 +27,17 @@
     <link rel="preload" href="./img/memories/foto2.jpg">
     <link rel="preload" href="./img/memories/foto3.jpg">
 
-    <link rel="preload" href="https://www.youtube.com/embed/drDu3fKYQ5o">
 
 
 
-    <!-- Google Tag Manager -->
-    <script>(function (w, d, s, l, i) {
-            w[l] = w[l] || []; w[l].push({
-                'gtm.start':
-                    new Date().getTime(), event: 'gtm.js'
-            }); var f = d.getElementsByTagName(s)[0],
-                j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-                    'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-        })(window, document, 'script', 'dataLayer', 'GTM-NPCF94L');</script>
-    <!-- End Google Tag Manager -->
+    <!-- Google Tag Manager: wird erst nach Einwilligung geladen (consent.js) -->
+    <script src="consent.js" defer></script>
 </head>
 
 <body>
 
 
-    <!-- Google Tag Manager (noscript) -->
-    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NPCF94L" height="0" width="0"
-            style="display:none;visibility:hidden"></iframe></noscript>
-    <!-- End Google Tag Manager (noscript) -->
-
-
-    <div id="banner"><img src="./illustrationen/banner.png" alt="banner"></div>
+    <div id="banner"><img src="./illustrationen/banner.png" alt="Bergbierfestival Tschlin"></div>
 
 
     <div id='map'></div>
@@ -91,6 +73,7 @@
                 <h2><br>Start</h2>
                 <p>Tschlin, Posthaltestelle: zwischen 11:00 und 14:00 Uhr (Shuttle vorhanden). Alle
                     Bergbierliebhabenden erhalten dort ein Degustationsglas und ihr Festbändel für die Wanderung. </p>
+                <p>Abgabe von Bier ab 16 Jahren.</p>
                 <h2>Wanderung</h2>
                 <p>Die Wanderung kann in individueller Geschwindigkeit absolviert werden. Die 6 Stände sind während
                     den in der Karte erwähnten Zeiten betreut und in regelmässigen Abständen der Strecke entlang
@@ -114,7 +97,8 @@
                     OK: <a href="tel:+41796707510">079 670 75 10</a></p>
                 <br>
                 <h2>Sponsoren</h2>
-                <img src="./img/logo/sponsoren2026.png" alt="sponsoren" style="width: 100%; height: auto;">
+                <img src="./img/logo/sponsoren2026.png" alt="Logos der Sponsoren" style="width: 100%; height: auto;">
+                <p><br><a href="./impressum.html">Impressum & Datenschutz</a></p>
 
             </div>
 
@@ -152,7 +136,7 @@
 
 
     <div id="bergmassiv" data-tooltip="Höhenprofil anzeigen">
-        <img src="./illustrationen/bergmassiv.png" alt="banner">
+        <img src="./illustrationen/bergmassiv.png" alt="Höhenprofil anzeigen">
     </div>
 
     <div id="actionHoehenprofil">
@@ -174,17 +158,17 @@
 
 
         <div id="circleNavi" onclick="geoFindMe()" class="buttonDesign" data-tooltip="Mein Standort" aria-label="Mein Standort">
-            <img src="./illustrationen/navigation.png" alt="navigation">
+            <img src="./illustrationen/navigation.png" alt="Mein Standort">
         </div>
 
         <div id="circleBus" onclick="infosBus()" class="buttonDesign" data-tooltip="Shuttle-Service" aria-label="Shuttle-Service">
 
-            <img src="./illustrationen/bus.png" alt="bus">
+            <img src="./illustrationen/bus.png" alt="Shuttle-Service">
         </div>
 
         <div id="circleGeneral" onclick="infosGeneral()" class="buttonDesign" data-tooltip="Informationen" aria-label="Informationen">
 
-            <img src="./illustrationen/info.png" alt="navigation">
+            <img src="./illustrationen/info.png" alt="Informationen">
 
 
         </div>
@@ -194,10 +178,10 @@
     <div class="iconBlock" id="left">
         <a id="nochKeinTicket" class="buttonDesign" target="_blank" data-tooltip="Tickets kaufen" aria-label="Tickets kaufen"
             href="https://www.ticketino.com/de/Event/Bergbierfestival-2025/195518"><img
-                src="./illustrationen/ticket.png" alt="tickets">
+                src="./illustrationen/ticket.png" alt="Tickets kaufen">
         </a>
         <a target="_blank" id="BT" class="buttonDesign" data-tooltip="Bun Tschlin Shop" aria-label="Bun Tschlin Shop" href="https://shop.buntschlin.ch/"><img
-                src="./illustrationen/BT.png" alt="logo">
+                src="./illustrationen/BT.png" alt="Bun Tschlin Shop">
         </a>
     </div>
 

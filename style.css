@@ -1,23 +1,42 @@
+/* Schrift: Figtree (kostenlos, SIL Open Font License, siehe font/Figtree-OFL.txt) */
 @font-face {
-    font-family: 'proxima_nova_rgregular';
-    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot');
-    src: url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
-        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.woff') format('woff'),
-        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.ttf') format('truetype'),
-        url('https://litmus.com/fonts/Emails/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
-    font-weight: normal;
+    font-family: 'Figtree';
     font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./font/figtree-latin-400-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 }
 
 @font-face {
-    font-family: "ProximaNovaAW01-Extrabold";
-    src:
-        url("./font/proxima-nova-extrabold.woff2") format("woff2"),
-        url("./font/proxima-nova-extrabold.woff") format("woff")
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url('./font/figtree-latin-ext-400-normal.woff2') format('woff2');
+    unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('./font/figtree-latin-800-normal.woff2') format('woff2');
+    unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+}
+
+@font-face {
+    font-family: 'Figtree';
+    font-style: normal;
+    font-weight: 800;
+    font-display: swap;
+    src: url('./font/figtree-latin-ext-800-normal.woff2') format('woff2');
+    unicode-range: U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+0304,U+0308,U+0329,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF;
 }
 
 body {
-    font-family: 'proxima_nova_rgregular';
+    font-family: 'Figtree', system-ui, sans-serif;
     height: 100%;
     margin: 0;
     padding: 0;
@@ -25,7 +44,8 @@ body {
 }
 
 h1 {
-    font-family: 'ProximaNovaAW01-Extrabold', cursive;
+    font-family: 'Figtree', system-ui, sans-serif;
+    font-weight: 800;
     margin: 0 0 2vh 0;
     font-size: 26px;
 }
@@ -36,7 +56,8 @@ h2 {
 }
 
 h3 {
-    font-family: 'ProximaNovaAW01-Extrabold', cursive;
+    font-family: 'Figtree', system-ui, sans-serif;
+    font-weight: 800;
     margin: 0;
 }
 
@@ -545,10 +566,6 @@ svg {
     .arrow:hover {
         opacity: 0.6;
     }
-
-    #bergmassiv:hover {
-        transform: translateY(-0.5vh);
-    }
 }
 
 /* Beschriftung der Icons beim Hover */
@@ -674,9 +691,9 @@ svg {
     #bergmassiv[data-tooltip]::after {
         content: attr(data-tooltip);
         position: absolute;
-        top: 0;
+        top: 55%;
         left: 50%;
-        transform: translate(-50%, -100%);
+        transform: translate(-50%, -50%);
         padding: 0.6vh 0.8vw;
         border-radius: 0.5vw;
         background-color: rgba(0, 0, 0, 0.8);
@@ -691,4 +708,52 @@ svg {
     #bergmassiv[data-tooltip]:hover::after {
         opacity: 1;
     }
+}
+
+/* Cookie-Banner (consent.js) */
+#cookieBanner {
+    position: fixed;
+    z-index: 7;
+    left: 50%;
+    bottom: 14vh;
+    transform: translateX(-50%);
+    width: min(560px, calc(100vw - 32px));
+    box-sizing: border-box;
+    padding: 16px 20px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    color: #1d2420;
+    box-shadow: 0 6px 24px rgba(0, 0, 0, 0.35);
+    font-size: 15px;
+    line-height: 1.45;
+}
+
+#cookieBanner p {
+    margin: 0 0 12px;
+}
+
+#cookieBanner a {
+    color: inherit;
+    text-decoration: underline;
+}
+
+.cookieKnoepfe {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.cookieKnoepfe button {
+    font: inherit;
+    padding: 8px 18px;
+    border-radius: 8px;
+    border: 2px solid #1d2420;
+    background-color: #ffffff;
+    color: #1d2420;
+    cursor: pointer;
+}
+
+#cookieJa {
+    background-color: #1d2420;
+    color: #ffffff;
 }

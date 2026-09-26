@@ -202,7 +202,7 @@ mapboxgl.accessToken = 'pk.eyJ1Ijoibndmd3NiIiwiYSI6ImNsNHNyaDBnbjBlenIzZGxhejg5e
                         var video = document.createElement("IFRAME");
                         video.setAttribute("frameborder", "0"); 
                         video.setAttribute('allowFullScreen', '')
-                        video.setAttribute("src", "https://www.youtube.com/embed/drDu3fKYQ5o");
+                        video.setAttribute("src", "https://www.youtube-nocookie.com/embed/drDu3fKYQ5o");
                        
 
                         document.getElementById("one").appendChild(video);
@@ -287,7 +287,7 @@ ABSAGE
 
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/bier.png");
-                      bild.setAttribute("alt", "bieraEngiadinaisaReduziert");
+                      bild.setAttribute("alt", "Biera Engiadinaisa");
                       bild.setAttribute("id", "bieraEngiadinaisaReduziert");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
@@ -298,7 +298,7 @@ ABSAGE
                       
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/tier.png");
-                      bild.setAttribute("alt", "standBioSchorta");
+                      bild.setAttribute("alt", "Stand Bio Schorta");
                       bild.setAttribute("id", "standBioSchorta");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
@@ -319,7 +319,7 @@ ABSAGE
                      
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/bier.png");
-                      bild.setAttribute("alt", "monstein");
+                      bild.setAttribute("alt", "Monsteiner Bier");
                       bild.setAttribute("id", "monstein");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
@@ -330,7 +330,7 @@ ABSAGE
                       
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/sandwitch.png");
-                      bild.setAttribute("alt", "cilgiaEtter");
+                      bild.setAttribute("alt", "Cilgia Etter");
                       bild.setAttribute("id", "cilgiaEtter");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
@@ -351,7 +351,7 @@ ABSAGE
 
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/bier.png");
-                      bild.setAttribute("alt", "engadinerbier");
+                      bild.setAttribute("alt", "Engadiner Bier");
                       bild.setAttribute("id", "engadinerbier");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle").appendChild(bild);
@@ -363,7 +363,7 @@ ABSAGE
                       
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/kaese.png");
-                      bild.setAttribute("alt", "paurariaRiatsch");
+                      bild.setAttribute("alt", "Pauraria Riatsch");
                       bild.setAttribute("id", "paurariaRiatsch");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
@@ -381,7 +381,7 @@ ABSAGE
  
                         var bild = document.createElement("IMG");
                         bild.setAttribute("src", "./illustrationen/bier.png");
-                        bild.setAttribute("alt", "bieraEngiadinaisa");
+                        bild.setAttribute("alt", "Bieraria Tschlin");
                         bild.setAttribute("id", "bieraEngiadinaisa");
                         bild.setAttribute("onclick", "infoblock()");
                         document.getElementById("circle").appendChild(bild);
@@ -392,7 +392,7 @@ ABSAGE
 
                         var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/fleisch.png");
-                      bild.setAttribute("alt", "zanetti");
+                      bild.setAttribute("alt", "Bacharia Zanetti");
                       bild.setAttribute("id", "zanetti");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
@@ -412,7 +412,7 @@ ABSAGE
  
                         var bild = document.createElement("IMG");
                         bild.setAttribute("src", "./illustrationen/bier.png");
-                        bild.setAttribute("alt", "poschiavini");
+                        bild.setAttribute("alt", "Birraria Poschiavina");
                         bild.setAttribute("id", "poschiavini");
                         bild.setAttribute("onclick", "infoblock()");
                         document.getElementById("circle").appendChild(bild);
@@ -441,7 +441,7 @@ ABSAGE
 
                         var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./illustrationen/eier.png");
-                      bild.setAttribute("alt", "mayer");
+                      bild.setAttribute("alt", "Övs Mayer");
                       bild.setAttribute("id", "mayer");
                       bild.setAttribute("onclick", "infoblock()");
                       document.getElementById("circle2").appendChild(bild);
@@ -459,7 +459,7 @@ ABSAGE
         
                                 var bild = document.createElement("IMG");
                               bild.setAttribute("src", "./illustrationen/cullas.png");
-                              bild.setAttribute("alt", "abendmenu");
+                              bild.setAttribute("alt", "Abendmenü");
                               bild.setAttribute("id", "abendmenu");
                               bild.setAttribute("onclick", "infoblock()");
                               document.getElementById("circle").appendChild(bild);
@@ -478,6 +478,7 @@ ABSAGE
 
                      var bild = document.createElement("IMG");
                      bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
+                     bild.setAttribute("alt", "Logo Biera Engiadinaisa");
                      document.getElementById("one").appendChild(bild);
               
               
@@ -523,7 +524,7 @@ ABSAGE
 
                     var foto = document.createElement("IMG");
                     foto.setAttribute("src", "./img/memories/foto1.jpg");
-                    foto.setAttribute("alt", "wanderung");
+                    foto.setAttribute("alt", "Impressionen von der Bergbierwanderung");
                     foto.setAttribute("id", "fotos");
                     document.getElementById("one").appendChild(foto);
 
@@ -551,7 +552,7 @@ ABSAGE
 
                         var foto = document.createElement("IMG");
                         foto.setAttribute("src", "./img/memories/foto2.jpg");
-                        foto.setAttribute("alt", "wanderung");
+                        foto.setAttribute("alt", "Impressionen von der Bergbierwanderung");
                         foto.setAttribute("id", "fotos");
                         document.getElementById("one").appendChild(foto);
 
@@ -589,7 +590,7 @@ ABSAGE
 
                         var foto = document.createElement("IMG");
                         foto.setAttribute("src", "./img/memories/foto3.jpg");
-                        foto.setAttribute("alt", "wanderung");
+                        foto.setAttribute("alt", "Impressionen von der Bergbierwanderung");
                         foto.setAttribute("id", "fotos");
                         document.getElementById("one").appendChild(foto);
 
@@ -639,7 +640,6 @@ ABSAGE
 
                         var logo = document.createElement("IMG");
                       
-                        logo.setAttribute("alt", "logo");
                         logo.setAttribute("id", "fotos");
                         logo.setAttribute("id", "logo");
                         document.getElementById("sponsor").appendChild(logo);
@@ -651,15 +651,18 @@ ABSAGE
                           case 'fahne1': case 'fahne5':
                             link.href = "https://www.bezzola-denoth.ch/home"; 
                             logo.setAttribute("src", "./img/logo/bezzolaDenoth.png");
+                            logo.setAttribute("alt", "Logo Bezzola Denoth");
                             break;
 
                             case 'fahne2': case 'fahne4':
                               link.href = "https://www.valsot.ch/"; 
                               logo.setAttribute("src", "./img/logo/valsot.jpg");
+                              logo.setAttribute("alt", "Logo Gemeinde Valsot");
                               break;
                               case 'fahne3':
                                 link.href = "https://buntschlin.ch/"; 
                                 logo.setAttribute("src", "./img/logo/bt.jpg");
+                                logo.setAttribute("alt", "Logo Bun Tschlin");
                                 break;
                                
                         };
@@ -686,7 +689,7 @@ ABSAGE
                         var video = document.createElement("IFRAME");
                         video.setAttribute("frameborder", "0"); 
                         video.setAttribute("allowFullScreen", "");
-                        video.setAttribute("src", "https://www.youtube.com/embed/sYlYIlP9wwk");
+                        video.setAttribute("src", "https://www.youtube-nocookie.com/embed/sYlYIlP9wwk");
                         document.getElementById("one").appendChild(video);
                         
                         // Text
@@ -697,6 +700,7 @@ ABSAGE
                  
                         var bild = document.createElement("IMG");
                         bild.setAttribute("src", "./img/logo/sponsoren2026.png");
+                        bild.setAttribute("alt", "Logos der Sponsoren");
                         document.getElementById("one").appendChild(bild);
                       
                         
@@ -746,6 +750,7 @@ ABSAGE
 
                 var bild = document.createElement("IMG");
                 bild.setAttribute("src", "./img/logo/bzZanetti.jpg");
+                bild.setAttribute("alt", "Logo Bacharia Zanetti");
                 document.getElementById("two").appendChild(bild);
          
                 var content = document.createElement("P");
@@ -778,6 +783,7 @@ ABSAGE
   
          var bild = document.createElement("IMG");
          bild.setAttribute("src", "./img/logo/ovs.jpg");
+         bild.setAttribute("alt", "Logo Övs Mayer");
          document.getElementById("two").appendChild(bild);
   
         var content = document.createElement("P");
@@ -803,6 +809,7 @@ ABSAGE
  
         var bild = document.createElement("IMG");
         bild.setAttribute("src", "./img/logo/mia.jpg");
+        bild.setAttribute("alt", "Logo Mia Iva");
         document.getElementById("two").appendChild(bild);
  
        var content = document.createElement("P");
@@ -836,6 +843,7 @@ ABSAGE
 
        var bild = document.createElement("IMG");
        bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
+       bild.setAttribute("alt", "Logo Biera Engiadinaisa");
        document.getElementById("two").appendChild(bild);
 
        var content = document.createElement("P");
@@ -849,6 +857,7 @@ document.getElementById("two").appendChild(titel);
 
 var bild = document.createElement("IMG");
 bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
+bild.setAttribute("alt", "Logo Bieraria Tschlin");
 document.getElementById("two").appendChild(bild);
 
        var bieraSorten = document.createElement("H2");
@@ -933,6 +942,7 @@ document.getElementById("two").appendChild(bild);
 
        var bild = document.createElement("IMG");
        bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
+       bild.setAttribute("alt", "Logo Biera Engiadinaisa");
        document.getElementById("two").appendChild(bild);
 
        var content = document.createElement("P");
@@ -1021,6 +1031,7 @@ document.getElementById("two").appendChild(bild);
 
        var bild = document.createElement("IMG");
        bild.setAttribute("src", "./img/logo/doppeleu.png");
+       bild.setAttribute("alt", "Logo Doppelleu Boxer AG");
        document.getElementById("two").appendChild(bild);
 
        var doppelleuBoxerAGT = document.createElement("P");
@@ -1091,6 +1102,7 @@ document.getElementById("two").appendChild(bild);
 
        var bild = document.createElement("IMG");
        bild.setAttribute("src", "./img/logo/cilgiaEtter.jpg");
+       bild.setAttribute("alt", "Logo Cilgia Etter");
        document.getElementById("two").appendChild(bild);
 
        var etterP = document.createElement("P");
@@ -1116,6 +1128,7 @@ document.getElementById("two").appendChild(bild);
 
        var bild = document.createElement("IMG");
        bild.setAttribute("src", "./img/logo/bsSchorta.jpg");
+       bild.setAttribute("alt", "Logo Stand Bio Schorta");
        document.getElementById("two").appendChild(bild);
 
        var standBioSchortaT = document.createElement("P");
@@ -1143,6 +1156,7 @@ document.getElementById("two").appendChild(bild);
 
       var bild = document.createElement("IMG");
       bild.setAttribute("src", "./img/logo/simmentaler.png");
+      bild.setAttribute("alt", "Logo Simmentaler Bier");
       document.getElementById("two").appendChild(bild);
 
       var simmentalerT = document.createElement("P");
@@ -1202,6 +1216,7 @@ document.getElementById("two").appendChild(bild);
 
        var bild = document.createElement("IMG");
        bild.setAttribute("src", "./img/logo/prRiatsch.jpg");
+       bild.setAttribute("alt", "Logo Pauraria Riatsch");
        document.getElementById("two").appendChild(bild);
 
        var paurariaRiatschT = document.createElement("P");
@@ -1231,6 +1246,7 @@ document.getElementById("two").appendChild(bild);
                
                      var bild = document.createElement("IMG");
                      bild.setAttribute("src", "./img/logo/mundart.png");
+                     bild.setAttribute("alt", "Logo Mundart");
                      document.getElementById("two").appendChild(bild);
 
                      var mundartCT = document.createElement("H2");
@@ -1279,6 +1295,7 @@ document.getElementById("two").appendChild(bild);
               
                     var bild = document.createElement("IMG");
                     bild.setAttribute("src", "./img/logo/girun.webp");
+                    bild.setAttribute("alt", "Logo Alpenbrauerei Girun");
                     document.getElementById("two").appendChild(bild);
               
                     var girunC = document.createElement("P");
@@ -1309,6 +1326,7 @@ document.getElementById("two").appendChild(bild);
               
                      var bild = document.createElement("IMG");
                      bild.setAttribute("src", "./img/logo/stadtbierChur.jpg");
+                     bild.setAttribute("alt", "Logo Churer Stadtbier");
                      document.getElementById("two").appendChild(bild);
               
                     var content = document.createElement("P");
@@ -1342,6 +1360,7 @@ document.getElementById("two").appendChild(titel);
 
 var bild = document.createElement("IMG");
 bild.setAttribute("src", "./img/logo/Suppe_knoedel.jpg");
+bild.setAttribute("alt", "Knödelsuppe");
 document.getElementById("two").appendChild(bild);
 
 // Text
@@ -1365,6 +1384,7 @@ document.getElementById("two").appendChild(content);
              
                    var bild = document.createElement("IMG");
                    bild.setAttribute("src", "./img/logo/appenzeller.png");
+                   bild.setAttribute("alt", "Logo Appenzeller Bier");
                    document.getElementById("two").appendChild(bild);
              
                    var content = document.createElement("P");
@@ -1395,6 +1415,7 @@ document.getElementById("two").appendChild(content);
              
                    var bild = document.createElement("IMG");
                    bild.setAttribute("src", "./img/logo/BP1.png");
+                   bild.setAttribute("alt", "Logo Birraria Poschiavina");
                    document.getElementById("two").appendChild(bild);
              
                    var brauhausC = document.createElement("P");
@@ -1419,6 +1440,7 @@ document.getElementById("two").appendChild(content);
 
      var bild = document.createElement("IMG");
      bild.setAttribute("src", "./img/logo/DomleschgerBier.jpg");
+     bild.setAttribute("alt", "Logo Domleschger Bier");
      document.getElementById("two").appendChild(bild);
 
      var domleschgerT = document.createElement("P");
@@ -1439,6 +1461,7 @@ document.getElementById("two").appendChild(content);
 
       var bild = document.createElement("IMG");
       bild.setAttribute("src", "./img/logo/DomleschgerBier.jpg");
+      bild.setAttribute("alt", "Logo Domleschger Bier");
       document.getElementById("two").appendChild(bild);
 
       var domleschgerT = document.createElement("P");
@@ -1529,6 +1552,7 @@ document.getElementById("two").appendChild(content);
 
          var bild = document.createElement("IMG");
          bild.setAttribute("src", "./img/logo/beEngiadinaisa.jpeg");
+         bild.setAttribute("alt", "Logo Biera Engiadinaisa");
          document.getElementById("two").appendChild(bild);
   
   
@@ -1568,6 +1592,7 @@ document.getElementById("two").appendChild(content);
         
                  var bild = document.createElement("IMG");
                  bild.setAttribute("src", "./img/logo/EngadinerBier.jpg");
+                 bild.setAttribute("alt", "Logo Engadiner Bier");
                  document.getElementById("two").appendChild(bild);
           
                  var bergBierText = document.createElement("P");
@@ -1601,7 +1626,7 @@ document.getElementById("two").appendChild(content);
 
                       var bild = document.createElement("IMG");
                       bild.setAttribute("src", "./img/logo/monsteiner-logo.png");
-                      bild.setAttribute("alt", "startBier");
+                      bild.setAttribute("alt", "Logo Monsteiner Bier");
                       bild.setAttribute("id", "startBier");
                       document.getElementById("two").appendChild(bild);
 

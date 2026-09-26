@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang='de'>
+
+<head>
+    <meta charset='utf-8' />
+    <title>Impressum & Datenschutz – Bergbierfestival Karte</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1' />
+    <meta name="robots" content="noindex">
+    <style>
+        @font-face {
+            font-family: 'Figtree';
+            font-weight: 400;
+            font-display: swap;
+            src: url('./font/figtree-latin-400-normal.woff2') format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Figtree';
+            font-weight: 800;
+            font-display: swap;
+            src: url('./font/figtree-latin-800-normal.woff2') format('woff2');
+        }
+
+        :root {
+            --hintergrund: #3a413c;
+            --flaeche: #a2d5bf;
+            --text: #1d2420;
+        }
+
+        body {
+            margin: 0;
+            padding: 0 16px;
+            background-color: var(--hintergrund);
+            color: var(--text);
+            font-family: 'Figtree', system-ui, sans-serif;
+            line-height: 1.55;
+        }
+
+        main {
+            max-width: 720px;
+            margin: 5vh auto;
+            padding: 32px clamp(20px, 5vw, 48px) 40px;
+            background-color: var(--flaeche);
+            border-radius: 16px 16px 16px 64px;
+        }
+
+        h1,
+        h2 {
+            font-weight: 800;
+            line-height: 1.2;
+        }
+
+        h1 {
+            font-size: clamp(1.7rem, 5vw, 2.2rem);
+            margin: 0.4em 0 0.8em;
+        }
+
+        h2 {
+            font-size: 1.25rem;
+            margin: 2em 0 0.4em;
+        }
+
+        h3 {
+            font-size: 1rem;
+            margin: 1.4em 0 0.2em;
+        }
+
+        p,
+        ul {
+            margin: 0 0 0.8em;
+        }
+
+        a {
+            color: inherit;
+        }
+
+        .zurueck {
+            display: inline-block;
+            font-weight: 600;
+            text-decoration: none;
+        }
+
+        .zurueck:hover {
+            text-decoration: underline;
+        }
+
+        .knopf {
+            font: inherit;
+            padding: 8px 16px;
+            border-radius: 8px;
+            border: 2px solid var(--text);
+            background-color: transparent;
+            color: var(--text);
+            cursor: pointer;
+        }
+
+        #cookieStatus {
+            margin-left: 8px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <a class="zurueck" href="./">← zurück zur Karte</a>
+
+        <h1>Impressum & Datenschutz</h1>
+
+        <h2>Impressum</h2>
+        <p>
+            Engadin Booking<br>
+            Coliv SA<br>
+            Stradun 322<br>
+            CH-7550 Scuol<br>
+            E-Mail: <a href="mailto:info@engadin-booking.ch">info@engadin-booking.ch</a>
+        </p>
+
+        <h2 id="datenschutz">Datenschutz</h2>
+        <p>Verantwortlich ist Engadin Booking (siehe oben). Beim Aufruf der Karte wird deine IP-Adresse an GitHub
+            (Hosting), Mapbox (Karte) und beim Anzeigen von Videos an YouTube übermittelt, teilweise in die USA.
+            Google-Statistik laden wir nur mit deiner Einwilligung.</p>
+        <p><button type="button" class="knopf" id="cookieZuruecksetzen">Cookie-Einstellungen ändern</button>
+            <span id="cookieStatus" role="status"></span></p>
+    </main>
+
+    <script>
+        //Wahl löschen: beim nächsten Besuch der Karte erscheint der Cookie-Hinweis wieder
+        document.getElementById('cookieZuruecksetzen').onclick = function () {
+            try { localStorage.removeItem('cookieEinwilligung'); } catch (e) { }
+            document.getElementById('cookieStatus').textContent = 'Erledigt – der Hinweis erscheint wieder, wenn du zur Karte zurückkehrst.';
+        };
+    </script>
+</body>
+
+</html>
